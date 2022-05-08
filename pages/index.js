@@ -41,7 +41,7 @@ export default function Home() {
         🌍 Hi I'm <a target="_blank" href="https://github.com/bacqueyrisses/" rel="noreferrer">Enzo Bacqueyrisses</a>
         </h1>
 
-        <h2 className='text-3xl font-bold underline'>test</h2>
+        <h2 className='p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4'>test</h2>
 
         <p className={styles.description}>
           Work in progress being a <code className={styles.code}>dEvElOpEr</code>
