@@ -40,9 +40,7 @@ export default function Home() {
         <h1 className={styles.title}>
         🌍 Hi I'm <a target="_blank" href="https://github.com/bacqueyrisses/" rel="noreferrer">Enzo Bacqueyrisses</a>
         </h1>
-
-        <h2 className='text-9xl'>test</h2>
-
+        
         <p className={styles.description}>
           Work in progress being a <code className={styles.code}>dEvElOpEr</code>
         </p>
