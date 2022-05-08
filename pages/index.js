@@ -58,7 +58,7 @@ export default function Home() {
               </div>
         }
         {projects.length == 0 && (
-          <p style={{fontSize: '2rem'}}>No projects yet <span style={{marginLeft: '1rem'}}>🕳️</span></p>
+          <p style={{fontSize: '2rem'}}>No projects yet :(</p>
         )
         }
 
