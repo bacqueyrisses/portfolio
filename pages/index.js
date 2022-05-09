@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Enzo Bacqueyrisses | Portfolio</title>
+        <title>Enz Bacqueyrisses | Portfolio</title>
         <meta name="description" content="Welcome to Enzo Bacqueyrisses' Portfolio" />
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>🌍</text></svg>" />
       </Head>
