@@ -38,7 +38,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-        🌍 Hi I' m <a target="_blank" href="https://github.com/bacqueyrisses/" rel="noreferrer">Enzo Bacqueyrisses</a>
+        🌍 Hi I'm <a target="_blank" href="https://github.com/bacqueyrisses/" rel="noreferrer">Enzo Bacqueyrisses</a>
         </h1>
         
         <p className={styles.description}>
@@ -56,7 +56,7 @@ export default function Home() {
               </div>
         }
         {projects.length == 0 && (
-          <p style={{fontSize: '2rem'}}>No projets yet :(</p>
+          <p style={{fontSize: '2rem'}}>No projects yet :(</p>
         )
         }
 
@@ -65,7 +65,7 @@ export default function Home() {
       <footer className={styles.footer}>
         <div
         >
-          Made wih 🍺
+          Made with 🍺
         </div>
       </footer>
     </div>
