@@ -53,6 +53,8 @@ export default function Home() {
                     </a>
                 </h1>
 
+                <button type='submit' className='bg-blue-500 px-4 py-2 rounded-xl  active:bg-blue-300 text-white'>Test</button>
+
                 <p className={styles.description}>
                     Work in progress being a{' '}
                     <code className={styles.code}>dEvElOpEr</code>
