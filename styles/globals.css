@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .custom-class {
+        @apply flex flex-col justify-center align-middle;
+    }
+}
+
+
