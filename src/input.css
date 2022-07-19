@@ -1,3 +1,114 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Body & Main */
+body {
+    @apply
+    /* All displays */
+    flex
+    bg-gradient-to-r from-sky-400/10 to-indigo-500/10
+    /* Small displays */
+    sm:p-5 
+    sm:pb-0
+}
+
+main {
+    @apply
+    mx-auto
+    mt-5
+}
+
+/* Sections Classes */
+.sections-container {
+    @apply 
+    /* All displays */
+    font-boska font-normal
+    /* Small displays */
+    sm:text-5xl
+    /* Large displays */
+    xl:text-6xl 
+}
+
+.section {
+    @apply 
+    /* All displays */
+    transition-all
+    /* Large displays */
+    xl:flex 
+    xl:justify-center 
+    xl:align-middle 
+    xl:gap-7
+    xl:mb-5
+
+
+}
+
+.section-content {
+    @apply
+    /* All displays */
+    flex
+}
+
+.section-content-inner {
+    @apply
+    /* All displays */
+    flex
+}
+
+.section--accent {
+    @apply
+    /* All displays */
+    italic font-extralight
+}
+
+sup, .type {
+    @apply
+    /* All displays */
+    text-xs 
+    left-2
+}
+
+.wip {
+    @apply
+    cursor-wait
+}
+
+/* Selectors */
+.selectors {
+    @apply 
+    /* All displays */
+    flex 
+    justify-center 
+    align-middle 
+    mt-10 
+    mb-10
+    gap-10 
+    font-cabinet 
+    font-bold
+    text-gray-700
+    text-sm
+    cursor-pointer
+}
+.selector {
+    @apply
+    /* All displays */
+    border-solid border-2 border-transparent
+    px-4 
+    p-3
+    rounded-full
+    shadow-stripe
+    transition
+    bg-[#eef4fe]
+}
+
+.selector:hover {
+    @apply
+    /* All displays */
+    shadow-md
+    translate-y-1
+    bg-[#edf1fe]
+    font-extrabold
+}
+
+

@@ -4,14 +4,139 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="theme-color" content="#a62339" />
+        <meta name="theme-color" content="#000000" />
         <link rel="shortcut icon" href="#" />
         <script defer src="script.js"></script>
-        <link rel="stylesheet" href="/dist/output.css">
-        <title>Document</title>
+        <link
+            href="https://api.fontshare.com/v2/css?f[]=boska@900,901,701,201,401,301,500,400,2,1,200,700,300,501&f[]=cabinet-grotesk@800,500,100,700,400,300,200,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/dist/output.css" />
+        <title>Bacqueyrisses</title>
     </head>
     <body>
-        <div class="bg-red-500 flex">Test</div>
-        <h1 class="text-blue-400">Test 2</h1>
+        <main>
+            <div class="sections-container">
+                <div class="section section-contact">
+                    <div class="section-content">
+                        <a target="_blank" href="https://www.linkedin.com/in/enzobacqueyrisses/">
+                            <div class="section-content-inner section--accent">
+                                Linkedin
+                            </div>
+                        </a>
+                        <!-- <sup>
+                            (
+                            <span class="type">React</span>
+                            )
+                        </sup> -->
+                    </div>
+                    <div class="section-content">
+                        <div class="section-content-inner">Github</div>
+                        <!-- <sup>
+                            (
+                            <span class="type">React</span>
+                            )
+                        </sup> -->
+                    </div>
+                    <div class="section-content">
+                        <div class="section-content-inner section--accent">Email</div>
+                        <!-- <sup>
+                            (
+                            <span class="type">Node.JS</span>
+                            )
+                        </sup> -->
+                    </div>
+                </div>
+                <div class="section section-skills">
+                    <div class="section-content">
+                        <div class="section-content-inner section--accent skills" data-cursor="url('/ressources/html.png')">
+                            HTML & CSS
+                        </div>
+                        <!-- <sup>
+                            (
+                            <span class="type">HTML</span>
+                            <span class="type">CSS</span>
+                            )
+                        </sup> -->
+                    </div>
+                    <div class="section-content">
+                        <div class="section-content-inner skills react" data-cursor="ressources/react.png">React</div>
+                        <!-- <sup>
+                            (
+                            <span class="type">React</span>
+                            )
+                        </sup> -->
+                    </div>
+                    <div class="section-content">
+                        <div class="section-content-inner section--accent skills" data-cursor="url('src/ressources/node.png')">
+                            Node.JS
+                        </div>
+                        <!-- <sup>
+                            (
+                            <span class="type">HTML</span>
+                            <span class="type">CSS</span>
+                            )
+                        </sup> -->
+                    </div>
+                    <div class="section-content">
+                        <div class="skills" data-cursor="url('src/ressources/tw.png')">Tailwind CSS</div> 
+                        <!-- <sup>
+                            (
+                            <span class="type">Node.JS</span>
+                            )
+                        </sup> -->
+                    </div>
+                </div>
+                <div class="section section-projects">
+                    <div class="section-content wip">
+                        <div class="section-content-inner section--accent">Wordy</div>
+                        <sup>
+                            (
+                            <span class="type">In progress</span>
+                            )
+                        </sup>
+                    </div>
+                    <div class="section-content wip">
+                        <div class="section-content-inner">isThisHome?</div>
+                        <sup>
+                            (
+                            <span class="type">In progress</span>
+                            )
+                        </sup>
+                    </div>
+                    <div class="section-content wip">
+                        <div class="section-content-inner section--accent">
+                            Project Z
+                        </div>
+                        <sup>
+                            (
+                            <span class="type">In progress</span>
+                            )
+                        </sup>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <ul id="filters" class="selectors">
+                    <li id="contact" class="selector" data-filter="section-contact">
+                        Contact
+                    </li>
+                    <li
+                        id="skills"
+                        class="selector accent-two"
+                        data-filter="section-skills"
+                    >
+                        Skills
+                    </li>
+                    <li
+                        id="projects"
+                        class="selector accent-one"
+                        data-filter="section-projects"
+                    >
+                        Projects
+                    </li>
+                </ul>
+            </div>
+        </main>
     </body>
 </html>
