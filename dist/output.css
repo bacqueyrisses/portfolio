@@ -558,19 +558,15 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.filter {
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 /* Body & Main */
 
 body {
   display: flex;
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-  --tw-gradient-from: rgb(56 189 248 / 0.1);
+  --tw-gradient-from: rgb(56 189 248 / 0.2);
   --tw-gradient-to: rgb(56 189 248 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: rgb(99 102 241 / 0.1);
+  --tw-gradient-to: rgb(99 102 241 / 0.2);
 }
 
 @media (min-width: 640px) {
@@ -634,10 +630,6 @@ main {
 .section--accent {
   font-weight: 200;
   font-style: italic;
-}
-
-.react:hover {
-  cursor: url(/src/ressources/react.png);
 }
 
 sup,  .type {
