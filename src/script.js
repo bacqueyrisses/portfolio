@@ -17,11 +17,11 @@ document.querySelectorAll('.selector').forEach((button) => {
 });
 
 // Custom cursor when hovering skills
-document.querySelectorAll('.skills').forEach(tech => {
-    tech.addEventListener('mouseenter', e => {
-        const cursor = e.target.dataset.cursor;
-        document.body.style.cursor = cursor + " , auto";
-    })
-    tech.addEventListener('mouseleave', e => {
-        document.body.style.cursor = 'inherit';
-})});
+// document.querySelectorAll('.skills').forEach(tech => {
+//     tech.addEventListener('mouseenter', e => {
+//         const cursor = e.target.dataset.cursor;
+//         document.body.style.cursor = cursor + " , auto";
+//     })
+//     tech.addEventListener('mouseleave', e => {
+//         document.body.style.cursor = 'inherit';
+// })});
