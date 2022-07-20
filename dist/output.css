@@ -754,6 +754,10 @@ sup,  .type {
   font-style: italic;
 }
 
+.soft-hide {
+  opacity: 0.25;
+}
+
 
 
 

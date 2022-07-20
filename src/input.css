@@ -146,6 +146,11 @@ sup, .type {
     italic
 }
 
+.soft-hide {
+    @apply
+    opacity-[0.25]
+}
+
 
 
 
