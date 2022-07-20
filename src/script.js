@@ -17,11 +17,11 @@ document.querySelectorAll('.selector').forEach((button) => {
                 }
             });
     }));
-    button.addEventListener('mouseleave', (e) => {
-        const filter = e.target.dataset.filter;
-        document.querySelectorAll('.section:not(.' + filter + ')').forEach((contentToHide) => {
-            contentToHide.classList.remove('soft-hide');
-            });
-    });
+    // button.addEventListener('mouseleave', (e) => {
+    //     const filter = e.target.dataset.filter;
+    //     document.querySelectorAll('.section:not(.' + filter + ')').forEach((contentToHide) => {
+    //         contentToHide.classList.remove('soft-hide');
+    //         });
+    // });
 });
 
