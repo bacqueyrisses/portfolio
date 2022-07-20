@@ -5,23 +5,23 @@ document.querySelectorAll('.selector').forEach((button) => {
     button.addEventListener(mouseEvent, (e) => {
         const filter = e.target.dataset.filter;
         document.querySelectorAll('.section:not(.' + filter + ')').forEach((contentToHide) => {
-                // if (window.getComputedStyle(button)['font-style'] === 'italic') {
-                //     contentToHide.style.opacity = 1;
-                // } else {
-                //     contentToHide.style.opacity = 0.25;
-                // }
-                if (contentToHide.classList.contains('soft-hide')) {
-                    contentToHide.classList.remove('soft-hide')
-                } else {
-                    contentToHide.classList.add('soft-hide')
-                }
-            });
-    }));
-    // button.addEventListener('mouseleave', (e) => {
-    //     const filter = e.target.dataset.filter;
-    //     document.querySelectorAll('.section:not(.' + filter + ')').forEach((contentToHide) => {
-    //         contentToHide.classList.remove('soft-hide');
-    //         });
-    // });
+        if ((window.screen.width <= 640) && (mouseEvent === 'click')) {
+            contentToHide.classList.toggle('soft-hide')
+            } else if (window.screen.width > 640) {
+            contentToHide.classList.toggle('soft-hide')
+            } else {
+        return
+    }
+
+})}));
+
+    button.addEventListener('mouseleave', (e) => {
+        const filter = e.target.dataset.filter;
+        if (window.screen.width > 640) {
+        document.querySelectorAll('.section:not(.' + filter + ')').forEach((contentToHide) => {
+            contentToHide.classList.remove('soft-hide');
+            })};
+    });
 });
 
+// Séparer mouseenter sur desktop et click sur desktop et mobile
