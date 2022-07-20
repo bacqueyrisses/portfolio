@@ -24,4 +24,4 @@ document.querySelectorAll('.skills').forEach(tech => {
     })
     tech.addEventListener('mouseleave', e => {
         document.body.style.cursor = 'inherit';
-})})
+})});
