@@ -74,6 +74,10 @@ sup, .type {
     cursor-wait
 }
 
+.react:hover {
+    cursor: url(/ressources/react.png), auto;
+}
+
 /* Selectors */
 .selectors {
     @apply 
