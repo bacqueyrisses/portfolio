@@ -10,9 +10,11 @@ document.querySelectorAll('.selector').forEach((button) => {
                 // } else {
                 //     contentToHide.style.opacity = 0.25;
                 // }
-                contentToHide.classList.toggle('soft-hide')
-                
-
+                if (contentToHide.classList.contains('soft-hide')) {
+                    contentToHide.classList.remove('soft-hide')
+                } else {
+                    contentToHide.classList.add('soft-hide')
+                }
             });
     }));
     button.addEventListener('mouseleave', (e) => {
