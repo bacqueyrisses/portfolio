@@ -74,10 +74,6 @@ sup, .type {
     cursor-wait
 }
 
-.react:hover {
-    cursor: url(/ressources/react.png), auto;
-}
-
 /* Selectors */
 .selectors {
     @apply 
@@ -85,34 +81,28 @@ sup, .type {
     flex 
     justify-center 
     align-middle 
-    mt-10 
+    mt-5 
     mb-10
     gap-10 
-    font-cabinet 
-    font-bold
+    font-cabinet
+    font-normal
     text-gray-700
-    text-sm
+    text-xl
     cursor-pointer
 }
 .selector {
     @apply
     /* All displays */
-    border-solid border-2 border-transparent
-    px-4 
-    p-3
+    m-2
+    p-1
     rounded-full
-    shadow-stripe
-    transition
-    bg-[#eef4fe]
+    bg-transparent
 }
 
 .selector:hover {
     @apply
     /* All displays */
-    shadow-md
-    translate-y-1
-    bg-[#edf1fe]
-    font-extrabold
+    italic
 }
 
 

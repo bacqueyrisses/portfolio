@@ -20,8 +20,8 @@ document.querySelectorAll('.selector').forEach((button) => {
 document.querySelectorAll('.skills').forEach(tech => {
     tech.addEventListener('mouseenter', e => {
         const cursor = e.target.dataset.cursor;
-        document.body.style.cursor = 'url(' + window.location.href + cursor + ')';
-        console.log('url(' + window.location.href + cursor + ')');
-        let t = document.body.style.cursor
-        console.log(t);
-    })})
+        document.body.style.cursor = cursor + " , auto";
+    })
+    tech.addEventListener('mouseleave', e => {
+        document.body.style.cursor = 'inherit';
+})})
