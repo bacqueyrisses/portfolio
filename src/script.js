@@ -25,3 +25,5 @@ document.querySelectorAll('.selector').forEach((button) => {
 //     tech.addEventListener('mouseleave', e => {
 //         document.body.style.cursor = 'inherit';
 // })});
+
+

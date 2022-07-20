@@ -5,11 +5,10 @@
 /* Body & Main */
 body {
     @apply
-    /* All displays */
     flex
     bg-gradient-to-r from-sky-400/20 to-indigo-500/20
     /* Small displays */
-    sm:p-5 
+    sm:p-5
     sm:pb-0
 }
 
@@ -22,51 +21,93 @@ main {
 /* Sections Classes */
 .sections-container {
     @apply 
-    /* All displays */
     font-boska font-normal
+    text-5xl
     /* Small displays */
     sm:text-5xl
     /* Large displays */
-    xl:text-6xl 
+    xl:text-7xl
 }
 
 .section {
     @apply 
-    /* All displays */
     transition-all
+    mb-4
     /* Large displays */
     xl:flex 
     xl:justify-center 
     xl:align-middle 
     xl:gap-7
     xl:mb-5
-
-
 }
+
+
+.section:nth-child(1) {
+    @apply
+    /* Large displays */
+    xl:text-6xl
+}
+
+.section:nth-child(2) {
+    @apply
+    /* Large displays */
+    xl:text-6xl
+    xl:not-italic
+    xl:font-normal
+}
+
+.section:nth-child(2) div:nth-child(3) {
+    @apply
+    not-italic
+    font-normal
+    xl:italic
+    xl:font-extralight
+}
+
+.section:nth-child(2) div:nth-child(4) {
+    @apply
+    italic
+    font-extralight
+    xl:not-italic
+    xl:font-normal
+}
+
+
+.section:nth-child(3) {
+    @apply
+    /* Large displays */
+    xl:text-6xl
+}
+
+
 
 .section-content {
     @apply
-    /* All displays */
     flex
 }
 
 .section-content-inner {
     @apply
-    /* All displays */
     flex
 }
 
 .section--accent {
     @apply
-    /* All displays */
+    /* Large displays */
     italic font-extralight
+    sm:italic sm:font-extralight
+    md:italic md:font-extralight
+    xl:italic xl:font-extralight
 }
 
 sup, .type {
     @apply
     /* All displays */
-    text-xs 
-    left-2
+    top-7
+    text-xs
+    sm:left-2
+    md:left-2
+    xl:left-2 
 }
 
 .wip {
@@ -104,5 +145,8 @@ sup, .type {
     /* All displays */
     italic
 }
+
+
+
 
 

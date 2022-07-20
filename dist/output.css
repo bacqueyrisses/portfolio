@@ -558,10 +558,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.filter {
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 /* Body & Main */
 
 body {
@@ -590,6 +586,8 @@ main {
 
 .sections-container {
   font-family: Boska, serif;
+  font-size: 3rem;
+  line-height: 1;
   font-weight: 400;
 }
 
@@ -602,12 +600,13 @@ main {
 
 @media (min-width: 1280px) {
   .sections-container {
-    font-size: 3.75rem;
+    font-size: 4.5rem;
     line-height: 1;
   }
 }
 
 .section {
+  margin-bottom: 1rem;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -620,6 +619,47 @@ main {
     justify-content: center;
     gap: 1.75rem;
     vertical-align: middle;
+  }
+
+  .section:nth-child(1) {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .section:nth-child(2) {
+    font-size: 3.75rem;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+.section:nth-child(2) div:nth-child(3) {
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width: 1280px) {
+  .section:nth-child(2) div:nth-child(3) {
+    font-weight: 200;
+    font-style: italic;
+  }
+}
+
+.section:nth-child(2) div:nth-child(4) {
+  font-weight: 200;
+  font-style: italic;
+}
+
+@media (min-width: 1280px) {
+  .section:nth-child(2) div:nth-child(4) {
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .section:nth-child(3) {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 
@@ -636,10 +676,49 @@ main {
   font-style: italic;
 }
 
+@media (min-width: 640px) {
+  .section--accent {
+    font-weight: 200;
+    font-style: italic;
+  }
+}
+
+@media (min-width: 768px) {
+  .section--accent {
+    font-weight: 200;
+    font-style: italic;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section--accent {
+    font-weight: 200;
+    font-style: italic;
+  }
+}
+
 sup,  .type {
-  left: 0.5rem;
+  top: 1.75rem;
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+@media (min-width: 640px) {
+  sup,  .type {
+    left: 0.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  sup,  .type {
+    left: 0.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  sup,  .type {
+    left: 0.5rem;
+  }
 }
 
 .wip {
@@ -674,5 +753,8 @@ sup,  .type {
 .selector:hover {
   font-style: italic;
 }
+
+
+
 
 
