@@ -579,7 +579,13 @@ body {
 main {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 1280px) {
+  main {
+    margin-top: 1.25rem;
+  }
 }
 
 /* Sections Classes */

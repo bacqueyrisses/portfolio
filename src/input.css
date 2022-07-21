@@ -15,7 +15,8 @@ body {
 main {
     @apply
     mx-auto
-    mt-5
+    mt-2
+    xl:mt-5
 }
 
 /* Sections Classes */
