@@ -623,9 +623,16 @@ main {
     font-size: 3.75rem;
     line-height: 1;
   }
+}
 
+.section:nth-child(2) {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+@media (min-width: 1280px) {
   .section:nth-child(2) {
-    font-size: 3.75rem;
+    font-size: 3rem;
     line-height: 1;
     font-weight: 400;
     font-style: normal;
@@ -664,7 +671,9 @@ main {
 }
 
 .section * {
-  transition: font-weight 70ms ease;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 /* .section--accent { */
@@ -748,12 +757,12 @@ sup,  .type {
 
 .hide {
   opacity: 0.25;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
-.hide * {
-  transition: font-weight 170ms ease;
-  font-weight: 200
-}
+
 
 
 

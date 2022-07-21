@@ -49,8 +49,9 @@ main {
 
 .section:nth-child(2) {
     @apply
+    text-4xl
     /* Large displays */
-    xl:text-6xl
+    xl:text-5xl
     xl:not-italic
     xl:font-normal
 }
@@ -89,8 +90,8 @@ main {
 }
 
 .section * {
-    transition: font-weight 70ms ease;
-
+    @apply
+    transition-all
 }
 
 /* .section--accent { */
@@ -162,14 +163,10 @@ sup, .type {
 .hide {
     @apply
     opacity-25
+    transition-opacity
 }
 
-.hide * {
-    transition: font-weight 170ms ease;
-    @apply
-    font-extralight
 
-}
 
 
 
