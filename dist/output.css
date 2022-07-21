@@ -664,7 +664,7 @@ main {
 }
 
 .section * {
-  transition: font-weight 60ms ease;
+  transition: font-weight 70ms ease;
 }
 
 /* .section--accent { */
@@ -751,7 +751,7 @@ sup,  .type {
 }
 
 .hide * {
-  transition: font-weight 160ms ease;
+  transition: font-weight 170ms ease;
   font-weight: 200
 }
 
