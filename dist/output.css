@@ -562,11 +562,14 @@ video {
 
 body {
   display: flex;
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  height: 100vh;
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
   --tw-gradient-from: rgb(56 189 248 / 0.2);
   --tw-gradient-to: rgb(56 189 248 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   --tw-gradient-to: rgb(99 102 241 / 0.2);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 640px) {

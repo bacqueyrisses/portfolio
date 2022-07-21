@@ -6,10 +6,13 @@
 body {
     @apply
     flex
-    bg-gradient-to-r from-sky-400/20 to-indigo-500/20
+    bg-gradient-to-b from-sky-400/20 to-indigo-500/20
+    bg-no-repeat
+    bg-cover
     /* Small displays */
     sm:p-5
     sm:pb-0
+    h-screen
 }
 
 main {
@@ -142,7 +145,7 @@ sup, .type {
 /* JavaScript class to hide content */
 .hide {
     @apply
-    opacity-[0.25]
+    opacity-25
 }
 
 
