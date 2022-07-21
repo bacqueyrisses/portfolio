@@ -15,8 +15,7 @@ body {
 main {
     @apply
     mx-auto
-    mt-2
-    xl:mt-5
+    mt-5
 }
 
 /* Sections Classes */
@@ -144,16 +143,6 @@ sup, .type {
 .hide {
     @apply
     opacity-[0.25]
-}
-
-.enzo {
-    @apply
-    flex
-    justify-center
-    align-middle
-    font-boska
-    font-normal
-    text-xl
 }
 
 

@@ -579,13 +579,7 @@ body {
 main {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0.5rem;
-}
-
-@media (min-width: 1280px) {
-  main {
-    margin-top: 1.25rem;
-  }
+  margin-top: 1.25rem;
 }
 
 /* Sections Classes */
@@ -758,16 +752,6 @@ sup,  .type {
 
 .hide {
   opacity: 0.25;
-}
-
-.enzo {
-  display: flex;
-  justify-content: center;
-  vertical-align: middle;
-  font-family: Boska, serif;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 400;
 }
 
 
