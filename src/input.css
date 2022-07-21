@@ -91,7 +91,7 @@ main {
 
 .section * {
     @apply
-    transition-all
+    transition-opacity
 }
 
 /* .section--accent { */
