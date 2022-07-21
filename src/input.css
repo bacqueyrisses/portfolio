@@ -92,6 +92,7 @@ main {
 .section * {
     @apply
     transition-opacity
+    
 }
 
 /* .section--accent { */
@@ -107,8 +108,9 @@ sup, .type {
     @apply
     /* All displays */
     top-7
-    xl:top-0
+    left-1
     text-xs
+    xl:top-0
     sm:left-2
     md:left-2
     xl:left-2 
