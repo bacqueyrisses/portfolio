@@ -750,26 +750,7 @@ sup,  .type {
   padding: 0.25rem;
 }
 
-.selector:active {
-  font-style: italic;
-}
-
-/* .soft-hide-contact {
-    @apply
-    opacity-[0.25]
-}
-
-.soft-hide-skills {
-    @apply
-    opacity-[0.25]
-}
-
-.soft-hide-projects {
-    @apply
-    opacity-[0.25]
-} */
-
-.bye {
+.hide {
   opacity: 0.25;
 }
 

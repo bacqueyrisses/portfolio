@@ -47,20 +47,23 @@ const applyFilter = (filter) => {
         '.section:not(.' + filter + ')'
     );
     contentsToHide.forEach((contentToHide) => {
-        contentToHide.classList.add('bye');
+        contentToHide.classList.add('hide');
     });
+
+    const activeButton = document.querySelector(`li[data-filter=${filter}]`)
+    activeButton.style.fontStyle = 'italic'
 
     return filter;
 };
 
 const removeFilter = (filter) => {
-    const contentsToShow = document.querySelectorAll('.bye');
+    const contentsToShow = document.querySelectorAll('.hide');
     contentsToShow.forEach((contentToShow) => {
-        contentToShow.classList.remove('bye');
+        contentToShow.classList.remove('hide');
     });
 
-    // const activeButton = document.querySelector(`li[data-filter=${filter}]`)
-    // activeButton.
+    const activeButton = document.querySelector(`li[data-filter=${filter}]`)
+    activeButton.style.fontStyle = 'normal'
 
     return null;
 };

@@ -140,30 +140,8 @@ sup, .type {
     bg-transparent
 }
 
-.selector:active {
-    @apply
-    /* All displays */
-    italic
-}
 
-
-
-/* .soft-hide-contact {
-    @apply
-    opacity-[0.25]
-}
-
-.soft-hide-skills {
-    @apply
-    opacity-[0.25]
-}
-
-.soft-hide-projects {
-    @apply
-    opacity-[0.25]
-} */
-
-.bye {
+.hide {
     @apply
     opacity-[0.25]
 }
