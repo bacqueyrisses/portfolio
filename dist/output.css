@@ -717,6 +717,7 @@ sup,  .type {
 
 @media (min-width: 1280px) {
   sup,  .type {
+    top: 0px;
     left: 0.5rem;
   }
 }
@@ -749,6 +750,8 @@ sup,  .type {
   background-color: transparent;
   padding: 0.25rem;
 }
+
+/* JavaScript class to hide content */
 
 .hide {
   opacity: 0.25;

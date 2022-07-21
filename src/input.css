@@ -79,8 +79,6 @@ main {
     xl:text-6xl
 }
 
-
-
 .section-content {
     @apply
     flex
@@ -104,6 +102,7 @@ sup, .type {
     @apply
     /* All displays */
     top-7
+    xl:top-0
     text-xs
     sm:left-2
     md:left-2
@@ -140,6 +139,7 @@ sup, .type {
     bg-transparent
 }
 
+/* JavaScript class to hide content */
 .hide {
     @apply
     opacity-[0.25]
