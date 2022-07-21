@@ -7,12 +7,17 @@ if (typeof window !== 'undefined') {
             ['mouseenter', 'mouseleave'].includes(mouseEvent)));
 
     document.querySelectorAll('.selector').forEach((button) => {
-        'mouseenter click'.split(' ').forEach((mouseEvent) =>
+        'mouseenter click mouseleave'.split(' ').forEach((mouseEvent) =>
             button.addEventListener(mouseEvent, (e) => {
                 if (filterNotApplicable(mouseEvent)) {
                     return;
                 }
 
+                if (mouseEvent === 'mouseleave') {
+                    activeFilter = removeFilter()
+                    return
+                }
+                
                 const filter = e.target.dataset.filter;
 
                 if (activeFilter === null) {
