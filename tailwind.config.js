@@ -16,7 +16,7 @@ module.exports = {
       },
       backgroundImage: {
         'gradient': "url('/ressources/tw-gradient.png')",
-        'gradient2':"url('/ressources/tw-gradient-two.jpg')",
+        'gradientt': "url('/ressources/gradient-two.jpg')",
       },
       boxShadow: {
         'stripe': '0px 2px 2px 1px rgba(0,0,0,0.2);'
