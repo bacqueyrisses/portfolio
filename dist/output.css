@@ -750,7 +750,7 @@ sup,  .type {
   padding: 0.25rem;
 }
 
-.selector:hover {
+.selector:active {
   font-style: italic;
 }
 

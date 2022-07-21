@@ -140,11 +140,13 @@ sup, .type {
     bg-transparent
 }
 
-.selector:hover {
+.selector:active {
     @apply
     /* All displays */
     italic
 }
+
+
 
 /* .soft-hide-contact {
     @apply

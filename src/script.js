@@ -13,12 +13,13 @@ if (typeof window !== 'undefined') {
                     return;
                 }
 
+                const filter = e.target.dataset.filter;
+
                 if (mouseEvent === 'mouseleave') {
-                    activeFilter = removeFilter()
+                    activeFilter = removeFilter(filter)
                     return
                 }
-                
-                const filter = e.target.dataset.filter;
+
 
                 if (activeFilter === null) {
                     activeFilter = applyFilter(filter);
@@ -26,14 +27,16 @@ if (typeof window !== 'undefined') {
                 }
 
                 if (activeFilter === filter) {
-                    activeFilter = removeFilter();
+                    activeFilter = removeFilter(filter);
                     return;
                 }
 
+
                 if (activeFilter !== null && activeFilter !== filter) {
-                    removeFilter();
+                    removeFilter(activeFilter);
                     activeFilter = applyFilter(filter);
                 }
+
             })
         );
     });
@@ -50,10 +53,19 @@ const applyFilter = (filter) => {
     return filter;
 };
 
-const removeFilter = () => {
+const removeFilter = (filter) => {
     const contentsToShow = document.querySelectorAll('.bye');
     contentsToShow.forEach((contentToShow) => {
         contentToShow.classList.remove('bye');
     });
+
+    // const activeButton = document.querySelector(`li[data-filter=${filter}]`)
+    // activeButton.
+
     return null;
 };
+
+
+
+
+
