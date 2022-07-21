@@ -3,8 +3,8 @@ if (typeof window !== 'undefined') {
     let activeFilter = null;
     const filterNotApplicable = (mouseEvent) =>
         ((window.screen.width > 640 && mouseEvent === 'click') ||
-        (window.screen.width <= 640 &&
-            ['mouseenter', 'mouseleave'].includes(mouseEvent)));
+        window.screen.width <= 640 &&
+        ['mouseenter', 'mouseleave'].includes(mouseEvent));
 
     document.querySelectorAll('.selector').forEach((button) => {
         'mouseenter click mouseleave'.split(' ').forEach((mouseEvent) =>
@@ -16,10 +16,9 @@ if (typeof window !== 'undefined') {
                 const filter = e.target.dataset.filter;
 
                 if (mouseEvent === 'mouseleave') {
-                    activeFilter = removeFilter(filter)
-                    return
+                    activeFilter = removeFilter(filter);
+                    return;
                 }
-
 
                 if (activeFilter === null) {
                     activeFilter = applyFilter(filter);
@@ -31,12 +30,10 @@ if (typeof window !== 'undefined') {
                     return;
                 }
 
-
                 if (activeFilter !== null && activeFilter !== filter) {
                     removeFilter(activeFilter);
                     activeFilter = applyFilter(filter);
                 }
-
             })
         );
     });
@@ -50,8 +47,8 @@ const applyFilter = (filter) => {
         contentToHide.classList.add('hide');
     });
 
-    const activeButton = document.querySelector(`li[data-filter=${filter}]`)
-    activeButton.style.fontStyle = 'italic'
+    const activeButton = document.querySelector(`li[data-filter=${filter}]`);
+    activeButton.style.fontStyle = 'italic';
 
     return filter;
 };
@@ -62,13 +59,8 @@ const removeFilter = (filter) => {
         contentToShow.classList.remove('hide');
     });
 
-    const activeButton = document.querySelector(`li[data-filter=${filter}]`)
-    activeButton.style.fontStyle = 'normal'
+    const activeButton = document.querySelector(`li[data-filter=${filter}]`);
+    activeButton.style.fontStyle = 'normal';
 
     return null;
 };
-
-
-
-
-
