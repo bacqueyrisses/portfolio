@@ -56,7 +56,7 @@ main {
     xl:font-normal
 }
 
-.section:nth-child(2) div:nth-child(3) {
+/* .section:nth-child(2) div:nth-child(3) {
     @apply
     not-italic
     font-normal
@@ -70,7 +70,7 @@ main {
     font-extralight
     xl:not-italic
     xl:font-normal
-}
+} */
 
 .section:nth-child(3) {
     @apply
@@ -88,14 +88,14 @@ main {
     flex
 }
 
-.section--accent {
-    @apply
+/* .section--accent { */
+    /* @apply */
     /* Large displays */
-    italic font-extralight
+    /* italic font-extralight
     sm:italic sm:font-extralight
     md:italic md:font-extralight
-    xl:italic xl:font-extralight
-}
+    xl:italic xl:font-extralight */
+/* } */
 
 sup, .type {
     @apply
@@ -139,12 +139,31 @@ sup, .type {
 }
 
 /* JavaScript class to hide content */
+
+
+.section:nth-child(1) {
+    @apply
+    not-italic
+    font-normal
+}
+
+.section:nth-child(2) {
+    @apply
+    italic
+    font-extralight
+
+}
+
 .hide {
     @apply
     opacity-25
 }
 
-
+.hide * {
+    transition: all 170ms ease-in;
+    @apply
+    font-extralight
+}
 
 
 

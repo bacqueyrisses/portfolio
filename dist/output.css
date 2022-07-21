@@ -635,29 +635,23 @@ main {
   }
 }
 
-.section:nth-child(2) div:nth-child(3) {
-  font-weight: 400;
-  font-style: normal;
-}
-
-@media (min-width: 1280px) {
-  .section:nth-child(2) div:nth-child(3) {
-    font-weight: 200;
-    font-style: italic;
-  }
+/* .section:nth-child(2) div:nth-child(3) {
+    @apply
+    not-italic
+    font-normal
+    xl:italic
+    xl:font-extralight
 }
 
 .section:nth-child(2) div:nth-child(4) {
-  font-weight: 200;
-  font-style: italic;
-}
+    @apply
+    italic
+    font-extralight
+    xl:not-italic
+    xl:font-normal
+} */
 
 @media (min-width: 1280px) {
-  .section:nth-child(2) div:nth-child(4) {
-    font-weight: 400;
-    font-style: normal;
-  }
-
   .section:nth-child(3) {
     font-size: 3.75rem;
     line-height: 1;
@@ -672,31 +666,18 @@ main {
   display: flex;
 }
 
-.section--accent {
-  font-weight: 200;
-  font-style: italic;
-}
+/* .section--accent { */
 
-@media (min-width: 640px) {
-  .section--accent {
-    font-weight: 200;
-    font-style: italic;
-  }
-}
+/* @apply */
 
-@media (min-width: 768px) {
-  .section--accent {
-    font-weight: 200;
-    font-style: italic;
-  }
-}
+/* Large displays */
 
-@media (min-width: 1280px) {
-  .section--accent {
-    font-weight: 200;
-    font-style: italic;
-  }
-}
+/* italic font-extralight
+    sm:italic sm:font-extralight
+    md:italic md:font-extralight
+    xl:italic xl:font-extralight */
+
+/* } */
 
 sup,  .type {
   top: 1.75rem;
@@ -754,11 +735,24 @@ sup,  .type {
 
 /* JavaScript class to hide content */
 
+.section:nth-child(1) {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.section:nth-child(2) {
+  font-weight: 200;
+  font-style: italic;
+}
+
 .hide {
   opacity: 0.25;
 }
 
-
+.hide * {
+  transition: all 170ms ease-in;
+  font-weight: 200
+}
 
 
 
