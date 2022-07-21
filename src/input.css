@@ -89,7 +89,7 @@ main {
 }
 
 .section * {
-    transition: all 170ms ease-in;
+    transition: font-weight 60ms ease;
 
 }
 
@@ -165,8 +165,10 @@ sup, .type {
 }
 
 .hide * {
+    transition: font-weight 160ms ease;
     @apply
     font-extralight
+
 }
 
 
