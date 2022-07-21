@@ -729,7 +729,7 @@ sup,  .type {
 
 .selectors {
   margin-top: 1.25rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 0.5rem;
   display: flex;
   cursor: pointer;
   justify-content: center;
@@ -752,6 +752,16 @@ sup,  .type {
 
 .hide {
   opacity: 0.25;
+}
+
+.enzo {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  font-family: Boska, serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
 }
 
 

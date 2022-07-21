@@ -123,7 +123,7 @@ sup, .type {
     justify-center 
     align-middle 
     mt-5 
-    mb-10
+    mb-2
     gap-10 
     font-cabinet
     font-normal
@@ -140,10 +140,19 @@ sup, .type {
     bg-transparent
 }
 
-
 .hide {
     @apply
     opacity-[0.25]
+}
+
+.enzo {
+    @apply
+    flex
+    justify-center
+    align-middle
+    font-boska
+    font-bold
+    text-xl
 }
 
 
