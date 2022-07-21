@@ -754,9 +754,28 @@ sup,  .type {
   font-style: italic;
 }
 
-.soft-hide {
+/* .soft-hide-contact {
+    @apply
+    opacity-[0.25]
+}
+
+.soft-hide-skills {
+    @apply
+    opacity-[0.25]
+}
+
+.soft-hide-projects {
+    @apply
+    opacity-[0.25]
+} */
+
+.bye {
   opacity: 0.25;
 }
+
+
+
+
 
 
 

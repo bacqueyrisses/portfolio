@@ -146,10 +146,29 @@ sup, .type {
     italic
 }
 
-.soft-hide {
+/* .soft-hide-contact {
     @apply
     opacity-[0.25]
 }
+
+.soft-hide-skills {
+    @apply
+    opacity-[0.25]
+}
+
+.soft-hide-projects {
+    @apply
+    opacity-[0.25]
+} */
+
+.bye {
+    @apply
+    opacity-[0.25]
+}
+
+
+
+
 
 
 
