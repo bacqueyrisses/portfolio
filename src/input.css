@@ -32,7 +32,6 @@ main {
 
 .section {
     @apply 
-    transition-all
     mb-4
     /* Large displays */
     xl:flex 
@@ -55,6 +54,7 @@ main {
     xl:not-italic
     xl:font-normal
 }
+
 
 /* .section:nth-child(2) div:nth-child(3) {
     @apply
@@ -86,6 +86,11 @@ main {
 .section-content-inner {
     @apply
     flex
+}
+
+.section * {
+    transition: all 170ms ease-in;
+
 }
 
 /* .section--accent { */
@@ -160,7 +165,6 @@ sup, .type {
 }
 
 .hide * {
-    transition: all 170ms ease-in;
     @apply
     font-extralight
 }

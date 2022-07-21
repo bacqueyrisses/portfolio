@@ -608,9 +608,6 @@ main {
 
 .section {
   margin-bottom: 1rem;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
 }
 
 @media (min-width: 1280px) {
@@ -664,6 +661,10 @@ main {
 
 .section-content-inner {
   display: flex;
+}
+
+.section * {
+  transition: all 170ms ease-in;
 }
 
 /* .section--accent { */
@@ -750,8 +751,7 @@ sup,  .type {
 }
 
 .hide * {
-  transition: all 170ms ease-in;
-  font-weight: 200
+  font-weight: 200;
 }
 
 
