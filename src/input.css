@@ -13,7 +13,6 @@ body {
     h-screen
 }
 
-
 main {
     @apply
     mx-auto
@@ -42,7 +41,6 @@ main {
     xl:gap-7
     xl:mb-5
 }
-
 
 .section:nth-child(1) {
     @apply
@@ -73,7 +71,6 @@ main {
     xl:not-italic
     xl:font-normal
 }
-
 
 .section:nth-child(3) {
     @apply
