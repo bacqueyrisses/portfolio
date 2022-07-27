@@ -1,5 +1,5 @@
 if (typeof window !== 'undefined') {
-    
+
     // Prerequisites
 
     let activeFilter = null;
@@ -14,6 +14,7 @@ if (typeof window !== 'undefined') {
     };
 
     // Set activeFilter ifs
+
 
     document.querySelectorAll('.selector').forEach((selector) => {
         'mouseenter mouseleave click'.split(' ').forEach((mouseEvent) => {
