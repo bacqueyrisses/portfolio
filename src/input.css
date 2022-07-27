@@ -131,8 +131,8 @@ sup, .type {
     mt-5 
     mb-2
     gap-10 
-    font-cabinet
-    font-normal
+    font-sentient
+    font-extralight
     text-gray-700
     text-xl
     cursor-pointer
@@ -168,6 +168,15 @@ sup, .type {
     transition-opacity
 }
 
+
+.pres-container {
+    @apply
+    flex
+    flex-col
+    flex-wrap
+    justify-start
+    font-sentient
+}
 
 
 

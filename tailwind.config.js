@@ -12,7 +12,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'boska': ['Boska', 'serif'],
-        'cabinet': ["'Cabinet Grotesk'", 'sans-serif']
+        'cabinet': ["'Cabinet Grotesk'", 'sans-serif'],
+        'sentient': ["Sentient", 'serif'],
       },
       backgroundImage: {
         'gradient': "url('/ressources/tw-gradient.png')",
