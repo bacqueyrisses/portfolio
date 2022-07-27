@@ -7,7 +7,7 @@ if (typeof window !== 'undefined') {
         if (
             (window.screen.width > 640 && mouseEvent === 'click') ||
             (window.screen.width <= 640 &&
-                [mouseenter, mouseleave].includes(mouseEvent))
+                ['mouseenter', 'mouseleave'].includes(mouseEvent))
         ) {
             return true;
         }
