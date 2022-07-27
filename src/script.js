@@ -1,6 +1,6 @@
 if (typeof window !== 'undefined') {
-
-    // Prerequisites 
+    
+    // Prerequisites
 
     let activeFilter = null;
     const filterNotApplicable = (mouseEvent) => {
