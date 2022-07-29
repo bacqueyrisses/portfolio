@@ -21,7 +21,8 @@ main {
 
 /* Sections Classes */
 .sections-container {
-    @apply font-boska font-normal
+    @apply 
+    font-boska font-normal
     text-5xl
     /* Small displays */
     sm:text-5xl
@@ -80,13 +81,15 @@ main {
 sup,
 .type {
     @apply 
-    /* All displays */
     top-7
     left-1
     text-xs
-    xl:top-0
+    /* Small displays */
     sm:left-2
+    /* Medium displays */
     md:left-2
+    /* Large displays */
+    xl:top-0
     xl:left-2;
 }
 
@@ -98,7 +101,6 @@ sup,
 /* Selectors */
 .selectors {
     @apply 
-    /* All displays */
     flex 
     justify-center 
     align-middle 
