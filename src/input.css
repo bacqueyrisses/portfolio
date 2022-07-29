@@ -41,63 +41,46 @@ main {
 }
 
 .section:nth-child(1) {
-    @apply /* Large displays */
+    @apply 
+    /* Large displays */
     xl:text-6xl;
 }
 
 .section:nth-child(2) {
-    @apply text-4xl
+    @apply 
+    text-4xl
     /* Large displays */
     xl:text-5xl
     xl:not-italic
     xl:font-normal;
 }
 
-/* .section:nth-child(2) div:nth-child(3) {
-    @apply
-    not-italic
-    font-normal
-    xl:italic
-    xl:font-extralight
-}
-
-.section:nth-child(2) div:nth-child(4) {
-    @apply
-    italic
-    font-extralight
-    xl:not-italic
-    xl:font-normal
-} */
-
 .section:nth-child(3) {
-    @apply /* Large displays */
+    @apply 
+    /* Large displays */
     xl:text-6xl;
 }
 
 .section-content {
-    @apply flex;
+    @apply 
+    flex;
 }
 
 .section-content-inner {
-    @apply flex;
+    @apply 
+    flex;
 }
 
 .section * {
-    @apply transition-opacity;
+    @apply 
+    transition-opacity;
 }
 
-/* .section--accent { */
-/* @apply */
-/* Large displays */
-/* italic font-extralight
-    sm:italic sm:font-extralight
-    md:italic md:font-extralight
-    xl:italic xl:font-extralight */
-/* } */
 
 sup,
 .type {
-    @apply /* All displays */
+    @apply 
+    /* All displays */
     top-7
     left-1
     text-xs
@@ -108,12 +91,14 @@ sup,
 }
 
 .wip {
-    @apply cursor-wait;
+    @apply 
+    cursor-wait;
 }
 
 /* Selectors */
 .selectors {
-    @apply /* All displays */
+    @apply 
+    /* All displays */
     flex 
     justify-center 
     align-middle 
@@ -127,7 +112,8 @@ sup,
     cursor-pointer;
 }
 .selector {
-    @apply /* All displays */
+    @apply 
+    /* All displays */
     m-2
     p-1
     rounded-full
@@ -135,24 +121,27 @@ sup,
 }
 
 /* JavaScript class to hide content */
-
 .section:nth-child(1) {
-    @apply not-italic
+    @apply 
+    not-italic
     font-normal;
 }
 
 .section:nth-child(2) {
-    @apply italic
+    @apply 
+    italic
     font-extralight;
 }
 
 .hide {
-    @apply opacity-25
+    @apply 
+    opacity-25
     transition-opacity;
 }
 
 .pres-container {
-    @apply flex
+    @apply 
+    flex
     flex-col
     flex-wrap
     justify-start
