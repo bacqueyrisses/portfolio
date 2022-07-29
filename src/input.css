@@ -4,30 +4,29 @@
 
 /* Body & Main */
 body {
-    @apply
+    @apply 
     flex
+    h-screen
     bg-gradient-to-b from-sky-400/20 to-indigo-500/40 
     /* Small displays */
     sm:p-5
     sm:pb-0
-    h-screen
 }
 
 main {
-    @apply
+    @apply 
     mx-auto
-    mt-5
+    mt-5;
 }
 
 /* Sections Classes */
 .sections-container {
-    @apply 
-    font-boska font-normal
+    @apply font-boska font-normal
     text-5xl
     /* Small displays */
     sm:text-5xl
     /* Large displays */
-    xl:text-7xl
+    xl:text-7xl;
 }
 
 .section {
@@ -38,24 +37,21 @@ main {
     xl:justify-center 
     xl:align-middle 
     xl:gap-7
-    xl:mb-5
+    xl:mb-5;
 }
 
 .section:nth-child(1) {
-    @apply
-    /* Large displays */
-    xl:text-6xl
+    @apply /* Large displays */
+    xl:text-6xl;
 }
 
 .section:nth-child(2) {
-    @apply
-    text-4xl
+    @apply text-4xl
     /* Large displays */
     xl:text-5xl
     xl:not-italic
-    xl:font-normal
+    xl:font-normal;
 }
-
 
 /* .section:nth-child(2) div:nth-child(3) {
     @apply
@@ -74,57 +70,50 @@ main {
 } */
 
 .section:nth-child(3) {
-    @apply
-    /* Large displays */
-    xl:text-6xl
+    @apply /* Large displays */
+    xl:text-6xl;
 }
 
 .section-content {
-    @apply
-    flex
+    @apply flex;
 }
 
 .section-content-inner {
-    @apply
-    flex
+    @apply flex;
 }
 
 .section * {
-    @apply
-    transition-opacity
-    
+    @apply transition-opacity;
 }
 
 /* .section--accent { */
-    /* @apply */
-    /* Large displays */
-    /* italic font-extralight
+/* @apply */
+/* Large displays */
+/* italic font-extralight
     sm:italic sm:font-extralight
     md:italic md:font-extralight
     xl:italic xl:font-extralight */
 /* } */
 
-sup, .type {
-    @apply
-    /* All displays */
+sup,
+.type {
+    @apply /* All displays */
     top-7
     left-1
     text-xs
     xl:top-0
     sm:left-2
     md:left-2
-    xl:left-2 
+    xl:left-2;
 }
 
 .wip {
-    @apply
-    cursor-wait
+    @apply cursor-wait;
 }
 
 /* Selectors */
 .selectors {
-    @apply 
-    /* All displays */
+    @apply /* All displays */
     flex 
     justify-center 
     align-middle 
@@ -135,45 +124,37 @@ sup, .type {
     font-extralight
     text-gray-700
     text-xl
-    cursor-pointer
+    cursor-pointer;
 }
 .selector {
-    @apply
-    /* All displays */
+    @apply /* All displays */
     m-2
     p-1
     rounded-full
-    bg-transparent
+    bg-transparent;
 }
 
 /* JavaScript class to hide content */
 
-
 .section:nth-child(1) {
-    @apply
-    not-italic
-    font-normal
+    @apply not-italic
+    font-normal;
 }
 
 .section:nth-child(2) {
-    @apply
-    italic
-    font-extralight
-
+    @apply italic
+    font-extralight;
 }
 
 .hide {
-    @apply
-    opacity-25
-    transition-opacity
+    @apply opacity-25
+    transition-opacity;
 }
 
-
 .pres-container {
-    @apply
-    flex
+    @apply flex
     flex-col
     flex-wrap
     justify-start
-    font-sentient
+    font-sentient;
 }

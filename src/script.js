@@ -1,13 +1,11 @@
 if (typeof window !== 'undefined') {
-
     // Prerequisites
 
     let activeFilter = null;
-    const filterNotApplicable = (mouseEvent) => {
+    const filterNotApplicable = mouseEvent => {
         if (
             (window.screen.width > 640 && mouseEvent === 'click') ||
-            (window.screen.width <= 640 &&
-                ['mouseenter', 'mouseleave'].includes(mouseEvent))
+            (window.screen.width <= 640 && ['mouseenter', 'mouseleave'].includes(mouseEvent))
         ) {
             return true;
         }
@@ -15,14 +13,13 @@ if (typeof window !== 'undefined') {
 
     // Set activeFilter ifs
 
-
-    document.querySelectorAll('.selector').forEach((selector) => {
-        'mouseenter mouseleave click'.split(' ').forEach((mouseEvent) => {
+    document.querySelectorAll('.selector').forEach(selector => {
+        'mouseenter mouseleave click'.split(' ').forEach(mouseEvent => {
             if (filterNotApplicable(mouseEvent)) {
                 return;
             }
 
-            selector.addEventListener(mouseEvent, (e) => {
+            selector.addEventListener(mouseEvent, e => {
                 const filter = e.target.dataset.filter;
 
                 // activeFilter ifs
@@ -47,30 +44,26 @@ if (typeof window !== 'undefined') {
 
     // Functions
 
-    const applyFilter = (filter) => {
+    const applyFilter = filter => {
         // Hide content
-        const contentToHide = document.querySelectorAll(
-            `.section:not(.${filter})`
-        );
-        contentToHide.forEach((content) => {
+        const contentToHide = document.querySelectorAll(`.section:not(.${filter})`);
+        contentToHide.forEach(content => {
             content.classList.add('hide');
         });
         // Make the selector font-style go italic
-        document.querySelector(`li[data-filter=${filter}]`).style.fontStyle =
-            'italic';
+        document.querySelector(`li[data-filter=${filter}]`).style.fontStyle = 'italic';
         // activeFilter = filter
         return filter;
     };
 
-    const removeFilter = (filter) => {
+    const removeFilter = filter => {
         // Reveal hidden content
         const contentToShow = document.querySelectorAll('.hide');
-        contentToShow.forEach((content) => {
+        contentToShow.forEach(content => {
             content.classList.remove('hide');
         });
         // Make the selector font-style go normal
-        document.querySelector(`li[data-filter=${filter}]`).style.fontStyle =
-            'normal';
+        document.querySelector(`li[data-filter=${filter}]`).style.fontStyle = 'normal';
         // activeFilter = null
         return null;
     };
