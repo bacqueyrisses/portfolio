@@ -1,6 +1,5 @@
 if (typeof window !== 'undefined') {
     // Prerequisites
-
     let activeFilter = null;
     const filterNotApplicable = mouseEvent => {
         if (
@@ -12,7 +11,6 @@ if (typeof window !== 'undefined') {
     };
 
     // Set activeFilter ifs
-
     document.querySelectorAll('.selector').forEach(selector => {
         'mouseenter mouseleave click'.split(' ').forEach(mouseEvent => {
             if (filterNotApplicable(mouseEvent)) {
@@ -43,7 +41,6 @@ if (typeof window !== 'undefined') {
     });
 
     // Functions
-
     const applyFilter = filter => {
         // Hide content
         const contentToHide = document.querySelectorAll(`.section:not(.${filter})`);
