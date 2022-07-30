@@ -40,7 +40,7 @@ if (typeof window !== 'undefined') {
         });
     });
 
-    // Functio
+    // Functions
     const applyFilter = filter => {
         // Hide content
         const contentToHide = document.querySelectorAll(`.section:not(.${filter})`);
