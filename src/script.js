@@ -40,7 +40,7 @@ if (typeof window !== 'undefined') {
         });
     });
 
-    // Functions
+    // Function
     const applyFilter = filter => {
         // Hide content
         const contentToHide = document.querySelectorAll(`.section:not(.${filter})`);
@@ -65,3 +65,6 @@ if (typeof window !== 'undefined') {
         return null;
     };
 }
+
+
+
