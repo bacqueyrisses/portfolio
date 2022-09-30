@@ -558,6 +558,18 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.hidden {
+  display: none;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 /* Body & Main */
 
 body {
@@ -619,54 +631,36 @@ main {
     vertical-align: middle;
   }
 
-  .section:nth-child(1) {
+  .section--contact {
     font-size: 3.75rem;
     line-height: 1;
   }
 }
 
-.section:nth-child(2) {
+.section--skills {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
 
 @media (min-width: 1280px) {
-  .section:nth-child(2) {
+  .section--skills {
     font-size: 3rem;
     line-height: 1;
     font-weight: 400;
     font-style: normal;
   }
-}
 
-/* .section:nth-child(2) div:nth-child(3) {
-    @apply
-    not-italic
-    font-normal
-    xl:italic
-    xl:font-extralight
-}
-
-.section:nth-child(2) div:nth-child(4) {
-    @apply
-    italic
-    font-extralight
-    xl:not-italic
-    xl:font-normal
-} */
-
-@media (min-width: 1280px) {
-  .section:nth-child(3) {
+  .section--projects {
     font-size: 3.75rem;
     line-height: 1;
   }
 }
 
-.section-content {
+.section__content {
   display: flex;
 }
 
-.section-content-inner {
+.section__content__title {
   display: flex;
 }
 
@@ -676,20 +670,8 @@ main {
   transition-duration: 150ms;
 }
 
-/* .section--accent { */
-
-/* @apply */
-
-/* Large displays */
-
-/* italic font-extralight
-    sm:italic sm:font-extralight
-    md:italic md:font-extralight
-    xl:italic xl:font-extralight */
-
-/* } */
-
-sup,  .type {
+sup, 
+.type {
   top: 1.75rem;
   left: 0.25rem;
   font-size: 0.75rem;
@@ -697,19 +679,22 @@ sup,  .type {
 }
 
 @media (min-width: 640px) {
-  sup,  .type {
+  sup, 
+.type {
     left: 0.5rem;
   }
 }
 
 @media (min-width: 768px) {
-  sup,  .type {
+  sup, 
+.type {
     left: 0.5rem;
   }
 }
 
 @media (min-width: 1280px) {
-  sup,  .type {
+  sup, 
+.type {
     top: 0px;
     left: 0.5rem;
   }
@@ -746,12 +731,12 @@ sup,  .type {
 
 /* JavaScript class to hide content */
 
-.section:nth-child(1) {
+.section--contact {
   font-weight: 400;
   font-style: normal;
 }
 
-.section:nth-child(2) {
+.section--skills {
   font-weight: 200;
   font-style: italic;
 }
@@ -770,11 +755,3 @@ sup,  .type {
   justify-content: flex-start;
   font-family: Sentient, serif;
 }
-
-
-
-
-
-
-
-

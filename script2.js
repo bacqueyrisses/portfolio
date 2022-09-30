@@ -4,7 +4,7 @@ if (typeof window !== 'undefined') {
 
     const filterNotApplicable = () => {
         if (
-            window.screen.width <= 640 && mouseEvent === 'click'
+            window.screen.width <= 640 && mouseEvent === 'click' 
             ||
             window.screen.width > 640 && [mouseleave, mouseenter].includes(mouseEvent)
         ) {

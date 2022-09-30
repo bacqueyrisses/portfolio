@@ -41,13 +41,13 @@ main {
     xl:mb-5;
 }
 
-.section:nth-child(1) {
+.section--contact {
     @apply 
     /* Large displays */
     xl:text-6xl;
 }
 
-.section:nth-child(2) {
+.section--skills {
     @apply 
     text-4xl
     /* Large displays */
@@ -56,18 +56,18 @@ main {
     xl:font-normal;
 }
 
-.section:nth-child(3) {
+.section--projects {
     @apply 
     /* Large displays */
     xl:text-6xl;
 }
 
-.section-content {
+.section__content {
     @apply 
     flex;
 }
 
-.section-content-inner {
+.section__content__title {
     @apply 
     flex;
 }
@@ -123,13 +123,13 @@ sup,
 }
 
 /* JavaScript class to hide content */
-.section:nth-child(1) {
+.section--contact {
     @apply 
     not-italic
     font-normal;
 }
 
-.section:nth-child(2) {
+.section--skills {
     @apply 
     italic
     font-extralight;

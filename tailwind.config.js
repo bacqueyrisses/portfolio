@@ -2,8 +2,7 @@
 module.exports = {
   content: [
     'index.html',
-    '/src/script.js',
-    'anime.min.js'
+    './src/script.js',
 ],
   theme: {
     container: {
