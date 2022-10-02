@@ -122,7 +122,7 @@ sup,
     bg-transparent;
 }
 
-/* JavaScript class to hide content*/
+/* JavaScript class to hide content */
 .section--contact {
     @apply 
     not-italic
