@@ -1,4 +1,4 @@
-// Script
+// Script JS
 if (typeof window !== 'undefined') {
     // Prerequisites
     let activeFilter = null;
