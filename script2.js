@@ -47,6 +47,7 @@ if (typeof window !== 'undefined') {
         document.querySelectorAll('.hide').forEach(contentToShow => contentToShow.classList.remove('hide'))
     }
 
-
+     }
+     
 
 }
