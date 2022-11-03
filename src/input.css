@@ -2,150 +2,92 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Body & Main */
+/* Fonts */
+@font-face {
+    font-family: "Gooper";
+    src:  url("./../ressources/fonts/Gooper-Regular.woff") format('woff'),
+    url("./../ressources/fonts/Gooper-Regular.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "Gooper-Accent";
+    src:  url("./../ressources/fonts/Gooper-SemiBoldItalic.woff") format('woff'),
+    url("./../ressources/fonts/Gooper-SemiBoldItalic.woff2") format('woff2');
+}
+
 body {
-    @apply 
-    flex
-    h-screen
-    bg-gradient-to-b from-sky-400/20 to-indigo-500/40 
-    /* Small displays */
-    sm:p-5
-    sm:pb-0
+    font-family: "Gooper", sans-serif
+
 }
 
-main {
-    @apply 
-    mx-auto
-    mt-5;
+.presentation__content--accent, .logo-container {
+    font-family: "Gooper-Accent", sans-serif;
 }
 
-/* Sections Classes */
-.sections-container {
-    @apply 
-    font-boska font-normal
-    text-5xl
-    /* Small displays */
-    sm:text-5xl
-    /* Large displays */
-    xl:text-7xl;
+/* Body */
+
+body {
+    @apply bg-[#fbead1]
 }
 
-.section {
-    @apply 
-    mb-4
-    /* Large displays */
-    xl:flex 
-    xl:justify-center 
-    xl:align-middle 
-    xl:gap-7
-    xl:mb-5;
+.container {
+    @apply flex flex-col
 }
 
-.section--contact {
-    @apply 
-    /* Large displays */
-    xl:text-6xl;
+.container, .header {
+    @apply px-4
+    sm:px-7
+    md:px-8
+    lg:px-9
+}
+/* Header */
+.header, .logo-container, .nav__list {
+    @apply flex justify-between items-center pt-3 mb-5
+    sm:mb-8
 }
 
-.section--skills {
-    @apply 
-    text-4xl
-    /* Large displays */
-    xl:text-5xl
-    xl:not-italic
-    xl:font-normal;
+.nav__list {
+    @apply invisible gap-[7vw]
+    sm:visible
+}
+.presentation__content__icon {
+    @apply w-[0.7em] inline-block align-baseline hover:animate-spin
 }
 
-.section--projects {
-    @apply 
-    /* Large displays */
-    xl:text-6xl;
+.presentation__content__icon--star {
+    color: #4697f6;
+    @apply w-5 hover:animate-ping
 }
 
-.section__content {
-    @apply 
-    flex;
+.presentation__content__icon--spike {
+    color: #1bd175;
+    @apply w-5 hover:animate-ping
 }
 
-.section__content__title {
-    @apply 
-    flex;
-}
-
-.section * {
-    @apply 
-    transition-opacity;
+.presentation__content {
+    @apply text-[6vw] flex flex-col pl-1 leading-[7vw]
+    sm:leading-[7vw]
+    md:leading-[7vw]
+    lg:leading-[7.5vw]
 }
 
 
-sup,
-.type {
-    @apply 
-    top-7
-    left-1
-    text-xs
-    /* Small displays */
-    sm:left-2
-    /* Medium displays */
-    md:left-2
-    /* Large displays */
-    xl:top-0
-    xl:left-2;
+.presentation__content > * {
+    @apply whitespace-nowrap
 }
 
-.wip {
-    @apply 
-    cursor-wait;
+.logo-img {
+    @apply w-8
 }
 
-/* Selectors */
-.selectors {
-    @apply 
-    flex 
-    justify-center 
-    align-middle 
-    mt-5 
-    mb-2
-    gap-10 
-    font-sentient
-    font-extralight
-    text-gray-700
-    text-xl
-    cursor-pointer;
-}
-.selector {
-    @apply 
-    /* All displays */
-    m-2
-    p-1
-    rounded-full
-    bg-transparent;
+.logo-content {
+    @apply ml-2 text-3xl
 }
 
-/* JavaScript class to hide content */
-.section--contact {
-    @apply 
-    not-italic
-    font-normal;
+.next-img {
+    @apply w-[25vh] absolute left-52 pt-20 opacity-10 hover:opacity-100 cursor-pointer
 }
 
-.section--skills {
-    @apply 
-    italic
-    font-extralight;
-}
 
-.hide {
-    @apply 
-    opacity-25
-    transition-opacity;
-}
 
-.pres-container {
-    @apply 
-    flex
-    flex-col
-    flex-wrap
-    justify-start
-    font-sentient;
-}
+

@@ -1,89 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!-- General -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="./ressources/images/logo.png" />
     <!-- SEO -->
-    <meta name="description" content="Enzo Bacqueyrisses | JavaScript Developer" />
     <title>Enzo Bacqueyrisses</title>
-    <meta name="author" content="Enzo Bacqueyrisses">
-    <meta name="keywords" content="JavaScript, NodeJS, Dev">
-    <meta name="theme-color" content="#dcf2fd" />
-    <link rel="icon" type="image/png" href="/ressources/favi.png" />
-    <!-- CSS -->
-    <link
-        href="https://api.fontshare.com/v2/css?f[]=boska@900,901,701,201,401,301,500,400,2,1,200,700,300,501&f[]=cabinet-grotesk@800,500,100,700,400,300,200,900&f[]=sentient@400,700,201,301,200,501,500,300,401,701&display=swap"
-        rel="stylesheet" />
-
-    <link rel="stylesheet" href="/dist/output.css" />
-    <!-- Links -->
-    <script defer src="/src/script.js"></script>
+    <meta name="description" content="Javascript Developer" />
+    <meta name="author" content="Enzo Bacqueyrisses" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fbead1" />
+    <!-- Links & Scripts-->
+    <link rel="stylesheet" href="./dist/output.css" />
 </head>
-
 <body>
-    <main>
-        <div class="sections-container">
-            <div class="section section--contact soft-hide-contact">
-                <div class="section-content">
-                    <a target="_blank" href="https://www.linkedin.com/in/enzobacqueyrisses/">
-                        <div class="section__content__title section--accent">Linkedin</div>
-                    </a>
-                </div>
-                <div class="section-content">
-                    <a target="_blank" href="https://github.com/bacqueyrisses">
-                        <div class="section__content__title">Github</div>
-                    </a>
-                </div>
-                <div class="section__content">
-                    <a href="mailto:bacqueyrisses@proton.me">
-                        <div class="section__content__title section--accent">Email</div>
-                    </a>
-                </div>
-            </div>
-            <div class="section section--skills soft-hide-skills">
-                <div class="section__content section__content__title section--accent skills">HTML & CSS</div>
-                <div class="section-content section__content__title skills">React</div>
-                <div class="section__content__title section--accent skills">Node.JS</div>
-                <div class="section-content skills">Tailwind CSS</div>
-            </div>
-            <div class="section section--projects soft-hide-projects">
-                <div class="section__content wip">
-                    <div class="section__content__title section__content__title--accent">Wordy</div>
-                    <sup>
-                        (
-                        <span class="type">In progress</span>
-                        )
-                    </sup>
-                </div>
-                <div class="section__content wip">
-                    <div class="section__content__title">isThisHome?</div>
-                    <sup>
-                        (
-                        <span class="type">In progress</span>
-                        )
-                    </sup>
-                </div>
-                <div class="section__content wip">
-                    <div class="section__content__title section__content__title--accent">Project Z</div>
-                    <sup>
-                        (
-                        <span class="type">In progress</span>
-                        )
-                    </sup>
-                </div>
-            </div>
+<header class="header">
+    <div class="logo-container">
+        <img
+                class="logo-img"
+                src="./ressources/images/logo.png"
+                alt="Logo de Enzo Bacqueyrisses"
+        />
+        <div class="logo-content">EB</div>
+    </div>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Linkedin</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="container presentation">
+    <div class="presentation__content">
+        <h1>
+            <span>Hi, I’m</span>
+            <span class="presentation__content--accent">Enzo Bacqueyrisses</span>
+            <img
+                    src="https://uploads-ssl.webflow.com/62256e3694580b7ffbcea5c7/62282ae713de7f7a5a22cf77_flower-symbol.svg"
+                    alt="smiley icon"
+                    class="presentation__content__icon"
+            />
+        </h1>
+        <div>
+            A
+            <span class="presentation__content__icon--star">✹</span>
+            <span class="presentation__content--accent">Web Developer</span>
+            <span class="presentation__content__icon--star">✹</span>
+            living in
         </div>
         <div>
-            <ul id="filters" class="selectors">
-                <li id="contact" class="selector" data-filter="section--contact">contact</li>
-                <li id="skills" class="selector accent-two" data-filter="section--skills">skills</li>
-                <li id="projects" class="selector accent-one" data-filter="section--projects">projects</li>
-            </ul>
+            <span class="presentation__content--accent">Bordeaux</span>
+            <img
+                    src="https://uploads-ssl.webflow.com/62256e3694580b7ffbcea5c7/6228e1a8be59174091781f10_smiley-icon.svg"
+                    alt="smiley icon"
+                    class="presentation__content__icon"
+            />
+            with skills in
         </div>
-    </main>
+        <div>
+            <span class="presentation__content__icon--spike">✦</span>
+            <span class="presentation__content--accent">Back-End JavaScript</span>
+            <span class="presentation__content__icon--spike">✦</span>
+        </div>
+    </div>
+</section>
+<section>
+    <img
+            class="next-img"
+            src="./ressources/images/next.png"
+            alt="rocket illustration enzo bacqueyrisses"
+    />
+</section>
 </body>
-
 </html>
