@@ -88,6 +88,50 @@ body {
     @apply w-[25vh] absolute left-52 pt-20 opacity-10 hover:opacity-100 cursor-pointer
 }
 
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+        opacity: 0;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+
+
+.fade {
+    animation: slidein 1s forwards;
+    opacity: 0;
+}
+
+.fade:nth-child(1) {
+    animation-delay: .5s;
+}
+
+.fade:nth-child(2) {
+    animation-delay: 1.5s;
+}
+
+.fade:nth-child(3) {
+    animation-delay: 2.5s;
+}
+
+.fade:nth-child(4) {
+    animation-delay: 3.5s;
+}
+
 
 
 
