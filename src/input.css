@@ -27,11 +27,11 @@ body {
 /* Body */
 
 body {
-    @apply bg-[#fbead1] m-0
+    @apply bg-[#fbead1] m-0 flex flex-col items-center
 }
 
 .container {
-    @apply flex flex-col m-0
+    @apply m-0 text-center
 }
 
 .container {
@@ -51,8 +51,11 @@ body {
 }
 
 /* Header */
+.header {
+    @apply w-full self-start
+}
 .header, .logo-container, .nav__list {
-    @apply flex justify-between items-center pt-3 mb-5
+    @apply flex items-center pt-3 mb-5 justify-between
     sm:mb-8
 }
 
@@ -82,9 +85,9 @@ body {
 }
 
 
-/*.presentation__content > * {*/
-/*    @apply whitespace-nowrap*/
-/*}*/
+.presentation__content > * {
+    @apply whitespace-nowrap
+}
 
 .logo-img {
     @apply w-8

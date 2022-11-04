@@ -586,14 +586,16 @@ body {
 
 body {
   margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   --tw-bg-opacity: 1;
   background-color: rgb(251 234 209 / var(--tw-bg-opacity));
 }
 
 .container {
   margin: 0px;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
   padding-left: 3vw;
   padding-right: 3vw;
 }
@@ -618,6 +620,11 @@ body {
 }
 
 /* Header */
+
+.header {
+  width: 100%;
+  align-self: flex-start;
+}
 
 .header, .logo-container, .nav__list {
   margin-bottom: 1.25rem;
@@ -719,11 +726,9 @@ body {
   }
 }
 
-/*.presentation__content > * {*/
-
-/*    @apply whitespace-nowrap*/
-
-/*}*/
+.presentation__content > * {
+  white-space: nowrap;
+}
 
 .logo-img {
   width: 2rem;
