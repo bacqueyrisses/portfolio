@@ -582,7 +582,7 @@ body {
   font-family: "Gooper-Accent", sans-serif;
 }
 
-/* Body */
+/* Body & Container */
 
 html, body {
   overflow-x: hidden;
@@ -612,7 +612,11 @@ body {
   }
 }
 
+/* Header */
+
 .header {
+  width: 100%;
+  align-self: flex-start;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -622,13 +626,6 @@ body {
     padding-left: 7vw;
     padding-right: 7vw;
   }
-}
-
-/* Header */
-
-.header {
-  width: 100%;
-  align-self: flex-start;
 }
 
 .header, .logo-container, .nav__list {
@@ -738,12 +735,6 @@ body {
     line-height: 7.5vw;
   }
 }
-
-/*.presentation__content > * {*/
-
-/*    @apply whitespace-nowrap*/
-
-/*}*/
 
 .logo-img {
   width: 1.75rem;

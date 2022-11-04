@@ -24,7 +24,7 @@ body {
     font-family: "Gooper-Accent", sans-serif;
 }
 
-/* Body */
+/* Body & Container */
 
 html, body {
     @apply overflow-x-hidden
@@ -35,28 +35,14 @@ body {
 }
 
 .container {
-    @apply m-0
-}
-
-.container {
-    @apply px-[3vw]
+    @apply m-0 px-[3vw]
     sm:px-[2vw]
-
-}
-
-.header {
-    @apply px-4
-    sm:px-[7vw]
-    /*@apply px-7*/
-    /*sm:px-7*/
-    /*md:px-20*/
-    /*lg:px-28*/
-
 }
 
 /* Header */
 .header {
-    @apply w-full self-start
+    @apply w-full self-start px-4
+    sm:px-[7vw]
 }
 .header, .logo-container, .nav__list {
     @apply flex items-center pt-3 mb-5 justify-between
@@ -88,11 +74,6 @@ body {
     md:leading-[7vw]
     lg:leading-[7.5vw]
 }
-
-
-/*.presentation__content > * {*/
-/*    @apply whitespace-nowrap*/
-/*}*/
 
 .logo-img {
     @apply w-7
