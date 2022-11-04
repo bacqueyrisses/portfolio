@@ -91,7 +91,8 @@ body {
 }
 
 .logo-content {
-    @apply ml-2 text-3xl
+    @apply ml-2 text-2xl
+    sm:text-3xl
 }
 
 .next-img {
