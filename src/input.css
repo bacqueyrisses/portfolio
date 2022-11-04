@@ -35,8 +35,8 @@ body {
 }
 
 .container {
-    /*@apply px-7*/
     @apply px-[3vw]
+    sm:px-[2vw]
 
 }
 
@@ -75,8 +75,8 @@ body {
 }
 
 .presentation__content {
-    @apply text-[6.2vw] flex flex-col pl-1 leading-[7vw]
-    sm:leading-[7vw]
+    @apply text-[6.2vw] flex flex-col pl-1 leading-[8vw]
+    sm:leading-[7vw] sm:text-[5.6vw]
     md:leading-[7vw]
     lg:leading-[7.5vw]
 }

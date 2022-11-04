@@ -593,9 +593,15 @@ body {
   margin: auto;
   display: flex;
   flex-direction: column;
-  /*@apply px-7*/
   padding-left: 3vw;
   padding-right: 3vw;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
 }
 
 .header {
@@ -691,11 +697,12 @@ body {
   flex-direction: column;
   padding-left: 0.25rem;
   font-size: 6.2vw;
-  line-height: 7vw;
+  line-height: 8vw;
 }
 
 @media (min-width: 640px) {
   .presentation__content {
+    font-size: 5.6vw;
     line-height: 7vw;
   }
 }
