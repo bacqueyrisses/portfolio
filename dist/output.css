@@ -590,9 +590,9 @@ body {
 }
 
 .container {
-  margin: auto;
   display: flex;
   flex-direction: column;
+  text-align: center;
   padding-left: 3vw;
   padding-right: 3vw;
 }
@@ -605,7 +605,6 @@ body {
 }
 
 .header {
-  margin: auto;
   padding-left: 1rem;
   padding-right: 1rem;
 }

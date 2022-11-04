@@ -31,7 +31,7 @@ body {
 }
 
 .container {
-    @apply flex flex-col m-auto
+    @apply flex flex-col text-center
 }
 
 .container {
@@ -41,7 +41,7 @@ body {
 }
 
 .header {
-    @apply px-4 m-auto
+    @apply px-4
     sm:px-[7vw]
     /*@apply px-7*/
     /*sm:px-7*/
