@@ -26,8 +26,12 @@ body {
 
 /* Body */
 
+html, body {
+    @apply overflow-x-hidden
+}
+
 body {
-    @apply bg-[#fbead1] m-0 flex flex-col items-center
+    @apply bg-[#fbead1] m-0 flex flex-col items-center relative h-screen
 }
 
 .container {
