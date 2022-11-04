@@ -35,7 +35,7 @@ body {
 }
 
 .container {
-    @apply m-0 text-center
+    @apply m-0
 }
 
 .container {
