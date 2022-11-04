@@ -585,14 +585,15 @@ body {
 /* Body */
 
 body {
+  margin: 0px;
   --tw-bg-opacity: 1;
   background-color: rgb(251 234 209 / var(--tw-bg-opacity));
 }
 
 .container {
+  margin: 0px;
   display: flex;
   flex-direction: column;
-  text-align: center;
   padding-left: 3vw;
   padding-right: 3vw;
 }

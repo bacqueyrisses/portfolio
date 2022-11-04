@@ -27,11 +27,11 @@ body {
 /* Body */
 
 body {
-    @apply bg-[#fbead1]
+    @apply bg-[#fbead1] m-0
 }
 
 .container {
-    @apply flex flex-col text-center
+    @apply flex flex-col m-0
 }
 
 .container {
