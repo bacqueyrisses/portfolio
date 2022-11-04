@@ -66,6 +66,7 @@ body {
 .nav__list {
     @apply invisible gap-[7vw]
     sm:visible
+    hover:shadow-xl
 }
 .presentation__content__icon {
     @apply w-[0.7em] inline-block align-baseline hover:animate-spin
@@ -94,7 +95,7 @@ body {
 /*}*/
 
 .logo-img {
-    @apply w-8
+    @apply w-7
 }
 
 .logo-content {
