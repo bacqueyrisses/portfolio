@@ -78,16 +78,16 @@ body {
 }
 
 .presentation__content {
-    @apply text-[6.2vw] flex flex-col pl-1 leading-[8vw]
+    @apply text-[6.2vw] flex flex-col pl-1 leading-[8vw] flex-nowrap whitespace-nowrap
     sm:leading-[7vw] sm:text-[5.6vw]
     md:leading-[7vw]
     lg:leading-[7.5vw]
 }
 
 
-.presentation__content > * {
-    @apply whitespace-nowrap
-}
+/*.presentation__content > * {*/
+/*    @apply whitespace-nowrap*/
+/*}*/
 
 .logo-img {
     @apply w-8

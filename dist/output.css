@@ -702,6 +702,8 @@ body {
 .presentation__content {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  white-space: nowrap;
   padding-left: 0.25rem;
   font-size: 6.2vw;
   line-height: 8vw;
@@ -726,9 +728,11 @@ body {
   }
 }
 
-.presentation__content > * {
-  white-space: nowrap;
-}
+/*.presentation__content > * {*/
+
+/*    @apply whitespace-nowrap*/
+
+/*}*/
 
 .logo-img {
   width: 2rem;
