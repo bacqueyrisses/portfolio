@@ -31,18 +31,22 @@ body {
 }
 
 .container {
-    @apply flex flex-col
+    @apply flex flex-col m-auto
 }
 
 .container {
-    @apply px-7
+    /*@apply px-7*/
+    @apply px-[3vw]
+
 }
 
 .header {
-    @apply px-7
-    sm:px-7
-    md:px-20
-    lg:px-28
+    @apply px-4 m-auto
+    sm:px-[7vw]
+    /*@apply px-7*/
+    /*sm:px-7*/
+    /*md:px-20*/
+    /*lg:px-28*/
 
 }
 
@@ -71,7 +75,7 @@ body {
 }
 
 .presentation__content {
-    @apply text-[5.6vw] flex flex-col pl-1 leading-[7vw]
+    @apply text-[6.2vw] flex flex-col pl-1 leading-[7vw]
     sm:leading-[7vw]
     md:leading-[7vw]
     lg:leading-[7.5vw]
