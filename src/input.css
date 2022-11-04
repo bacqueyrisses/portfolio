@@ -36,9 +36,9 @@ body {
 
 .container, .header {
     @apply px-4
-    sm:px-7
-    md:px-8
-    lg:px-9
+    /*sm:px-7*/
+    /*md:px-8*/
+    /*lg:px-9*/
 }
 /* Header */
 .header, .logo-container, .nav__list {
