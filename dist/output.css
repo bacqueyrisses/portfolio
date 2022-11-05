@@ -691,11 +691,11 @@ body {
 }
 
 .header, .logo-container, .nav__list {
-  margin-bottom: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 0.75rem;
+  padding-bottom: 1.25rem;
 }
 
 @media (min-width: 640px) {

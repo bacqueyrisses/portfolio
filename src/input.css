@@ -56,7 +56,7 @@ body {
     sm:px-[7vw]
 }
 .header, .logo-container, .nav__list {
-    @apply flex items-center pt-3 mb-5 justify-between
+    @apply flex items-center pt-3 pb-5 justify-between
     sm:mb-8
 }
 
