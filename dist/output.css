@@ -546,6 +546,10 @@ video {
   }
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .mt-auto {
   margin-top: auto;
 }
@@ -566,6 +570,10 @@ video {
   margin-top: 1rem;
 }
 
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
 .flex {
   display: flex;
 }
@@ -580,6 +588,42 @@ video {
 
 .w-16 {
   width: 4rem;
+}
+
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-\[2vw\] {
+  width: 2vw;
+}
+
+.w-\[vw\] {
+  width: vw;
+}
+
+.w-\[5vw\] {
+  width: 5vw;
+}
+
+.w-\[1vw\] {
+  width: 1vw;
+}
+
+.w-\[10vw\] {
+  width: 10vw;
+}
+
+.w-\[15vw\] {
+  width: 15vw;
+}
+
+.w-\[12vw\] {
+  width: 12vw;
+}
+
+.w-\[13vw\] {
+  width: 13vw;
 }
 
 .self-start {
@@ -613,8 +657,56 @@ video {
   line-height: 2.25rem;
 }
 
+.text-\[3vw\] {
+  font-size: 3vw;
+}
+
+.text-\[6vw\] {
+  font-size: 6vw;
+}
+
+.text-\[4vw\] {
+  font-size: 4vw;
+}
+
+.text-\[5vw\] {
+  font-size: 5vw;
+}
+
 .italic {
   font-style: italic;
+}
+
+.text-\[3xl\] {
+  color: 3xl;
+}
+
+.text-\[3\] {
+  color: 3;
+}
+
+.text-\[3v\] {
+  color: 3v;
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[6\] {
+  color: 6;
+}
+
+.text-\[6w\] {
+  color: 6w;
+}
+
+.text-\[6v\] {
+  color: 6v;
+}
+
+.text-\[vw\] {
+  color: vw;
 }
 
 .underline {
@@ -922,6 +1014,12 @@ body {
 
 .hover\:decoration-2:hover {
   text-decoration-thickness: 2px;
+}
+
+@media (min-width: 640px) {
+  .sm\:invisible {
+    visibility: hidden;
+  }
 }
 
 
