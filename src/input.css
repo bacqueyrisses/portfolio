@@ -10,18 +10,28 @@
 }
 
 @font-face {
-    font-family: "Gooper-Accent";
+    font-family: "Gooper-Bold-Italic";
     src:  url("./../ressources/fonts/Gooper-SemiBoldItalic.woff") format('woff'),
-    url("./../ressources/fonts/Gooper-SemiBoldItalic.woff2") format('woff2');
+    url("./../ressources/fonts/Gooper-SemiBold.woff2") format('woff2');
 }
+
+@font-face {
+    font-family: "Gooper-Bold";
+    src:  url("./../ressources/fonts/Gooper-SemiBold.woff") format('woff'),
+    url("./../ressources/fonts/Gooper-SemiBold.woff2") format('woff2');
+}
+
 
 body {
     font-family: "Gooper", sans-serif
-
 }
 
 .presentation__content--accent, .logo-container {
-    font-family: "Gooper-Accent", sans-serif;
+    font-family: "Gooper-Bold-Italic", sans-serif;
+}
+
+.mail {
+    font-family: "Gooper-Bold", sans-serif;
 }
 
 /* Body & Container */
@@ -111,26 +121,26 @@ body {
 
 
 
-.fade {
-    animation: slidein 1s forwards;
-    opacity: 0;
-}
+/*.fade {*/
+/*    animation: slide-up .6s cubic-bezier(0.4, 0, 0.2, 1) 500ms backwards;*/
+/*    opacity: 0;*/
+/*}*/
 
-.fade:nth-child(1) {
-    animation-delay: .5s;
-}
+/*.fade:nth-child(1) {*/
+/*    animation-delay: .5s;*/
+/*}*/
 
-.fade:nth-child(2) {
-    animation-delay: 1.5s;
-}
+/*.fade:nth-child(2) {*/
+/*    animation-delay: 1.5s;*/
+/*}*/
 
-.fade:nth-child(3) {
-    animation-delay: 2.5s;
-}
+/*.fade:nth-child(3) {*/
+/*    animation-delay: 2.5s;*/
+/*}*/
 
-.fade:nth-child(4) {
-    animation-delay: 3.5s;
-}
+/*.fade:nth-child(4) {*/
+/*    animation-delay: 3.5s;*/
+/*}*/
 
 
 
