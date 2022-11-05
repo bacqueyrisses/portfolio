@@ -641,7 +641,7 @@ body {
 /* Body & Container */
 
 html, body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 @media (min-width: 640px) {
