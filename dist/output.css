@@ -546,28 +546,8 @@ video {
   }
 }
 
-.invisible {
-  visibility: hidden;
-}
-
 .mt-auto {
   margin-top: auto;
-}
-
-.mr-4 {
-  margin-right: 1rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
 }
 
 .mr-3 {
@@ -582,69 +562,12 @@ video {
   display: none;
 }
 
-.h-16 {
-  height: 4rem;
-}
-
-.w-16 {
-  width: 4rem;
-}
-
-.w-1 {
-  width: 0.25rem;
-}
-
-.w-\[2vw\] {
-  width: 2vw;
-}
-
-.w-\[vw\] {
-  width: vw;
-}
-
-.w-\[5vw\] {
-  width: 5vw;
-}
-
-.w-\[1vw\] {
-  width: 1vw;
-}
-
-.w-\[10vw\] {
-  width: 10vw;
-}
-
-.w-\[15vw\] {
-  width: 15vw;
-}
-
 .w-\[12vw\] {
   width: 12vw;
 }
 
-.w-\[13vw\] {
-  width: 13vw;
-}
-
 .self-start {
   align-self: flex-start;
-}
-
-.border {
-  border-width: 1px;
-}
-
-.border-b-2 {
-  border-bottom-width: 2px;
-}
-
-.border-b {
-  border-bottom-width: 1px;
-}
-
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .object-contain {
@@ -652,21 +575,8 @@ video {
      object-fit: contain;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-\[3vw\] {
-  font-size: 3vw;
-}
-
-.text-\[6vw\] {
-  font-size: 6vw;
-}
-
-.text-\[4vw\] {
-  font-size: 4vw;
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .text-\[5vw\] {
@@ -677,52 +587,8 @@ video {
   font-style: italic;
 }
 
-.text-\[3xl\] {
-  color: 3xl;
-}
-
-.text-\[3\] {
-  color: 3;
-}
-
-.text-\[3v\] {
-  color: 3v;
-}
-
-.text-\[\] {
-  color: ;
-}
-
-.text-\[6\] {
-  color: 6;
-}
-
-.text-\[6w\] {
-  color: 6w;
-}
-
-.text-\[6v\] {
-  color: 6v;
-}
-
-.text-\[vw\] {
-  color: vw;
-}
-
 .underline {
   text-decoration-line: underline;
-}
-
-.decoration-gray-700 {
-  text-decoration-color: #374151;
-}
-
-.decoration-gray-300 {
-  text-decoration-color: #d1d5db;
-}
-
-.decoration-gray-600 {
-  text-decoration-color: #4b5563;
 }
 
 .decoration-gray-500 {
@@ -775,7 +641,13 @@ body {
 /* Body & Container */
 
 html, body {
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  html, body {
+    overflow: auto;
+  }
 }
 
 body {
