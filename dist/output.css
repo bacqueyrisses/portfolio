@@ -575,8 +575,8 @@ video {
      object-fit: contain;
 }
 
-.pb-10 {
-  padding-bottom: 2.5rem;
+.pb-32 {
+  padding-bottom: 8rem;
 }
 
 .text-\[5vw\] {
@@ -641,7 +641,7 @@ body {
 /* Body & Container */
 
 html, body {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 @media (min-width: 640px) {

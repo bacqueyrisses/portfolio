@@ -37,12 +37,12 @@ body {
 /* Body & Container */
 
 html, body {
-    @apply overflow-x-hidden
+    @apply overflow-hidden
     sm:overflow-auto
 }
 
 body {
-    @apply bg-[#fbead1] m-0 flex flex-col items-center relative h-full
+    @apply bg-[#fbead1] m-0 flex flex-col items-center relative h-screen
 }
 
 .container {
