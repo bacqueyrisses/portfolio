@@ -21,6 +21,11 @@
     url("./../ressources/fonts/Gooper-SemiBold.woff2") format('woff2');
 }
 
+@font-face {
+    font-family: "Space";
+    src:  url("./../ressources/fonts/space.woff2") format('woff2')
+}
+
 
 body {
     font-family: "Gooper", sans-serif
@@ -30,7 +35,12 @@ body {
     font-family: "Gooper-Bold-Italic", sans-serif;
 }
 
-.mail {
+.mail-title {
+    font-family: "Space", sans-serif;
+
+}
+
+.mail-content {
     font-family: "Gooper-Bold", sans-serif;
 }
 
