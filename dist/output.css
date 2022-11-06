@@ -575,24 +575,16 @@ video {
      object-fit: contain;
 }
 
-.pl-6 {
-  padding-left: 1.5rem;
-}
-
-.pr-2 {
-  padding-right: 0.5rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
-
 .pl-5 {
   padding-left: 1.25rem;
 }
 
 .pr-3 {
   padding-right: 0.75rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .text-\[5vw\] {
@@ -679,7 +671,7 @@ html, body {
 body {
   margin: 0px;
   display: flex;
-  height: 85vh;
+  height: 80vh;
   width: 100%;
   flex-direction: column;
   align-items: center;
