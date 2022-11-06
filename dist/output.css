@@ -673,8 +673,8 @@ body {
 
 .container {
   margin: 0px;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 @media (min-width: 640px) {
