@@ -566,6 +566,14 @@ video {
   width: 10vw;
 }
 
+.w-\[vw\] {
+  width: vw;
+}
+
+.w-\[8vw\] {
+  width: 8vw;
+}
+
 .self-start {
   align-self: flex-start;
 }
