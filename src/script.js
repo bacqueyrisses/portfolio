@@ -1,70 +1,122 @@
-if (typeof window !== 'undefined') {
-    // Prerequisites
-    let activeFilter = null;
-    const filterNotApplicable = mouseEvent => {
-        if (
-            (window.screen.width > 640 && mouseEvent === 'click') ||
-            (window.screen.width <= 640 && ['mouseenter', 'mouseleave'].includes(mouseEvent))
-        ) {
-            return true;
-        }
-    };
+let touchstartX = 0;
+let touchstartY = 0;
+let touchendX = 0;
+let touchendY = 0;
 
-    // Set activeFilter ifs
-    document.querySelectorAll('.selector').forEach(selector => {
-        'mouseenter mouseleave click'.split(' ').forEach(mouseEvent => {
-            if (filterNotApplicable(mouseEvent)) {
-                return;
-            }
+const gestureZone = document.getElementById('test');
 
-            selector.addEventListener(mouseEvent, e => {
-                const filter = e.target.dataset.filter;
+gestureZone.addEventListener('touchstart', function(event) {
+    touchstartX = event.changedTouches[0].screenX;
+    touchstartY = event.changedTouches[0].screenY;
+}, false);
 
-                // activeFilter ifs
-                if (activeFilter === null) {
-                    activeFilter = applyFilter(filter);
-                    return;
-                }
+gestureZone.addEventListener('touchend', function(event) {
+    touchendX = event.changedTouches[0].screenX;
+    touchendY = event.changedTouches[0].screenY;
+    handleGesture();
+}, false);
 
-                if (activeFilter === filter) {
-                    activeFilter = removeFilter(filter);
-                    return;
-                }
+function handleGesture() {
+    if (touchendX < touchstartX) {
+        console.log('Swiped left');
+        alert('hey')
+    }
 
-                if (activeFilter !== null && activeFilter !== filter) {
-                    removeFilter(activeFilter);
-                    activeFilter = applyFilter(filter);
-                    return;
-                }
-            });
-        });
-    });
+    if (touchendX > touchstartX) {
+        console.log('Swiped right');
+        alert('hey')
 
-    // Functions
-    const applyFilter = filter => {
-        // Hide content
-        const contentToHide = document.querySelectorAll(`.section:not(.${filter})`);
-        contentToHide.forEach(content => {
-            content.classList.add('hide');
-        });
-        // Make the selector font-style go italic
-        document.querySelector(`li[data-filter=${filter}]`).style.fontStyle = 'italic';
-        // activeFilter = filter
-        return filter;
-    };
+    }
 
-    const removeFilter = filter => {
-        // Reveal hidden content
-        const contentToShow = document.querySelectorAll('.hide');
-        contentToShow.forEach(content => {
-            content.classList.remove('hide');
-        });
-        // Make the selector font-style go normal
-        document.querySelector(`li[data-filter=${filter}]`).style.fontStyle = 'normal';
-        // activeFilter = null
-        return null;
-    };
+    if (touchendY < touchstartY) {
+        console.log('Swiped up');
+        alert('hey')
+
+    }
+
+    if (touchendY > touchstartY) {
+        console.log('Swiped down');
+        alert('hey')
+
+    }
+
+    if (touchendY === touchstartY) {
+        console.log('Tap');
+        alert('hey')
+
+    }
 }
 
 
 
+
+// if (typeof window !== 'undefined') {
+//     // Prerequisites
+//     let activeFilter = null;
+//     const filterNotApplicable = mouseEvent => {
+//         if (
+//             (window.screen.width > 640 && mouseEvent === 'click') ||
+//             (window.screen.width <= 640 && ['mouseenter', 'mouseleave'].includes(mouseEvent))
+//         ) {
+//             return true;
+//         }
+//     };
+//
+//     // Set activeFilter ifs
+//     document.querySelectorAll('.selector').forEach(selector => {
+//         'mouseenter mouseleave click'.split(' ').forEach(mouseEvent => {
+//             if (filterNotApplicable(mouseEvent)) {
+//                 return;
+//             }
+//
+//             selector.addEventListener(mouseEvent, e => {
+//                 const filter = e.target.dataset.filter;
+//
+//                 // activeFilter ifs
+//                 if (activeFilter === null) {
+//                     activeFilter = applyFilter(filter);
+//                     return;
+//                 }
+//
+//                 if (activeFilter === filter) {
+//                     activeFilter = removeFilter(filter);
+//                     return;
+//                 }
+//
+//                 if (activeFilter !== null && activeFilter !== filter) {
+//                     removeFilter(activeFilter);
+//                     activeFilter = applyFilter(filter);
+//                     return;
+//                 }
+//             });
+//         });
+//     });
+//
+//     // Functions
+//     const applyFilter = filter => {
+//         // Hide content
+//         const contentToHide = document.querySelectorAll(`.section:not(.${filter})`);
+//         contentToHide.forEach(content => {
+//             content.classList.add('hide');
+//         });
+//         // Make the selector font-style go italic
+//         document.querySelector(`li[data-filter=${filter}]`).style.fontStyle = 'italic';
+//         // activeFilter = filter
+//         return filter;
+//     };
+//
+//     const removeFilter = filter => {
+//         // Reveal hidden content
+//         const contentToShow = document.querySelectorAll('.hide');
+//         contentToShow.forEach(content => {
+//             content.classList.remove('hide');
+//         });
+//         // Make the selector font-style go normal
+//         document.querySelector(`li[data-filter=${filter}]`).style.fontStyle = 'normal';
+//         // activeFilter = null
+//         return null;
+//     };
+// }
+//
+//
+//
