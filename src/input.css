@@ -56,7 +56,7 @@ body {
 }
 
 .container {
-    @apply m-0 px-[3vw]
+    @apply m-0 pr-[3.5vw] pl-[2.5vw]
     sm:px-[2vw]
 }
 
@@ -68,6 +68,11 @@ body {
 .header, .logo-container, .nav__list {
     @apply flex items-center pt-3 mb-3 justify-between
     sm:mb-8
+}
+
+.header {
+    @apply pt-0
+    sm:pt-3
 }
 
 .nav__list {
@@ -98,7 +103,7 @@ body {
     @apply
     /*text-[6.2vw] */
         text-[13vw]
-    flex flex-col pl-1
+    flex flex-col
     leading-[14vw]
     /*leading-[8vw]*/
     flex-nowrap
