@@ -52,7 +52,7 @@ html, body {
 }
 
 body {
-    @apply bg-[#fbead1] m-0 flex flex-col items-center relative h-screen justify-between
+    @apply bg-[#fbead1] m-0 flex flex-col items-center h-screen justify-between
 }
 
 .container {
@@ -103,9 +103,9 @@ body {
 .presentation__content {
     @apply
     /*text-[6.2vw] */
-        text-[12.5vw]
+        text-[11vw]
     flex flex-col
-    leading-[14vw]
+    leading-[12.5vw]
     /*leading-[8vw]*/
     flex-nowrap
     /*whitespace-nowrap*/

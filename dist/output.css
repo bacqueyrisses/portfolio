@@ -665,7 +665,6 @@ html, body {
 }
 
 body {
-  position: relative;
   margin: 0px;
   display: flex;
   height: 100vh;
@@ -807,8 +806,8 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  font-size: 12.5vw;
-  line-height: 14vw;
+  font-size: 11vw;
+  line-height: 12.5vw;
 }
 
 @media (min-width: 640px) {
