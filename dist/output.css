@@ -659,7 +659,7 @@ body {
 /* Body & Container */
 
 html, body, * {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 @media (min-width: 640px) {
@@ -870,8 +870,8 @@ body {
   }
 }
 
-.mail--hidden {
-  visibility: hidden;
+.b-hidden {
+  display: none;
 }
 
 @keyframes slidein {

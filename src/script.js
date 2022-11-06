@@ -4,6 +4,7 @@ let touchendX = 0;
 let touchendY = 0;
 
 const mail = document.getElementById('mail')
+const mail2 = document.getElementById('mail-2')
 
 const gestureZone = document.getElementById('test');
 
@@ -20,7 +21,8 @@ gestureZone.addEventListener('touchend', function(event) {
 
 function handleGesture() {
     if (touchendX < touchstartX) {
-        mail.classList.add('mail--hidden')
+        mail.classList.toggle('b-hidden')
+        mail2.classList.toggle('b-hidden')
     }
 
     // if (touchendX > touchstartX) {

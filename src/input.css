@@ -47,7 +47,7 @@ body {
 /* Body & Container */
 
 html, body, * {
-    @apply overflow-x-hidden
+    @apply overflow-hidden
     sm:overflow-auto
 }
 
@@ -136,8 +136,8 @@ body {
     }
 }
 
-.mail--hidden {
-    @apply invisible
+.b-hidden {
+    @apply hidden
 }
 
 @keyframes slidein {
