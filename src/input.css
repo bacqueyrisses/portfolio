@@ -56,7 +56,7 @@ body {
 }
 
 .container {
-    @apply m-0 pr-[3.5vw] pl-[2.5vw]
+    @apply m-0 px-3
     sm:px-[2vw]
 }
 
