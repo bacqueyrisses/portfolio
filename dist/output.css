@@ -590,6 +590,10 @@ video {
   width: 7.2vw;
 }
 
+.w-\[7\.5vw\] {
+  width: 7.5vw;
+}
+
 .self-start {
   align-self: flex-start;
 }
@@ -641,6 +645,14 @@ video {
 
 .pt-\[0\.5vh\] {
   padding-top: 0.5vh;
+}
+
+.pt-\[0\.vh\] {
+  padding-top: 0.vh;
+}
+
+.pt-\[0\.3vh\] {
+  padding-top: 0.3vh;
 }
 
 .text-\[5vw\] {
