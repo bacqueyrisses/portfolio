@@ -658,12 +658,12 @@ body {
 
 /* Body & Container */
 
-html, body, * {
+html, body {
   overflow: hidden;
 }
 
 @media (min-width: 640px) {
-  html, body, * {
+  html, body {
     overflow: auto;
   }
 }
@@ -677,6 +677,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(251 234 209 / var(--tw-bg-opacity));
 }
