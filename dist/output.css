@@ -558,8 +558,8 @@ video {
   margin-right: 0.75rem;
 }
 
-.mb-28 {
-  margin-bottom: 7rem;
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .flex {
@@ -581,14 +581,6 @@ video {
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-.pb-3 {
-  padding-bottom: 0.75rem;
-}
-
-.pb-5 {
-  padding-bottom: 1.25rem;
 }
 
 .pb-2 {
@@ -763,6 +755,16 @@ body {
   animation: spin 1s linear infinite;
 }
 
+.presentation__content__icon--hidden {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .presentation__content__icon--hidden {
+    display: inline-block;
+  }
+}
+
 .presentation__content__icon--star {
   color: #4697f6;
   width: 1.25rem
@@ -799,10 +801,9 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  white-space: nowrap;
   padding-left: 0.25rem;
-  font-size: 6.2vw;
-  line-height: 8vw;
+  font-size: 13vw;
+  line-height: 14vw;
 }
 
 @media (min-width: 640px) {
