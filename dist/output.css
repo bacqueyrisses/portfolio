@@ -803,7 +803,7 @@ body {
   flex-direction: column;
   flex-wrap: nowrap;
   font-size: 11.3vw;
-  line-height: 12.5vw;
+  line-height: 12.8vw;
 }
 
 @media (min-width: 640px) {
