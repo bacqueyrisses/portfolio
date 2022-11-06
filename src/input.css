@@ -103,7 +103,7 @@ body {
 .presentation__content {
     @apply
     /*text-[6.2vw] */
-        text-[11vw]
+        text-[11.3vw]
     flex flex-col
     leading-[12.5vw]
     /*leading-[8vw]*/
