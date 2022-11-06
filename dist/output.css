@@ -546,11 +546,6 @@ video {
   }
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -567,10 +562,6 @@ video {
   display: none;
 }
 
-.w-screen {
-  width: 100vw;
-}
-
 .w-\[10vw\] {
   width: 10vw;
 }
@@ -584,14 +575,9 @@ video {
      object-fit: contain;
 }
 
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pb-2 {
@@ -820,7 +806,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  font-size: 11.3vw;
+  font-size: 11.6vw;
   line-height: 12.8vw;
 }
 
