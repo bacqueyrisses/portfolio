@@ -662,12 +662,6 @@ html, body {
   overflow: hidden;
 }
 
-@media (min-width: 640px) {
-  html, body {
-    overflow: auto;
-  }
-}
-
 body {
   margin: 0px;
   display: flex;
