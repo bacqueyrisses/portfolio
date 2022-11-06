@@ -48,7 +48,7 @@ body {
 
 html, body {
     @apply overflow-x-hidden
-    /*sm:overflow-auto*/
+    sm:overflow-auto
 }
 
 body {
@@ -104,6 +104,7 @@ body {
 
 .presentation__content {
     @apply
+        w-full
     /*text-[6.2vw] */
         text-[11.6vw]
     flex flex-col
