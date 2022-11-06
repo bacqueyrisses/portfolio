@@ -5,6 +5,7 @@ let touchendY = 0;
 
 const mail = document.getElementById('mail')
 const mail2 = document.getElementById('mail-2')
+const mail3 = document.getElementById('mail-3')
 
 const gestureZone = document.getElementById('test');
 
@@ -23,13 +24,14 @@ function handleGesture() {
     if (touchendX < touchstartX) {
         mail.classList.toggle('b-hidden')
         mail2.classList.toggle('b-hidden')
+        // mail3.classList.toggle('b-hidden')
     }
 
-    // if (touchendX > touchstartX) {
-    //     console.log('Swiped right');
-    //     alert('hey')
-    //
-    // }
+    if (touchendX > touchstartX) {
+        mail.classList.toggle('b-hidden')
+        mail2.classList.toggle('b-hidden')
+        // mail3.classList.toggle('b-hidden')
+    }
     //
     // if (touchendY < touchstartY) {
     //     console.log('Swiped up');
