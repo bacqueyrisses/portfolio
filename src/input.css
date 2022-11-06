@@ -52,12 +52,12 @@ html, body {
 }
 
 body {
-    @apply bg-[#fbead1] m-0 flex flex-col items-center  justify-between h-[85vh]
+    @apply bg-[#fbead1] m-0 flex flex-col items-center  justify-between h-[85vh] w-full
 }
 
 .container {
     @apply m-0
-    px-10
+    /*px-10*/
 
     sm:px-[2vw]
 }
