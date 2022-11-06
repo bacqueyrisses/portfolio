@@ -52,7 +52,7 @@ html, body {
 }
 
 body {
-    @apply bg-[#fbead1] m-0 flex flex-col items-center relative h-screen
+    @apply bg-[#fbead1] m-0 flex flex-col items-center relative h-screen justify-between
 }
 
 .container {
@@ -66,7 +66,8 @@ body {
     sm:px-[7vw]
 }
 .header, .logo-container, .nav__list {
-    @apply flex items-center pt-3 mb-3 justify-between
+    @apply flex items-center pt-3  justify-between
+    /*mb-3*/
     sm:mb-8
 }
 

@@ -558,10 +558,6 @@ video {
   margin-right: 0.75rem;
 }
 
-.mb-24 {
-  margin-bottom: 6rem;
-}
-
 .flex {
   display: flex;
 }
@@ -675,6 +671,7 @@ body {
   height: 100vh;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   --tw-bg-opacity: 1;
   background-color: rgb(251 234 209 / var(--tw-bg-opacity));
 }
@@ -709,7 +706,6 @@ body {
 }
 
 .header, .logo-container, .nav__list {
-  margin-bottom: 0.75rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
