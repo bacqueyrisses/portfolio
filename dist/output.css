@@ -546,10 +546,6 @@ video {
   }
 }
 
-.mt-auto {
-  margin-top: auto;
-}
-
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -667,7 +663,7 @@ html, body {
 body {
   margin: 0px;
   display: flex;
-  height: 100vh;
+  height: 90vh;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
