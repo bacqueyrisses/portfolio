@@ -47,7 +47,7 @@ body {
 /* Body & Container */
 
 html, body {
-    @apply overflow-x-hidden
+    @apply overflow-hidden
     sm:overflow-auto
 }
 
