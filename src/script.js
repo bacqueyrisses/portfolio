@@ -3,6 +3,8 @@ let touchstartY = 0;
 let touchendX = 0;
 let touchendY = 0;
 
+const mail = document.getElementById('mail')
+
 const gestureZone = document.getElementById('test');
 
 gestureZone.addEventListener('touchstart', function(event) {
@@ -18,33 +20,32 @@ gestureZone.addEventListener('touchend', function(event) {
 
 function handleGesture() {
     if (touchendX < touchstartX) {
-        console.log('Swiped left');
-        alert('hey')
+        mail.classList.add('mail--hidden')
     }
 
-    if (touchendX > touchstartX) {
-        console.log('Swiped right');
-        alert('hey')
-
-    }
-
-    if (touchendY < touchstartY) {
-        console.log('Swiped up');
-        alert('hey')
-
-    }
-
-    if (touchendY > touchstartY) {
-        console.log('Swiped down');
-        alert('hey')
-
-    }
-
-    if (touchendY === touchstartY) {
-        console.log('Tap');
-        alert('hey')
-
-    }
+    // if (touchendX > touchstartX) {
+    //     console.log('Swiped right');
+    //     alert('hey')
+    //
+    // }
+    //
+    // if (touchendY < touchstartY) {
+    //     console.log('Swiped up');
+    //     alert('hey')
+    //
+    // }
+    //
+    // if (touchendY > touchstartY) {
+    //     console.log('Swiped down');
+    //     alert('hey')
+    //
+    // }
+    //
+    // if (touchendY === touchstartY) {
+    //     console.log('Tap');
+    //     alert('hey')
+    //
+    // }
 }
 
 

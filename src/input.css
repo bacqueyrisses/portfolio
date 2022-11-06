@@ -136,6 +136,9 @@ body {
     }
 }
 
+.mail--hidden {
+    @apply invisible
+}
 
 @keyframes slidein {
     from {
