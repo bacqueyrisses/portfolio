@@ -1,14 +1,12 @@
+let pageWidth = window.innerWidth || document.body.clientWidth;
+let treshold = Math.max(1,Math.floor(0.01 * (pageWidth)));
 let touchstartX = 0;
 let touchstartY = 0;
 let touchendX = 0;
 let touchendY = 0;
-let activeFilter = 'mail'
 
-const mail = document.getElementById('mail')
-const mail2 = document.getElementById('mail-2')
-const mail3 = document.getElementById('mail-3')
-
-const gestureZone = document.body;
+const limit = Math.tan(45 * 1.5 / 180 * Math.PI);
+const gestureZone = document.body
 
 gestureZone.addEventListener('touchstart', function(event) {
     touchstartX = event.changedTouches[0].screenX;
@@ -18,49 +16,97 @@ gestureZone.addEventListener('touchstart', function(event) {
 gestureZone.addEventListener('touchend', function(event) {
     touchendX = event.changedTouches[0].screenX;
     touchendY = event.changedTouches[0].screenY;
-    handleGesture();
+    handleGesture(event);
 }, false);
 
-function handleGesture() {
-    if (touchendX < touchstartX) {
-        if (activeFilter === "mail") {
-            mail.classList.toggle('b-hidden')
-            mail2.classList.toggle('b-hidden')
-            return activeFilter = 'linkedin'
+function handleGesture(e) {
+    let x = touchendX - touchstartX;
+    let y = touchendY - touchstartY;
+    let xy = Math.abs(x / y);
+    let yx = Math.abs(y / x);
+    if (Math.abs(x) > treshold || Math.abs(y) > treshold) {
+        if (yx <= limit) {
+            if (x < 0) {
+                console.log("left");
+            } else {
+                console.log("right");
+            }
         }
-
-        if (activeFilter === 'linkedin') {
-            mail2.classList.toggle('b-hidden')
-            mail3.classList.toggle('b-hidden')
-            return activeFilter = 'github'
+        if (xy <= limit) {
+            if (y < 0) {
+                console.log("top");
+            } else {
+                console.log("bottom");
+            }
         }
-
-        if (activeFilter === 'github') {
-            mail3.classList.toggle('b-hidden')
-            mail.classList.toggle('b-hidden')
-            return activeFilter = 'mail'
-        }
+    } else {
+        console.log("tap");
     }
+}
 
-    if (touchendX > touchstartX) {
-        if (activeFilter === "mail") {
-            mail.classList.toggle('b-hidden')
-            mail3.classList.toggle('b-hidden')
-            return activeFilter = 'github'
-        }
-
-        if (activeFilter === 'github') {
-            mail3.classList.toggle('b-hidden')
-            mail2.classList.toggle('b-hidden')
-            return activeFilter = 'linkedin'
-        }
-
-        if (activeFilter === 'linkedin') {
-            mail2.classList.toggle('b-hidden')
-            mail.classList.toggle('b-hidden')
-            return activeFilter = 'mail'
-        }
-    }
+// let touchstartX = 0;
+// let touchstartY = 0;
+// let touchendX = 0;
+// let touchendY = 0;
+// let activeFilter = 'mail'
+//
+// const mail = document.getElementById('mail')
+// const mail2 = document.getElementById('mail-2')
+// const mail3 = document.getElementById('mail-3')
+//
+// const gestureZone = document.body;
+//
+// gestureZone.addEventListener('touchstart', function(event) {
+//     touchstartX = event.changedTouches[0].screenX;
+//     touchstartY = event.changedTouches[0].screenY;
+// }, false);
+//
+// gestureZone.addEventListener('touchend', function(event) {
+//     touchendX = event.changedTouches[0].screenX;
+//     touchendY = event.changedTouches[0].screenY;
+//     handleGesture();
+// }, false);
+//
+// function handleGesture() {
+//     if (touchendX < touchstartX) {
+//         if (activeFilter === "mail") {
+//             mail.classList.toggle('b-hidden')
+//             mail2.classList.toggle('b-hidden')
+//             return activeFilter = 'linkedin'
+//         }
+//
+//         if (activeFilter === 'linkedin') {
+//             mail2.classList.toggle('b-hidden')
+//             mail3.classList.toggle('b-hidden')
+//             return activeFilter = 'github'
+//         }
+//
+//         if (activeFilter === 'github') {
+//             mail3.classList.toggle('b-hidden')
+//             mail.classList.toggle('b-hidden')
+//             return activeFilter = 'mail'
+//         }
+//     }
+//
+//     if (touchendX > touchstartX) {
+//         if (activeFilter === "mail") {
+//             mail.classList.toggle('b-hidden')
+//             mail3.classList.toggle('b-hidden')
+//             return activeFilter = 'github'
+//         }
+//
+//         if (activeFilter === 'github') {
+//             mail3.classList.toggle('b-hidden')
+//             mail2.classList.toggle('b-hidden')
+//             return activeFilter = 'linkedin'
+//         }
+//
+//         if (activeFilter === 'linkedin') {
+//             mail2.classList.toggle('b-hidden')
+//             mail.classList.toggle('b-hidden')
+//             return activeFilter = 'mail'
+//         }
+//     }
     //
     // if (touchendY < touchstartY) {
     //     if (activeFilter === "one") {
