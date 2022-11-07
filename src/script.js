@@ -45,18 +45,18 @@ function handleGesture() {
     if (touchendX > touchstartX) {
         if (activeFilter === "mail") {
             mail.classList.toggle('b-hidden')
-            mail2.classList.toggle('b-hidden')
+            mail3.classList.toggle('b-hidden')
             return activeFilter = 'github'
         }
 
         if (activeFilter === 'github') {
-            mail2.classList.toggle('b-hidden')
             mail3.classList.toggle('b-hidden')
+            mail2.classList.toggle('b-hidden')
             return activeFilter = 'linkedin'
         }
 
         if (activeFilter === 'linkedin') {
-            mail3.classList.toggle('b-hidden')
+            mail2.classList.toggle('b-hidden')
             mail.classList.toggle('b-hidden')
             return activeFilter = 'mail'
         }
