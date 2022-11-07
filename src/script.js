@@ -27,20 +27,20 @@ function handleGesture(e) {
     if (Math.abs(x) > treshold || Math.abs(y) > treshold) {
         if (yx <= limit) {
             if (x < 0) {
-                console.log("left");
+                alert("left");
             } else {
-                console.log("right");
+                alert("right");
             }
         }
         if (xy <= limit) {
             if (y < 0) {
-                console.log("top");
+                alert("top");
             } else {
-                console.log("bottom");
+                alert("bottom");
             }
         }
     } else {
-        console.log("tap");
+        alert("tap");
     }
 }
 
