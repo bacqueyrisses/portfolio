@@ -24,6 +24,7 @@ function handleGesture(e) {
     let y = touchendY - touchstartY;
     let xy = Math.abs(x / y);
     let yx = Math.abs(y / x);
+
     if (Math.abs(x) > treshold || Math.abs(y) > treshold) {
         if (yx <= limit) {
             if (x < 0) {
@@ -43,6 +44,7 @@ function handleGesture(e) {
         alert("tap");
     }
 }
+
 
 // let touchstartX = 0;
 // let touchstartY = 0;
@@ -155,7 +157,7 @@ function handleGesture(e) {
     //     alert('tap')
     //
     // }
-}
+// }
 
 
 
