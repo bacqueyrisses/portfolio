@@ -546,10 +546,6 @@ video {
   }
 }
 
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
 .mr-3 {
   margin-right: 0.75rem;
 }
@@ -566,32 +562,12 @@ video {
   width: 10vw;
 }
 
-.w-\[vw\] {
-  width: vw;
+.w-\[7\.5vw\] {
+  width: 7.5vw;
 }
 
 .w-\[8vw\] {
   width: 8vw;
-}
-
-.w-\[1vw\] {
-  width: 1vw;
-}
-
-.w-\[7vw\] {
-  width: 7vw;
-}
-
-.w-\[7\.vw\] {
-  width: 7.vw;
-}
-
-.w-\[7\.2vw\] {
-  width: 7.2vw;
-}
-
-.w-\[7\.5vw\] {
-  width: 7.5vw;
 }
 
 .self-start {
@@ -613,42 +589,6 @@ video {
 
 .pb-2 {
   padding-bottom: 0.5rem;
-}
-
-.pt-1 {
-  padding-top: 0.25rem;
-}
-
-.pt-\[\] {
-  padding-top: ;
-}
-
-.pt-\[1\] {
-  padding-top: 1;
-}
-
-.pt-\[1v\] {
-  padding-top: 1v;
-}
-
-.pt-\[1vh\] {
-  padding-top: 1vh;
-}
-
-.pt-\[vh\] {
-  padding-top: vh;
-}
-
-.pt-\[0vh\] {
-  padding-top: 0vh;
-}
-
-.pt-\[0\.5vh\] {
-  padding-top: 0.5vh;
-}
-
-.pt-\[0\.vh\] {
-  padding-top: 0.vh;
 }
 
 .pt-\[0\.3vh\] {
@@ -886,6 +826,7 @@ body {
 
 @media (min-width: 640px) {
   .presentation__content {
+    white-space: nowrap;
     font-size: 5.6vw;
     line-height: 7vw;
   }

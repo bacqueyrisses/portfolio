@@ -111,7 +111,7 @@ body {
     leading-[12.8vw]
     /*leading-[8vw]*/
     flex-nowrap
-    /*whitespace-nowrap*/
+    sm:whitespace-nowrap
     sm:leading-[7vw] sm:text-[5.6vw]
     md:leading-[7vw]
     lg:leading-[7.5vw]
