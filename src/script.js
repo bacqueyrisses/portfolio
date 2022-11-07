@@ -2,7 +2,7 @@ let touchstartX = 0;
 let touchstartY = 0;
 let touchendX = 0;
 let touchendY = 0;
-let activeFilter = 'one'
+let activeFilter = 'mail'
 
 const mail = document.getElementById('mail')
 const mail2 = document.getElementById('mail-2')
@@ -23,6 +23,26 @@ gestureZone.addEventListener('touchend', function(event) {
 
 function handleGesture() {
     if (touchendX < touchstartX) {
+        if (activeFilter === "mail") {
+            mail.classList.toggle('b-hidden')
+            mail2.classList.toggle('b-hidden')
+            return activeFilter = 'linkedin'
+        }
+
+        if (activeFilter === 'linkedin') {
+            mail2.classList.toggle('b-hidden')
+            mail3.classList.toggle('b-hidden')
+            return activeFilter = 'github'
+        }
+
+        if (activeFilter === 'github') {
+            mail3.classList.toggle('b-hidden')
+            mail.classList.toggle('b-hidden')
+            return activeFilter = 'mail'
+        }
+    }
+
+    if (touchendX > touchstartX) {
         if (activeFilter === "one") {
             mail.classList.toggle('b-hidden')
             mail2.classList.toggle('b-hidden')
@@ -40,17 +60,8 @@ function handleGesture() {
             mail.classList.toggle('b-hidden')
             return activeFilter = 'one'
         }
-
-
-
     }
-
-    // if (touchendX > touchstartX) {
-    //     mail.classList.toggle('b-hidden')
-    //     mail2.classList.toggle('b-hidden')
-    //     // mail3.classList.toggle('b-hidden')
-    // }
-    // //
+    //
     // if (touchendY < touchstartY) {
     //     console.log('Swiped up');
     //     alert('hey')
