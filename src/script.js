@@ -42,40 +42,40 @@ function handleGesture(e) {
         if (xy <= limit) {
             if (y < 0) {
                 if (activeFilter === "mail") {
-                                mail.classList.toggle('b-hidden')
-                                mail2.classList.toggle('b-hidden')
-                                return activeFilter = 'linkedin'
-                            }
+                    mail.classList.toggle('b-hidden')
+                    mail3.classList.toggle('b-hidden')
+                    return activeFilter = 'github'
+                }
 
-                            if (activeFilter === 'linkedin') {
-                                mail2.classList.toggle('b-hidden')
-                                mail3.classList.toggle('b-hidden')
-                                return activeFilter = 'github'
-                            }
+                if (activeFilter === 'github') {
+                    mail3.classList.toggle('b-hidden')
+                    mail2.classList.toggle('b-hidden')
+                    return activeFilter = 'linkedin'
+                }
 
-                            if (activeFilter === 'github') {
-                                mail3.classList.toggle('b-hidden')
-                                mail.classList.toggle('b-hidden')
-                                return activeFilter = 'mail'
-                            }
+                if (activeFilter === 'linkedin') {
+                    mail2.classList.toggle('b-hidden')
+                    mail.classList.toggle('b-hidden')
+                    return activeFilter = 'mail'
+                }
             } else {
-                        if (activeFilter === "mail") {
-                            mail.classList.toggle('b-hidden')
-                            mail3.classList.toggle('b-hidden')
-                            return activeFilter = 'github'
-                        }
+                if (activeFilter === "mail") {
+                    mail.classList.toggle('b-hidden')
+                    mail2.classList.toggle('b-hidden')
+                    return activeFilter = 'linkedin'
+                }
 
-                        if (activeFilter === 'github') {
-                            mail3.classList.toggle('b-hidden')
-                            mail2.classList.toggle('b-hidden')
-                            return activeFilter = 'linkedin'
-                        }
+                if (activeFilter === 'linkedin') {
+                    mail2.classList.toggle('b-hidden')
+                    mail3.classList.toggle('b-hidden')
+                    return activeFilter = 'github'
+                }
 
-                        if (activeFilter === 'linkedin') {
-                            mail2.classList.toggle('b-hidden')
-                            mail.classList.toggle('b-hidden')
-                            return activeFilter = 'mail'
-                        }
+                if (activeFilter === 'github') {
+                    mail3.classList.toggle('b-hidden')
+                    mail.classList.toggle('b-hidden')
+                    return activeFilter = 'mail'
+                }
             }
         }
     } else {
