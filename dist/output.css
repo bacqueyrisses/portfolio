@@ -727,6 +727,18 @@ video {
   padding-top: 1.5vh;
 }
 
+.pt-\[1\.1vh\] {
+  padding-top: 1.1vh;
+}
+
+.pt-\[1\.2vh\] {
+  padding-top: 1.2vh;
+}
+
+.pt-\[1\.3vh\] {
+  padding-top: 1.3vh;
+}
+
 .text-\[5vw\] {
   font-size: 5vw;
 }
