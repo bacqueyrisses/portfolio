@@ -662,6 +662,10 @@ video {
   width: 85vw;
 }
 
+.w-\[1vw\] {
+  width: 1vw;
+}
+
 .self-start {
   align-self: flex-start;
 }
