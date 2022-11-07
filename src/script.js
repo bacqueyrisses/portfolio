@@ -11,13 +11,17 @@ const mail3 = document.getElementById('mail-3')
 const gestureZone = document.body;
 
 gestureZone.addEventListener('touchstart', function(event) {
-    touchstartX = event.changedTouches[0].screenX;
-    touchstartY = event.changedTouches[0].screenY;
+    touchstartX = event.screenX;
+    touchstartY = event.screenY;
+    // touchstartX = event.changedTouches[0].screenX;
+    // touchstartY = event.changedTouches[0].screenY;
 }, false);
 
 gestureZone.addEventListener('touchend', function(event) {
-    touchendX = event.changedTouches[0].screenX;
-    touchendY = event.changedTouches[0].screenY;
+    touchendX = event.screenX;
+    touchendY = event.screenY;
+    // touchendX = event.changedTouches[0].screenX;
+    // touchendY = event.changedTouches[0].screenY;
     handleGesture();
 }, false);
 
