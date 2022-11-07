@@ -666,6 +666,10 @@ video {
   width: 1vw;
 }
 
+.w-\[7\.7vw\] {
+  width: 7.7vw;
+}
+
 .self-start {
   align-self: flex-start;
 }
@@ -689,6 +693,38 @@ video {
 
 .pt-\[0\.3vh\] {
   padding-top: 0.3vh;
+}
+
+.pt-\[0\.vh\] {
+  padding-top: 0.vh;
+}
+
+.pt-\[0\.5vh\] {
+  padding-top: 0.5vh;
+}
+
+.pt-\[0\.8vh\] {
+  padding-top: 0.8vh;
+}
+
+.pt-\[0vh\] {
+  padding-top: 0vh;
+}
+
+.pt-\[vh\] {
+  padding-top: vh;
+}
+
+.pt-\[1vh\] {
+  padding-top: 1vh;
+}
+
+.pt-\[1\.vh\] {
+  padding-top: 1.vh;
+}
+
+.pt-\[1\.5vh\] {
+  padding-top: 1.5vh;
 }
 
 .text-\[5vw\] {
