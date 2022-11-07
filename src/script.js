@@ -5,6 +5,12 @@ let touchstartY = 0;
 let touchendX = 0;
 let touchendY = 0;
 
+const mail = document.getElementById('mail')
+const mail2 = document.getElementById('mail-2')
+const mail3 = document.getElementById('mail-3')
+let activeFilter = 'mail'
+
+
 const limit = Math.tan(45 * 1.5 / 180 * Math.PI);
 const gestureZone = document.body
 
@@ -28,20 +34,52 @@ function handleGesture(e) {
     if (Math.abs(x) > treshold || Math.abs(y) > treshold) {
         if (yx <= limit) {
             if (x < 0) {
-                alert("left");
+                console.log("left");
             } else {
-                alert("right");
+                console.log("right");
             }
         }
         if (xy <= limit) {
             if (y < 0) {
-                alert("top");
+                if (activeFilter === "mail") {
+                                mail.classList.toggle('b-hidden')
+                                mail2.classList.toggle('b-hidden')
+                                return activeFilter = 'linkedin'
+                            }
+
+                            if (activeFilter === 'linkedin') {
+                                mail2.classList.toggle('b-hidden')
+                                mail3.classList.toggle('b-hidden')
+                                return activeFilter = 'github'
+                            }
+
+                            if (activeFilter === 'github') {
+                                mail3.classList.toggle('b-hidden')
+                                mail.classList.toggle('b-hidden')
+                                return activeFilter = 'mail'
+                            }
             } else {
-                alert("bottom");
+                        if (activeFilter === "mail") {
+                            mail.classList.toggle('b-hidden')
+                            mail3.classList.toggle('b-hidden')
+                            return activeFilter = 'github'
+                        }
+
+                        if (activeFilter === 'github') {
+                            mail3.classList.toggle('b-hidden')
+                            mail2.classList.toggle('b-hidden')
+                            return activeFilter = 'linkedin'
+                        }
+
+                        if (activeFilter === 'linkedin') {
+                            mail2.classList.toggle('b-hidden')
+                            mail.classList.toggle('b-hidden')
+                            return activeFilter = 'mail'
+                        }
             }
         }
     } else {
-        alert("tap");
+        console.log("tap");
     }
 }
 
