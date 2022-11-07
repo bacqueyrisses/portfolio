@@ -61,24 +61,24 @@ function handleGesture() {
             return activeFilter = 'one'
         }
     }
-    //
-    // if (touchendY < touchstartY) {
-    //     console.log('Swiped up');
-    //     alert('hey')
-    //
-    // }
-    //
-    // if (touchendY > touchstartY) {
-    //     console.log('Swiped down');
-    //     alert('hey')
-    //
-    // }
-    //
-    // if (touchendY === touchstartY) {
-    //     console.log('Tap');
-    //     alert('hey')
-    //
-    // }
+
+    if (touchendY < touchstartY) {
+        console.log('Swiped up');
+        alert('up')
+
+    }
+
+    if (touchendY > touchstartY) {
+        console.log('Swiped down');
+        alert('down')
+
+    }
+
+    if (touchendY === touchstartY) {
+        console.log('Tap');
+        alert('tap')
+
+    }
 }
 
 
