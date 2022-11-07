@@ -43,43 +43,72 @@ function handleGesture() {
     }
 
     if (touchendX > touchstartX) {
-        // if (activeFilter === "one") {
-        //     mail.classList.toggle('b-hidden')
-        //     mail2.classList.toggle('b-hidden')
-        //     return activeFilter = 'two'
-        // }
-        //
-        // if (activeFilter === 'two') {
-        //     mail2.classList.toggle('b-hidden')
-        //     mail3.classList.toggle('b-hidden')
-        //     return activeFilter = 'three'
-        // }
-        //
-        // if (activeFilter === 'three') {
-        //     mail3.classList.toggle('b-hidden')
-        //     mail.classList.toggle('b-hidden')
-        //     return activeFilter = 'one'
-        // }
-        alert('?')
+        if (activeFilter === "one") {
+            mail.classList.toggle('b-hidden')
+            mail2.classList.toggle('b-hidden')
+            return activeFilter = 'two'
+        }
+
+        if (activeFilter === 'two') {
+            mail2.classList.toggle('b-hidden')
+            mail3.classList.toggle('b-hidden')
+            return activeFilter = 'three'
+        }
+
+        if (activeFilter === 'three') {
+            mail3.classList.toggle('b-hidden')
+            mail.classList.toggle('b-hidden')
+            return activeFilter = 'one'
+        }
     }
 
     if (touchendY < touchstartY) {
-        console.log('Swiped up');
-        alert('up')
+        if (activeFilter === "one") {
+            mail.classList.toggle('b-hidden')
+            mail2.classList.toggle('b-hidden')
+            return activeFilter = 'two'
+        }
+
+        if (activeFilter === 'two') {
+            mail2.classList.toggle('b-hidden')
+            mail3.classList.toggle('b-hidden')
+            return activeFilter = 'three'
+        }
+
+        if (activeFilter === 'three') {
+            mail3.classList.toggle('b-hidden')
+            mail.classList.toggle('b-hidden')
+            return activeFilter = 'one'
+        }
 
     }
 
     if (touchendY > touchstartY) {
-        console.log('Swiped down');
-        alert('down')
+        if (activeFilter === "one") {
+            mail.classList.toggle('b-hidden')
+            mail2.classList.toggle('b-hidden')
+            return activeFilter = 'two'
+        }
+
+        if (activeFilter === 'two') {
+            mail2.classList.toggle('b-hidden')
+            mail3.classList.toggle('b-hidden')
+            return activeFilter = 'three'
+        }
+
+        if (activeFilter === 'three') {
+            mail3.classList.toggle('b-hidden')
+            mail.classList.toggle('b-hidden')
+            return activeFilter = 'one'
+        }
 
     }
 
-    if (touchendY === touchstartY) {
-        console.log('Tap');
-        alert('tap')
-
-    }
+    // if (touchendY === touchstartY) {
+    //     console.log('Tap');
+    //     alert('tap')
+    //
+    // }
 }
 
 
