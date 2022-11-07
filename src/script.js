@@ -8,7 +8,7 @@ const mail = document.getElementById('mail')
 const mail2 = document.getElementById('mail-2')
 const mail3 = document.getElementById('mail-3')
 
-const gestureZone = document.getElementById('test');
+const gestureZone = document.body;
 
 gestureZone.addEventListener('touchstart', function(event) {
     touchstartX = event.changedTouches[0].screenX;
