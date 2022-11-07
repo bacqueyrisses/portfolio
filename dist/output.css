@@ -558,6 +558,26 @@ video {
   display: none;
 }
 
+.h-\[5vh\] {
+  height: 5vh;
+}
+
+.h-\[vh\] {
+  height: vh;
+}
+
+.h-\[1vh\] {
+  height: 1vh;
+}
+
+.h-\[10vh\] {
+  height: 10vh;
+}
+
+.h-\[7vh\] {
+  height: 7vh;
+}
+
 .w-\[10vw\] {
   width: 10vw;
 }
