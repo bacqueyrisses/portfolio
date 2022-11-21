@@ -52,7 +52,7 @@ body {
 }
 
 body {
-    @apply bg-[#fbead1] m-0 flex flex-col items-center justify-between h-[85vh] sm:h-screen w-full relative overflow-hidden;
+    @apply bg-[#fbead1] m-0 flex flex-col items-center justify-between h-screen sm:h-screen w-full relative overflow-hidden;
 }
 
 .container {

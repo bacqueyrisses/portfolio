@@ -599,6 +599,10 @@ video {
   padding-top: 0.3vh;
 }
 
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
 .text-\[5vw\] {
   font-size: 5vw;
 }
@@ -687,7 +691,7 @@ body {
   position: relative;
   margin: 0px;
   display: flex;
-  height: 85vh;
+  height: 100vh;
   width: 100%;
   flex-direction: column;
   align-items: center;
