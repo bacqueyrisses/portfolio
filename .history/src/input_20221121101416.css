@@ -5,38 +5,39 @@
 /* Fonts */
 @font-face {
     font-family: "Gooper";
-    src: url("./../ressources/fonts/Gooper-Regular.woff") format("woff"),
-        url("./../ressources/fonts/Gooper-Regular.woff2") format("woff2");
+    src:  url("./../ressources/fonts/Gooper-Regular.woff") format('woff'),
+    url("./../ressources/fonts/Gooper-Regular.woff2") format('woff2');
 }
 
 @font-face {
     font-family: "Gooper-Bold-Italic";
-    src: url("./../ressources/fonts/Gooper-SemiBoldItalic.woff") format("woff"),
-        url("./../ressources/fonts/Gooper-SemiBold.woff2") format("woff2");
+    src:  url("./../ressources/fonts/Gooper-SemiBoldItalic.woff") format('woff'),
+    url("./../ressources/fonts/Gooper-SemiBold.woff2") format('woff2');
 }
 
 @font-face {
     font-family: "Gooper-Bold";
-    src: url("./../ressources/fonts/Gooper-SemiBold.woff") format("woff"),
-        url("./../ressources/fonts/Gooper-SemiBold.woff2") format("woff2");
+    src:  url("./../ressources/fonts/Gooper-SemiBold.woff") format('woff'),
+    url("./../ressources/fonts/Gooper-SemiBold.woff2") format('woff2');
 }
 
 @font-face {
     font-family: "Space";
-    src: url("./../ressources/fonts/space.woff2") format("woff2");
+    src:  url("./../ressources/fonts/space.woff2") format('woff2')
 }
+
 
 body {
-    font-family: "Gooper", sans-serif;
+    font-family: "Gooper", sans-serif
 }
 
-.presentation__content--accent,
-.logo-container {
+.presentation__content--accent, .logo-container {
     font-family: "Gooper-Bold-Italic", sans-serif;
 }
 
 .mail-title {
     font-family: "Space", sans-serif;
+
 }
 
 .mail-content {
@@ -45,70 +46,68 @@ body {
 
 /* Body & Container */
 
-html,
-body {
+html, body {
     @apply overflow-hidden
-    sm:overflow-auto;
+    sm:overflow-auto
 }
 
 body {
-    @apply bg-[#fbead1] m-0 flex flex-col items-center justify-between h-[85vh] sm:h-screen w-full relative overflow-hidden;
+    @apply bg-[#fbead1] m-0 flex flex-col items-center justify-between h-[85vh] sm:h-screen w-full relative overflow-hidden
 }
 
 .container {
     @apply m-0
     /*px-10*/
 
-    sm:px-[2vw];
+    sm:px-[2vw]
 }
 
 /* Header */
 .header {
     @apply w-full self-start px-4
-    sm:px-[7vw];
+    sm:px-[7vw]
 }
-.header,
-.logo-container,
-.nav__list {
+.header, .logo-container, .nav__list {
     @apply flex items-center pt-3  justify-between
     /*mb-3*/
-    sm:mb-8;
+    sm:mb-8
 }
 
 .header {
     @apply pt-0
-    sm:pt-3;
+    sm:pt-3
 }
 
 .nav__list {
     @apply invisible gap-[7vw]
-    sm:visible;
+    sm:visible
 }
 
-.nav__list > li {
-    @apply hover:shadow-xl;
+.nav__list > a {
+
 }
 .presentation__content__icon {
-    @apply w-[0.7em] inline-block align-baseline hover:animate-spin;
+    @apply w-[0.7em] inline-block align-baseline hover:animate-spin
 }
 
 .presentation__content__icon--hidden {
     @apply hidden
-    sm:inline-block;
+    sm:inline-block
 }
 
 .presentation__content__icon--star {
     color: #4697f6;
-    @apply w-5 hover:animate-ping;
+    @apply w-5 hover:animate-ping
 }
 
 .presentation__content__icon--spike {
     color: #1bd175;
-    @apply w-5 hover:animate-ping;
+    @apply w-5 hover:animate-ping
 }
 
 .presentation__content {
-    @apply w-full
+    @apply
+        w-full
     /*text-[6.2vw] */
         text-[11.6vw]
     flex flex-col
@@ -118,20 +117,20 @@ body {
     sm:whitespace-nowrap
     sm:leading-[7vw] sm:text-[5.6vw]
     md:leading-[7vw]
-    lg:leading-[7.5vw];
+    lg:leading-[7.5vw]
 }
 
 .logo-img {
-    @apply w-7;
+    @apply w-7
 }
 
 .logo-content {
     @apply ml-2 text-2xl
-    sm:text-3xl;
+    sm:text-3xl
 }
 
 .next-img {
-    @apply w-[25vh] absolute left-52 pt-20 opacity-10 hover:opacity-100 cursor-pointer;
+    @apply w-[25vh] absolute left-52 pt-20 opacity-10 hover:opacity-100 cursor-pointer
 }
 
 @keyframes fadeIn {
@@ -141,7 +140,7 @@ body {
 }
 
 .b-hidden {
-    @apply hidden;
+    @apply hidden
 }
 
 @keyframes slidein {
@@ -157,6 +156,8 @@ body {
         opacity: 1;
     }
 }
+
+
 
 /*.fade {*/
 /*    animation: slide-up .6s cubic-bezier(0.4, 0, 0.2, 1) 500ms backwards;*/
@@ -178,3 +179,7 @@ body {
 /*.fade:nth-child(4) {*/
 /*    animation-delay: 3.5s;*/
 /*}*/
+
+
+
+

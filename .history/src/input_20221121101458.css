@@ -76,7 +76,7 @@ body {
 }
 
 .header {
-    @apply pt-0
+@apply pt-0
     sm:pt-3;
 }
 
