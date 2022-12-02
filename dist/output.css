@@ -774,10 +774,10 @@ body {
 
 .nav__list > li {
   border-radius: 0.5rem;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .nav__list > li:hover {
