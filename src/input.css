@@ -86,8 +86,10 @@ body {
 }
 
 .nav__list > li {
-    @apply hover:shadow-xl;
+    @apply  px-[10px] py-[15px] rounded-lg
+    hover:bg-[#F4D6AE]
 }
+
 .presentation__content__icon {
     @apply w-[0.7em] inline-block align-baseline hover:animate-spin;
 }
