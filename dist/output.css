@@ -772,7 +772,7 @@ body {
   }
 }
 
-.nav__list > li {
+.nav__list > li > a {
   border-radius: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -780,7 +780,7 @@ body {
   padding-bottom: 0.75rem;
 }
 
-.nav__list > li:hover {
+.nav__list > li > a:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(244 214 174 / var(--tw-bg-opacity));
 }

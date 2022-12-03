@@ -85,7 +85,7 @@ body {
     sm:visible;
 }
 
-.nav__list > li {
+.nav__list > li > a {
     @apply  px-4 py-3 rounded-lg
     hover:bg-[#F4D6AE]
 }
