@@ -7,23 +7,27 @@
     font-family: "Gooper";
     src: url("./../ressources/fonts/Gooper-Regular.woff") format("woff"),
         url("./../ressources/fonts/Gooper-Regular.woff2") format("woff2");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Gooper-Bold-Italic";
     src: url("./../ressources/fonts/Gooper-SemiBoldItalic.woff") format("woff"),
         url("./../ressources/fonts/Gooper-SemiBold.woff2") format("woff2");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Gooper-Bold";
     src: url("./../ressources/fonts/Gooper-SemiBold.woff") format("woff"),
         url("./../ressources/fonts/Gooper-SemiBold.woff2") format("woff2");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Space";
     src: url("./../ressources/fonts/space.woff2") format("woff2");
+    font-display: swap;
 }
 
 body {
@@ -47,8 +51,7 @@ body {
 
 html,
 body {
-    @apply overflow-hidden
-    sm:overflow-auto;
+    @apply overflow-hidden sm:overflow-auto;
 }
 
 body {
@@ -76,8 +79,7 @@ body {
 }
 
 .header {
-    @apply pt-0
-    sm:pt-3;
+    @apply pt-0 sm:pt-3;
 }
 
 .nav__list {
@@ -95,8 +97,7 @@ body {
 }
 
 .presentation__content__icon--hidden {
-    @apply hidden
-    sm:inline-block;
+    @apply hidden sm:inline-block;
 }
 
 .presentation__content__icon--star {
@@ -128,8 +129,7 @@ body {
 }
 
 .logo-content {
-    @apply ml-2 text-2xl
-    sm:text-3xl;
+    @apply ml-2 text-2xl sm:text-3xl;
 }
 
 .next-img {
