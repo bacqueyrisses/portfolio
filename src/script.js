@@ -1,29 +1,46 @@
+// const head = document.getElementsByTagName("head")[0];
+// const meta = document.createElement("meta");
+// meta.name = "theme-color";
+
+// window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (event) => {
+//     const newColorScheme = event.matches ? (meta.content = "#282c34") : (meta.content = "#fbead1");
+// });
+
+// head.appendChild(meta);
+
 let pageWidth = window.innerWidth || document.body.clientWidth;
-let treshold = Math.max(1,Math.floor(0.01 * (pageWidth)));
+let treshold = Math.max(1, Math.floor(0.01 * pageWidth));
 let touchstartX = 0;
 let touchstartY = 0;
 let touchendX = 0;
 let touchendY = 0;
 
-const mail = document.getElementById('mail')
-const mail2 = document.getElementById('mail-2')
-const mail3 = document.getElementById('mail-3')
-let activeFilter = 'mail'
+const mail = document.getElementById("mail");
+const mail2 = document.getElementById("mail-2");
+const mail3 = document.getElementById("mail-3");
+let activeFilter = "mail";
 
+const limit = Math.tan(((45 * 1.5) / 180) * Math.PI);
+const gestureZone = document.body;
 
-const limit = Math.tan(45 * 1.5 / 180 * Math.PI);
-const gestureZone = document.body
+gestureZone.addEventListener(
+    "touchstart",
+    function (event) {
+        touchstartX = event.changedTouches[0].screenX;
+        touchstartY = event.changedTouches[0].screenY;
+    },
+    false
+);
 
-gestureZone.addEventListener('touchstart', function(event) {
-    touchstartX = event.changedTouches[0].screenX;
-    touchstartY = event.changedTouches[0].screenY;
-}, false);
-
-gestureZone.addEventListener('touchend', function(event) {
-    touchendX = event.changedTouches[0].screenX;
-    touchendY = event.changedTouches[0].screenY;
-    handleGesture(event);
-}, false);
+gestureZone.addEventListener(
+    "touchend",
+    function (event) {
+        touchendX = event.changedTouches[0].screenX;
+        touchendY = event.changedTouches[0].screenY;
+        handleGesture(event);
+    },
+    false
+);
 
 function handleGesture(e) {
     let x = touchendX - touchstartX;
@@ -42,39 +59,39 @@ function handleGesture(e) {
         if (xy <= limit) {
             if (y < 0) {
                 if (activeFilter === "mail") {
-                    mail.classList.toggle('b-hidden')
-                    mail3.classList.toggle('b-hidden')
-                    return activeFilter = 'github'
+                    mail.classList.toggle("b-hidden");
+                    mail3.classList.toggle("b-hidden");
+                    return (activeFilter = "github");
                 }
 
-                if (activeFilter === 'github') {
-                    mail3.classList.toggle('b-hidden')
-                    mail2.classList.toggle('b-hidden')
-                    return activeFilter = 'linkedin'
+                if (activeFilter === "github") {
+                    mail3.classList.toggle("b-hidden");
+                    mail2.classList.toggle("b-hidden");
+                    return (activeFilter = "linkedin");
                 }
 
-                if (activeFilter === 'linkedin') {
-                    mail2.classList.toggle('b-hidden')
-                    mail.classList.toggle('b-hidden')
-                    return activeFilter = 'mail'
+                if (activeFilter === "linkedin") {
+                    mail2.classList.toggle("b-hidden");
+                    mail.classList.toggle("b-hidden");
+                    return (activeFilter = "mail");
                 }
             } else {
                 if (activeFilter === "mail") {
-                    mail.classList.toggle('b-hidden')
-                    mail2.classList.toggle('b-hidden')
-                    return activeFilter = 'linkedin'
+                    mail.classList.toggle("b-hidden");
+                    mail2.classList.toggle("b-hidden");
+                    return (activeFilter = "linkedin");
                 }
 
-                if (activeFilter === 'linkedin') {
-                    mail2.classList.toggle('b-hidden')
-                    mail3.classList.toggle('b-hidden')
-                    return activeFilter = 'github'
+                if (activeFilter === "linkedin") {
+                    mail2.classList.toggle("b-hidden");
+                    mail3.classList.toggle("b-hidden");
+                    return (activeFilter = "github");
                 }
 
-                if (activeFilter === 'github') {
-                    mail3.classList.toggle('b-hidden')
-                    mail.classList.toggle('b-hidden')
-                    return activeFilter = 'mail'
+                if (activeFilter === "github") {
+                    mail3.classList.toggle("b-hidden");
+                    mail.classList.toggle("b-hidden");
+                    return (activeFilter = "mail");
                 }
             }
         }
@@ -82,7 +99,6 @@ function handleGesture(e) {
         console.log("tap");
     }
 }
-
 
 // let touchstartX = 0;
 // let touchstartY = 0;
@@ -147,58 +163,55 @@ function handleGesture(e) {
 //             return activeFilter = 'mail'
 //         }
 //     }
-    //
-    // if (touchendY < touchstartY) {
-    //     if (activeFilter === "one") {
-    //         mail.classList.toggle('b-hidden')
-    //         mail2.classList.toggle('b-hidden')
-    //         return activeFilter = 'two'
-    //     }
-    //
-    //     if (activeFilter === 'two') {
-    //         mail2.classList.toggle('b-hidden')
-    //         mail3.classList.toggle('b-hidden')
-    //         return activeFilter = 'three'
-    //     }
-    //
-    //     if (activeFilter === 'three') {
-    //         mail3.classList.toggle('b-hidden')
-    //         mail.classList.toggle('b-hidden')
-    //         return activeFilter = 'one'
-    //     }
-    //
-    // }
-    //
-    // if (touchendY > touchstartY) {
-    //     if (activeFilter === "one") {
-    //         mail.classList.toggle('b-hidden')
-    //         mail2.classList.toggle('b-hidden')
-    //         return activeFilter = 'two'
-    //     }
-    //
-    //     if (activeFilter === 'two') {
-    //         mail2.classList.toggle('b-hidden')
-    //         mail3.classList.toggle('b-hidden')
-    //         return activeFilter = 'three'
-    //     }
-    //
-    //     if (activeFilter === 'three') {
-    //         mail3.classList.toggle('b-hidden')
-    //         mail.classList.toggle('b-hidden')
-    //         return activeFilter = 'one'
-    //     }
-    //
-    // }
-
-    // if (touchendY === touchstartY) {
-    //     console.log('Tap');
-    //     alert('tap')
-    //
-    // }
+//
+// if (touchendY < touchstartY) {
+//     if (activeFilter === "one") {
+//         mail.classList.toggle('b-hidden')
+//         mail2.classList.toggle('b-hidden')
+//         return activeFilter = 'two'
+//     }
+//
+//     if (activeFilter === 'two') {
+//         mail2.classList.toggle('b-hidden')
+//         mail3.classList.toggle('b-hidden')
+//         return activeFilter = 'three'
+//     }
+//
+//     if (activeFilter === 'three') {
+//         mail3.classList.toggle('b-hidden')
+//         mail.classList.toggle('b-hidden')
+//         return activeFilter = 'one'
+//     }
+//
+// }
+//
+// if (touchendY > touchstartY) {
+//     if (activeFilter === "one") {
+//         mail.classList.toggle('b-hidden')
+//         mail2.classList.toggle('b-hidden')
+//         return activeFilter = 'two'
+//     }
+//
+//     if (activeFilter === 'two') {
+//         mail2.classList.toggle('b-hidden')
+//         mail3.classList.toggle('b-hidden')
+//         return activeFilter = 'three'
+//     }
+//
+//     if (activeFilter === 'three') {
+//         mail3.classList.toggle('b-hidden')
+//         mail.classList.toggle('b-hidden')
+//         return activeFilter = 'one'
+//     }
+//
 // }
 
-
-
+// if (touchendY === touchstartY) {
+//     console.log('Tap');
+//     alert('tap')
+//
+// }
+// }
 
 // if (typeof window !== 'undefined') {
 //     // Prerequisites

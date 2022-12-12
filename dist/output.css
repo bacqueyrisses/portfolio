@@ -707,6 +707,17 @@ body {
   overflow: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(251 234 209 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --tw-bg-opacity: 1;
+    background-color: rgb(40 44 52 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
 }
 
 @media (min-width: 640px) {
@@ -791,6 +802,13 @@ body {
 .nav__list > li > a:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(244 214 174 / var(--tw-bg-opacity));
+}
+
+@media (prefers-color-scheme: dark) {
+  .nav__list > li > a:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(26 28 32 / var(--tw-bg-opacity));
+  }
 }
 
 .presentation__content__icon {
@@ -972,18 +990,6 @@ body {
 
 .hover\:decoration-2:hover {
   text-decoration-thickness: 2px;
-}
-
-@media (prefers-color-scheme: dark) {
-  .dark\:bg-\[\#0d1116\] {
-    --tw-bg-opacity: 1;
-    background-color: rgb(13 17 22 / var(--tw-bg-opacity));
-  }
-
-  .dark\:text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
 }
 
 @media (min-width: 640px) {

@@ -55,7 +55,7 @@ body {
 }
 
 body {
-    @apply bg-[#fbead1] m-0 flex flex-col items-center justify-between h-[90vh] sm:h-screen w-full relative overflow-hidden;
+    @apply bg-[#fbead1] dark:bg-[#282c34] text-black dark:text-[#ffffff] m-0 flex flex-col items-center justify-between h-[90vh] sm:h-screen w-full relative overflow-hidden;
 }
 
 .container {
@@ -90,6 +90,7 @@ body {
 .nav__list > li > a {
     @apply  px-4 py-3 rounded-lg
     hover:bg-[#F4D6AE]
+    dark:hover:bg-[#1a1c20]
 }
 
 .presentation__content__icon {
