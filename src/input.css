@@ -63,8 +63,7 @@ body {
 
 /* Header */
 .header {
-    @apply w-full self-start px-5
-    sm:px-[7vw];
+    @apply self-start w-full px-5 sm:pl-[3vw] sm:pr-[2.6vw];
 }
 .header,
 .logo-container,

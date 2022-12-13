@@ -1738,43 +1738,6 @@ html {
   }
 }
 
-.alert {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--b2, var(--b1)) / var(--tw-bg-opacity));
-  padding: 1rem;
-  border-radius: var(--rounded-box, 1rem);
-}
-
-.alert > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-}
-
-@media (min-width: 768px) {
-  .alert {
-    flex-direction: row;
-  }
-
-  .alert > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-}
-
-.alert > :where(*) {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -2171,10 +2134,6 @@ html {
   margin-right: 0.75rem;
 }
 
-.inline {
-  display: inline;
-}
-
 .flex {
   display: flex;
 }
@@ -2203,6 +2162,10 @@ html {
   width: 7.7vw;
 }
 
+.max-w-\[90vw\] {
+  max-width: 90vw;
+}
+
 .self-start {
   align-self: flex-start;
 }
@@ -2220,12 +2183,12 @@ html {
   padding-left: 0.5rem;
 }
 
-.pl-5 {
-  padding-left: 1.25rem;
+.pl-\[1vw\] {
+  padding-left: 1vw;
 }
 
-.pr-3 {
-  padding-right: 0.75rem;
+.pr-\[0\.6vw\] {
+  padding-right: 0.6vw;
 }
 
 .pb-5 {
@@ -2252,10 +2215,6 @@ html {
   font-size: 5vw;
 }
 
-.italic {
-  font-style: italic;
-}
-
 .underline {
   text-decoration-line: underline;
 }
@@ -2266,10 +2225,6 @@ html {
 
 .decoration-1 {
   text-decoration-thickness: 1px;
-}
-
-.filter {
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 /* Fonts */
@@ -2383,8 +2338,8 @@ body {
 
 @media (min-width: 640px) {
   .header {
-    padding-left: 7vw;
-    padding-right: 7vw;
+    padding-left: 3vw;
+    padding-right: 2.6vw;
   }
 }
 
