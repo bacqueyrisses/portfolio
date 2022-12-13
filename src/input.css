@@ -63,7 +63,7 @@ body {
 
 /* Header */
 .header {
-    @apply w-full self-start px-4
+    @apply w-full self-start px-5
     sm:px-[7vw];
 }
 .header,

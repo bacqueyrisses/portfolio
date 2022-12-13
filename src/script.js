@@ -8,12 +8,9 @@ if (
     document.documentElement.classList.remove("dark");
 }
 
-var themeToggleDarkIcon = document.getElementById("theme-toggle-dark-icon");
-var themeToggleLightIcon = document.getElementById("theme-toggle-light-icon");
-
 // Change the icons inside the button based on previous settings
 
-var themeToggleBtn = document.getElementById("theme-toggle");
+const themeToggleBtn = document.getElementById("theme-toggle");
 
 themeToggleBtn.addEventListener("click", function () {
     // if set via local storage previously
