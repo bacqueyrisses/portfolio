@@ -7,27 +7,23 @@
     font-family: "Gooper";
     src: url("./../ressources/fonts/Gooper-Regular.woff") format("woff"),
         url("./../ressources/fonts/Gooper-Regular.woff2") format("woff2");
-    font-display: swap;
 }
 
 @font-face {
     font-family: "Gooper-Bold-Italic";
     src: url("./../ressources/fonts/Gooper-SemiBoldItalic.woff") format("woff"),
         url("./../ressources/fonts/Gooper-SemiBold.woff2") format("woff2");
-    font-display: swap;
 }
 
 @font-face {
     font-family: "Gooper-Bold";
     src: url("./../ressources/fonts/Gooper-SemiBold.woff") format("woff"),
         url("./../ressources/fonts/Gooper-SemiBold.woff2") format("woff2");
-    font-display: swap;
 }
 
 @font-face {
     font-family: "Space";
     src: url("./../ressources/fonts/space.woff2") format("woff2");
-    font-display: swap;
 }
 
 body {
