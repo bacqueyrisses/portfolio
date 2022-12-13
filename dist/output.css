@@ -2620,6 +2620,14 @@ body {
   text-decoration-thickness: 2px;
 }
 
+.dark .dark\:inline-block {
+  display: inline-block;
+}
+
+.dark .dark\:hidden {
+  display: none;
+}
+
 @media (min-width: 640px) {
   .sm\:invisible {
     visibility: hidden;
