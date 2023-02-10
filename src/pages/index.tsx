@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Image from "next/image";
 
 import localFont from "@next/font/local";
+import Link from "next/link";
 const gooperFont = localFont({ src: "./../../public/fonts/gooper.ttf" });
 const gooperLightFont = localFont({
   src: "./../../public/fonts/gooperlight.ttf",
@@ -35,8 +36,7 @@ export default function Home() {
             <span className={gooperFont.className}>Web Developer</span>
             <br /> living in{" "}
             <span className={gooperFont.className}>Bordeaux</span> with skills
-            in <br />✦ <span className={gooperFont.className}>JavaScript</span>{" "}
-            ✦
+            in ✦ <span className={gooperFont.className}>JavaScript</span> ✦
           </div>
           <div className={"hidden text-6xl font-medium sm:block"}>
             Hi, I’m Enzo! <br />A{" "}
@@ -116,13 +116,29 @@ export default function Home() {
 
         <section className={"mt-10"}>
           <div className={"mt-5 flex max-w-[70%] flex-wrap gap-3 text-sm"}>
-            <div
-              className={
-                "w-28 items-center rounded-xl border bg-black px-4 py-1.5 text-center text-[0.92rem] font-medium text-[#e1e6de] sm:text-lg"
-              }
+            <Link
+              href={"/"}
+              className="group inline-flex items-center rounded-xl bg-black py-1.5 px-4 font-medium text-[#e1e6de] transition md:text-lg"
             >
               Projects
-            </div>
+              <svg
+                className="mt-0.5 ml-2 -mr-1 stroke-[#e1e6de] stroke-2"
+                fill="none"
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                aria-hidden="true"
+              >
+                <path
+                  className="origin-center rotate-90 opacity-0 transition group-hover:opacity-100"
+                  d="M0 5h7"
+                ></path>
+                <path
+                  className="origin-center rotate-90 transition group-hover:translate-y-[3px]"
+                  d="M1 1l4 4-4 4"
+                ></path>
+              </svg>
+            </Link>
           </div>
           <div className={"mt-5 text-xl font-semibold"}>
             <span className={gooperFont.className}>Click</span> to get more more
