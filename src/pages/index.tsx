@@ -108,7 +108,7 @@ export default function Home() {
           <div className={"mt-5 flex max-w-[70%] flex-wrap gap-3 text-sm"}>
             <div
               className={
-                "w-28 rounded-xl border bg-black px-4 py-1 text-center text-[#e1e6de]"
+                "w-28 rounded-xl border bg-black px-4 py-1 text-center text-[0.92rem] text-[#e1e6de] "
               }
             >
               Projects
