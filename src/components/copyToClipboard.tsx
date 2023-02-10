@@ -11,7 +11,7 @@ export default function CopyToClipboard({
     setIsCopied(true);
     setTimeout(() => {
       setIsCopied(false);
-    }, 1500);
+    }, 1700);
     navigator.clipboard.writeText(contentToCopy);
   };
 
