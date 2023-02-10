@@ -25,8 +25,8 @@ export default function Home() {
 
       <Header />
       <main className={""}>
-        <section className={"mt-16 text-[1.31rem] sm:text-4xl"}>
-          <div className={"max-w-[86%] font-semibold sm:max-w-[84%]"}>
+        <section className={"mt-16 text-2xl sm:text-4xl"}>
+          <div className={"font-medium"}>
             Hi, I’m Enzo! <br />A{" "}
             <span className={gooperFont.className}>Web Developer</span>
             <br /> living in{" "}
@@ -38,7 +38,7 @@ export default function Home() {
             ✦
           </div>
 
-          <div className={"mt-5 max-w-[84%] text-sm"}>
+          <div className={"mt-5 text-sm"}>
             My goal is to create{" "}
             <span className={"link-underline-black link-underline italic"}>
               optimized
@@ -98,13 +98,6 @@ export default function Home() {
               Tailwind CSS
             </a>
           </div>
-          <Image
-            className={"absolute top-8 -right-[9.3rem] sm:-right-[7.9rem]"}
-            src={"/images/logo.png"}
-            alt={"logo enzo bacqueyrisses"}
-            width={"330"}
-            height={"320"}
-          />
         </section>
 
         <hr className={"mt-10 border-black"} />
@@ -128,9 +121,9 @@ export default function Home() {
             <span className={"italic"}>code architecture</span> possible.
           </div>
           <div className={"mt-10 flex gap-5"}>
-            <div className={"basis-1/3 text-center text-4xl"}>🌶️</div>
-            <div className={"basis-1/3 text-center text-4xl"}>🌿</div>
-            <div className={"basis-1/3 text-center text-4xl"}>📔</div>
+            <div className={"basis-1/3 text-center text-4xl"}></div>
+            <div className={"basis-1/3 text-center text-4xl"}></div>
+            <div className={"basis-1/3 text-center text-4xl"}></div>
           </div>
         </section>
       </main>
