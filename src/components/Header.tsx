@@ -14,7 +14,9 @@ export default function Header() {
             <a
               href={"https://github.com/bacqueyrisses"}
               target={"_blank"}
-              className={"link-underline-black link-underline"}
+              className={
+                "link-underline-black link-underline py-1.5 px-4 hover:rounded-xl hover:bg-black hover:text-[#e1e6de]"
+              }
             >
               Github
             </a>
@@ -24,7 +26,9 @@ export default function Header() {
               href={"https://www.linkedin.com/in/bacqueyrisses/"}
               rel="noreferrer"
               target={"_blank"}
-              className={"link-underline-black link-underline"}
+              className={
+                "link-underline-black link-underline py-1.5 px-4 hover:rounded-xl hover:bg-black hover:text-[#e1e6de]"
+              }
             >
               Linkedin
             </a>
