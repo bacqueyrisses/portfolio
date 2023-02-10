@@ -23,7 +23,7 @@ export default function Home() {
       </Head>
       <Header />
       <main className={""}>
-        <section className={"mt-16 text-xl sm:text-4xl"}>
+        <section className={"mt-16 text-[1.31rem] sm:text-4xl"}>
           <div className={"max-w-[86%] font-medium sm:max-w-[84%]"}>
             Hi, I’m Enzo! <br />A{" "}
             <span className={gooperFont.className}>Web Developer</span>
@@ -126,34 +126,10 @@ export default function Home() {
             I make apps for fun, always working on the best{" "}
             <span className={"italic"}>code architecture</span> possible.
           </div>
-          <div className={"mt-5 flex gap-5"}>
-            <a
-              href={"https://www.google.fr"}
-              className={
-                "flex h-[150px] basis-1/3 flex-col items-center justify-center border border-black text-2xl hover:rounded-xl hover:bg-black hover:text-[#e1e6de]"
-              }
-            >
-              <span>Garaikunde</span>
-              <span>🌶️</span>
-            </a>
-            <a
-              href={"https://www.google.fr"}
-              className={
-                "flex h-[150px] basis-1/3 flex-col items-center justify-center border border-black text-2xl hover:rounded-xl hover:bg-black hover:text-[#e1e6de]"
-              }
-            >
-              <span>Herbal</span>
-              <span>🌿</span>
-            </a>
-            <a
-              href={"https://www.google.fr"}
-              className={
-                "flex h-[150px] basis-1/3 flex-col items-center justify-center border border-black text-2xl hover:rounded-xl hover:bg-black hover:text-[#e1e6de]"
-              }
-            >
-              <span>Wordy</span>
-              <span>📔</span>
-            </a>
+          <div className={"mt-10 flex gap-5"}>
+            <div className={"basis-1/3 text-center text-4xl"}>🌶️</div>
+            <div className={"basis-1/3 text-center text-4xl"}>🌿</div>
+            <div className={"basis-1/3 text-center text-4xl"}>📔</div>
           </div>
         </section>
       </main>
