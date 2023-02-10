@@ -10,7 +10,7 @@ export default function Header() {
         <ul className={"flex gap-5"}>
           <li>
             <a
-              href={"https://www.github.com"}
+              href={"https://github.com/bacqueyrisses"}
               target={"_blank"}
               className={"link-underline-black link-underline"}
             >
@@ -19,7 +19,7 @@ export default function Header() {
           </li>
           <li>
             <a
-              href={"https://www.github.com"}
+              href={"https://www.linkedin.com/in/bacqueyrisses/"}
               rel="noreferrer"
               target={"_blank"}
               className={"link-underline-black link-underline"}
@@ -29,9 +29,12 @@ export default function Header() {
           </li>
         </ul>
       </div>
-      <div className={"rounded-xl bg-black py-1 px-4 text-[#e1e6de]"}>
+      <a
+        href={"mailto:bacqueyrisses@proton.me"}
+        className={"rounded-xl bg-black py-1 px-4 text-[#e1e6de]"}
+      >
         Contact
-      </div>
+      </a>
     </div>
   );
 }
