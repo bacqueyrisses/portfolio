@@ -29,7 +29,7 @@ export default function Footer() {
 
         <a
           href={"mailto:bacqueyrisses@proton.me"}
-          className="group inline-flex items-center rounded-xl bg-black py-1.5 px-4 font-medium text-[#e1e6de] transition hover:bg-[#232b2b]"
+          className="group inline-flex items-center rounded-xl bg-black py-1.5 px-4 font-medium text-secondary transition hover:bg-[#232b2b]"
         >
           Get in touch
           <svg

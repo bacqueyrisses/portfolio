@@ -15,7 +15,7 @@ export default function Header() {
               href={"https://github.com/bacqueyrisses"}
               target={"_blank"}
               className={
-                "link-underline-black link-underline rounded-xl py-1.5 px-4 transition-colors hover:bg-black hover:text-[#e1e6de]"
+                "link-underline-black link-underline rounded-xl py-1.5 px-4 transition-colors hover:bg-black hover:text-secondary"
               }
             >
               Github
@@ -27,7 +27,7 @@ export default function Header() {
               rel="noreferrer"
               target={"_blank"}
               className={
-                "link-underline-black link-underline rounded-xl py-1.5 px-4 transition-colors hover:bg-black hover:text-[#e1e6de]"
+                "link-underline-black link-underline rounded-xl py-1.5 px-4 transition-colors hover:bg-black hover:text-secondary"
               }
             >
               Linkedin
@@ -38,7 +38,7 @@ export default function Header() {
 
       <Link
         href={"#contact"}
-        className="group inline-flex items-center rounded-xl bg-black py-1.5 px-4 font-medium text-[#e1e6de] transition hover:bg-[#232b2b]"
+        className="group inline-flex items-center rounded-xl bg-black py-1.5 px-4 font-medium text-secondary transition hover:bg-[#232b2b]"
       >
         Contact
       </Link>
@@ -48,7 +48,7 @@ export default function Header() {
 
 export function Switcher() {
   return (
-    <label className="swap-rotate swap self-center">
+    <label className="swap swap-rotate self-center">
       <input type="checkbox" />
 
       <svg
