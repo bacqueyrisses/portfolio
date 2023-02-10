@@ -74,7 +74,7 @@ export default function Home() {
               target={"_blank"}
               rel="noreferrer"
               className={
-                "w-28 rounded-xl border border-black px-4 py-1 text-center hover:bg-black hover:italic hover:text-[#e1e6de] md:w-32"
+                "w-28 rounded-xl border border-black px-4 py-1.5 text-center hover:bg-black hover:italic hover:text-[#e1e6de] md:w-32"
               }
             >
               Express.JS
@@ -84,7 +84,7 @@ export default function Home() {
               target={"_blank"}
               rel="noreferrer"
               className={
-                "w-28 rounded-xl border border-black py-1 px-4 text-center hover:bg-black hover:italic hover:text-[#e1e6de] md:w-32"
+                "w-28 rounded-xl border border-black py-1.5  px-4 text-center hover:bg-black hover:italic hover:text-[#e1e6de] md:w-32"
               }
             >
               Next.JS
@@ -94,7 +94,7 @@ export default function Home() {
               target={"_blank"}
               rel="noreferrer"
               className={
-                "w-28 rounded-xl border border-black px-4 py-1 text-center hover:bg-black hover:italic hover:text-[#e1e6de] md:w-32"
+                "w-28 rounded-xl border border-black px-4 py-1.5 text-center hover:bg-black hover:italic hover:text-[#e1e6de] md:w-32"
               }
             >
               React.JS
@@ -104,7 +104,7 @@ export default function Home() {
               target={"_blank"}
               rel="noreferrer"
               className={
-                "w-28 whitespace-nowrap rounded-xl border border-black px-4 py-1 text-center hover:bg-black hover:italic hover:text-[#e1e6de] md:w-32"
+                "w-28 whitespace-nowrap rounded-xl border border-black px-4 py-1.5 text-center hover:bg-black hover:italic hover:text-[#e1e6de] md:w-32"
               }
             >
               Tailwind CSS
@@ -118,7 +118,7 @@ export default function Home() {
           <div className={"mt-5 flex max-w-[70%] flex-wrap gap-3 text-sm"}>
             <div
               className={
-                "w-28 rounded-xl border bg-black px-4 py-1 text-center text-[0.92rem] font-medium text-[#e1e6de] sm:text-lg"
+                "w-28 items-center rounded-xl border bg-black px-4 py-1.5 text-center text-[0.92rem] font-medium text-[#e1e6de] sm:text-lg"
               }
             >
               Projects

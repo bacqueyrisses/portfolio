@@ -32,7 +32,7 @@ export default function Header() {
 
       <a
         href={"mailto:bacqueyrisses@proton.me"}
-        className="group inline-flex items-center rounded-xl bg-black py-1 px-4 font-medium text-[#e1e6de] transition"
+        className="group inline-flex items-center rounded-xl bg-black py-1.5 px-4 font-medium text-[#e1e6de] transition"
       >
         Contact
         <svg
