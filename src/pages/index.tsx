@@ -60,7 +60,7 @@ export default function Home() {
             }
           >
             <a
-              href={"htpps://www.google.com"}
+              href={"https://expressjs.com/fr/"}
               target={"_blank"}
               rel="noreferrer"
               className={
@@ -70,7 +70,7 @@ export default function Home() {
               Express.JS
             </a>
             <a
-              href={"htpps://www.google.com"}
+              href={"https://nextjs.org"}
               target={"_blank"}
               rel="noreferrer"
               className={
@@ -80,7 +80,7 @@ export default function Home() {
               Next.JS
             </a>
             <a
-              href={"htpps://www.google.com"}
+              href={"https://fr.reactjs.org"}
               target={"_blank"}
               rel="noreferrer"
               className={
@@ -90,7 +90,7 @@ export default function Home() {
               React.JS
             </a>
             <a
-              href={"htpps://www.google.com"}
+              href={"https://tailwindcss.com"}
               target={"_blank"}
               rel="noreferrer"
               className={
