@@ -2,13 +2,10 @@ import Head from "next/head";
 import Header from "@/components/Header";
 import Image from "next/image";
 
-import localFont from "@next/font/local";
 import Link from "next/link";
+import Footer from "@/components/Footer";
+import localFont from "@next/font/local";
 const gooperFont = localFont({ src: "./../../public/fonts/gooper.ttf" });
-const gooperLightFont = localFont({
-  src: "./../../public/fonts/gooperlight.ttf",
-  variable: "--font-poppins",
-});
 
 export default function Home() {
   return (
@@ -31,14 +28,14 @@ export default function Home() {
             "mt-14 text-[1.69rem] leading-[2.1rem] sm:text-4xl md:text-5xl"
           }
         >
-          <div className={"font-medium sm:hidden"}>
+          <div className={"font-medium text-black sm:hidden"}>
             Hi, I’m Enzo! <br />A{" "}
             <span className={gooperFont.className}>Web Developer</span>
             <br /> living in{" "}
             <span className={gooperFont.className}>Bordeaux</span> with skills
             in ✦ <span className={gooperFont.className}>JavaScript</span> ✦
           </div>
-          <div className={"hidden text-6xl font-medium sm:block"}>
+          <div className={"hidden text-6xl font-medium text-black sm:block"}>
             Hi, I’m Enzo! <br />A{" "}
             <span className={gooperFont.className}>Web Developer </span>
             <br />
@@ -118,7 +115,7 @@ export default function Home() {
           <div className={"mt-5 flex max-w-[70%] flex-wrap gap-3 text-sm"}>
             <Link
               href={"/"}
-              className="group inline-flex items-center rounded-xl bg-black py-1.5 px-4 font-medium text-[#e1e6de] transition md:text-base"
+              className="group inline-flex items-center rounded-xl bg-black py-1.5 px-4 font-medium text-[#e1e6de] transition hover:bg-[#232b2b] md:text-base"
             >
               Projects
               <svg
@@ -144,7 +141,7 @@ export default function Home() {
             <span className={gooperFont.className}>Click</span> to get more more
             details
           </div>
-          <div className={"text-sm"}>
+          <div className={"text-sm md:text-lg"}>
             I make apps for fun, always working on the best{" "}
             <span className={"italic"}>code architecture</span> possible.
           </div>
@@ -154,6 +151,10 @@ export default function Home() {
             <div className={"basis-1/3 text-center text-4xl"}></div>
           </div>
         </section>
+
+        <hr className={"mt-10 border-black"} />
+
+        <Footer />
       </main>
     </>
   );
