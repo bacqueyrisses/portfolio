@@ -90,11 +90,11 @@ export default function Home() {
               React.JS
             </a>
             <a
-              href={"https://tailwindcss.com"}
+              href={"https://www.tailwindcss.com"}
               target={"_blank"}
               rel="noreferrer"
               className={
-                "w-28 whitespace-nowrap  rounded-xl border border-black px-4 py-1 text-center hover:bg-black hover:italic hover:text-[#e1e6de]"
+                "w-28 whitespace-nowrap rounded-xl border border-black px-4 py-1 text-center hover:bg-black hover:italic hover:text-[#e1e6de]"
               }
             >
               Tailwind CSS
