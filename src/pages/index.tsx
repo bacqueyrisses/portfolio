@@ -122,7 +122,7 @@ export default function Home() {
             >
               Projects
               <svg
-                className="mt-[0.45rem] ml-2 -mr-1 stroke-[#e1e6de] stroke-2"
+                className="mt-1.5 ml-2 -mr-1 stroke-[#e1e6de] stroke-2 md:mt-[0.45rem]"
                 fill="none"
                 width="10"
                 height="10"
