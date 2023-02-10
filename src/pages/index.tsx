@@ -25,7 +25,7 @@ export default function Home() {
 
       <Header />
       <main className={""}>
-        <section className={"mt-16 text-3xl sm:text-4xl"}>
+        <section className={"mt-16 text-[1.65rem] leading-8 sm:text-4xl"}>
           <div className={"font-medium"}>
             Hi, I’m Enzo! <br />A{" "}
             <span className={gooperFont.className}>Web Developer</span>
