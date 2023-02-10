@@ -23,7 +23,7 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <section className={"mt-16 text-3xl sm:text-4xl"}>
+        <section className={"mt-16 text-xl sm:text-4xl"}>
           <div className={"max-w-[86%] font-medium sm:max-w-[84%]"}>
             Hi, I’m Enzo! <br />A{" "}
             <span className={gooperFont.className}>Web Developer</span>
@@ -36,7 +36,7 @@ export default function Home() {
             ✦
           </div>
 
-          <div className={"mt-5 max-w-[85%] text-sm"}>
+          <div className={"mt-5 max-w-[65%] text-sm sm:max-w-[85%]"}>
             My goal is to create{" "}
             <span className={"link-underline-black link-underline italic"}>
               optimized
@@ -61,7 +61,7 @@ export default function Home() {
               target={"_blank"}
               rel="noreferrer"
               className={
-                "basis-1/3 rounded-xl border border-black py-1 px-2 text-center hover:bg-black hover:italic hover:text-[#e1e6de]"
+                "basis-1/3 rounded-xl border border-black py-1 text-center hover:bg-black hover:italic hover:text-[#e1e6de]"
               }
             >
               Express.JS
@@ -71,7 +71,7 @@ export default function Home() {
               target={"_blank"}
               rel="noreferrer"
               className={
-                "basis-1/3 rounded-xl border border-black py-1 px-2 text-center hover:bg-black hover:italic hover:text-[#e1e6de]"
+                "basis-1/3 rounded-xl border border-black py-1 text-center hover:bg-black hover:italic hover:text-[#e1e6de]"
               }
             >
               Next.JS
@@ -81,7 +81,7 @@ export default function Home() {
               target={"_blank"}
               rel="noreferrer"
               className={
-                "basis-1/3 rounded-xl border border-black py-1 px-2 text-center hover:bg-black hover:italic hover:text-[#e1e6de]"
+                "basis-1/3 rounded-xl border border-black py-1 text-center hover:bg-black hover:italic hover:text-[#e1e6de]"
               }
             >
               React.JS
@@ -91,7 +91,7 @@ export default function Home() {
               target={"_blank"}
               rel="noreferrer"
               className={
-                "basis-1/3 rounded-xl border border-black py-1 px-2 text-center hover:bg-black hover:italic hover:text-[#e1e6de]"
+                "px-22 basis-1/3 rounded-xl border border-black py-1 text-center hover:bg-black hover:italic hover:text-[#e1e6de]"
               }
             >
               Tailwind CSS
