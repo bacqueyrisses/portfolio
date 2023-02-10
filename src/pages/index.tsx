@@ -26,21 +26,31 @@ export default function Home() {
       <Header />
       <main className={""}>
         <section
-          className={"mt-14 text-[1.69rem] leading-[2.1rem] sm:text-4xl"}
+          className={
+            "mt-14 text-[1.69rem] leading-[2.1rem] sm:text-4xl md:text-5xl"
+          }
         >
-          <div className={"font-medium"}>
+          <div className={"font-medium sm:hidden"}>
             Hi, I’m Enzo! <br />A{" "}
             <span className={gooperFont.className}>Web Developer</span>
             <br /> living in{" "}
-            <span className={gooperFont.className}>Bordeaux</span> with
-            <br />
-            skills in ✦ <span className={gooperFont.className}>
-              JavaScript
-            </span>{" "}
+            <span className={gooperFont.className}>Bordeaux</span> with skills
+            in <br />✦ <span className={gooperFont.className}>JavaScript</span>{" "}
             ✦
           </div>
+          <div className={"hidden text-6xl font-medium sm:block"}>
+            Hi, I’m Enzo! <br />A{" "}
+            <span className={gooperFont.className}>Web Developer </span>
+            <br />
+            living in <span className={gooperFont.className}>
+              Bordeaux
+            </span>{" "}
+            <br />
+            with skills in ✦{" "}
+            <span className={gooperFont.className}>JavaScript</span> ✦
+          </div>
 
-          <div className={"mt-5 text-sm"}>
+          <div className={"mt-5 text-sm md:text-lg"}>
             My goal is to create{" "}
             <span className={"link-underline-black link-underline italic"}>
               optimized
@@ -56,7 +66,7 @@ export default function Home() {
           </div>
           <div
             className={
-              "mt-5 flex max-w-[90%] flex-wrap justify-start gap-3 text-sm font-medium"
+              "mt-5 flex max-w-[90%] flex-wrap justify-start gap-3 text-sm font-medium md:text-base"
             }
           >
             <a
@@ -64,7 +74,7 @@ export default function Home() {
               target={"_blank"}
               rel="noreferrer"
               className={
-                "w-28 rounded-xl border border-black px-4 py-1 text-center hover:bg-black hover:italic hover:text-[#e1e6de]"
+                "w-28 rounded-xl border border-black px-4 py-1 text-center hover:bg-black hover:italic hover:text-[#e1e6de] md:w-32"
               }
             >
               Express.JS
@@ -74,7 +84,7 @@ export default function Home() {
               target={"_blank"}
               rel="noreferrer"
               className={
-                "w-28 rounded-xl border border-black py-1 px-4 text-center hover:bg-black hover:italic hover:text-[#e1e6de]"
+                "w-28 rounded-xl border border-black py-1 px-4 text-center hover:bg-black hover:italic hover:text-[#e1e6de] md:w-32"
               }
             >
               Next.JS
@@ -84,7 +94,7 @@ export default function Home() {
               target={"_blank"}
               rel="noreferrer"
               className={
-                "w-28 rounded-xl border border-black px-4 py-1 text-center hover:bg-black hover:italic hover:text-[#e1e6de]"
+                "w-28 rounded-xl border border-black px-4 py-1 text-center hover:bg-black hover:italic hover:text-[#e1e6de] md:w-32"
               }
             >
               React.JS
@@ -94,7 +104,7 @@ export default function Home() {
               target={"_blank"}
               rel="noreferrer"
               className={
-                "w-28 whitespace-nowrap rounded-xl border border-black px-4 py-1 text-center hover:bg-black hover:italic hover:text-[#e1e6de]"
+                "w-28 whitespace-nowrap rounded-xl border border-black px-4 py-1 text-center hover:bg-black hover:italic hover:text-[#e1e6de] md:w-32"
               }
             >
               Tailwind CSS
@@ -108,7 +118,7 @@ export default function Home() {
           <div className={"mt-5 flex max-w-[70%] flex-wrap gap-3 text-sm"}>
             <div
               className={
-                "w-28 rounded-xl border bg-black px-4 py-1 text-center text-[0.92rem] text-[#e1e6de] "
+                "w-28 rounded-xl border bg-black px-4 py-1 text-center text-[0.92rem] font-medium text-[#e1e6de] sm:text-lg"
               }
             >
               Projects

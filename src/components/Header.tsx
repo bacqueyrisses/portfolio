@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <div
       className={
-        "flex items-baseline justify-between text-[0.92rem] font-medium"
+        "flex items-baseline justify-between text-[0.92rem] font-medium sm:text-lg"
       }
     >
       <div className={"flex items-baseline gap-5"}>
@@ -29,11 +29,29 @@ export default function Header() {
           </li>
         </ul>
       </div>
+
       <a
         href={"mailto:bacqueyrisses@proton.me"}
-        className={"rounded-xl bg-black py-1 px-4 text-[#e1e6de]"}
+        className="group inline-flex items-center rounded-xl bg-black py-1 px-4 font-medium text-[#e1e6de] transition"
       >
         Contact
+        <svg
+          className="mt-0.5 ml-2 -mr-1 stroke-[#e1e6de] stroke-2"
+          fill="none"
+          width="10"
+          height="10"
+          viewBox="0 0 10 10"
+          aria-hidden="true"
+        >
+          <path
+            className="opacity-0 transition group-hover:opacity-100"
+            d="M0 5h7"
+          ></path>
+          <path
+            className="transition group-hover:translate-x-[3px]"
+            d="M1 1l4 4-4 4"
+          ></path>
+        </svg>
       </a>
     </div>
   );
