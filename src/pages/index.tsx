@@ -49,7 +49,6 @@ export default function Home() {
             <span className={"link-underline-black link-underline italic"}>
               JavaScript ecosystem
             </span>
-            .
           </div>
           <div
             className={
