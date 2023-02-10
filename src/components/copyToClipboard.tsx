@@ -19,7 +19,7 @@ export default function CopyToClipboard({
     <div className={"relative inline-flex items-center"}>
       <button
         type="button"
-        className={`inline-flex items-center rounded-xl border border-black py-1.5 px-4 font-medium hover:-skew-x-6 ${
+        className={`inline-flex items-center rounded-xl border border-black py-1.5 px-4 font-medium transition hover:-skew-x-6 ${
           isCopied ? "-skew-x-6 bg-black text-secondary" : ""
         }`}
         onClick={handleClick}
