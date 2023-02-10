@@ -23,7 +23,7 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <section className={"mt-16 text-xl sm:text-4xl"}>
+        <section className={"relative mt-16 text-xl sm:text-4xl"}>
           <div className={"max-w-[86%] font-medium sm:max-w-[84%]"}>
             Hi, I’m Enzo! <br />A{" "}
             <span className={gooperFont.className}>Web Developer</span>
