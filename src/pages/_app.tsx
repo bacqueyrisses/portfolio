@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <main
       className={`${satoshiFont.className}
-        h-screen overflow-x-hidden bg-[#e1e6de] px-7 py-3`}
+        relative h-screen overflow-x-hidden bg-[#e1e6de] px-7 py-3`}
     >
       <Component {...pageProps} />
     </main>
