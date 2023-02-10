@@ -15,7 +15,7 @@ export default function Header() {
               href={"https://github.com/bacqueyrisses"}
               target={"_blank"}
               className={
-                "link-underline-black link-underline py-1.5 px-4 hover:rounded-xl hover:bg-black hover:text-[#e1e6de]"
+                "link-underline-black link-underline rounded-xl py-1.5 px-4 transition-colors hover:bg-black hover:text-[#e1e6de]"
               }
             >
               Github
@@ -27,7 +27,7 @@ export default function Header() {
               rel="noreferrer"
               target={"_blank"}
               className={
-                "link-underline-black link-underline py-1.5 px-4 hover:rounded-xl hover:bg-black hover:text-[#e1e6de]"
+                "link-underline-black link-underline rounded-xl py-1.5 px-4 transition-colors hover:bg-black hover:text-[#e1e6de]"
               }
             >
               Linkedin

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import localFont from "@next/font/local";
+import CopyToClipboard from "@/components/copyToClipboard";
 const gooperFont = localFont({ src: "./../../public/fonts/gooper.ttf" });
 
 export default function Footer() {
@@ -24,12 +25,15 @@ export default function Footer() {
         </div>
       </div>
       <div className={"flex justify-center gap-5 text-xs md:text-sm"}>
-        <div
-          className={
-            "rounded-xl border border-black bg-[#e1e6de] py-1.5 px-4 font-medium text-black"
-          }
-        >
-          bacqueyrisses@proton.me
+        <div className={"flex justify-center"}>
+          <CopyToClipboard contentToCopy={"enzo.bacqueyrisses@gmail.com"} />
+          <div
+            className={
+              "inline-flex items-center  rounded-xl border border-black bg-[#e1e6de] py-1.5 px-4 font-medium text-black"
+            }
+          >
+            bacqueyrisses@proton.me
+          </div>
         </div>
 
         <a
