@@ -19,22 +19,13 @@ export default function Footer() {
           Let's work together on{" "}
           <span className={gooperFont.className}>someting great</span>
         </div>
-        <div className={"mb-5 text-sm md:text-lg"}>
+        <div className={"mb-8 text-sm md:text-lg"}>
           I'm available starting <span className={""}>April 2023</span> for a
           full time job.
         </div>
       </div>
       <div className={"flex justify-center gap-5 text-xs md:text-sm"}>
-        <div className={"flex justify-center"}>
-          <CopyToClipboard contentToCopy={"enzo.bacqueyrisses@gmail.com"} />
-          <div
-            className={
-              "inline-flex items-center  rounded-xl border border-black bg-[#e1e6de] py-1.5 px-4 font-medium text-black"
-            }
-          >
-            bacqueyrisses@proton.me
-          </div>
-        </div>
+        <CopyToClipboard contentToCopy={"bacqueyrisses@proton.me"} />
 
         <a
           href={"mailto:bacqueyrisses@proton.me"}

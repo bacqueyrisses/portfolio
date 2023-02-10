@@ -7,7 +7,11 @@ module.exports = {
       md: "960px",
       lg: "1440px",
     },
-    extend: {},
+    extend: {
+      colors: {
+        secondary: "#e1e6de",
+      },
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {
