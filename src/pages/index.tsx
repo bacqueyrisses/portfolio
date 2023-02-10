@@ -118,7 +118,7 @@ export default function Home() {
           <div className={"mt-5 flex max-w-[70%] flex-wrap gap-3 text-sm"}>
             <Link
               href={"/"}
-              className="group inline-flex items-center rounded-xl bg-black py-1.5 px-4 font-medium text-[#e1e6de] transition md:text-lg"
+              className="group inline-flex items-center rounded-xl bg-black py-1.5 px-4 font-medium text-[#e1e6de] transition md:text-base"
             >
               Projects
               <svg

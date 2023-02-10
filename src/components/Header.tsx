@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <div
       className={
-        "flex items-baseline justify-between text-[0.92rem] font-medium sm:text-lg"
+        "flex items-baseline justify-between text-[0.92rem] font-medium sm:text-base"
       }
     >
       <div className={"flex items-baseline gap-5"}>
