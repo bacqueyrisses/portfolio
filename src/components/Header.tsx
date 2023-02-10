@@ -1,6 +1,10 @@
 export default function Header() {
   return (
-    <div className={"flex items-baseline justify-between text-sm font-medium"}>
+    <div
+      className={
+        "flex items-baseline justify-between text-[0.92rem] font-medium"
+      }
+    >
       <div className={"flex items-baseline gap-5"}>
         <Switcher />
         <ul className={"flex gap-5"}>
