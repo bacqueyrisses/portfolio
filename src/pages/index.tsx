@@ -140,7 +140,7 @@ export default function Home() {
               </svg>
             </Link>
           </div>
-          <div className={"mt-5 text-xl font-semibold"}>
+          <div className={"mt-5 text-xl font-medium"}>
             <span className={gooperFont.className}>Click</span> to get more more
             details
           </div>
