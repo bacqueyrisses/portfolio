@@ -108,9 +108,7 @@ export default function Home() {
             </a>
           </div>
         </section>
-
         <hr className={"mt-10 border-black"} />
-
         <section className={"mt-10"}>
           <div className={"mt-5 flex max-w-[70%] flex-wrap gap-3 text-sm"}>
             <Link
@@ -150,9 +148,7 @@ export default function Home() {
             <div className={"basis-1/3 text-center text-4xl"}></div>
           </div>
         </section>
-
         <hr className={"mt-10 border-black"} />
-
         <Footer />
       </main>
     </>
