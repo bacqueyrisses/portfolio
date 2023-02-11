@@ -113,6 +113,7 @@ export default function Home() {
           <div className={"mt-5 gap-3 text-sm"}>
             <Link
               to="projects"
+              duration={1}
               className={
                 "group inline-flex items-center rounded-xl bg-black py-1.5 px-4 font-medium text-secondary transition md:text-base md:hover:bg-[#232b2b]"
               }

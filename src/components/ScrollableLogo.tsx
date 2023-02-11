@@ -16,14 +16,14 @@ export default function ScrollableLogo() {
     };
   }, []);
 
-  const css = { transform: "rotate(" + scrollPosition / 2 + "deg)" };
+  const css = { transform: "rotate(" + scrollPosition / 1.1 + "deg)" };
   return (
     <Image
       style={css}
       src={"/images/logo.webp"}
       alt={"logo enzo bacqueyrisses"}
-      width={110}
-      height={110}
+      width={80}
+      height={80}
     />
   );
 }
