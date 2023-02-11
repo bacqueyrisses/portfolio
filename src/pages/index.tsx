@@ -115,7 +115,7 @@ export default function Home() {
           <div className={"mt-5 flex max-w-[70%] flex-wrap gap-3 text-sm"}>
             <Link
               href={"/"}
-              className="group inline-flex items-center rounded-xl bg-black py-1.5 px-4 font-medium text-secondary transition hover:bg-[#232b2b] md:text-base"
+              className="group inline-flex items-center rounded-xl bg-black py-1.5 px-4 font-medium text-secondary transition md:text-base md:hover:bg-[#232b2b]"
             >
               Projects
               <svg
