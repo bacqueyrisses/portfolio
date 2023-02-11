@@ -22,8 +22,8 @@ export default function ScrollableLogo() {
       style={css}
       src={"/images/logo.webp"}
       alt={"logo enzo bacqueyrisses"}
-      width={100}
-      height={100}
+      width={120}
+      height={120}
     />
   );
 }

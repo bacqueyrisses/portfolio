@@ -12,12 +12,11 @@ export default function Footer() {
       </div>
       <div className={"flex flex-col items-center justify-center"}>
         <div className={"mb-3 text-lg font-medium md:text-xl"}>
-          Let's work together on{" "}
-          <span className={gooperFont.className}>someting great</span>
+          Let's work together
         </div>
-        <div className={"mb-8 text-sm md:text-lg"}>
-          I'm available starting <span className={""}>April 2023</span> for a
-          full time job.
+        <div className={"mb-8 text-base md:text-lg"}>
+          I'm available from <span className={""}>April 2023</span> for a full
+          time job.
         </div>
       </div>
       <div className={"flex justify-center gap-5 text-xs md:text-sm"}>
