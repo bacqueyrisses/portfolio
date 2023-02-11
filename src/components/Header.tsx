@@ -36,12 +36,12 @@ export default function Header() {
         </ul>
       </div>
 
-      <Link
+      <a
         href={"#contact"}
         className="group inline-flex items-center rounded-xl bg-black py-1.5 px-4 font-medium text-secondary transition md:hover:bg-[#232b2b]"
       >
         Contact
-      </Link>
+      </a>
     </div>
   );
 }
