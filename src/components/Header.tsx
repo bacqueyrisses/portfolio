@@ -4,10 +4,10 @@ export default function Header() {
   return (
     <div
       className={
-        "flex items-baseline justify-between text-[0.92rem] font-medium sm:text-base"
+        "flex items-baseline justify-between text-[0.92rem] font-medium sm:text-base md:text-base"
       }
     >
-      <div className={"flex items-baseline gap-5"}>
+      <div className={"flex items-baseline gap-5 font-medium"}>
         <Switcher />
         <ul className={"flex md:gap-5"}>
           <li>
@@ -15,7 +15,7 @@ export default function Header() {
               href={"https://github.com/bacqueyrisses"}
               target={"_blank"}
               className={
-                "link-underline-black link-underline rounded-xl py-1.5 px-4 transition-colors hover:bg-black hover:text-secondary"
+                "link-underline-black link-underline rounded-xl py-2 px-4 transition-colors hover:bg-black hover:text-secondary"
               }
             >
               Github
@@ -27,7 +27,7 @@ export default function Header() {
               rel="noreferrer"
               target={"_blank"}
               className={
-                "link-underline-black link-underline rounded-xl py-1.5 px-4 transition-colors hover:bg-black hover:text-secondary"
+                "link-underline-black link-underline rounded-xl py-2 px-4 transition-colors hover:bg-black hover:text-secondary"
               }
             >
               Linkedin
@@ -39,7 +39,7 @@ export default function Header() {
       <Link
         to="contact"
         className={
-          "group inline-flex items-center rounded-xl bg-black py-1.5 px-4 font-medium text-secondary transition md:hover:bg-[#232b2b]"
+          "cursor-pointer rounded-xl bg-black py-1.5 px-4 text-[0.92rem] font-medium text-secondary transition dark:bg-secondary dark:text-black dark:hover:text-secondary md:text-base md:hover:bg-[#232b2b] dark:md:hover:bg-black"
         }
       >
         Contact

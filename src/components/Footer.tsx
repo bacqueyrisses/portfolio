@@ -2,7 +2,6 @@ import Image from "next/image";
 import localFont from "@next/font/local";
 import CopyToClipboard from "@/components/copyToClipboard";
 import ScrollableLogo from "@/components/ScrollableLogo";
-const gooperFont = localFont({ src: "./../../public/fonts/gooper.ttf" });
 
 export default function Footer() {
   return (
@@ -25,12 +24,12 @@ export default function Footer() {
         <a
           href={"mailto:bacqueyrisses@proton.me"}
           className={
-            "group inline-flex items-center rounded-xl bg-black py-1.5 px-4 text-[0.77rem] font-medium leading-5 text-secondary transition md:text-sm md:hover:bg-[#232b2b]"
+            "group inline-flex items-center rounded-xl bg-black py-1.5 px-4 text-[0.77rem] font-medium leading-5 text-secondary transition dark:bg-secondary dark:text-black md:text-base md:hover:bg-[#232b2b] dark:md:hover:bg-secondary"
           }
         >
           Get in touch
           <svg
-            className="mt-0.5 ml-2 -mr-1 stroke-[#e1e6de] stroke-2"
+            className="mt-0.5 ml-2 -mr-1 stroke-secondary stroke-2 dark:stroke-black"
             fill="none"
             width="10"
             height="10"

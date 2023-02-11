@@ -18,7 +18,6 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <meta name="theme-color" content="#e0e5df" />
       </Head>
 
       <Header />
@@ -28,14 +27,14 @@ export default function Home() {
             "mt-14 text-[1.69rem] leading-[2.1rem] sm:text-4xl md:text-5xl"
           }
         >
-          <div className={"font-medium text-black sm:hidden"}>
+          <div className={"font-medium sm:hidden"}>
             Hi, I’m Enzo! <br />A{" "}
             <span className={gooperFont.className}>Web Developer</span>
             <br /> living in{" "}
             <span className={gooperFont.className}>Bordeaux</span> with skills
             in ✦ <span className={gooperFont.className}>JavaScript</span> ✦
           </div>
-          <div className={"hidden text-6xl font-medium text-black sm:block"}>
+          <div className={"hidden text-6xl font-medium sm:block"}>
             Hi, I’m Enzo! <br />A{" "}
             <span className={gooperFont.className}>Web Developer </span>
             <br />
@@ -71,7 +70,7 @@ export default function Home() {
               target={"_blank"}
               rel="noreferrer"
               className={
-                "w-28 rounded-xl border border-black px-4 py-1.5 text-center transition hover:-skew-x-6 hover:bg-black hover:text-secondary md:w-32"
+                "w-28 rounded-xl border border-black px-4 py-1.5 text-center transition hover:-skew-x-6 hover:bg-black hover:text-secondary dark:border-2 dark:border-secondary dark:hover:bg-secondary dark:hover:text-black md:w-32"
               }
             >
               Express.JS
@@ -81,7 +80,7 @@ export default function Home() {
               target={"_blank"}
               rel="noreferrer"
               className={
-                "w-28 rounded-xl border border-black py-1.5 px-4 text-center transition hover:-skew-x-6 hover:bg-black hover:text-secondary md:w-32"
+                "w-28 rounded-xl border border-black py-1.5 px-4 text-center transition hover:-skew-x-6 hover:bg-black hover:text-secondary dark:border-2 dark:border-secondary dark:hover:bg-secondary dark:hover:text-black md:w-32"
               }
             >
               Next.JS
@@ -91,7 +90,7 @@ export default function Home() {
               target={"_blank"}
               rel="noreferrer"
               className={
-                "w-28 rounded-xl border border-black px-4 py-1.5 text-center transition hover:-skew-x-6 hover:bg-black hover:text-secondary md:w-32"
+                "w-28 rounded-xl border border-black px-4 py-1.5 text-center transition hover:-skew-x-6 hover:bg-black hover:text-secondary dark:border-2 dark:border-secondary dark:hover:bg-secondary dark:hover:text-black md:w-32"
               }
             >
               React.JS
@@ -101,26 +100,26 @@ export default function Home() {
               target={"_blank"}
               rel="noreferrer"
               className={
-                "w-28 whitespace-nowrap rounded-xl border border-black px-4 py-1.5 text-center transition hover:-skew-x-6 hover:bg-black hover:text-secondary md:w-32"
+                "w-28 whitespace-nowrap rounded-xl border border-black px-4 py-1.5 text-center transition hover:-skew-x-6 hover:bg-black hover:text-secondary dark:border-2 dark:border-secondary dark:hover:bg-secondary dark:hover:text-black md:w-32"
               }
             >
               Tailwind CSS
             </a>
           </div>
         </section>
-        <hr className={"mt-10 border-black"} />
+        <hr className={"mt-10 border-black dark:border-secondary"} />
         <section className={"mt-10"}>
           <div className={"mt-5 gap-3 text-sm"}>
             <Link
               to="projects"
               duration={1}
               className={
-                "group inline-flex items-center rounded-xl bg-black py-1.5 px-4 font-medium text-secondary transition md:text-base md:hover:bg-[#232b2b]"
+                "group inline-flex cursor-pointer items-center rounded-xl bg-black py-1.5 px-4 font-medium text-secondary transition dark:bg-secondary dark:text-black md:text-base md:hover:bg-[#232b2b] dark:md:hover:bg-secondary"
               }
             >
               Projects
               <svg
-                className="mt-1.5 ml-2 -mr-1 stroke-[#e1e6de] stroke-2 md:mt-[0.45rem]"
+                className="mt-1.5 ml-2 -mr-1 stroke-secondary stroke-2 dark:stroke-black md:mt-[0.45rem]"
                 fill="none"
                 width="10"
                 height="10"
@@ -156,7 +155,7 @@ export default function Home() {
             <div className={"basis-1/3 text-center text-4xl"}></div>
           </div>
         </section>
-        <hr className={"mt-10 border-black"} />
+        <hr className={"mt-10 border-black dark:border-secondary"} />
         <Footer />
       </main>
     </>

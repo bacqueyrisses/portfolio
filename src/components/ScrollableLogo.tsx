@@ -18,12 +18,23 @@ export default function ScrollableLogo() {
 
   const css = { transform: "rotate(" + scrollPosition + "deg)" };
   return (
-    <Image
-      style={css}
-      src={"/images/logo.webp"}
-      alt={"logo enzo bacqueyrisses"}
-      width={80}
-      height={80}
-    />
+    <>
+      <Image
+        style={css}
+        className={"dark:hidden"}
+        src={"/images/logo.webp"}
+        alt={"logo enzo bacqueyrisses"}
+        width={110}
+        height={110}
+      />
+      <Image
+        style={css}
+        className={"hidden dark:block"}
+        src={"/images/whitelogo.webp"}
+        alt={"logo enzo bacqueyrisses"}
+        width={110}
+        height={110}
+      />
+    </>
   );
 }
