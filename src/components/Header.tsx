@@ -53,7 +53,7 @@ export default function Header() {
 export function Switcher() {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
-  const [isIconDark, setIsIconDark] = useState(theme === "light");
+  const [isIconDark] = useState(theme === "light");
 
   useEffect(() => {
     setMounted(true);
