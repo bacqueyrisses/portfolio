@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { useRef } from "react";
+import { Link } from "react-scroll";
 
 export default function Header() {
   return (
@@ -36,27 +35,12 @@ export default function Header() {
           </li>
         </ul>
       </div>
-
-      <a
-        onClick={scrollToRef}
+      <Link
+        to={"contact"}
         className="group inline-flex items-center rounded-xl bg-black py-1.5 px-4 font-medium text-secondary transition md:hover:bg-[#232b2b]"
-      >
-        Contact
-      </a>
+      />
     </div>
   );
-}
-
-export function scrollToRef() {
-  const element = document.getElementById("contact");
-  element.scrollIntoView();
-  element.scrollIntoView(false);
-  element.scrollIntoView({ block: "end" });
-  element.scrollIntoView({
-    behavior: "smooth",
-    block: "end",
-    inline: "nearest",
-  });
 }
 
 export function Switcher() {
