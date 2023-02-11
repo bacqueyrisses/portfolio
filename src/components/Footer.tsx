@@ -11,10 +11,10 @@ export default function Footer() {
         <ScrollableLogo />
       </div>
       <div className={"flex flex-col items-center justify-center"}>
-        <div className={"mb-3 text-lg font-medium md:text-xl"}>
+        <div className={"text-lg font-medium md:text-xl"}>
           Let's work together
         </div>
-        <div className={"mb-8 text-[0.95rem] leading-6 md:text-lg"}>
+        <div className={"mb-7 text-[0.95rem] leading-6 md:text-lg"}>
           I'm available from <span className={""}>April 2023</span> for a full
           time job.
         </div>
@@ -24,7 +24,9 @@ export default function Footer() {
 
         <a
           href={"mailto:bacqueyrisses@proton.me"}
-          className="group inline-flex items-center rounded-xl bg-black py-1.5 px-4 font-medium text-secondary transition hover:bg-[#232b2b]"
+          className={
+            "group inline-flex items-center rounded-xl bg-black py-1.5 px-4 text-sm font-medium text-secondary transition hover:bg-[#232b2b]"
+          }
         >
           Get in touch
           <svg

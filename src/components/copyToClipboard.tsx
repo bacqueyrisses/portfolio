@@ -19,7 +19,7 @@ export default function CopyToClipboard({
     <div className={"relative inline-flex items-center"}>
       <button
         type="button"
-        className={`inline-flex items-center rounded-xl border border-black py-1.5 px-4 font-medium transition md:hover:-skew-x-6 ${
+        className={`inline-flex items-center rounded-xl border border-black py-1.5 px-4 text-sm font-medium transition md:hover:-skew-x-6 ${
           isCopied ? "-skew-x-6 bg-black text-secondary" : ""
         }`}
         onClick={handleClick}
@@ -27,9 +27,11 @@ export default function CopyToClipboard({
         bacqueyrisses@proton.me
       </button>
       {isCopied && (
-        <div className="absolute bottom-6 left-1/2 mb-3.5 -translate-x-1/2 translate-y-0 scale-100 pb-1 opacity-100">
+        <div className="absolute bottom-[1.30rem] left-1/2 mb-3.5 -translate-x-1/2 translate-y-0 scale-100 pb-1 opacity-100 md:bottom-[1.32rem]">
           <div
-            className="relative -skew-x-6 rounded-lg bg-black px-1.5 font-mono text-[0.625rem] font-medium leading-6 text-white"
+            className={
+              "relative -skew-x-6 rounded-lg bg-black px-1.5 text-[0.625rem] font-medium leading-6 text-white"
+            }
             data-reach-alert="true"
           >
             Copied
