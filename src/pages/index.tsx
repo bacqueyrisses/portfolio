@@ -47,7 +47,7 @@ export default function Home() {
             <span className={gooperFont.className}>JavaScript</span> ✦
           </div>
 
-          <div className={"mt-5 text-base md:text-lg"}>
+          <div className={"mt-5 text-[0.95rem] leading-6 md:text-lg"}>
             My goal is to create{" "}
             <span className={"link-underline-black link-underline italic"}>
               optimized
@@ -138,10 +138,9 @@ export default function Home() {
             </Link>
           </div>
           <div className={"mt-5 text-xl font-medium"}>
-            <span className={gooperFont.className}>Click</span> to get more more
-            details
+            Click to get more more details
           </div>
-          <div className={"text-base md:text-lg"}>
+          <div className={"text-[0.95rem] leading-6 md:text-lg"}>
             I make apps for fun, always working on the best{" "}
             <span className={"italic"}>code architecture</span> possible.
           </div>
