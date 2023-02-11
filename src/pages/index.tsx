@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "@/components/Header";
 
-import Link from "next/link";
+import { Link } from "react-scroll";
 import Footer from "@/components/Footer";
 import localFont from "@next/font/local";
 
@@ -110,10 +110,12 @@ export default function Home() {
         </section>
         <hr className={"mt-10 border-black"} />
         <section className={"mt-10"}>
-          <div className={"mt-5 flex max-w-[70%] flex-wrap gap-3 text-sm"}>
+          <div className={"mt-5 gap-3 text-sm"}>
             <Link
-              href={"/"}
-              className="group inline-flex items-center rounded-xl bg-black py-1.5 px-4 font-medium text-secondary transition md:text-base md:hover:bg-[#232b2b]"
+              to="projects"
+              className={
+                "group inline-flex items-center rounded-xl bg-black py-1.5 px-4 font-medium text-secondary transition md:text-base md:hover:bg-[#232b2b]"
+              }
             >
               Projects
               <svg
@@ -134,6 +136,11 @@ export default function Home() {
                 ></path>
               </svg>
             </Link>
+
+            <div
+              id={"projects"}
+              className={"flex items-center justify-center"}
+            ></div>
           </div>
           <div className={"mt-5 text-xl font-medium"}>
             Click to get more more details

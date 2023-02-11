@@ -16,7 +16,7 @@ export default function ScrollableLogo() {
     };
   }, []);
 
-  const css = { transform: "rotate(" + scrollPosition + "deg)" };
+  const css = { transform: "rotate(" + scrollPosition / 2 + "deg)" };
   return (
     <Image
       style={css}

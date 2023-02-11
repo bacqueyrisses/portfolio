@@ -35,11 +35,15 @@ export default function Header() {
           </li>
         </ul>
       </div>
+
       <Link
-        children={"Contact"}
-        to={"contact"}
-        className="group inline-flex items-center rounded-xl bg-black py-1.5 px-4 font-medium text-secondary transition md:hover:bg-[#232b2b]"
-      />
+        to="contact"
+        className={
+          "group inline-flex items-center rounded-xl bg-black py-1.5 px-4 font-medium text-secondary transition md:hover:bg-[#232b2b]"
+        }
+      >
+        Contact
+      </Link>
     </div>
   );
 }
