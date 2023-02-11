@@ -1,18 +1,14 @@
 import Image from "next/image";
 import localFont from "@next/font/local";
 import CopyToClipboard from "@/components/copyToClipboard";
+import ScrollableLogo from "@/components/ScrollableLogo";
 const gooperFont = localFont({ src: "./../../public/fonts/gooper.ttf" });
 
 export default function Footer() {
   return (
     <footer className={"mt-6"} id={"contact"}>
       <div className={"flex justify-center"}>
-        <Image
-          src={"/images/logo.webp"}
-          alt={"logo enzo bacqueyrisses"}
-          width={100}
-          height={100}
-        />
+        <ScrollableLogo />
       </div>
       <div className={"flex flex-col items-center justify-center"}>
         <div className={"mb-3 text-lg font-medium md:text-xl"}>

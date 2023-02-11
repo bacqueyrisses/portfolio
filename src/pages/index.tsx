@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import localFont from "@next/font/local";
+
 const gooperFont = localFont({ src: "./../../public/fonts/gooper.ttf" });
 
 export default function Home() {
