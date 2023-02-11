@@ -70,7 +70,7 @@ export default function Home() {
               target={"_blank"}
               rel="noreferrer"
               className={
-                "w-28 rounded-xl border border-black px-4 py-1.5 text-center transition hover:-skew-x-6 hover:bg-black hover:text-secondary dark:border-2 dark:border-secondary dark:hover:bg-secondary dark:hover:text-black md:w-32"
+                "w-28 rounded-xl border-2 border-black px-4 py-1.5 text-center transition hover:-skew-x-6 hover:bg-black hover:text-secondary dark:border-secondary dark:hover:bg-secondary dark:hover:text-black md:w-32"
               }
             >
               Express.JS
@@ -80,7 +80,7 @@ export default function Home() {
               target={"_blank"}
               rel="noreferrer"
               className={
-                "w-28 rounded-xl border border-black py-1.5 px-4 text-center transition hover:-skew-x-6 hover:bg-black hover:text-secondary dark:border-2 dark:border-secondary dark:hover:bg-secondary dark:hover:text-black md:w-32"
+                "w-28 rounded-xl border-2 border-black py-1.5 px-4 text-center transition hover:-skew-x-6 hover:bg-black hover:text-secondary dark:border-secondary dark:hover:bg-secondary dark:hover:text-black md:w-32"
               }
             >
               Next.JS
@@ -90,7 +90,7 @@ export default function Home() {
               target={"_blank"}
               rel="noreferrer"
               className={
-                "w-28 rounded-xl border border-black px-4 py-1.5 text-center transition hover:-skew-x-6 hover:bg-black hover:text-secondary dark:border-2 dark:border-secondary dark:hover:bg-secondary dark:hover:text-black md:w-32"
+                "w-28 rounded-xl border-2 border-black px-4 py-1.5 text-center transition hover:-skew-x-6 hover:bg-black hover:text-secondary dark:border-secondary dark:hover:bg-secondary dark:hover:text-black md:w-32"
               }
             >
               React.JS
@@ -100,7 +100,7 @@ export default function Home() {
               target={"_blank"}
               rel="noreferrer"
               className={
-                "w-28 whitespace-nowrap rounded-xl border border-black px-4 py-1.5 text-center transition hover:-skew-x-6 hover:bg-black hover:text-secondary dark:border-2 dark:border-secondary dark:hover:bg-secondary dark:hover:text-black md:w-32"
+                "w-28 whitespace-nowrap rounded-xl border-2 border-black px-4 py-1.5 text-center transition hover:-skew-x-6 hover:bg-black hover:text-secondary dark:border-secondary dark:hover:bg-secondary dark:hover:text-black md:w-32"
               }
             >
               Tailwind CSS
