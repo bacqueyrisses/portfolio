@@ -9,7 +9,7 @@ export default function Header() {
     >
       <div className={"flex items-baseline gap-5"}>
         <Switcher />
-        <ul className={"flex gap-5"}>
+        <ul className={"flex md:gap-5"}>
           <li>
             <a
               href={"https://github.com/bacqueyrisses"}
