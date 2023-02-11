@@ -48,7 +48,7 @@ export default function Header() {
 
 export function Switcher() {
   return (
-    <label className="swap swap-rotate self-center">
+    <label className="swap-rotate swap self-center">
       <input type="checkbox" />
 
       <svg
