@@ -7,13 +7,13 @@ export default function CopyToClipboard({
 }) {
   const [isCopied, setIsCopied] = useState(false);
 
-  const handleClick = async () => {
+  async function handleClick() {
     setIsCopied(true);
     setTimeout(() => {
       setIsCopied(false);
     }, 1700);
     await navigator.clipboard.writeText(contentToCopy);
-  };
+  }
 
   return (
     <div className={"relative inline-flex items-center"}>
