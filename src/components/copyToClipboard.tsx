@@ -7,12 +7,12 @@ export default function CopyToClipboard({
 }) {
   const [isCopied, setIsCopied] = useState(false);
 
-  const handleClick = () => {
+  const handleClick = async () => {
     setIsCopied(true);
     setTimeout(() => {
       setIsCopied(false);
     }, 1700);
-    navigator.clipboard.writeText(contentToCopy);
+    await navigator.clipboard.writeText(contentToCopy);
   };
 
   return (
