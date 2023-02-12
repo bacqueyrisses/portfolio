@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "@/components/Header";
 
-import { Link } from "react-scroll";
+import { Link, animateScroll } from "react-scroll";
 import Footer from "@/components/Footer";
 import localFont from "@next/font/local";
 
@@ -112,7 +112,6 @@ export default function Home() {
           <div className={"mt-5 gap-3 text-sm"}>
             <Link
               to="projects"
-              duration={1}
               className={
                 "group inline-flex cursor-pointer items-center rounded-xl bg-black py-1.5 px-4 font-medium text-secondary transition dark:bg-secondary dark:text-black md:text-base md:hover:bg-[#232b2b] dark:md:hover:bg-secondary"
               }
@@ -136,24 +135,20 @@ export default function Home() {
                 ></path>
               </svg>
             </Link>
-
-            <div
-              id={"projects"}
-              className={"flex items-center justify-center"}
-            ></div>
           </div>
           <div className={"mt-5 text-xl font-medium"}>
-            Click to get more more details
+            Click to get more details
           </div>
           <div className={"text-[0.95rem] leading-6 md:text-lg"}>
             I make apps for fun, always working on the best{" "}
             <span className={"italic"}>code architecture</span> possible.
           </div>
-          <div className={"mt-10 flex gap-5"}>
-            <div className={"basis-1/3 text-center text-4xl"}></div>
-            <div className={"basis-1/3 text-center text-4xl"}></div>
-            <div className={"basis-1/3 text-center text-4xl"}></div>
-          </div>
+          <div
+            className={
+              "mx-auto mt-10 flex items-center justify-center gap-5 font-medium md:text-lg"
+            }
+            id={"projects"}
+          ></div>
         </section>
         <hr className={"mt-10 border-black dark:border-secondary"} />
         <Footer />
