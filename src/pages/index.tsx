@@ -62,7 +62,7 @@ export default function Home() {
           </div>
           <div
             className={
-              "mt-5 flex max-w-[90%] flex-wrap justify-start gap-3 text-sm font-medium md:text-base"
+              "mt-5 flex flex-wrap justify-start gap-3 text-sm font-medium md:text-base"
             }
           >
             <a

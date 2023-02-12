@@ -52,8 +52,9 @@ export default function Header() {
 
 export function Switcher() {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
-  const [isIconDark] = useState(theme === "light");
+  const { resolvedTheme, setTheme } = useTheme();
+
+  const [isIconDark] = useState(resolvedTheme === "light");
 
   useEffect(() => {
     setMounted(true);
@@ -63,6 +64,8 @@ export function Switcher() {
     return null;
   }
 
+  console.log(resolvedTheme);
+
   if (isIconDark) {
     return (
       <label className="swap-rotate swap self-center">
@@ -70,7 +73,7 @@ export function Switcher() {
           type="checkbox"
           className={""}
           onClick={() => {
-            setTheme(theme === "light" ? "dark" : "light");
+            setTheme(resolvedTheme === "light" ? "dark" : "light");
           }}
         />
         <svg
@@ -97,7 +100,7 @@ export function Switcher() {
           type="checkbox"
           className={""}
           onClick={() => {
-            setTheme(theme === "light" ? "dark" : "light");
+            setTheme(resolvedTheme === "light" ? "dark" : "light");
           }}
         />
         <svg
