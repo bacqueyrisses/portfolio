@@ -24,16 +24,16 @@ export default function ScrollableLogo() {
         className={"dark:hidden"}
         src={"/images/logo.webp"}
         alt={"logo enzo bacqueyrisses"}
-        width={110}
-        height={110}
+        width={120}
+        height={120}
       />
       <Image
         style={css}
         className={"hidden dark:block"}
         src={"/images/whitelogo.webp"}
         alt={"logo enzo bacqueyrisses"}
-        width={110}
-        height={110}
+        width={120}
+        height={120}
       />
     </>
   );
