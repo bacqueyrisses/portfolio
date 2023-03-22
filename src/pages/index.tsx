@@ -156,7 +156,7 @@ export default function Home() {
             <a
               href="https://github.com/bacqueyrisses/garaikunde"
               className={
-                "group flex flex-col justify-center rounded-3xl border-2 border-black px-4 py-5 transition hover:rounded-3xl md:border-transparent md:hover:border-2 md:hover:border-black md:dark:hover:border-secondary"
+                "group flex flex-col justify-center rounded-3xl border-2 border-black px-4 py-5 transition hover:rounded-3xl dark:border-secondary md:border-transparent md:hover:border-2 md:hover:border-black md:dark:hover:border-secondary"
               }
               target="_blank"
               rel="noopener noreferrer"
@@ -185,7 +185,7 @@ export default function Home() {
             <a
               href="https://github.com/bacqueyrisses/"
               className={
-                "group flex flex-col justify-center rounded-3xl border-2 border-black px-4 py-5 transition hover:rounded-3xl md:border-transparent md:hover:border-2 md:hover:border-black md:dark:hover:border-secondary"
+                "group flex flex-col justify-center rounded-3xl border-2 border-black px-4 py-5 transition hover:rounded-3xl dark:border-secondary md:border-transparent md:hover:border-2 md:hover:border-black md:dark:hover:border-secondary"
               }
               target="_blank"
               rel="noopener noreferrer"
@@ -214,7 +214,7 @@ export default function Home() {
             <a
               href="https://github.com/bacqueyrisses/"
               className={
-                "group flex flex-col justify-center rounded-3xl border-2 border-black px-4 py-5 transition hover:rounded-3xl md:border-transparent md:hover:border-2 md:hover:border-black md:dark:hover:border-secondary"
+                "group flex flex-col justify-center rounded-3xl border-2 border-black px-4 py-5 transition hover:rounded-3xl dark:border-secondary md:border-transparent md:hover:border-2 md:hover:border-black md:dark:hover:border-secondary"
               }
               target="_blank"
               rel="noopener noreferrer"
