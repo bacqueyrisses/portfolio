@@ -1,10 +1,16 @@
+// Next
 import Head from "next/head";
 import Header from "@/components/Header";
-
-import { Link, animateScroll } from "react-scroll";
 import Footer from "@/components/Footer";
-import localFont from "@next/font/local";
 
+// React libraries
+import { Link, animateScroll } from "react-scroll";
+import styles from "@/styles/Home.module.css";
+
+// Fonts
+import { Inter } from "@next/font/google";
+const inter = Inter({ subsets: ["latin"] });
+import localFont from "@next/font/local";
 const gooperFont = localFont({ src: "./../../public/fonts/gooper.ttf" });
 
 export default function Home() {
@@ -143,12 +149,95 @@ export default function Home() {
             I make apps for fun, always working on the best{" "}
             <span className={"italic"}>code architecture</span> possible.
           </div>
-          <div
-            className={
-              "mx-auto mt-10 flex items-center justify-center gap-5 font-medium md:text-lg"
-            }
-            id={"projects"}
-          ></div>
+
+          <div className={"mt-12 mb-12 grid grid-cols-1 gap-5 md:grid-cols-3"}>
+            <a
+              href="https://github.com/bacqueyrisses/garaikunde"
+              className={
+                "group flex flex-col justify-center rounded-3xl border-2 border-black px-4 py-5 transition hover:rounded-3xl md:border-transparent md:hover:border-2 md:hover:border-black md:dark:hover:border-secondary"
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h2 className={`mb-2.5 font-semibold ${inter.className}`}>
+                Garaikunde{" "}
+                <span
+                  className={`inline-block transform font-semibold transition group-hover:translate-x-1 ${inter.className}`}
+                >
+                  -&gt;
+                </span>
+              </h2>
+              <p className={"mb-2.5 text-sm opacity-70"}>
+                An e-commerce website for spices and natural plants to designed
+                to give more flexibility to customers flexibility to customers.
+              </p>
+              <p
+                className={
+                  "text-sm opacity-70 transition group-hover:opacity-100"
+                }
+              >
+                Next.JS + React.JS + Tailwind CSS
+              </p>
+            </a>
+
+            <a
+              href="https://github.com/bacqueyrisses/"
+              className={
+                "group flex flex-col justify-center rounded-3xl border-2 border-black px-4 py-5 transition hover:rounded-3xl md:border-transparent md:hover:border-2 md:hover:border-black md:dark:hover:border-secondary"
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h2 className={`mb-2.5 font-semibold ${inter.className}`}>
+                Devzone{" "}
+                <span
+                  className={`inline-block transform font-semibold transition group-hover:translate-x-1 ${inter.className}`}
+                >
+                  -&gt;
+                </span>
+              </h2>
+              <p className={"mb-2.5 text-sm opacity-70"}>
+                Get a custom dashboard with all the information you need on a
+                daily basis as a developer basis as a developer.
+              </p>
+              <p
+                className={
+                  "text-sm opacity-70 transition group-hover:opacity-100"
+                }
+              >
+                Express.JS API
+              </p>
+            </a>
+
+            <a
+              href="https://github.com/bacqueyrisses/"
+              className={
+                "group flex flex-col justify-center rounded-3xl border-2 border-black px-4 py-5 transition hover:rounded-3xl md:border-transparent md:hover:border-2 md:hover:border-black md:dark:hover:border-secondary"
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h2 className={`mb-2.5 font-semibold ${inter.className}`}>
+                Wordhand{" "}
+                <span
+                  className={`inline-block transform font-semibold transition group-hover:translate-x-1 ${inter.className}`}
+                >
+                  -&gt;
+                </span>
+              </h2>
+              <p className={"mb-2.5 text-sm opacity-70"}>
+                Expand your vocabulary, discover new words and get acceess to
+                your favorites ones easily, all in one place all in one place.
+              </p>
+              <p
+                className={
+                  "text-sm opacity-70 transition group-hover:opacity-100"
+                }
+              >
+                Next.JS + React.JS + Tailwind CSS
+              </p>
+            </a>
+          </div>
         </section>
         <hr className={"mt-10 border-black dark:border-secondary"} />
         <Footer />

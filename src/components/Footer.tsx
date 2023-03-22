@@ -1,5 +1,3 @@
-import Image from "next/image";
-import localFont from "@next/font/local";
 import CopyToClipboard from "@/components/copyToClipboard";
 import ScrollableLogo from "@/components/ScrollableLogo";
 
