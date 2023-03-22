@@ -36,10 +36,8 @@ export default function CopyToClipboard({
       {
         <div className="absolute bottom-[1.30rem] left-1/2 mb-3.5 -translate-x-1/2 translate-y-0 scale-100 pb-1 opacity-100 dark:bottom-[1.40rem] md:bottom-[1.55rem] dark:md:bottom-[1.65rem]">
           <div
-            className={`relative rounded-lg bg-black px-1.5 text-[0.625rem] font-medium leading-6 text-white transition dark:bg-secondary dark:text-black ${
-              isCopied
-                ? "-skew-x-6 opacity-100"
-                : "opacity-0 group-hover:opacity-100"
+            className={`relative -skew-x-6 rounded-lg bg-black px-1.5 text-[0.72rem] font-medium leading-6 text-white transition dark:bg-secondary dark:text-black  ${
+              isCopied ? "opacity-100" : "opacity-0 group-hover:opacity-100"
             }`}
             data-reach-alert="true"
           >
