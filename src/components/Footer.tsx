@@ -11,7 +11,7 @@ export default function Footer() {
         <div className={"text-lg font-medium md:text-xl"}>
           Let's work together
         </div>
-        <div className={"mb-8 text-[0.95rem] leading-6 md:text-lg"}>
+        <div className={"mb-7 text-[0.95rem] leading-6 sm:mb-8 md:text-lg"}>
           I'm available from <span className={""}>April 2023</span> for a full
           time job.
         </div>
