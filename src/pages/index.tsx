@@ -5,7 +5,6 @@ import Footer from "@/components/Footer";
 
 // React libraries
 import { Link, animateScroll } from "react-scroll";
-import styles from "@/styles/Home.module.css";
 
 // Fonts
 import { Inter } from "@next/font/google";
@@ -119,7 +118,7 @@ export default function Home() {
             <Link
               to="projects"
               className={
-                "group inline-flex cursor-pointer items-center rounded-xl bg-black py-1.5 px-4 font-medium text-secondary transition dark:bg-secondary dark:text-black md:text-base md:hover:bg-[#232b2b] dark:md:hover:bg-secondary"
+                "group inline-flex cursor-pointer items-center rounded-xl bg-black py-1.5 px-4 font-medium text-secondary transition dark:bg-secondary dark:text-black md:text-base"
               }
             >
               Projects
@@ -150,7 +149,10 @@ export default function Home() {
             <span className={"italic"}>code architecture</span> possible.
           </div>
 
-          <div className={"mt-12 mb-12 grid grid-cols-1 gap-5 md:grid-cols-3"}>
+          <div
+            className={"mt-12 mb-12 grid grid-cols-1 gap-5 md:grid-cols-3"}
+            id={"projects"}
+          >
             <a
               href="https://github.com/bacqueyrisses/garaikunde"
               className={
