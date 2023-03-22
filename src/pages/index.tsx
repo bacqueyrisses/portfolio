@@ -164,7 +164,7 @@ export default function Home() {
               <h2 className={`mb-2.5 font-semibold ${inter.className}`}>
                 Garaikunde{" "}
                 <span
-                  className={`inline-block transform font-semibold transition group-hover:translate-x-1 ${inter.className}`}
+                  className={`inline-block transform font-semibold transition sm:group-hover:translate-x-1 ${inter.className}`}
                 >
                   -&gt;
                 </span>
@@ -193,7 +193,7 @@ export default function Home() {
               <h2 className={`mb-2.5 font-semibold ${inter.className}`}>
                 Devzone{" "}
                 <span
-                  className={`inline-block transform font-semibold transition group-hover:translate-x-1 ${inter.className}`}
+                  className={`inline-block transform font-semibold transition sm:group-hover:translate-x-1 ${inter.className}`}
                 >
                   -&gt;
                 </span>
@@ -222,7 +222,7 @@ export default function Home() {
               <h2 className={`mb-2.5 font-semibold ${inter.className}`}>
                 Wordhand{" "}
                 <span
-                  className={`inline-block transform font-semibold transition group-hover:translate-x-1 ${inter.className}`}
+                  className={`inline-block transform font-semibold transition sm:group-hover:translate-x-1 ${inter.className}`}
                 >
                   -&gt;
                 </span>
