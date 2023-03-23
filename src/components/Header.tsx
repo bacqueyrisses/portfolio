@@ -64,11 +64,9 @@ export function Switcher() {
     return null;
   }
 
-  console.log(resolvedTheme);
-
   if (isIconDark) {
     return (
-      <label className="swap-rotate swap self-center">
+      <label className="swap swap-rotate self-center">
         <input
           type="checkbox"
           className={""}

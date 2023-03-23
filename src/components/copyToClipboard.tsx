@@ -6,17 +6,12 @@ export default function CopyToClipboard({
   contentToCopy: string;
 }) {
   const [isCopied, setIsCopied] = useState(false);
-  const [toolContent, setToolContent] = useState("Click to copy");
 
   async function handleClick() {
     setIsCopied(true);
-    setToolContent("Copied");
     setTimeout(() => {
       setIsCopied(false);
     }, 1700);
-    setTimeout(() => {
-      setToolContent("Click to copy");
-    }, 1800);
     await navigator.clipboard.writeText(contentToCopy);
   }
 
@@ -36,12 +31,12 @@ export default function CopyToClipboard({
       {
         <div className="absolute bottom-[1.30rem] left-1/2 mb-3.5 -translate-x-1/2 translate-y-0 scale-100 pb-1 opacity-100 dark:bottom-[1.40rem] md:bottom-[1.55rem] dark:md:bottom-[1.65rem]">
           <div
-            className={`relative -skew-x-6 rounded-lg bg-black px-1.5 text-[0.625rem] font-medium leading-6 text-white transition dark:bg-secondary dark:text-black sm:text-[0.72rem]  ${
+            className={`relative -skew-x-6 rounded-lg bg-black px-1.5 text-[0.625rem] font-medium leading-6 text-white dark:bg-secondary dark:text-black sm:text-[0.72rem]  ${
               isCopied ? "opacity-100" : "opacity-0 sm:group-hover:opacity-100"
             }`}
             data-reach-alert="true"
           >
-            {toolContent}
+            {isCopied ? "Copied" : "Click to copy"}
             <svg
               aria-hidden="true"
               width="16"

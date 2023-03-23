@@ -22,7 +22,7 @@ export default function Footer() {
         <a
           href={"mailto:bacqueyrisses@proton.me"}
           className={
-            "group inline-flex items-center rounded-xl bg-black py-1.5 px-4 text-[0.77rem] font-medium leading-5 text-secondary transition dark:bg-secondary dark:text-black md:text-base md:hover:bg-[#232b2b] dark:md:hover:bg-secondary"
+            "group inline-flex items-center rounded-xl bg-black py-1.5 px-4 text-[0.77rem] font-medium leading-5 text-secondary transition dark:bg-secondary dark:text-black md:text-base"
           }
         >
           Get in touch

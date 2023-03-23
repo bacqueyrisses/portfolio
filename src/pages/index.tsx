@@ -5,11 +5,11 @@ import Footer from "@/components/Footer";
 
 // React libraries
 import { Link, animateScroll } from "react-scroll";
+import projects from "./../data/projects.json";
 
-// Fonts
-import { Inter } from "@next/font/google";
-const inter = Inter({ subsets: ["latin"] });
+// Font
 import localFont from "@next/font/local";
+import Project from "@/components/Project";
 const gooperFont = localFont({ src: "./../../public/fonts/gooper.ttf" });
 
 export default function Home() {
@@ -153,92 +153,9 @@ export default function Home() {
             className={"mt-12 mb-12 grid grid-cols-1 gap-5 md:grid-cols-3"}
             id={"projects"}
           >
-            <a
-              href="https://github.com/bacqueyrisses/garaikunde"
-              className={
-                "group flex flex-col justify-center rounded-3xl border-2 border-black px-4 py-5 transition hover:rounded-3xl dark:border-secondary md:border-transparent md:hover:border-2 md:hover:border-black md:dark:hover:border-secondary"
-              }
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h2 className={`mb-2.5 font-semibold ${inter.className}`}>
-                Garaikunde{" "}
-                <span
-                  className={`inline-block transform font-semibold transition sm:group-hover:translate-x-1 ${inter.className}`}
-                >
-                  -&gt;
-                </span>
-              </h2>
-              <p className={"mb-2.5 text-sm opacity-70"}>
-                An e-commerce website for spices and natural plants to designed
-                to give more flexibility to customers flexibility to customers.
-              </p>
-              <p
-                className={
-                  "text-sm opacity-70 transition group-hover:opacity-100"
-                }
-              >
-                Next.JS + React.JS + Tailwind CSS
-              </p>
-            </a>
-
-            <a
-              href="https://github.com/bacqueyrisses/"
-              className={
-                "group flex flex-col justify-center rounded-3xl border-2 border-black px-4 py-5 transition hover:rounded-3xl dark:border-secondary md:border-transparent md:hover:border-2 md:hover:border-black md:dark:hover:border-secondary"
-              }
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h2 className={`mb-2.5 font-semibold ${inter.className}`}>
-                Devzone{" "}
-                <span
-                  className={`inline-block transform font-semibold transition sm:group-hover:translate-x-1 ${inter.className}`}
-                >
-                  -&gt;
-                </span>
-              </h2>
-              <p className={"mb-2.5 text-sm opacity-70"}>
-                Get a custom dashboard with all the information you need on a
-                daily basis as a developer basis as a developer.
-              </p>
-              <p
-                className={
-                  "text-sm opacity-70 transition group-hover:opacity-100"
-                }
-              >
-                Express.JS API
-              </p>
-            </a>
-
-            <a
-              href="https://github.com/bacqueyrisses/"
-              className={
-                "group flex flex-col justify-center rounded-3xl border-2 border-black px-4 py-5 transition hover:rounded-3xl dark:border-secondary md:border-transparent md:hover:border-2 md:hover:border-black md:dark:hover:border-secondary"
-              }
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h2 className={`mb-2.5 font-semibold ${inter.className}`}>
-                Wordhand{" "}
-                <span
-                  className={`inline-block transform font-semibold transition sm:group-hover:translate-x-1 ${inter.className}`}
-                >
-                  -&gt;
-                </span>
-              </h2>
-              <p className={"mb-2.5 text-sm opacity-70"}>
-                Expand your vocabulary, discover new words and get acceess to
-                your favorites ones easily, all in one place all in one place.
-              </p>
-              <p
-                className={
-                  "text-sm opacity-70 transition group-hover:opacity-100"
-                }
-              >
-                Next.JS + React.JS + Tailwind CSS
-              </p>
-            </a>
+            {projects.map((project, index) => (
+              <Project project={project} index={index} key={project.name} />
+            ))}
           </div>
         </section>
         <hr className={"mt-10 border-black dark:border-secondary"} />
