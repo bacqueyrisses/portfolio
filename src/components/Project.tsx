@@ -3,9 +3,9 @@ import { Inter } from "@next/font/google";
 import { useEffect, useState } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Project({ project, index }) {
+export default function Project({ project, index }: any) {
   const [borderOpacity, setBorderOpacity] = useState(0);
-  const [scroll, setScroll] = useState([]);
+  const [scroll, setScroll] = useState<number[]>([]);
   useEffect(() => {
     if (window.screen.width < 900)
       setScroll([100, 400].map((e) => e * (index + 1)));
