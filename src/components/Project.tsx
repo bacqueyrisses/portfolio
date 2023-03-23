@@ -6,7 +6,9 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Project({ project, index }: any) {
   const [borderOpacity, setBorderOpacity] = useState(0);
   const [scroll, setScroll] = useState<number[]>([]);
+
   useEffect(() => {
+    console.log(window.screen.width);
     if (window.screen.width < 900)
       setScroll([100, 400].map((e) => e * (index + 1)));
     if (window.screen.width >= 900)
@@ -31,7 +33,7 @@ export default function Project({ project, index }: any) {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [scroll]);
 
   return (
     <a
@@ -57,6 +59,7 @@ export default function Project({ project, index }: any) {
   );
 }
 
-function round(value, decimals) {
-  return Number(Math.round(value + "e" + decimals) + "e-" + decimals);
+function round(value: number, digits: number) {
+  const rounder = Math.pow(10, digits);
+  return parseFloat((Math.round(value * rounder) / rounder).toFixed(digits));
 }
