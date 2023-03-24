@@ -3,8 +3,10 @@ import { Inter } from "@next/font/google";
 import { useEffect, useState } from "react";
 const inter = Inter({ subsets: ["latin"] });
 import { isMobile } from "react-device-detect";
+import { useTheme } from "next-themes";
 
 export default function Project({ project, index }: any) {
+  const { theme } = useTheme();
   const [borderOpacity, setBorderOpacity] = useState(0.05);
   const [borderHovering, setborderHovering] = useState(false);
   const [scroll, setScroll] = useState<number[]>([]);
@@ -50,15 +52,25 @@ export default function Project({ project, index }: any) {
       }
       href="https://github.com/bacqueyrisses/garaikunde"
       style={
-        borderHovering
+        borderHovering && theme === "light"
           ? {
               border: `2px solid rgba(0, 0, 0, 1)`,
             }
-          : {
+          : !borderHovering && theme === "light"
+          ? {
               border: `2px solid rgba(0, 0, 0, ${borderOpacity})`,
             }
+          : borderHovering && theme === "dark"
+          ? {
+              border: `2px solid rgba(225, 230, 222, 1)`,
+            }
+          : !borderHovering && theme === "dark"
+          ? {
+              border: `2px solid rgba(225, 230, 222, ${borderOpacity})`,
+            }
+          : {}
       }
-      className={`borderHover group flex flex-col justify-center rounded-3xl px-4 py-5 transition hover:rounded-3xl hover:border-opacity-100 dark:border-secondary md:hover:border-2 md:dark:hover:border-secondary`}
+      className={`group flex flex-col justify-center rounded-3xl px-4 py-5 transition dark:border-secondary`}
       target="_blank"
       rel="noopener noreferrer"
     >
