@@ -40,16 +40,8 @@ export default function Project({ project, index }: any) {
 
   return (
     <a
-      onMouseEnter={
-        isMobile
-          ? () => setborderHovering(false)
-          : () => setborderHovering(true)
-      }
-      onMouseLeave={
-        isMobile
-          ? () => setborderHovering(true)
-          : () => setborderHovering(false)
-      }
+      onMouseEnter={() => setborderHovering(!isMobile)}
+      onMouseLeave={() => setborderHovering(isMobile)}
       href="https://github.com/bacqueyrisses/garaikunde"
       style={{
         border: `2px solid rgba(${
