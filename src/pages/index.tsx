@@ -141,8 +141,8 @@ export default function Home() {
               </svg>
             </Link>
           </div>
-          <div className={"mt-5 text-xl font-medium"}>
-            Click to get more details
+          <div className={"mt-5 text-lg font-medium"}>
+            Click to get more details.
           </div>
           <div className={"text-[0.95rem] leading-6 md:text-lg"}>
             I make apps for fun, always working on the best{" "}
