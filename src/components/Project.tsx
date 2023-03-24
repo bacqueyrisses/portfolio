@@ -51,25 +51,11 @@ export default function Project({ project, index }: any) {
           : () => setborderHovering(false)
       }
       href="https://github.com/bacqueyrisses/garaikunde"
-      style={
-        borderHovering && theme === "light"
-          ? {
-              border: `2px solid rgba(0, 0, 0, 1)`,
-            }
-          : !borderHovering && theme === "light"
-          ? {
-              border: `2px solid rgba(0, 0, 0, ${borderOpacity})`,
-            }
-          : borderHovering && theme === "dark"
-          ? {
-              border: `2px solid rgba(225, 230, 222, 1)`,
-            }
-          : !borderHovering && theme === "dark"
-          ? {
-              border: `2px solid rgba(225, 230, 222, ${borderOpacity})`,
-            }
-          : {}
-      }
+      style={{
+        border: `2px solid rgba(${
+          theme === "light" ? "0, 0, 0" : "225, 230, 222"
+        }, ${borderHovering ? "1" : borderOpacity})`,
+      }}
       className={`group flex flex-col justify-center rounded-3xl px-4 py-5 transition dark:border-secondary`}
       target="_blank"
       rel="noopener noreferrer"
