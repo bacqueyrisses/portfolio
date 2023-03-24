@@ -1,4 +1,4 @@
-// Font
+// Imports
 import { Inter } from "@next/font/google";
 import { useEffect, useState } from "react";
 const inter = Inter({ subsets: ["latin"] });
@@ -9,15 +9,21 @@ export default function Project({ project, index }: any) {
   const { theme } = useTheme();
   const [borderOpacity, setBorderOpacity] = useState(0.05);
   const [borderHovering, setborderHovering] = useState(false);
-  const [scroll, setScroll] = useState<number[]>([]);
 
   useEffect(() => {
-    isMobile
-      ? setScroll([100, 400].map((e) => e * (index + 1)))
-      : setScroll([0, 600]);
-  }, [borderOpacity]);
+    window.addEventListener("scroll", handleScroll);
 
-  const handleScroll = () => {
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [handleScroll]);
+
+  function handleScroll() {
+    let scroll;
+    isMobile
+      ? (scroll = [100, 400].map((e) => e * (index + 1)))
+      : (scroll = [0, 600]);
+
     const position = window.scrollY;
     const positionCorrected = position - scroll[0];
     const scrollMaxStartingAtZero = scroll[1] - scroll[0];
@@ -28,15 +34,7 @@ export default function Project({ project, index }: any) {
     if (opacity > 0) return setBorderOpacity(round(opacity, 2));
 
     return setBorderOpacity(0.05);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [scroll]);
+  }
 
   return (
     <a
