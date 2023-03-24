@@ -21,7 +21,7 @@ export default function Project({ project, index }: any) {
   function handleScroll() {
     let scroll;
     isMobile
-      ? (scroll = [100, 400].map((e) => e * (index + 1)))
+      ? (scroll = [0, 500].map((e) => e * (index + 1)))
       : (scroll = [0, 600]);
 
     const position = window.scrollY;
