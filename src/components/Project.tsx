@@ -8,7 +8,6 @@ export default function Project({ project, index }: any) {
   const [scroll, setScroll] = useState<number[]>([]);
 
   useEffect(() => {
-    console.log(window.screen.width);
     if (window.screen.width < 900)
       setScroll([100, 400].map((e) => e * (index + 1)));
     if (window.screen.width >= 900)
@@ -46,7 +45,7 @@ export default function Project({ project, index }: any) {
       <h2 className={`mb-2.5 font-semibold ${inter.className}`}>
         {project.name}
         <span
-          className={`inline-block transform font-semibold transition sm:group-hover:translate-x-1 ${inter.className}`}
+          className={`inline-block transform pl-1 font-semibold transition sm:group-hover:translate-x-1 md:pl-2 ${inter.className}`}
         >
           -&gt;
         </span>
