@@ -2,13 +2,14 @@
 import { Inter } from "@next/font/google";
 import { useEffect, useState } from "react";
 const inter = Inter({ subsets: ["latin"] });
-import { isMobile } from "react-device-detect";
 import { useTheme } from "next-themes";
+import { isMobile } from "react-device-detect";
 
 export default function Project({ project, index }: any) {
   const { theme } = useTheme();
   const [borderOpacity, setBorderOpacity] = useState(0.05);
   const [borderHovering, setborderHovering] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -17,6 +18,14 @@ export default function Project({ project, index }: any) {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [handleScroll]);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   function handleScroll() {
     let scroll;
