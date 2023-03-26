@@ -41,6 +41,7 @@ export default function Header() {
       <Link
         to="contact"
         smooth={true}
+        duration={0}
         className={
           "cursor-pointer rounded-xl bg-black py-1.5 px-4 text-[0.92rem] font-medium text-secondary transition dark:bg-secondary dark:text-black dark:hover:text-secondary md:text-base md:hover:bg-[#232b2b] dark:md:hover:bg-black"
         }

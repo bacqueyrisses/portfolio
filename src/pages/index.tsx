@@ -118,6 +118,7 @@ export default function Home() {
             <Link
               to="projects"
               smooth={true}
+              duration={0}
               className={
                 "group inline-flex cursor-pointer items-center rounded-xl bg-black py-1.5 px-4 font-medium text-secondary transition dark:bg-secondary dark:text-black md:text-base"
               }
