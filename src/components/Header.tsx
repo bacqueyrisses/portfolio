@@ -98,7 +98,6 @@ export function Switcher() {
       <label className="swap-rotate swap self-center">
         <input
           type="checkbox"
-          className={""}
           onClick={() => {
             setTheme(resolvedTheme === "light" ? "dark" : "light");
           }}
