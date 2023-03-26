@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 // React libraries
-import { Link, animateScroll } from "react-scroll";
+import { Link } from "react-scroll";
 import projects from "./../data/projects.json";
 
 // Font
@@ -117,6 +117,7 @@ export default function Home() {
           <div className={"mt-5 gap-3 text-sm"}>
             <Link
               to="projects"
+              smooth={true}
               className={
                 "group inline-flex cursor-pointer items-center rounded-xl bg-black py-1.5 px-4 font-medium text-secondary transition dark:bg-secondary dark:text-black md:text-base"
               }
@@ -154,7 +155,7 @@ export default function Home() {
             id={"projects"}
           >
             {projects.map((project, index) => (
-              <Project project={project} index={index} key={project.name} />
+              <Project project={project} index={index} kpey={project.name} />
             ))}
           </div>
         </section>

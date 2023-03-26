@@ -40,6 +40,7 @@ export default function Header() {
 
       <Link
         to="contact"
+        smooth={true}
         className={
           "cursor-pointer rounded-xl bg-black py-1.5 px-4 text-[0.92rem] font-medium text-secondary transition dark:bg-secondary dark:text-black dark:hover:text-secondary md:text-base md:hover:bg-[#232b2b] dark:md:hover:bg-black"
         }
@@ -66,7 +67,7 @@ export function Switcher() {
 
   if (isIconDark) {
     return (
-      <label className="swap swap-rotate self-center">
+      <label className="swap-rotate swap self-center">
         <input
           type="checkbox"
           className={""}
