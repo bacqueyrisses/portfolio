@@ -1,19 +1,19 @@
 [
   {
     "name": "Garaikunde",
-    "description": "An e-commerce website for spices and natural plants to designed to give more flexibility to customers flexibility to customers.",
+    "description": "An e-commerce website for spices and natural plants to designed to give more flexibility to customers when ordering their favorite products.",
     "stack": "Next.JS + React.JS + Tailwind CSS"
   },
   {
     "name": "Devzone",
     "description":
-    "Get a custom dashboard with all the information you need on a daily basis as a developer basis as a developer.",
+    "Get a custom dashboard with all the information, tools and tweaks you need on a daily basis as a developer to focus on the essentials.",
     "stack": "Express.JS"
   },
   {
     "name": "Wordhand",
     "description":
-    "Expand your vocabulary, discover new words and get acceess to your favorites ones easily, all in one place all in one place.",
+    "Expand your vocabulary, discover new words, bolster your existing writing skills and get access to your favorites ones easily, all in one place.",
     "stack": "Next.JS + React.JS + Tailwind CSS"
   }
 ]
