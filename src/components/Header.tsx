@@ -1,6 +1,7 @@
 import { Link } from "react-scroll";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import Marquee from "react-smooth-marquee";
 
 export default function Header() {
   return (
@@ -37,6 +38,36 @@ export default function Header() {
           </li>
         </ul>
       </div>
+
+      <span
+        className={`ml-auto mr-10 hidden items-center transition-colors delay-75 duration-500 ease-in-out lg:flex`}
+      >
+        <div className={`w-64 overflow-hidden`}>
+          <Marquee velocity={0.05}>
+            Full Stack Developer &nbsp;<em>—</em>&nbsp; Available May ’23 &nbsp;
+            <em>—</em>&nbsp; Full Stack Developer &nbsp;<em>—</em>&nbsp;
+            Available May ’23 &nbsp;<em>—</em>&nbsp; Full Stack Developer &nbsp;
+            <em>—</em>
+            &nbsp; Available May ’23 &nbsp;<em>—</em>&nbsp; Full Stack Developer
+            &nbsp;<em>—</em>&nbsp; Available May ’23 &nbsp;<em>—</em>&nbsp; Full
+            Stack Developer &nbsp;<em>—</em>&nbsp; Available May ’23 &nbsp;
+            <em>—</em>&nbsp; Full Stack Developer &nbsp;<em>—</em>&nbsp;
+            Available May ’22 &nbsp;<em>—</em>&nbsp; Full Stack Developer &nbsp;
+            <em>—</em>
+            &nbsp; Available May ’23 &nbsp;<em>—</em>&nbsp; Full Stack Developer
+            &nbsp;<em>—</em>&nbsp; Available May ’23 &nbsp;<em>—</em>&nbsp; Full
+            Stack Developer &nbsp;<em>—</em>&nbsp; Available May ’23 &nbsp;
+            <em>—</em>&nbsp; Full Stack Developer &nbsp;<em>—</em>&nbsp;
+            Available May ’22 &nbsp;<em>—</em>&nbsp; Full Stack Developer &nbsp;
+            <em>—</em>
+            &nbsp; Available May ’23 &nbsp;<em>—</em>&nbsp; Full Stack Developer
+            &nbsp;<em>—</em>&nbsp; Available May ’23 &nbsp;<em>—</em>&nbsp; Full
+            Stack Developer &nbsp;<em>—</em>&nbsp; Available May ’23 &nbsp;
+            <em>—</em>&nbsp; Full Stack Developer &nbsp;<em>—</em>&nbsp;
+            Available May ’22 &nbsp;<em>—</em>&nbsp;
+          </Marquee>
+        </div>
+      </span>
 
       <Link
         to="contact"
