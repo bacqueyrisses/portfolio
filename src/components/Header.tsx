@@ -18,7 +18,7 @@ export default function Header() {
               href={"https://github.com/bacqueyrisses"}
               target={"_blank"}
               className={
-                "link-underline-black link-underline rounded-xl py-2 px-4 transition-colors hover:bg-black hover:text-secondary"
+                "link-underline-black link-underline rounded-xl px-4 py-2 transition-colors hover:bg-black hover:text-secondary"
               }
             >
               Github
@@ -30,7 +30,7 @@ export default function Header() {
               rel="noreferrer"
               target={"_blank"}
               className={
-                "link-underline-black link-underline rounded-xl py-2 px-4 transition-colors hover:bg-black hover:text-secondary"
+                "link-underline-black link-underline rounded-xl px-4 py-2 transition-colors hover:bg-black hover:text-secondary"
               }
             >
               Linkedin
@@ -69,7 +69,7 @@ export default function Header() {
         smooth={true}
         duration={0}
         className={
-          "cursor-pointer rounded-xl bg-black py-1.5 px-4 text-[0.92rem] font-medium text-secondary transition dark:bg-secondary dark:text-black dark:hover:text-secondary md:text-base md:hover:bg-[#232b2b] dark:md:hover:bg-black"
+          "cursor-pointer rounded-xl bg-black px-4 py-1.5 text-[0.92rem] font-medium text-secondary transition dark:bg-secondary dark:text-black dark:hover:text-secondary md:text-base md:hover:bg-[#232b2b] dark:md:hover:bg-black"
         }
       >
         Contact
