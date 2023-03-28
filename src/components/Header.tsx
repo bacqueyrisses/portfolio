@@ -46,7 +46,7 @@ export default function Header() {
             className="bg-secondary dark:bg-primary"
             gradient={false}
           >
-            Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp; —&nbsp;
+            Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
             Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
             Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
             Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
