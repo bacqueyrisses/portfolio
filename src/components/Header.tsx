@@ -50,15 +50,15 @@ export default function Header() {
             Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
             Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
             Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
-            Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp; —&nbsp;
+            Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
             Full Stack Developer &nbsp;—&nbsp; Available May ’22 &nbsp;—&nbsp;
             Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
             Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
-            Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp; —&nbsp;
+            Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
             Full Stack Developer &nbsp;—&nbsp; Available May ’22 &nbsp;—&nbsp;
             Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
             Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
-            Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp; —&nbsp;
+            Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
             Full Stack Developer &nbsp;—&nbsp; Available May ’22 &nbsp;—&nbsp;
           </Marquee>
         </div>
