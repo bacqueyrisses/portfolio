@@ -40,7 +40,7 @@ export default function Header() {
       </div>
 
       <span className={`ml-auto mr-10 hidden lg:flex`}>
-        <div className={`lg:w-64`}>
+        <div className={`lg:w-72`}>
           <Marquee
             speed={50}
             className="bg-secondary dark:bg-primary"
@@ -55,11 +55,11 @@ export default function Header() {
             Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
             Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
             Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
-            Full Stack Developer &nbsp;—&nbsp; Available May ’22 &nbsp;—&nbsp;
             Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
             Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
             Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
-            Full Stack Developer &nbsp;—&nbsp; Available May ’22 &nbsp;—&nbsp;
+            Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
+            Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
           </Marquee>
         </div>
       </span>
