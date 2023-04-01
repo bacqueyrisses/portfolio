@@ -11,9 +11,7 @@ export default function ScrollableLogo() {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const css = { transform: "rotate(" + scrollPosition + "deg)" };

@@ -23,9 +23,7 @@ export default function Project({ project, index }: any) {
     setMounted(true);
   }, []);
 
-  if (!mounted) {
-    return null;
-  }
+  if (!mounted) return null;
 
   function handleScroll() {
     let scroll;
