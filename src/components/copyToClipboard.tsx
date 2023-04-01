@@ -19,7 +19,7 @@ export default function CopyToClipboard({
     <div className={"group relative inline-flex items-center"}>
       <button
         type="button"
-        className={`inline-flex items-center rounded-xl border border-black py-1.5 px-4 text-[0.77rem] font-medium leading-5 transition dark:border-2 dark:border-secondary md:text-base md:hover:-skew-x-6 ${
+        className={`inline-flex items-center rounded-xl border border-black px-4 py-1.5 text-[0.77rem] font-medium leading-5 transition dark:border-2 dark:border-secondary md:text-base md:hover:-skew-x-6 ${
           isCopied
             ? "-skew-x-6 bg-black text-secondary dark:bg-secondary dark:text-black"
             : ""
@@ -42,7 +42,7 @@ export default function CopyToClipboard({
               width="16"
               height="6"
               viewBox="0 0 16 6"
-              className="absolute top-full left-1/2 -mt-px -ml-2 text-black"
+              className="absolute left-1/2 top-full -ml-2 -mt-px text-black"
             >
               <path
                 fillRule="evenodd"

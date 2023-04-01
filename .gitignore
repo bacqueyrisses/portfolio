@@ -1,3 +1,9 @@
 .vercel
 node_modules
 .next
+
+# Sentry
+.sentryclirc
+
+# Sentry
+next.config.original.js
