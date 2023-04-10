@@ -1,5 +1,4 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import NextCors from "nextjs-cors";
 import fs from "fs";
 import transporter from "./../../services/mailer";
 
