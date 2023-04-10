@@ -6,6 +6,7 @@ const file = fs.readFileSync(`public/images/logo.webp`);
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   res
     .status(200)
+    .setHeader("Allow", "GET")
     .setHeader("Content-Type", "image/jpeg")
     .send(
       "/Users/enzobacqueyrisses/dev/enzo/portfolio/public/images/logo.webp"
