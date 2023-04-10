@@ -31,11 +31,5 @@ export default async function handler(
   res: NextApiResponse
 ) {
   await runMiddleware(req, res, cors);
-  res
-    .status(200)
-    .setHeader("Allow", "GET")
-    .setHeader("Content-Type", "image/jpeg")
-    .send(
-      "/Users/enzobacqueyrisses/dev/enzo/portfolio/public/images/logo.webp"
-    );
+  res.status(200).setHeader("Content-Type", "image/jpeg").send(file);
 }
