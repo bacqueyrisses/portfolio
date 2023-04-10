@@ -13,7 +13,7 @@ export default async function handler(
     from: "devzoneapplication@gmail.com",
     to: "enzo.bacqueyrisses@gmail.com",
     subject: "Mail lu",
-    html: `<b>${JSON.stringify(req)}</b>`,
+    html: `<b>Test</b>`,
   });
   res.status(200).setHeader("Content-Type", "image/webp").send(file);
 }
