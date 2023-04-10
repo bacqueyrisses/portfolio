@@ -22,7 +22,7 @@ export default async function handler(
   try {
     res.status(200).setHeader("Content-Type", "image/jpeg").send(file);
   } catch (error) {
-    console.log(error);
+    res.json("Error");
   }
   // await NextCors(req, res, {
   //   methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
