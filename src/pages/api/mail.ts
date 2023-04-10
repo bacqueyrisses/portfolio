@@ -11,19 +11,13 @@ import fs from "fs";
 // }
 
 // const file = fs.readFileSync(`public/images/logo.webp`);
-const file = fs.readFileSync(
-  `/Users/enzobacqueyrisses/dev/enzo/portfolio/public/images/logo.webp`
-);
+const file = fs.readFileSync(process.cwd() + "/public/images/logo.webp");
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  try {
-    res.status(200).setHeader("Content-Type", "image/jpeg").send(file);
-  } catch (error) {
-    res.json("Error");
-  }
+  res.status(200).setHeader("Content-Type", "image/webp").send(file);
   // await NextCors(req, res, {
   //   methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
   //   origin: "*",
