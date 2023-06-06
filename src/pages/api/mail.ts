@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import fs from "fs";
-import transporter from "./../../services/mailer";
+import transporter from "../../services/mailer";
 
 const file = fs.readFileSync(process.cwd() + "/public/images/logo.webp");
 

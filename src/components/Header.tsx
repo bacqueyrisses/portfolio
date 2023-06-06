@@ -1,6 +1,7 @@
 import { Link } from "react-scroll";
 import Marquee from "react-fast-marquee";
 import Switcher from "@/components/Switcher";
+import { nextMonth } from "@/services/date";
 
 export default function Header() {
   return (
@@ -45,20 +46,29 @@ export default function Header() {
             className="bg-secondary dark:bg-primary"
             gradient={false}
           >
-            Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
-            Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
-            Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
-            Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
-            Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
-            Full Stack Developer &nbsp;—&nbsp; Available May ’22 &nbsp;—&nbsp;
-            Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
-            Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
-            Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
-            Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
-            Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
-            Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
-            Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
-            Full Stack Developer &nbsp;—&nbsp; Available May ’23 &nbsp;—&nbsp;
+            Full Stack Developer &nbsp;—&nbsp; Available {nextMonth()} ’23
+            &nbsp;—&nbsp; Full Stack Developer &nbsp;—&nbsp; Available{" "}
+            {nextMonth()} ’23 &nbsp;—&nbsp; Full Stack Developer &nbsp;—&nbsp;
+            Available {nextMonth()} ’23 &nbsp;—&nbsp; Full Stack Developer
+            &nbsp;—&nbsp; Available {nextMonth()} ’23 &nbsp;—&nbsp; Full Stack
+            Developer &nbsp;—&nbsp; Available {nextMonth()} ’23 &nbsp;—&nbsp;
+            Full Stack Developer &nbsp;—&nbsp; Available {nextMonth()} ’23
+            &nbsp;—&nbsp; Full Stack Developer &nbsp;—&nbsp; Available{" "}
+            {nextMonth()} ’23 &nbsp;—&nbsp; Full Stack Developer &nbsp;—&nbsp;
+            Available {nextMonth()} ’23 &nbsp;—&nbsp; Full Stack Developer
+            &nbsp;—&nbsp; Available {nextMonth()} ’23 &nbsp;—&nbsp; Full Stack
+            Developer &nbsp;—&nbsp; Available {nextMonth()} ’23 &nbsp;—&nbsp;
+            Full Stack Developer &nbsp;—&nbsp; Available {nextMonth()} ’23
+            &nbsp;—&nbsp; Full Stack Developer &nbsp;—&nbsp; Available{" "}
+            {nextMonth()} ’23 &nbsp;—&nbsp; Full Stack Developer &nbsp;—&nbsp;
+            Available {nextMonth()} ’23 &nbsp;—&nbsp; Full Stack Developer
+            &nbsp;—&nbsp; Available {nextMonth()} ’23 &nbsp;—&nbsp; Full Stack
+            Developer &nbsp;—&nbsp; Available {nextMonth()} ’23 &nbsp;—&nbsp;
+            Full Stack Developer &nbsp;—&nbsp; Available {nextMonth()} ’23
+            &nbsp;—&nbsp; Full Stack Developer &nbsp;—&nbsp; Available{" "}
+            {nextMonth()} ’23 &nbsp;—&nbsp; Full Stack Developer &nbsp;—&nbsp;
+            Available {nextMonth()} ’23 &nbsp;—&nbsp; Full Stack Developer
+            &nbsp;—&nbsp; Available {nextMonth()} ’23 &nbsp;—&nbsp;
           </Marquee>
         </div>
       </span>
