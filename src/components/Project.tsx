@@ -51,7 +51,7 @@ export default function Project({ project, index }: any) {
       style={{
         border: `2px solid rgba(${
           theme === "light" ? "0, 0, 0" : "225, 230, 222"
-        }, ${borderHovering ? "1" : borderOpacity})`,
+        }, ${!isMobile ? "0" : borderHovering ? "1" : borderOpacity})`,
       }}
       className={`group flex flex-col justify-center rounded-3xl px-4 py-5 transition dark:border-secondary`}
       target="_blank"
