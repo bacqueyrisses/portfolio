@@ -1,19 +1,12 @@
 // Imports
 import { Inter } from "@next/font/google";
 import { useEffect, useState } from "react";
-const inter = Inter({ subsets: ["latin"] });
 import { useTheme } from "next-themes";
 import { isMobile } from "react-device-detect";
+import round from "@/utils/round";
+import { ProjectProps } from "@/types";
 
-type ProjectProps = {
-  project: {
-    id: number;
-    name: string;
-    description: string;
-    stack: string;
-    link: string;
-  };
-};
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Project({ project }: ProjectProps) {
   const { theme } = useTheme();
@@ -81,9 +74,4 @@ export default function Project({ project }: ProjectProps) {
       </p>
     </a>
   );
-}
-
-function round(value: number, digits: number) {
-  const rounder = Math.pow(10, digits);
-  return parseFloat((Math.round(value * rounder) / rounder).toFixed(digits));
 }

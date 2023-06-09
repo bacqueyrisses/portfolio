@@ -1,6 +1,6 @@
 import CopyToClipboard from "@/components/copyToClipboard";
 import ScrollableLogo from "@/components/ScrollableLogo";
-import { nextMonth } from "@/services/date";
+import nextMonth from "@/utils/date";
 
 export default function Footer() {
   return (

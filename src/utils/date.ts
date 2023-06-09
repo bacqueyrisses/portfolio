@@ -1,4 +1,4 @@
-export const nextMonth = (): string => {
+export default function nextMonth(): string {
   const months: string[] = [
     "January",
     "February",
@@ -17,4 +17,4 @@ export const nextMonth = (): string => {
   const currentDate = new Date();
   const nextMonthIndex = (currentDate.getMonth() + 1) % 12;
   return months[nextMonthIndex];
-};
+}

@@ -5,11 +5,13 @@ import Footer from "@/components/Footer";
 
 // React libraries
 import { Link } from "react-scroll";
-import projects from "./../data/projects.json";
 
 // Font
 import localFont from "@next/font/local";
 import Project from "@/components/Project";
+import { technologies } from "@/data/technologies";
+import { projects } from "@/data/projects";
+import Technology from "@/components/Technology";
 const gooperFont = localFont({ src: "./../../public/fonts/gooper.ttf" });
 
 export default function Home() {
@@ -19,7 +21,7 @@ export default function Home() {
         <title>Enzo Bacqueyrisses / JavaScript Developer</title>
         <meta
           name="description"
-          content="Full Stack JavaScript Developer living in Bordeaux / Node.JS & React."
+          content="Full Stack JavaScript Developer living in Bordeaux / Node.JS & React.JS"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -68,46 +70,9 @@ export default function Home() {
               "mt-5 flex flex-wrap justify-start gap-3 text-sm font-medium md:text-base"
             }
           >
-            <a
-              href={"https://expressjs.com/fr/"}
-              target={"_blank"}
-              rel="noreferrer"
-              className={
-                "w-28 rounded-xl border-2 border-black px-4 py-1.5 text-center transition hover:-skew-x-6 hover:bg-black hover:text-secondary dark:border-secondary dark:hover:bg-secondary dark:hover:text-black md:w-32"
-              }
-            >
-              Express.JS
-            </a>
-            <a
-              href={"https://nextjs.org"}
-              target={"_blank"}
-              rel="noreferrer"
-              className={
-                "w-28 rounded-xl border-2 border-black px-4 py-1.5 text-center transition hover:-skew-x-6 hover:bg-black hover:text-secondary dark:border-secondary dark:hover:bg-secondary dark:hover:text-black md:w-32"
-              }
-            >
-              Next.JS
-            </a>
-            <a
-              href={"https://fr.reactjs.org"}
-              target={"_blank"}
-              rel="noreferrer"
-              className={
-                "w-28 rounded-xl border-2 border-black px-4 py-1.5 text-center transition hover:-skew-x-6 hover:bg-black hover:text-secondary dark:border-secondary dark:hover:bg-secondary dark:hover:text-black md:w-32"
-              }
-            >
-              React.JS
-            </a>
-            <a
-              href={"https://www.tailwindcss.com"}
-              target={"_blank"}
-              rel="noreferrer"
-              className={
-                "w-28 whitespace-nowrap rounded-xl border-2 border-black px-4 py-1.5 text-center transition hover:-skew-x-6 hover:bg-black hover:text-secondary dark:border-secondary dark:hover:bg-secondary dark:hover:text-black md:w-32"
-              }
-            >
-              Tailwind CSS
-            </a>
+            {technologies.map((technology) => (
+              <Technology technology={technology} key={technology.id} />
+            ))}
           </div>
         </section>
         <hr className={"mt-10 border-black dark:border-secondary"} />

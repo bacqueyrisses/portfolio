@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 import Marquee from "react-fast-marquee";
 import Switcher from "@/components/Switcher";
-import { nextMonth } from "@/services/date";
+import nextMonth from "@/utils/date";
 
 export default function Header() {
   return (
