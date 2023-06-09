@@ -5,7 +5,17 @@ const inter = Inter({ subsets: ["latin"] });
 import { useTheme } from "next-themes";
 import { isMobile } from "react-device-detect";
 
-export default function Project({ project, index }: any) {
+type ProjectProps = {
+  project: {
+    id: number;
+    name: string;
+    description: string;
+    stack: string;
+    link: string;
+  };
+};
+
+export default function Project({ project }: ProjectProps) {
   const { theme } = useTheme();
   const [borderOpacity, setBorderOpacity] = useState(0.05);
   const [borderHovering, setborderHovering] = useState(false);
@@ -28,7 +38,7 @@ export default function Project({ project, index }: any) {
   function handleScroll() {
     let scroll;
     isMobile
-      ? (scroll = [0, 500].map((e) => e * (index + 1)))
+      ? (scroll = [0, 500].map((e) => e * (project.id + 1)))
       : (scroll = [0, 600]);
 
     const position = window.scrollY;
@@ -47,7 +57,7 @@ export default function Project({ project, index }: any) {
     <a
       onMouseEnter={() => setborderHovering(!isMobile)}
       onMouseLeave={() => setborderHovering(isMobile)}
-      href="https://github.com/bacqueyrisses/garaikunde"
+      href={project.link}
       style={{
         border: `2px solid rgba(${
           theme === "light" ? "0, 0, 0" : "225, 230, 222"

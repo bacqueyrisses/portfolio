@@ -33,21 +33,19 @@ export default function Home() {
           }
         >
           <div className={"font-medium sm:hidden"}>
-            Hi, I’m Enzo! <br />A{" "}
+            Hi, I’m Enzo! <br />A
             <span className={gooperFont.className}>Web Developer</span>
-            <br /> living in{" "}
+            <br /> living in
             <span className={gooperFont.className}>Bordeaux</span> with skills
             in ✦ <span className={gooperFont.className}>JavaScript</span> ✦
           </div>
           <div className={"hidden text-6xl font-medium sm:block"}>
-            Hi, I’m Enzo! <br />A{" "}
+            Hi, I’m Enzo! <br />A
             <span className={gooperFont.className}>Web Developer </span>
             <br />
-            living in <span className={gooperFont.className}>
-              Bordeaux
-            </span>{" "}
+            living in <span className={gooperFont.className}>Bordeaux</span>
             <br />
-            with skills in ✦{" "}
+            with skills in ✦
             <span className={gooperFont.className}>JavaScript</span> ✦
           </div>
 
@@ -85,7 +83,7 @@ export default function Home() {
               target={"_blank"}
               rel="noreferrer"
               className={
-                "w-28 rounded-xl border-2 border-black py-1.5 px-4 text-center transition hover:-skew-x-6 hover:bg-black hover:text-secondary dark:border-secondary dark:hover:bg-secondary dark:hover:text-black md:w-32"
+                "w-28 rounded-xl border-2 border-black px-4 py-1.5 text-center transition hover:-skew-x-6 hover:bg-black hover:text-secondary dark:border-secondary dark:hover:bg-secondary dark:hover:text-black md:w-32"
               }
             >
               Next.JS
@@ -120,12 +118,12 @@ export default function Home() {
               smooth={true}
               duration={0}
               className={
-                "group inline-flex cursor-pointer items-center rounded-xl bg-black py-1.5 px-4 font-medium text-secondary transition dark:bg-secondary dark:text-black md:text-base"
+                "group inline-flex cursor-pointer items-center rounded-xl bg-black px-4 py-1.5 font-medium text-secondary transition dark:bg-secondary dark:text-black md:text-base"
               }
             >
               Projects
               <svg
-                className="mt-1.5 ml-2 -mr-1 stroke-secondary stroke-2 dark:stroke-black md:mt-[0.45rem]"
+                className="-mr-1 ml-2 mt-1.5 stroke-secondary stroke-2 dark:stroke-black md:mt-[0.45rem]"
                 fill="none"
                 width="10"
                 height="10"
@@ -152,7 +150,7 @@ export default function Home() {
           </div>
 
           <div
-            className={"mt-12 mb-12 grid grid-cols-1 gap-5 md:grid-cols-3"}
+            className={"mb-12 mt-12 grid grid-cols-1 gap-5 md:grid-cols-3"}
             id={"projects"}
           >
             {projects.map((project, index) => (
