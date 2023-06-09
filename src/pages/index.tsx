@@ -154,7 +154,7 @@ export default function Home() {
             id={"projects"}
           >
             {projects.map((project, index) => (
-              <Project project={project} index={index} key={project.name} />
+              <Project project={project} key={index} />
             ))}
           </div>
         </section>
