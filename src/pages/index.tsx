@@ -35,20 +35,22 @@ export default function Home() {
           }
         >
           <div className={"font-medium sm:hidden"}>
-            Hi, I’m Enzo! <br />A
+            Hi, I’m Enzo! <br />A{" "}
             <span className={gooperFont.className}>Web Developer</span>
-            <br /> living in
+            <br /> living in{" "}
             <span className={gooperFont.className}>Bordeaux</span> with skills
             in ✦ <span className={gooperFont.className}>JavaScript</span> ✦
           </div>
           <div className={"hidden text-6xl font-medium sm:block"}>
-            Hi, I’m Enzo! <br />A
+            Hi, I’m Enzo! <br />A{" "}
             <span className={gooperFont.className}>Web Developer </span>
             <br />
-            living in <span className={gooperFont.className}>Bordeaux</span>
+            living in <span className={gooperFont.className}>
+              Bordeaux
+            </span>{" "}
             <br />
-            with skills in ✦
-            <span className={gooperFont.className}> JavaScript</span> ✦
+            with skills in ✦{" "}
+            <span className={gooperFont.className}>JavaScript</span> ✦
           </div>
 
           <div className={"mt-5 text-[0.95rem] leading-6 md:text-lg"}>

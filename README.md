@@ -1,15 +1,7 @@
 ## Hey there 👋
 
-I'm *Enzo Bacqueyrisses*, a web developer from France. I'm passionate about open source and specialize in TypeScript. I've been captivated by Next.js, React, and the Full Stack *JavaScript ecosystem*.
-<br />
-### Let's work together [📧](mailto:bacqueyrisses@proton.me)
+You just discovered my ✦ *portfolio* ✦
 
-### 📫 How to reach me?
-- [This portfolio](https://www.bacqueyrisses.dev)
-- [LinkedIn](https://www.linkedin.com/in/bacqueyrisses/)
-- [Twitter](https://twitter.com/Bacqueyrisses)
-- [📧](mailto:bacqueyrisses@proton.me)
+It's build with Next.JS + TypeScript + Tailwind CSS
 
-
-# Come say hi! [📧](mailto:bacqueyrisses@proton.me) 
-
+You can hit me up by email [📧](mailto:bacqueyrisses@proton.me), enjoy your day :)
