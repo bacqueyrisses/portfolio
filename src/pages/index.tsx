@@ -48,7 +48,7 @@ export default function Home() {
             living in <span className={gooperFont.className}>Bordeaux</span>
             <br />
             with skills in ✦
-            <span className={gooperFont.className}>JavaScript</span> ✦
+            <span className={gooperFont.className}> JavaScript</span> ✦
           </div>
 
           <div className={"mt-5 text-[0.95rem] leading-6 md:text-lg"}>
