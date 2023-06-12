@@ -3,7 +3,7 @@ import { TechnologyProps } from "@/types";
 export default function Technology({ technology }: TechnologyProps) {
   return (
     <a
-      href={"https://expressjs.com/fr/"}
+      href={technology.link}
       target={"_blank"}
       rel="noreferrer"
       className={

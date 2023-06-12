@@ -2,6 +2,7 @@ export type TechnologyProps = {
   technology: {
     id: number;
     name: string;
+    link: string;
   };
 };
 
