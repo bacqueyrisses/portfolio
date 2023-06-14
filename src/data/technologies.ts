@@ -1,22 +1,22 @@
 export const technologies = [
   {
     id: 1,
+    name: "React",
+    link: "https://react.dev ",
+  },
+  {
+    id: 2,
     name: "Next.JS",
     link: "https://nextjs.org",
   },
   {
-    id: 2,
-    name: "React.JS",
-    link: "https://react.dev",
-  },
-  {
     id: 3,
-    name: "Tailwind CSS",
-    link: "https://tailwindcss.com",
+    name: "TypeScript",
+    link: "https://www.typescriptlang.org",
   },
   {
     id: 4,
-    name: "Express.JS",
-    link: "https://expressjs.com",
+    name: "Tailwind CSS",
+    link: "https://tailwindcss.com",
   },
 ];

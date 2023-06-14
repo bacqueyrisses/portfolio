@@ -18,10 +18,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Enzo Bacqueyrisses / JavaScript Developer</title>
+        <title>Enzo Bacqueyrisses / TypeScript Developer</title>
         <meta
           name="description"
-          content="Full Stack JavaScript Developer living in Bordeaux / Node.JS & React.JS"
+          content="Full Stack JavaScript Developer living in Bordeaux / React & NodeJS"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
