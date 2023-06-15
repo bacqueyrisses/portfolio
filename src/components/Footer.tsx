@@ -1,4 +1,4 @@
-import CopyToClipboard from "@/components/copyToClipboard";
+import CopyToClipboard from "@/components/CopyToClipboard";
 import ScrollableLogo from "@/components/ScrollableLogo";
 import nextMonth from "@/utils/date";
 

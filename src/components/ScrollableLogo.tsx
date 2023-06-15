@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 export default function ScrollableLogo() {
-  const [scrollPosition, setScrollPosition] = useState(1);
+  const [scrollPosition, setScrollPosition] = useState<number>(1);
   const handleScroll = () => {
     const position = window.scrollY;
     setScrollPosition(position);

@@ -5,7 +5,7 @@ export default function CopyToClipboard({
 }: {
   contentToCopy: string;
 }) {
-  const [isCopied, setIsCopied] = useState(false);
+  const [isCopied, setIsCopied] = useState<boolean>(false);
 
   async function handleClick() {
     setIsCopied(true);

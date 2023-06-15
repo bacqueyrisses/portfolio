@@ -1,4 +1,3 @@
-// Imports
 import { Inter } from "@next/font/google";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
@@ -10,9 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Project({ project }: ProjectProps) {
   const { theme } = useTheme();
-  const [borderOpacity, setBorderOpacity] = useState(0.05);
-  const [borderHovering, setborderHovering] = useState(false);
-  const [mounted, setMounted] = useState(false);
+  const [borderOpacity, setBorderOpacity] = useState<number>(0.05);
+  const [borderHovering, setborderHovering] = useState<boolean>(false);
+  const [mounted, setMounted] = useState<boolean>(false);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);

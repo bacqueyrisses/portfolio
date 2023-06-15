@@ -2,10 +2,10 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
 export default function Switcher() {
-  const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useState<boolean>(false);
   const { resolvedTheme, setTheme } = useTheme();
 
-  const [isIconDark] = useState(resolvedTheme === "light");
+  const [isIconDark] = useState<boolean>(resolvedTheme === "light");
 
   useEffect(() => {
     setMounted(true);

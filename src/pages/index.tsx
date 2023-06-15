@@ -1,17 +1,15 @@
-// Next
 import Head from "next/head";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-// React libraries
 import { Link } from "react-scroll";
 
-// Font
 import localFont from "@next/font/local";
 import Project from "@/components/Project";
 import { technologies } from "@/data/technologies";
 import { projects } from "@/data/projects";
 import Technology from "@/components/Technology";
+
 const gooperFont = localFont({ src: "./../../public/fonts/gooper.ttf" });
 
 export default function Home() {
