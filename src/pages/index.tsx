@@ -45,7 +45,7 @@ export default function Home() {
             </div>
             <div>
             with skills in ✦
-            <span className={gooperFont.className}>JavaScript</span> ✦
+            <span className={gooperFont.className}> JavaScript</span> ✦
             </div>
             </div>
             </div>
