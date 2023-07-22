@@ -16,7 +16,7 @@ export const technologies = [
   },
   {
     id: 4,
-    name: "Tailwind CSS",
+    name: "Tailwind",
     link: "https://tailwindcss.com",
   },
 ];

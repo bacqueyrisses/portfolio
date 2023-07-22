@@ -19,19 +19,20 @@ export default function ScrollableLogo() {
     <>
       <Image
         style={css}
-        className={"dark:hidden"}
+        className={"dark:hidden bg-left bg-contain"}
         src={"/images/logo.webp"}
         alt={"logo enzo bacqueyrisses"}
-        width={120}
-        height={120}
+        width={60}
+        height={60}
       />
+
       <Image
         style={css}
-        className={"hidden dark:block"}
+        className={"hidden dark:block bg-left bg-contain"}
         src={"/images/whitelogo.webp"}
         alt={"logo enzo bacqueyrisses"}
-        width={120}
-        height={120}
+        width={60}
+        height={60}
       />
     </>
   );

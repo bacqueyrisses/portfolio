@@ -4,11 +4,13 @@ import Footer from "@/components/Footer";
 
 import { Link } from "react-scroll";
 
+
 import localFont from "@next/font/local";
 import Project from "@/components/Project";
 import { technologies } from "@/data/technologies";
 import { projects } from "@/data/projects";
 import Technology from "@/components/Technology";
+import Image from "next/image";
 
 const gooperFont = localFont({ src: "./../../public/fonts/gooper.ttf" });
 
@@ -24,34 +26,31 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+        <Header />
 
-      <Header />
-      <main className={""}>
+      <main className={"flex flex-col gap-14 sm:gap-16 mt-20"}>
         <section
           className={
-            "mt-14 text-[1.69rem] leading-[2.1rem] sm:text-4xl md:text-5xl"
+            "text-[1.69rem] leading-[2.1rem] sm:text-4xl md:text-5xl"
           }
         >
-          <div className={"font-medium sm:hidden"}>
-            Hi, I’m Enzo! <br />A{" "}
-            <span className={gooperFont.className}>Web Developer</span>
-            <br /> living in{" "}
-            <span className={gooperFont.className}>Bordeaux</span> with skills
-            in ✦ <span className={gooperFont.className}>JavaScript</span> ✦
-          </div>
-          <div className={"hidden text-6xl font-medium sm:block"}>
-            Hi, I’m Enzo! <br />A{" "}
-            <span className={gooperFont.className}>Web Developer </span>
-            <br />
-            living in <span className={gooperFont.className}>
-              Bordeaux
-            </span>{" "}
-            <br />
-            with skills in ✦{" "}
-            <span className={gooperFont.className}>JavaScript</span> ✦
-          </div>
 
-          <div className={"mt-5 text-[0.95rem] leading-6 md:text-lg"}>
+          <div className={"sm:text-6xl text-3xl font-medium flex flex-col sm:gap-8 gap-6"}>
+              <div className={"sm:space-y-2"}>
+            <div className={"sm:text-5xl text-2xl"}>Hi, I’m Enzo!</div>
+            <div>
+            <div>
+            A
+            <span className={gooperFont.className}> Web Developer </span>
+            </div>
+            <div>
+            with skills in ✦
+            <span className={gooperFont.className}>JavaScript</span> ✦
+            </div>
+            </div>
+            </div>
+
+          <div className={"text-2xl leading-6 md:text-4xl sm:w-1/3 w-2/3"}>
             My goal is to create{" "}
             <span className={"link-underline-black link-underline italic"}>
               optimized
@@ -65,65 +64,84 @@ export default function Home() {
               JavaScript ecosystem.
             </span>
           </div>
-          <div
-            className={
-              "mt-5 flex flex-wrap justify-start gap-3 text-sm font-medium md:text-base"
-            }
-          >
-            {technologies.map((technology) => (
-              <Technology technology={technology} key={technology.id} />
-            ))}
-          </div>
-        </section>
-        <hr className={"mt-10 border-black dark:border-secondary"} />
-        <section className={"mt-10"}>
-          <div className={"mt-5 gap-3 text-sm"}>
-            <Link
-              to="projects"
-              smooth={true}
-              duration={0}
-              className={
-                "group inline-flex cursor-pointer items-center rounded-xl bg-black px-4 py-1.5 font-medium text-secondary transition dark:bg-secondary dark:text-black md:text-base"
-              }
-            >
-              Projects
-              <svg
-                className="-mr-1 ml-2 mt-1.5 stroke-secondary stroke-2 dark:stroke-black md:mt-[0.45rem]"
-                fill="none"
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                aria-hidden="true"
-              >
-                <path
-                  className="origin-center rotate-90 opacity-0 transition group-hover:opacity-100"
-                  d="M0 5h7"
-                ></path>
-                <path
-                  className="origin-center rotate-90 transition group-hover:translate-y-[3px]"
-                  d="M1 1l4 4-4 4"
-                ></path>
-              </svg>
-            </Link>
-          </div>
-          <div className={"mt-5 text-lg font-medium"}>
-            Click to get more details.
-          </div>
-          <div className={"text-[0.95rem] leading-6 md:text-lg"}>
-            I make apps for fun, always working on the best{" "}
-            <span className={"italic"}>code architecture</span> possible.
+<div className={"flex gap-4"}>
+
+    <a target={"_blank"} href={"https://www.linkedin.com/in/bacqueyrisses/"} className={"bg-[#0e76a8] inline-flex cursor-pointer items-center rounded-md px-3 sm:px-4 py-1.5 font-medium text-secondary transition dark:bg-secondary dark:text-black text-sm md:text-base"
+    }>Linkedin
+        <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              className="ml-2 h- w-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+        </a>
+  <a target={"_blank"} href={"https://github.com/bacqueyrisses"}  className={"inline-flex cursor-pointer items-center rounded-md bg-black px-3 sm:px-4  py-1.5 font-medium text-secondary transition dark:bg-secondary dark:text-black md:text-base text-sm"
+  }>     Github   <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  className="ml-2 h- w-6">
+      <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+  </svg></a>
+</div>
+          {/*<div*/}
+          {/*  className={*/}
+          {/*    "flex flex-wrap justify-start gap-3 text-sm font-medium md:text-base"*/}
+          {/*  }*/}
+          {/*>*/}
+          {/*  {technologies.map((technology) => (*/}
+          {/*    <Technology technology={technology} key={technology.id} />*/}
+          {/*  ))}*/}
+          {/*</div>*/}
           </div>
 
+
+        </section>
+        <section className={"space-y-4"}>
+
+
           <div
-            className={"mb-12 mt-12 grid grid-cols-1 gap-5 md:grid-cols-3"}
+            className={"flex flex-col sm:flex-row gap-6 h-[70rem] sm:h-[26rem]"}
             id={"projects"}
           >
-            {projects.map((project, index) => (
-              <Project project={project} key={index} />
-            ))}
+<a href={"https://github.com/bacqueyrisses/devzone"} target={"_blank"} className={"font-medium cursor-pointer hover:opacity-95 px-4 py-2 basis-full sm:basis-1/3 rounded-lg bg-[url('/images/gradient1.webp')] bg-cover flex flex-col justify-between"}>
+    <div className={"w-full flex justify-between "}>
+    <div>Devzone</div>
+    <div>(2022)</div>
+    </div>
+    <div className={"font-medium"} >Boost your development productivity with a custom dashboard. Get your information and tools in one place, letting you focus on what matters most.</div>
+
+</a>
+              <a href={"https://github.com/bacqueyrisses/"} className={"font-medium cursor-pointer hover:opacity-95 px-4 py-2 basis-full sm:basis-1/3 rounded-lg bg-[url('/images/gradient2.webp')] bg-cover flex flex-col justify-between"}>
+                  <div className={"w-full flex justify-between "}>
+                      <div>Investy</div>
+                      <div>(2023)</div>
+                  </div>
+                  <div className={"font-medium"} >Easily venture into the world of investing with this intuitive tailored dashboard. The project offers a seamless experience for both users and admins.</div>
+
+              </a>
+              <a href={"https://github.com/bacqueyrisses/ouvrage"} target={"_blank"}  className={"font-medium cursor-pointer hover:opacity-95 px-4 py-2 basis-full sm:basis-1/3 rounded-lg bg-[url('/images/gradient3.webp')] bg-cover flex flex-col justify-between"}>
+                  <div className={"w-full flex justify-between"}>
+                      <div>Ouvrage</div>
+                      <div>(2023)</div>
+                  </div>
+                  <div className={"font-medium"} >Expand your vocabulary, discover new words, bolster your existing writing skills and get access to your favorites ones easily, all in one place.</div>
+
+              </a>
           </div>
+            <div
+                className={
+                    "flex gap-3 text-sm font-medium md:text-base items-center justify-center"
+                }
+            >
+                {/*{technologies.map((technology) => (*/}
+                {/*    <Technology technology={technology} key={technology.id} />*/}
+                {/*))}*/}
+                <div>(React)</div>
+                <div>(NextJS)</div>
+                <div>(Tailwind)</div>
+                <div>(ExpressJS)</div>
+                <div>(PostgreSQL)</div>
+
+            </div>
         </section>
-        <hr className={"mt-10 border-black dark:border-secondary"} />
         <Footer />
       </main>
     </>
