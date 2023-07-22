@@ -50,7 +50,7 @@ export default function Home() {
             </div>
             </div>
 
-          <div className={"text-2xl leading-6 md:text-4xl sm:w-1/3 w-2/3"}>
+          <div className={"text-xl leading-6 md:text-4xl sm:w-1/3 w-2/3"}>
             My goal is to create{" "}
             <span className={"link-underline-black link-underline italic"}>
               optimized
