@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <div
       className={
-        "flex items-center justify-between text-sm font-medium sm:text-base md:text-base pr-7 pl-4 fixed bg-secondary py-2 top-0 inset-x-0 sm:pr-40 sm:pl-36 dark:bg-primary shadow-sm"
+        "z-50 flex items-center justify-between text-sm font-medium sm:text-base md:text-base pr-7 pl-4 fixed bg-secondary py-2 top-0 inset-x-0 sm:pr-40 sm:pl-36 dark:bg-primary shadow-sm"
       }
     >
       <div className={"flex items-baseline gap-5 font-medium"}>

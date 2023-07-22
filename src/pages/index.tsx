@@ -35,7 +35,7 @@ export default function Home() {
           }
         >
 
-          <div className={"sm:text-6xl text-3xl font-medium flex flex-col sm:gap-8 gap-6"}>
+          <div className={"sm:text-6xl text-2xl font-medium flex flex-col sm:gap-8 gap-6"}>
               <div className={"sm:space-y-2"}>
             <div className={"sm:text-5xl text-2xl"}>Hi, I’m Enzo!</div>
             <div>
@@ -128,7 +128,7 @@ export default function Home() {
           </div>
             <div
                 className={
-                    "flex gap-3 text-sm font-medium md:text-base items-center justify-center"
+                    "flex gap-2 sm:gap-3 text-sm font-medium md:text-base items-center justify-center"
                 }
             >
                 {/*{technologies.map((technology) => (*/}

@@ -12,7 +12,7 @@ export default function Footer() {
         <div className={"text-lg font-medium md:text-xl"}>
           Let's work together
         </div>
-        <div className={"text-[0.95rem] leading-6 md:text-lg"}>
+        <div className={"text-[0.90rem] leading-6 md:text-lg"}>
           I'm available from {nextMonth()} 2023 for a full time job.
         </div>
       </div>
