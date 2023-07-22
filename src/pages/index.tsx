@@ -26,8 +26,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <main className={"w-full"}>
       <Header />
-      <main className={""}>
+
         <section
           className={
             "mt-14 text-[1.69rem] leading-[2.1rem] sm:text-4xl md:text-5xl"
@@ -40,19 +41,23 @@ export default function Home() {
             <span className={gooperFont.className}>Bordeaux</span> with skills
             in ✦ <span className={gooperFont.className}>JavaScript</span> ✦
           </div>
-          <div className={"hidden text-6xl font-medium sm:block"}>
-            Hi, I’m Enzo! <br />A{" "}
-            <span className={gooperFont.className}>Web Developer </span>
+          <div className={"hidden text-6xl font-medium sm:flex  sm:flex-col"}>
+            
+            <div className="text-5xl">Hi, I’m Enzo!</div> 
+            <div>
+            <div>
+            A <span className={gooperFont.className}>Web Developer </span>
+            </div>
             <br />
-            living in <span className={gooperFont.className}>
-              Bordeaux
-            </span>{" "}
-            <br />
+<div>
             with skills in ✦{" "}
             <span className={gooperFont.className}>JavaScript</span> ✦
+            </div>
+            </div>
+     
           </div>
 
-          {/* <div className={"mt-5 text-[0.95rem] leading-6 md:text-lg"}>
+          <div className={"mt-6 text-[0.95rem] text-3xl leading-6 md:text-2xl w-1/3"}>
             My goal is to create{" "}
             <span className={"link-underline-black link-underline italic"}>
               optimized

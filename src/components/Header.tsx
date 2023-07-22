@@ -2,17 +2,19 @@ import { Link } from "react-scroll";
 import Marquee from "react-fast-marquee";
 import Switcher from "@/components/Switcher";
 import nextMonth from "@/utils/date";
+import ScrollableLogo from "./ScrollableLogo";
 
 export default function Header() {
   return (
     <div
       className={
-        "flex items-baseline justify-between text-[0.92rem] font-medium sm:text-base md:text-base"
+        "flex items-center justify-between text-[0.92rem] font-medium sm:text-base md:text-base fixed p-2 bg-secondary top-0 left-24 right-24 px-12"
       }
     >
       <div className={"flex items-baseline gap-5 font-medium"}>
-        <Switcher />
-        {/* <ul className={"flex md:gap-5"}>
+        <ScrollableLogo/>
+        {/* <Switcher />
+        <ul className={"flex md:gap-5"}>
           <li>
             <a
               href={"https://github.com/bacqueyrisses"}
