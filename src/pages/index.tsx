@@ -24,16 +24,16 @@ export default function Home() {
             </Head>
             <Header/>
 
-            <main className={"flex flex-col gap-14 sm:gap-16 mt-20"}>
+            <main className={"flex flex-col gap-14 sm:gap-24 sm:mt-24 mt-20"}>
                 <section
                     className={
                         "text-[1.69rem] leading-[2.1rem] sm:text-4xl md:text-5xl"
                     }
                 >
 
-                    <div className={"sm:text-6xl text-2xl font-medium flex flex-col sm:gap-8 gap-6"}>
+                    <div className={"sm:text-6xl text-2xl font-medium flex flex-col sm:gap-10 gap-6"}>
                         <div className={"sm:space-y-2"}>
-                            <div className={"sm:text-5xl text-2xl"}>Hi, I’m Enzo!</div>
+                            <div className={"sm:text-4xl text-2xl"}>Hi, I’m Enzo!</div>
                             <div>
                                 <div>
                                     A
@@ -46,13 +46,13 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className={"sm:text-3xl text-lg font-normal w-9/12 sm:w-full"}>
-                            My goal is to create{" "}
-                            <span className={"link-underline-black link-underline italic"}>
+                        <div className={"sm:text-3xl text-lg font-normal w-10/12 sm:w-2/3"}>
+                            I'm passionate about open source projects and have specialized in TypeScript. My goal is to create{" "}
+                            <span className={"italic"}>
               optimized
             </span>{" "}
                             and{" "}
-                            <span className={"link-underline-black link-underline italic"}>
+                            <span className={"italic"}>
               beautiful
             </span>{" "}
                             websites using the latest technologies in the{" "}

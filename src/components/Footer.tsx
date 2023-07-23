@@ -9,10 +9,10 @@ export default function Footer() {
     <footer className={"sm:space-y-3 space-y-5 flex flex-col items-center"} id={"contact"}>
 
       <div className={"flex flex-col items-center justify-center"}>
-        <div className={"text-lg font-medium md:text-xl"}>
+        <div className={"text-lg font-medium md:text-2xl"}>
           Let's work together
         </div>
-        <div className={"text-[0.90rem] leading-6 md:text-lg"}>
+        <div className={"text-[0.90rem] leading-6 md:text-xl"}>
           I'm available <span className={"sm:hidden inline"}> from {nextMonth()} 2023 </span>for a full time job.
         </div>
       </div>
