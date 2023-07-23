@@ -46,7 +46,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className={"text-xl leading-6 md:text-4xl sm:w-1/3 w-9/12"}>
+                        <div className={"sm:text-3xl text-lg font-normal w-9/12 sm:w-full"}>
                             My goal is to create{" "}
                             <span className={"link-underline-black link-underline italic"}>
               optimized
@@ -63,23 +63,32 @@ export default function Home() {
                         <div className={"flex gap-4"}>
 
                             <a target={"_blank"} href={"https://www.linkedin.com/in/bacqueyrisses/"}
-                               className={"bg-[#0e76a8] inline-flex cursor-pointer items-center rounded-md px-3 sm:px-4 py-1.5 font-medium text-secondary transition dark:bg-secondary dark:text-black text-sm md:text-base"
+                               className={"bg-[#0e76a8] hover:bg-opacity-90 inline-flex cursor-pointer items-center rounded-md px-3 sm:px-4 py-1.5 font-medium text-secondary dark:bg-secondary dark:text-black text-sm md:text-base"
                                }>Linkedin
+
+
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                     stroke-width="1.5" stroke="currentColor"
-                                     className="ml-2 h- w-6">
+                                     stroke-width="1.5" stroke="currentColor" className="ml-2 h-4 w-4">
                                     <path stroke-linecap="round" stroke-linejoin="round"
-                                          d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                          d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
                                 </svg>
+
+
                             </a>
-                            <a target={"_blank"} href={"https://github.com/bacqueyrisses"}
-                               className={"inline-flex cursor-pointer items-center rounded-md bg-black px-3 sm:px-4  py-1.5 font-medium text-secondary transition dark:bg-secondary dark:text-black md:text-base text-sm"
-                               }> Github <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                              stroke-width="1.5" stroke="currentColor"
-                                              className="ml-2 h- w-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                      d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg></a>
+                            <a target={"_blank"} href={"https://www.linkedin.com/in/bacqueyrisses/"}
+                               className={"bg-black hover:bg-opacity-90 inline-flex cursor-pointer items-center rounded-md px-3 sm:px-4 py-1.5 font-medium text-secondary dark:bg-secondary dark:text-black text-sm md:text-base"
+                               }>Github
+
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                     stroke-width="1.5" stroke="currentColor" className="ml-2 h-4 w-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                          d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+                                </svg>
+
+
+                            </a>
+
                         </div>
                     </div>
 
@@ -92,12 +101,12 @@ export default function Home() {
                         {projects.map(project => {
                             return (
                                 <a key={project.id} href={project.link} target={"_blank"}
-                                   className={`font-medium cursor-pointer hover:opacity-95 px-4 py-2 basis-full sm:basis-1/3 rounded-lg bg-cover flex flex-col justify-between ${project.image}`}>
-                                    <div className={"w-full flex justify-between "}>
-                                        <div>{project.name}</div>
+                                   className={`font-medium text-sm sm:text-lg cursor-pointer hover:opacity-95 px-4 py-3 basis-full sm:basis-1/3 rounded-lg bg-cover flex flex-col justify-between ${project.image}`}>
+                                    <div className={"w-full flex justify-between items-baseline"}>
+                                        <div className={"sm:text-2xl text-lg"}>{project.name}</div>
                                         <div>({project.date})</div>
                                     </div>
-                                    <div className={"font-medium"}>{project.description}
+                                    <div>{project.description}
                                     </div>
 
                                 </a>
@@ -106,7 +115,7 @@ export default function Home() {
                     </div>
                     <div
                         className={
-                            "flex gap-2 sm:gap-3 text-sm font-medium md:text-base items-center justify-center"
+                            "flex gap-2 sm:gap-6 text-sm md:text-lg items-center justify-center"
                         }
                     >
                         {technologies.map((technology) => (
