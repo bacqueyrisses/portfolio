@@ -106,7 +106,7 @@ export default function Home() {
                         {projects.map(project => {
                             return (
                                 <a key={project.id} href={project.link} target={"_blank"}
-                                   className={`font-medium text-sm sm:text-lg cursor-pointer text-black sm:text-transparent sm:hover:text-black transition ease-out sm:hover:opacity-90 px-4 py-3 basis-full sm:basis-1/3 rounded-lg bg-cover flex flex-col justify-between ${project.image}`}>
+                                   className={`font-medium text-sm sm:text-lg cursor-pointer text-black transition ease-out sm:hover:opacity-90 px-4 py-3 basis-full sm:basis-1/3 rounded-lg bg-cover flex flex-col justify-between ${project.image}`}>
                                     <div className={"w-full flex justify-between items-baseline"}>
                                         <div className={"sm:text-2xl text-lg"}>{project.name}</div>
                                         <div>({project.date})</div>
