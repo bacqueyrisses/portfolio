@@ -28,7 +28,7 @@ export default function Header() {
       {/*</a>*/}
 
       <span className={`ml-auto mr-10 hidden lg:flex`}>
-        <div className={`lg:w-80`}>
+        <div className={`lg:w-96`}>
           <Marquee
             speed={60}
             className="bg-secondary dark:bg-primary"
