@@ -47,18 +47,11 @@ export default function Home() {
                         </div>
 
                         <div className={"sm:text-3xl text-lg font-normal w-10/12 sm:w-2/3"}>
-                            I'm passionate about open source projects and have specialized in TypeScript. My goal is to create{" "}
-                            <span className={"italic"}>
-              optimized
-            </span>{" "}
-                            and{" "}
-                            <span className={"italic"}>
-              beautiful
-            </span>{" "}
-                            websites using the latest technologies in the{" "}
-                            <span className={"link-underline-black link-underline italic"}>
-              JavaScript ecosystem.
-            </span>
+                            I'm passionate about <span className={"italic"}>open source projects </span>and have
+                            specialized in TypeScript. My goal is to create{" "}
+                            <span className={"italic"}>optimized</span> and <span className={"italic"}>beautiful</span> websites
+                            using the latest technologies in the<span
+                            className={"link-underline-black link-underline italic"}> full-stack JavaScript ecosystem.</span>
                         </div>
                         <div className={"flex gap-4"}>
 

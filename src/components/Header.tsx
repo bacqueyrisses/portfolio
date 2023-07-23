@@ -54,7 +54,7 @@ export default function Header() {
             smooth={true}
             duration={0}
             className={
-              "hover:bg-opacity-90 group inline-flex cursor-pointer items-center rounded-md bg-black px-4 py-1.5 font-medium text-secondary transition dark:bg-secondary dark:text-black md:text-base"
+              "hover:bg-opacity-80 group inline-flex cursor-pointer items-center rounded-md bg-black px-4 py-1.5 font-medium text-secondary transition dark:bg-secondary dark:text-black md:text-base"
             }
         >
           Contact
