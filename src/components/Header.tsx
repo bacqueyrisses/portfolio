@@ -28,35 +28,43 @@ export default function Header() {
       {/*</a>*/}
 
       <span className={`ml-auto mr-10 hidden lg:flex`}>
-        <div className={`lg:w-72`}>
+        <div className={`lg:w-80`}>
           <Marquee
             speed={50}
             className="bg-secondary dark:bg-primary"
             gradient={false}
           >
-            Full Stack Developer &nbsp;—&nbsp; Available {nextMonth()} ’23
-            &nbsp;—&nbsp; Full Stack Developer &nbsp;—&nbsp; Available{" "}
-            {nextMonth()} ’23 &nbsp;—&nbsp; Full Stack Developer &nbsp;—&nbsp;
-            Available {nextMonth()} ’23 &nbsp;—&nbsp; Full Stack Developer
-            &nbsp;—&nbsp; Available {nextMonth()} ’23 &nbsp;—&nbsp; Full Stack
-            Developer &nbsp;—&nbsp; Available {nextMonth()} ’23 &nbsp;—&nbsp;
-            Full Stack Developer &nbsp;—&nbsp; Available {nextMonth()} ’23
-            &nbsp;—&nbsp; Full Stack Developer &nbsp;—&nbsp; Available{" "}
-            {nextMonth()} ’23 &nbsp;—&nbsp; Full Stack Developer &nbsp;—&nbsp;
-            Available {nextMonth()} ’23 &nbsp;—&nbsp; Full Stack Developer
-            &nbsp;—&nbsp; Available {nextMonth()} ’23 &nbsp;—&nbsp; Full Stack
-            Developer &nbsp;—&nbsp; Available {nextMonth()} ’23 &nbsp;—&nbsp;
-            Full Stack Developer &nbsp;—&nbsp; Available {nextMonth()} ’23
-            &nbsp;—&nbsp; Full Stack Developer &nbsp;—&nbsp; Available{" "}
-            {nextMonth()} ’23 &nbsp;—&nbsp; Full Stack Developer &nbsp;—&nbsp;
-            Available {nextMonth()} ’23 &nbsp;—&nbsp; Full Stack Developer
-            &nbsp;—&nbsp; Available {nextMonth()} ’23 &nbsp;—&nbsp; Full Stack
-            Developer &nbsp;—&nbsp; Available {nextMonth()} ’23 &nbsp;—&nbsp;
-            Full Stack Developer &nbsp;—&nbsp; Available {nextMonth()} ’23
-            &nbsp;—&nbsp; Full Stack Developer &nbsp;—&nbsp; Available{" "}
-            {nextMonth()} ’23 &nbsp;—&nbsp; Full Stack Developer &nbsp;—&nbsp;
-            Available {nextMonth()} ’23 &nbsp;—&nbsp; Full Stack Developer
-            &nbsp;—&nbsp; Available {nextMonth()} ’23 &nbsp;—&nbsp;
+            🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            &nbsp;—&nbsp;
           </Marquee>
         </div>
       </span>
