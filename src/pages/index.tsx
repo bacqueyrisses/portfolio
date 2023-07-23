@@ -113,7 +113,7 @@ export default function Home() {
                                     </div>
 
                                     <div
-                                        className="z-0 absolute inset-0 w-full h-full bg-transparent group-hover:bg-white group-hover:opacity-5"></div>
+                                        className="z-0 absolute inset-0 w-full h-full bg-white opacity-20 group-hover:opacity-25"></div>
                                     <div className={"z-10 w-full flex justify-between items-baseline"}>
                                         <div className={"sm:text-2xl text-lg"}>{project.name}</div>
                                         <div className={"sm:text-xl"}>({project.date})</div>
