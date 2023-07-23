@@ -30,7 +30,7 @@ export default function Header() {
       <span className={`ml-auto mr-10 hidden lg:flex`}>
         <div className={`lg:w-96`}>
           <Marquee
-            speed={60}
+            speed={55}
             className="bg-secondary dark:bg-primary"
             gradient={false}
           >
