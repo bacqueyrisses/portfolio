@@ -19,4 +19,9 @@ export const technologies = [
     name: "Tailwind",
     link: "https://tailwindcss.com",
   },
+  {
+    id: 5,
+    name: "PostgreSQL",
+    link: "https://www.postgresql.org/",
+  },
 ];

@@ -12,33 +12,7 @@ export default function Header() {
       }
     >
       <div className={"flex items-baseline gap-5 font-medium"}>
-        {/*<Switcher />*/}
         <ScrollableLogo/>
-        {/*<ul className={"flex md:gap-5"}>*/}
-        {/*  <li>*/}
-        {/*    <a*/}
-        {/*      href={"https://github.com/bacqueyrisses"}*/}
-        {/*      target={"_blank"}*/}
-        {/*      className={*/}
-        {/*        "link-underline-black link-underline rounded-xl px-4 py-2 transition-colors hover:bg-black hover:text-secondary"*/}
-        {/*      }*/}
-        {/*    >*/}
-        {/*      Github*/}
-        {/*    </a>*/}
-        {/*  </li>*/}
-        {/*  <li>*/}
-        {/*    <a*/}
-        {/*      href={"https://www.linkedin.com/in/bacqueyrisses/"}*/}
-        {/*      rel="noreferrer"*/}
-        {/*      target={"_blank"}*/}
-        {/*      className={*/}
-        {/*        "link-underline-black link-underline rounded-xl px-4 py-2 transition-colors hover:bg-black hover:text-secondary"*/}
-        {/*      }*/}
-        {/*    >*/}
-        {/*      Linkedin*/}
-        {/*    </a>*/}
-        {/*  </li>*/}
-        {/*</ul>*/}
       </div>
 
       <span className={`ml-auto mr-10 hidden lg:flex`}>

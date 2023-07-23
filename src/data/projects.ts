@@ -4,7 +4,8 @@ export const projects = [
     name: "Devzone",
     description:
       "Boost your development productivity with a custom dashboard. Get your information and tools in one place, letting you focus on what matters most.",
-    stack: "Express.JS + React.JS + Chakra UI",
+    image: "bg-gradient1",
+    date: 2022,
     link: "https://github.com/bacqueyrisses/devzone",
   },
   {
@@ -12,7 +13,8 @@ export const projects = [
     name: "Investy",
     description:
       "Easily venture into the world of investing with this intuitive tailored dashboard. The project offers a seamless experience for both users and admins.",
-    stack: "Next.JS 13.4 + Shadcn UI + Tailwind CSS",
+    image: "bg-gradient2",
+    date: 2023,
     link: "https://github.com/bacqueyrisses/",
   },
   {
@@ -20,7 +22,8 @@ export const projects = [
     name: "Ouvrage",
     description:
       "Expand your vocabulary, discover new words, bolster your existing writing skills and get access to your favorites ones easily, all in one place.",
-    stack: "Next.JS 13.4 + Shadcn UI + Tailwind CSS",
+    image: "bg-gradient3",
+    date: 2023,
     link: "https://github.com/bacqueyrisses/ouvrage",
   },
 ];
