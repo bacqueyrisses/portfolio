@@ -15,7 +15,7 @@ export default function Header() {
         <ScrollableLogo/>
       </div>
 
-      <a className=" px-4 py-1.5 ml-auto mr-5 inline-flex items-center rounded-md bg-black text-secondary text-base font-medium hover:opacity-90"
+      <a className="px-4 py-1.5 ml-auto mr-5 inline-flex items-center rounded-md bg-black text-secondary text-base font-medium hover:opacity-90"
          href="/docs/changelog">🎉 <div data-orientation="vertical" role="none"
                                        className="shrink-0 bg-white w-[1px] mx-2 h-4"></div> <span
           className="sm:hidden">Style, a new CLI and more.</span><span className="hidden sm:inline">Available from August 2023</span>
