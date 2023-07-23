@@ -45,7 +45,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className={"sm:space-y-2 space-y-3"}>
+                        <div className={"space-y-2"}>
                             <div className={"sm:text-3xl text-lg font-normal w-10/12 sm:w-2/3"}>
                                <span className={"hidden sm:inline"}>I'm passionate about <span className={""}>open source projects </span>and have
                                 specialized in TypeScript. </span>
