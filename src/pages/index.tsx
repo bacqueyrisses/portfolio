@@ -109,7 +109,7 @@ export default function Home() {
                                 <a key={project.id} href={project.link} target={"_blank"}
                                    className={`group relative flex flex-col items-center justify-between overflow-hidden rounded-xl group font-medium text-sm sm:text-base cursor-pointer text-black transition ease-out px-4 py-3 basis-full sm:basis-1/3`}>
                                     <div
-                                        className={`absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover scale-125 group-hover:scale-150 ${project.image}`}>
+                                        className={`absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover scale-110 group-hover:scale-125 ${project.image}`}>
                                     </div>
 
                                     <div
