@@ -45,13 +45,23 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-
-                        <div className={"sm:text-3xl text-lg font-normal w-10/12 sm:w-2/3"}>
-                            I'm passionate about <span className={"italic"}>open source projects </span>and have
-                            specialized in TypeScript. My goal is to create{" "}
-                            <span className={"italic"}>optimized</span> and <span className={"italic"}>beautiful</span> websites
-                            using the latest technologies in the<span
-                            className={"link-underline-black link-underline italic"}> full-stack JavaScript ecosystem.</span>
+                        <div className={"space-y-2"}>
+                            <div className={"sm:text-3xl text-lg font-normal w-10/12 sm:w-2/3"}>
+                                I'm passionate about <span className={""}>open source projects </span>and have
+                                specialized in TypeScript. My goal is to create{" "}
+                                <span className={""}>optimized</span> and <span className={""}>beautiful</span> websites
+                                using the latest technologies in the<span
+                                className={"font-medium"}> full-stack JavaScript ecosystem.</span>
+                            </div>
+                            <div
+                                className={
+                                    "flex gap-2 sm:gap-6 text-sm md:text-lg items-center justify-start"
+                                }
+                            >
+                                {technologies.map((technology) => (
+                                    <Technology technology={technology} key={technology.id}/>
+                                ))}
+                            </div>
                         </div>
                         <div className={"flex gap-4"}>
 
@@ -94,7 +104,7 @@ export default function Home() {
                         {projects.map(project => {
                             return (
                                 <a key={project.id} href={project.link} target={"_blank"}
-                                   className={`font-medium text-sm sm:text-lg cursor-pointer hover:opacity-95 px-4 py-3 basis-full sm:basis-1/3 rounded-lg bg-cover flex flex-col justify-between ${project.image}`}>
+                                   className={`font-medium text-sm sm:text-lg cursor-pointer text-black sm:text-transparent sm:hover:text-black transition ease-out sm:hover:opacity-90 px-4 py-3 basis-full sm:basis-1/3 rounded-lg bg-cover flex flex-col justify-between ${project.image}`}>
                                     <div className={"w-full flex justify-between items-baseline"}>
                                         <div className={"sm:text-2xl text-lg"}>{project.name}</div>
                                         <div>({project.date})</div>
@@ -105,15 +115,7 @@ export default function Home() {
                                 </a>
                             )
                         })}
-                    </div>
-                    <div
-                        className={
-                            "flex gap-2 sm:gap-6 text-sm md:text-lg items-center justify-center"
-                        }
-                    >
-                        {technologies.map((technology) => (
-                            <Technology technology={technology} key={technology.id}/>
-                        ))}
+
                     </div>
                 </section>
                 <Footer/>

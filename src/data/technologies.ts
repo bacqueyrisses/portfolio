@@ -21,6 +21,11 @@ export const technologies = [
   },
   {
     id: 5,
+    name: "Express.JS",
+    link: "https://expressjs.com/fr/",
+  },
+  {
+    id: 6,
     name: "PostgreSQL",
     link: "https://www.postgresql.org/",
   },
