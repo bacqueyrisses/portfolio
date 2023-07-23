@@ -109,13 +109,17 @@ export default function Home() {
                                 <a key={project.id} href={project.link} target={"_blank"}
                                    className={`group relative flex flex-col items-center justify-between overflow-hidden rounded-xl group font-medium text-sm sm:text-base cursor-pointer text-black transition ease-out px-4 py-3 basis-full sm:basis-1/3`}>
                                     <div
-                                        className={`absolute w-full h-full transition-all duration-500 ease-in-out rounded-xl transform bg-center bg-cover scale-110 group-hover:scale-125 ${project.image}`}>
+                                        className={`absolute w-full h-full transition-all duration-500 ease-in-out rounded-xl transform bg-center bg-cover scale-110 sm:group-hover:scale-125 ${project.image}`}>
                                     </div>
 
                                     <div
-                                        className="z-0 rounded-xl absolute inset-0 w-full h-full bg-white opacity-20 group-hover:opacity-25"></div>
+                                        className="z-0 rounded-xl absolute inset-0 w-full h-full bg-white opacity-20 sm:group-hover:opacity-25"></div>
                                     <div className={"z-10 w-full flex justify-between items-baseline"}>
-                                        <div className={"sm:text-2xl text-lg"}>{project.name}</div>
+                                        <div className={"transition duration-300 sm:text-2xl text-lg"}>{project.name}
+                                            <span
+                                                className="sm:block hidden max-w-0 group-hover:max-w-full transition-all duration-500 h-[0.01rem] bg-primary opacity-90"></span>
+                                        </div>
+
                                         <div className={"sm:text-xl"}>({project.date})</div>
                                     </div>
                                     <div className={"z-10"}>{project.description}
