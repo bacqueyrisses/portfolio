@@ -56,7 +56,7 @@ export default function Home() {
                             </div>
                             <div
                                 className={
-                                    "flex gap-2 sm:gap-6 text-sm md:text-lg items-center justify-start"
+                                    "flex gap-2 font-normal sm:font-medium sm:gap-6 text-sm md:text-lg items-center justify-start"
                                 }
                             >
                                 {technologies.map((technology) => (
