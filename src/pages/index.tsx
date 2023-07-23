@@ -33,7 +33,7 @@ export default function Home() {
 
                     <div className={"sm:text-6xl text-2xl font-medium flex flex-col sm:gap-10 gap-6"}>
                         <div className={"sm:space-y-2"}>
-                            <div className={"sm:text-4xl text-2xl"}>Hi, I’m Enzo!</div>
+                            <div className={"sm:text-4xl text-xl"}>Hi, I’m Enzo!</div>
                             <div>
                                 <div>
                                     A
@@ -45,7 +45,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className={"space-y-2"}>
+                        <div className={"sm:space-y-2"}>
                             <div className={"sm:text-3xl font-medium sm:font-normal text-lg w-10/12 sm:w-2/3"}>
                                <span className={"hidden sm:inline"}>I'm passionate about <span className={""}>open source projects </span>and have
                                 specialized in TypeScript. </span>
