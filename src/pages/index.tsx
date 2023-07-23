@@ -46,13 +46,14 @@ export default function Home() {
                             </div>
                         </div>
                         <div className={"space-y-2"}>
-                            <div className={"sm:text-3xl text-lg font-normal w-10/12 sm:w-2/3"}>
+                            <div className={"sm:text-3xl font-medium sm:font-normal text-lg w-10/12 sm:w-2/3"}>
                                <span className={"hidden sm:inline"}>I'm passionate about <span className={""}>open source projects </span>and have
                                 specialized in TypeScript. </span>
-                                 My goal is to create{" "}
-                                <span className={"font-medium"}>optimized</span> and <span className={"font-medium"}>beautiful</span> websites
-                                using the latest technologies in the<span
-                                className={"font-medium"}> JavaScript ecosystem.</span>
+                                My goal is to create{" "}
+                                <span className={"font-medium"}>optimized</span> and <span
+                                className={"font-medium"}>beautiful</span> websites
+                                using the latest technologies<span className={"sm:hidden"}>.</span> <span className={"hidden sm:inline"}>in the <span
+                                className={" sm:font-medium"}> full-stack JavaScript ecosystem.</span></span>
                             </div>
                             <div
                                 className={
