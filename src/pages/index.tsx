@@ -52,7 +52,7 @@ export default function Home() {
                                  My goal is to create{" "}
                                 <span className={"font-medium"}>optimized</span> and <span className={"font-medium"}>beautiful</span> websites
                                 using the latest technologies in the<span
-                                className={"font-medium"}> full-stack JavaScript ecosystem.</span>
+                                className={"font-medium"}> JavaScript ecosystem.</span>
                             </div>
                             <div
                                 className={
