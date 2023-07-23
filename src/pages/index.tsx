@@ -52,7 +52,8 @@ export default function Home() {
                                 My goal is to create{" "}
                                 <span className={"font-medium"}>optimized</span> and <span
                                 className={"font-medium"}>beautiful</span> websites
-                                using the latest technologies<span className={"sm:hidden"}>.</span> <span className={"hidden sm:inline"}>in the <span
+                                using the latest technologies<span className={"sm:hidden"}>.</span> <span
+                                className={"hidden sm:inline"}>in the <span
                                 className={" sm:font-medium"}> full-stack JavaScript ecosystem.</span></span>
                             </div>
                             <div
@@ -106,12 +107,18 @@ export default function Home() {
                         {projects.map(project => {
                             return (
                                 <a key={project.id} href={project.link} target={"_blank"}
-                                   className={`font-medium text-sm sm:text-lg cursor-pointer text-black transition ease-out sm:hover:opacity-90 px-4 py-3 basis-full sm:basis-1/3 rounded-lg bg-cover flex flex-col justify-between ${project.image}`}>
-                                    <div className={"w-full flex justify-between items-baseline"}>
-                                        <div className={"sm:text-2xl text-lg"}>{project.name}</div>
-                                        <div className={"sm:text-base"}>({project.date})</div>
+                                   className={`group relative flex flex-col items-center justify-between overflow-hidden shadow-xl rounded-xl group font-medium text-sm sm:text-base cursor-pointer text-black transition ease-out px-4 py-3 basis-full sm:basis-1/3`}>
+                                    <div
+                                        className={`absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover scale-110 group-hover:scale-125 ${project.image}`}>
                                     </div>
-                                    <div>{project.description}
+
+                                    <div
+                                        className="z-0 absolute inset-0 w-full h-full bg-transparent group-hover:bg-white group-hover:bg-opacity-5"></div>
+                                    <div className={"z-10 w-full flex justify-between items-baseline"}>
+                                        <div className={"sm:text-2xl text-lg"}>{project.name}</div>
+                                        <div className={"sm:text-xl"}>({project.date})</div>
+                                    </div>
+                                    <div className={"z-10"}>{project.description}
                                     </div>
 
                                 </a>
