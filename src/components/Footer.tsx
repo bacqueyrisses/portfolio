@@ -13,7 +13,7 @@ export default function Footer() {
           Let's work together
         </div>
         <div className={"text-[0.90rem] leading-6 md:text-xl"}>
-          I'm available <span className={"sm:hidden inline"}> from {nextMonth()} 2023 </span>for a full time job.
+          I'm available from {nextMonth()} 2023 for a full time job.
         </div>
       </div>
       <div className={"flex justify-center text-xs md:text-sm"}>
