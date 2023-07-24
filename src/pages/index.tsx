@@ -39,7 +39,7 @@ export default function Home() {
                                     A
                                     <span className={gooperFont.className}> Web Developer </span>
                                 </div>
-                                <div>
+                                <div className={"whitespace-nowrap"}>
                                     with skills in ✦
                                     <span className={gooperFont.className}> JavaScript</span> ✦
                                 </div>
