@@ -16,5 +16,5 @@ export default function nextMonth(): string {
 
   const currentDate = new Date();
   const nextMonthIndex = (currentDate.getMonth() + 1) % 12;
-  return months[nextMonthIndex];
+  return months[nextMonthIndex]!;
 }
