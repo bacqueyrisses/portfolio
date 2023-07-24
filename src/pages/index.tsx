@@ -107,7 +107,7 @@ export default function Home() {
                         {projects.map(project => {
                             return (
                                 <a key={project.id} href={project.link} target={"_blank"}
-                                   className={`group relative flex flex-col items-center justify-between overflow-hidden rounded-xl group font-normal text-sm sm:text-base cursor-pointer text-black transition ease-out px-4 py-3 basis-full sm:basis-1/3`}>
+                                   className={`group relative flex flex-col items-center justify-between overflow-hidden rounded-xl group font-medium sm:font-normal text-sm sm:text-base cursor-pointer text-black transition ease-out px-4 py-3 basis-full sm:basis-1/3`}>
                                     <div
                                         className={`absolute w-full h-full transition-all duration-500 ease-in-out rounded-xl transform bg-center bg-cover scale-110 sm:group-hover:scale-125 ${project.image}`}>
                                     </div>
@@ -122,7 +122,7 @@ export default function Home() {
 
                                         <div className={"sm:text-xl"}>({project.date})</div>
                                     </div>
-                                    <div className={"z-10"}>{project.description}
+                                    <div className={"z-10 font-medium"}>{project.description}
                                     </div>
 
                                 </a>
