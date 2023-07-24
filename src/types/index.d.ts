@@ -1,3 +1,5 @@
+import "@total-typescript/ts-reset";
+
 export type TechnologyProps = {
   technology: {
     id: number;
