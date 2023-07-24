@@ -21,7 +21,7 @@ export default function Footer() {
       </div>
       <div className={"flex justify-center text-xs md:text-sm"}>
         <a
-          href={"mailto:bacqueyrisses@proton.me"}
+          href={"mailto:enzo.bacqueyrisses@gmail.com"}
           className={
             "hover:bg-opacity-90 group inline-flex items-center rounded-md bg-black px-4 py-1.5 text-sm font-medium leading-5 text-secondary transition dark:bg-secondary dark:text-black md:text-base"
           }
