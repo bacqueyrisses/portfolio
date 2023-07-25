@@ -1,11 +1,15 @@
 import CopyToClipboard from "@/components/CopyToClipboard";
 import ScrollableLogo from "@/components/ScrollableLogo";
-import nextMonth from "@/utils/date";
+import {getNextMonth, getYear, getYearTwoDigits} from "@/utils/date";
 import {technologies} from "@/data/technologies";
 import Technology from "@/components/Technology";
 
 export default function Footer() {
-  return (
+    const nextMonth = getNextMonth()
+    const yearLastTwoDigits = getYearTwoDigits()
+    const year = getYear()
+
+    return (
     <footer className={"sm:space-y-3 space-y-4 flex flex-col items-center"} id={"contact"}>
 
       <div className={"flex flex-col items-center justify-center"}>
@@ -13,10 +17,10 @@ export default function Footer() {
           Let's work together
         </div>
         <div className={"hidden sm:inline text-[0.90rem] leading-6 md:text-xl"}>
-          I'm available from {nextMonth()} 2023 for a full time job.
+          I'm available from {nextMonth} {year} for a full time job.
         </div>
           <div className={"inline sm:hidden text-[0.90rem] leading-6 md:text-xl"}>
-              🎉 Full-stack developer available from {nextMonth()} ’23
+              🎉 Full-stack developer available from {nextMonth} ’{yearLastTwoDigits}
           </div>
       </div>
       <div className={"flex justify-center text-xs md:text-sm"}>

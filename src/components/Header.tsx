@@ -1,10 +1,13 @@
 import { Link } from "react-scroll";
 import Marquee from "react-fast-marquee";
 import Switcher from "@/components/Switcher";
-import nextMonth from "@/utils/date";
+import { getNextMonth, getYearTwoDigits } from "@/utils/date";
 import ScrollableLogo from "@/components/ScrollableLogo";
 
 export default function Header() {
+  const nextMonth = getNextMonth()
+  const yearLastTwoDigits = getYearTwoDigits()
+
   return (
     <div
       className={
@@ -34,36 +37,45 @@ export default function Header() {
             className="bg-secondary dark:bg-primary"
             gradient={false}
           >
-            🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
-            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth()} ’23
+            🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
+            &nbsp;—&nbsp; 🎉 Full-stack developer available {nextMonth} ’{yearLastTwoDigits}
             &nbsp;—&nbsp;
           </Marquee>
         </div>

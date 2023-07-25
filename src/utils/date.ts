@@ -1,4 +1,4 @@
-export default function nextMonth(): string {
+export function getNextMonth(): string {
   const months: string[] = [
     "January",
     "February",
@@ -17,4 +17,14 @@ export default function nextMonth(): string {
   const currentDate = new Date();
   const nextMonthIndex = (currentDate.getMonth() + 1) % 12;
   return months[nextMonthIndex]!;
+}
+
+  export const getYearTwoDigits = () => {
+    const currentYear = new Date().getFullYear();
+    return currentYear.toString().slice(-2);
+  }
+
+  export const getYear = () => {
+    const currentYear = new Date().getFullYear();
+    return currentYear.toString()
 }
