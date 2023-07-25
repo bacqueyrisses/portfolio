@@ -24,6 +24,6 @@ export const projects = [
       "Expand your vocabulary, discover new words, bolster your existing writing skills and get access to your favorites ones easily, all in one place.",
     image: "bg-gradient3",
     date: 2023,
-    link: "https://github.com/bacqueyrisses/ouvrage",
+    link: "https://www.ouvrage.dev/",
   },
 ];
