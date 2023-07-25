@@ -17,7 +17,7 @@ export default function Home() {
                 <title>Enzo Bacqueyrisses / TypeScript Developer</title>
                 <meta
                     name="description"
-                    content="Full Stack JavaScript Developer living in Bordeaux / React & NodeJS"
+                    content="Full Stack TypeScript Developer / React & NodeJS"
                 />
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
