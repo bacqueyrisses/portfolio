@@ -6,7 +6,7 @@ import Technology from "@/components/Technology";
 
 export default function Footer() {
   return (
-    <footer className={"sm:space-y-3 space-y-5 flex flex-col items-center"} id={"contact"}>
+    <footer className={"sm:space-y-3 space-y-4 flex flex-col items-center"} id={"contact"}>
 
       <div className={"flex flex-col items-center justify-center"}>
         <div className={"text-lg font-medium md:text-2xl"}>
