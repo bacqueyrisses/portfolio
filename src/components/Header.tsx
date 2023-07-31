@@ -69,12 +69,12 @@ export default function Header() {
         </div>
       </span>
 
-        <Link
+       <Link
             to="contact"
             smooth={true}
             duration={0}
             className={
-              "sm:hover:bg-opacity-90 group inline-flex cursor-pointer items-center rounded-md bg-black px-4 py-1.5 font-medium text-secondary transition dark:bg-secondary dark:text-black md:text-base"
+              "sm:hover:hover:bg-neutral-800 group inline-flex cursor-pointer items-center rounded-md bg-black px-4 py-1.5 font-medium text-secondary transition dark:bg-secondary dark:text-black md:text-base"
             }
         >
           Contact

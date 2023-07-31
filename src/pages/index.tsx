@@ -82,7 +82,7 @@ export default function Home() {
 
                             </a>
                             <a target={"_blank"} href={"https://www.github.com/bacqueyrisses"}
-                               className={"bg-black hover:bg-opacity-90 inline-flex cursor-pointer items-center rounded-md px-3 sm:px-4 py-1.5 font-medium text-secondary dark:bg-secondary dark:text-black text-sm md:text-base"
+                               className={"bg-black hover:bg-neutral-800 inline-flex cursor-pointer items-center rounded-md px-3 sm:px-4 py-1.5 font-medium text-secondary dark:bg-secondary dark:text-black text-sm md:text-base"
                                }>Github
 
 
