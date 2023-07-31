@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     name: "NextAI",
     description:
-        "Discover the Next.JS effortlessly with this AI-powered documentation search. Experience daily updates for the most up-to-date information.",
+        "Discover Next.JS effortlessly with this AI-powered documentation search. Experience daily updates for the most up-to-date information.",
     image: "bg-gradient2",
     date: 2023,
     link: "https://www.nextai.dev/",
