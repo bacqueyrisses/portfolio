@@ -30,7 +30,7 @@ export default function Header() {
             <img
               src={animatedPopper}
               alt="telemoji popper"
-              className={"mr-2"}
+              className={"mx-1"}
               height={28}
               width={28}
             />
