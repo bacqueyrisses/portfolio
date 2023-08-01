@@ -163,7 +163,7 @@ export default function Home() {
                     {project.live && (
                       <div
                         className={
-                          "text-secondary-foreground focus:ring-ring inline-flex flex-grow-0 items-center space-x-1 self-start rounded-full border border-transparent bg-secondary px-2.5 py-0.5 text-xs font-semibold transition-colors hover:bg-secondary/80 focus:outline-none focus:ring-2 focus:ring-offset-2"
+                          "text-secondary-foreground focus:ring-ring inline-flex flex-grow-0 items-baseline space-x-1 self-start rounded-full border border-transparent bg-secondary px-2.5 py-0.5 text-xs font-semibold transition-colors hover:bg-secondary/80 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:items-center"
                         }
                       >
                         <span
