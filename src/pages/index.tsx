@@ -169,7 +169,9 @@ export default function Home() {
                         <span
                           className={"h-2 w-2 rounded-full bg-green-700"}
                         ></span>
-                        <span>Live</span>
+                        <span className={"font-normal sm:font-medium"}>
+                          Live
+                        </span>
                       </div>
                     )}
                     {project.description}
