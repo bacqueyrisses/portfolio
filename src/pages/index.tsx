@@ -163,13 +163,17 @@ export default function Home() {
                     {project.live && (
                       <div
                         className={
-                          "text-secondary-foreground focus:ring-ring inline-flex flex-grow-0 items-baseline space-x-1 self-start rounded-full border border-transparent bg-secondary px-2.5 py-0.5 text-xs font-semibold transition-colors hover:bg-secondary/80 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:items-center"
+                          "focus:ring-ring inline-flex flex-grow-0 items-center space-x-1 self-start rounded-full border border-transparent bg-secondary px-2.5 py-0.5 transition-colors hover:bg-secondary/80 focus:outline-none focus:ring-2 focus:ring-offset-2"
                         }
                       >
                         <span
                           className={"h-2 w-2 rounded-full bg-green-700"}
                         ></span>
-                        <span className={"font-normal sm:font-medium"}>
+                        <span
+                          className={
+                            "text-xs font-normal sm:text-sm sm:font-medium "
+                          }
+                        >
                           Live
                         </span>
                       </div>
