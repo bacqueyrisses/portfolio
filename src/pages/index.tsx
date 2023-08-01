@@ -2,13 +2,10 @@ import Head from "next/head";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import localFont from "@next/font/local";
 import { projects } from "@/data/projects";
 import Technology from "@/components/Technology";
 import { technologies } from "@/data/technologies";
-
-const gooperFont = localFont({ src: "./../../public/fonts/gooper.ttf" });
-
+import { gooperFont } from "@/styles/fonts";
 export default function Home() {
   return (
     <>
