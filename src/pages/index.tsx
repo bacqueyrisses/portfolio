@@ -138,7 +138,7 @@ export default function Home() {
                   key={project.id}
                   href={project.link}
                   target={"_blank"}
-                  className={`group group relative flex basis-full cursor-pointer flex-col items-center justify-between overflow-hidden rounded-xl px-4 py-3 text-sm font-medium text-black transition ease-out sm:basis-1/3 sm:text-base sm:font-normal`}
+                  className={`group relative flex w-full basis-full cursor-pointer flex-col items-center justify-between overflow-hidden rounded-xl px-4 py-3 text-sm font-medium text-black transition ease-out sm:basis-1/3 sm:text-base sm:font-normal md:h-[20rem] lg:h-full`}
                 >
                   <div
                     className={`absolute h-full w-full scale-110 transform rounded-xl bg-cover bg-center transition-all duration-500 ease-in-out sm:group-hover:scale-125 ${project.image}`}
