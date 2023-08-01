@@ -3,10 +3,11 @@ export const projects = [
     id: 1,
     name: "NextAI",
     description:
-        "Discover Next.JS effortlessly with this AI-powered documentation search. Experience daily updates for the most up-to-date information.",
+      "Discover Next.JS effortlessly with this AI-powered documentation search. Experience daily updates for the most up-to-date information.",
     image: "bg-gradient2",
     date: 2023,
     link: "https://www.nextai.dev/",
+    live: true,
   },
   {
     id: 2,
@@ -16,14 +17,16 @@ export const projects = [
     image: "bg-gradient3",
     date: 2023,
     link: "https://www.ouvrage.dev/",
+    live: true,
   },
   {
     id: 3,
     name: "Devzone",
     description:
-        "Boost your development productivity with a custom dashboard. Get your information and tools in one place, letting you focus on what matters most.",
+      "Boost your development productivity with a custom dashboard. Get your information and tools in one place, letting you focus on what matters most.",
     image: "bg-gradient1",
     date: 2022,
     link: "https://github.com/bacqueyrisses/devzone",
+    live: false,
   },
 ];
