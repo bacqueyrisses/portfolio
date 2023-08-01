@@ -8,6 +8,8 @@ export default function Footer() {
   const nextMonth = getNextMonth();
   const yearLastTwoDigits = getYearTwoDigits();
   const year = getYear();
+  const animatedPopper =
+    "https://em-content.zobj.net/source/telegram/358/party-popper_1f389.webp";
 
   return (
     <footer
@@ -23,11 +25,16 @@ export default function Footer() {
         </div>
         <div
           className={
-            "inline whitespace-nowrap text-[0.90rem] leading-6 sm:hidden md:text-xl"
+            "inline-flex items-center justify-center gap-1 whitespace-nowrap text-[0.90rem] leading-6 sm:hidden md:text-xl"
           }
         >
-          🎉 Full-stack developer available from {nextMonth} ’
-          {yearLastTwoDigits}
+          <img
+            src={animatedPopper}
+            alt="telemoji popper"
+            height={28}
+            width={28}
+          />{" "}
+          Full-stack developer available from {nextMonth} ’{yearLastTwoDigits}
         </div>
       </div>
       <div className={"flex justify-center text-xs md:text-sm"}>
