@@ -9,18 +9,18 @@ export const technologies = [
     name: "Next.JS",
     link: "https://nextjs.org",
   },
+  // {
+  //   id: 3,
+  //   name: "TypeScript",
+  //   link: "https://www.typescriptlang.org",
+  // },
   {
     id: 3,
-    name: "TypeScript",
-    link: "https://www.typescriptlang.org",
-  },
-  {
-    id: 4,
     name: "Tailwind",
     link: "https://tailwindcss.com",
   },
   {
-    id: 5,
+    id: 4,
     name: "PostgreSQL",
     link: "https://www.postgresql.org/",
   },

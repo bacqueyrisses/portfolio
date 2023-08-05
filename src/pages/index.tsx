@@ -50,7 +50,8 @@ export default function Home() {
                 <span className={"hidden sm:inline"}>
                   I'm passionate about{" "}
                   <span className={""}>open source projects </span>and have
-                  specialized in TypeScript.{" "}
+                  specialized in{" "}
+                  <span className={"font-medium"}>TypeScript</span>.{" "}
                 </span>
                 My goal is to create{" "}
                 <span className={"font-medium"}>optimized</span> and{" "}
@@ -168,7 +169,7 @@ export default function Home() {
                         ></span>
                         <span
                           className={
-                            "text-xs font-normal sm:text-sm sm:font-medium "
+                            "text-xs font-normal sm:text-sm sm:font-medium"
                           }
                         >
                           Live
