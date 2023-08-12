@@ -16,7 +16,6 @@ export default function Home() {
           content="Full Stack TypeScript Developer / React & NodeJS"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#E1E6DE">
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
