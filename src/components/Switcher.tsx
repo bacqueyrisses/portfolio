@@ -15,7 +15,7 @@ export default function Switcher() {
 
   if (isIconDark) {
     return (
-      <label className="swap-rotate swap self-center">
+      <label className="swap swap-rotate self-center">
         <input
           type="checkbox"
           className={""}

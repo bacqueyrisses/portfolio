@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
     >
       <main
         className={`${satoshiFont.className}
-        relative p-6 pb-14 pt-6 md:px-40`}
+        relative p-6 pb-14 pt-6 md:px-28 lg:px-36`}
       >
         <Component {...pageProps} />
       </main>

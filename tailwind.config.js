@@ -13,15 +13,12 @@ module.exports = {
         secondary: "#e1e6de",
       },
       backgroundImage: {
-        'gradient1': "url('/images/gradient1.webp')",
-        'gradient2': "url('/images/gradient2.webp')",
-        'gradient3': "url('/images/gradient3.webp')",
-      }
+        gradient1: "url('/images/gradient1.webp')",
+        gradient2: "url('/images/gradient2.webp')",
+        gradient3: "url('/images/gradient3.webp')",
+      },
     },
   },
-  plugins: [require("daisyui")],
-  daisyui: {
-    themes: false,
-  },
+  plugins: [],
   darkMode: "class",
 };

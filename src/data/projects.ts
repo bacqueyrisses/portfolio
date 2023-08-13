@@ -23,7 +23,7 @@ export const projects = [
     id: 3,
     name: "Devzone",
     description:
-      "Boost your development productivity with a custom dashboard. Get your information and tools in one place, letting you focus on what matters most.",
+      "Boost your development productivity with a custom dashboard. Get your information and tools in one place.",
     image: "bg-gradient1",
     date: 2022,
     link: "https://github.com/bacqueyrisses/devzone",

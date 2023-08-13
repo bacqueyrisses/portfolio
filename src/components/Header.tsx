@@ -1,6 +1,5 @@
 import { Link } from "react-scroll";
 import Marquee from "react-fast-marquee";
-import Switcher from "@/components/Switcher";
 import { getNextMonth, getYearTwoDigits } from "@/utils/date";
 import ScrollableLogo from "@/components/ScrollableLogo";
 
@@ -13,7 +12,7 @@ export default function Header() {
   return (
     <div
       className={
-        "fixed inset-x-0 top-0 z-50 flex items-center justify-between bg-secondary py-1 pl-3 pr-6 text-sm font-medium shadow-sm dark:bg-primary sm:py-2 sm:pl-36 sm:pr-40 sm:text-base md:text-base"
+        "fixed inset-x-0 top-0 z-50 flex items-center justify-between bg-secondary py-1 pl-3 pr-6 text-sm font-medium shadow-sm dark:bg-primary sm:py-2 sm:pl-32 sm:pr-36 sm:text-base md:text-base"
       }
     >
       <div className={"flex items-baseline gap-5 font-medium"}>

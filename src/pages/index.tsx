@@ -88,13 +88,13 @@ export default function Home() {
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   stroke="currentColor"
                   className="ml-2 h-4 w-4"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
                   />
                 </svg>
@@ -111,13 +111,13 @@ export default function Home() {
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   stroke="currentColor"
                   className="ml-2 h-4 w-4"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
                   />
                 </svg>
@@ -136,7 +136,7 @@ export default function Home() {
                   key={project.id}
                   href={project.link}
                   target={"_blank"}
-                  className={`group relative flex w-full basis-full cursor-pointer flex-col items-center justify-between overflow-hidden rounded-xl px-4 py-3 text-sm font-medium text-black transition ease-out sm:basis-1/3 sm:text-base sm:font-normal md:h-[20rem] lg:h-full`}
+                  className={`group relative flex w-full basis-full cursor-pointer flex-col items-center justify-between overflow-hidden rounded-xl px-4 py-3 text-sm font-medium text-black transition ease-out sm:basis-1/3 sm:text-base sm:font-normal md:h-[20rem] lg:h-[26rem]`}
                 >
                   <div
                     className={`absolute h-full w-full scale-110 transform rounded-xl bg-cover bg-center transition-all duration-500 ease-in-out sm:group-hover:scale-125 ${project.image}`}
