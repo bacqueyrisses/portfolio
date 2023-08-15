@@ -75,7 +75,33 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            <div className={"flex gap-4"}>
+            <div className={"flex justify-start gap-4"}>
+              <div className={"flex"}>
+                <a
+                  target={"_blank"}
+                  href={"https://twitter.com/bacqueyrisses"}
+                  className={
+                    "inline-flex cursor-pointer items-center rounded-md bg-[#1D9BF0] px-3 py-1.5 text-sm font-medium text-secondary hover:bg-opacity-90 dark:bg-secondary dark:text-black sm:px-4 md:text-base"
+                  }
+                >
+                  Twitter/X
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="ml-2 h-4 w-4"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                    />
+                  </svg>
+                </a>
+              </div>
+
               <a
                 target={"_blank"}
                 href={"https://www.linkedin.com/in/bacqueyrisses/"}
@@ -99,6 +125,7 @@ export default function Home() {
                   />
                 </svg>
               </a>
+
               <a
                 target={"_blank"}
                 href={"https://www.github.com/bacqueyrisses"}
