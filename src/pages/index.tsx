@@ -6,6 +6,7 @@ import { projects } from "@/data/projects";
 import Technology from "@/components/Technology";
 import { technologies } from "@/data/technologies";
 import { gooperFont } from "@/styles/fonts";
+import Image from "next/image";
 export default function Home() {
   return (
     <>
@@ -148,6 +149,18 @@ export default function Home() {
                     d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
                   />
                 </svg>
+              </a>
+              <a
+                href={"https://www.buymeacoffee.com/bacqueyrisses"}
+                target={"_blank"}
+                className={"hidden items-center sm:inline-flex"}
+              >
+                <Image
+                  src={"/images/coffee.png"}
+                  width={18}
+                  height={18}
+                  alt={"Enzo Bacqueyrisses' Buy Me a Coffee logo"}
+                />
               </a>
             </div>
           </div>
