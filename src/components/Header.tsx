@@ -6,8 +6,8 @@ import ScrollableLogo from "@/components/ScrollableLogo";
 export default function Header() {
   const nextMonth = getNextMonth();
   const yearLastTwoDigits = getYearTwoDigits();
-  const animatedPopper =
-    "https://em-content.zobj.net/source/telegram/358/party-popper_1f389.webp";
+  const popper =
+    "https://em-content.zobj.net/source/apple/354/party-popper_1f389.png";
 
   return (
     <div
@@ -27,11 +27,11 @@ export default function Header() {
             gradient={false}
           >
             <img
-              src={animatedPopper}
-              alt="telemoji popper"
+              src={popper}
+              alt="popper"
               className={"mx-1"}
-              height={28}
-              width={28}
+              height={19}
+              width={19}
             />
             <span>
               Full-stack developer available {nextMonth} ’{yearLastTwoDigits}{" "}
