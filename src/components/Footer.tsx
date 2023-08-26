@@ -9,13 +9,17 @@ export default function Footer() {
 
   return (
     <footer
-      className={"flex flex-col items-center space-y-4 sm:space-y-3"}
+      className={
+        "mt-10 flex flex-col items-center space-y-2 pb-16 sm:mt-0 sm:space-y-4"
+      }
       id={"contact"}
     >
-      <div className={"flex flex-col items-center justify-center"}>
-        <div className={"text-lg font-medium md:text-2xl"}>
-          Let's work together
-        </div>
+      <div
+        className={
+          "flex flex-col items-center justify-center space-y-0 sm:space-y-1"
+        }
+      >
+        <div className={"text-lg font-medium md:text-2xl"}>Let's connect!</div>
         <div className={"hidden text-[0.90rem] leading-6 sm:inline md:text-xl"}>
           I'm available from {nextMonth} {year} for a full time job.
         </div>

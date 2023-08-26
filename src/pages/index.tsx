@@ -5,7 +5,6 @@ import Footer from "@/components/Footer";
 import { projects } from "@/data/projects";
 import Technology from "@/components/Technology";
 import { technologies } from "@/data/technologies";
-import { gooperFont } from "@/styles/fonts";
 import Image from "next/image";
 export default function Home() {
   return (
@@ -21,50 +20,33 @@ export default function Home() {
       </Head>
       <Header />
 
-      <main className={"mt-20 flex flex-col gap-14 sm:mt-24 sm:gap-24"}>
+      <main
+        className={"flex flex-col justify-evenly gap-10 sm:h-screen sm:gap-0"}
+      >
         <section
           className={"text-[1.69rem] leading-[2.1rem] sm:text-4xl md:text-5xl"}
         >
           <div
             className={
-              "flex flex-col gap-6 text-2xl font-medium sm:gap-10 sm:text-6xl"
+              "flex flex-col items-center gap-4 pt-24 text-2xl sm:items-start sm:gap-4 sm:pt-6 sm:text-6xl"
             }
           >
-            <div className={"sm:space-y-2"}>
-              <div className={"text-xl sm:text-4xl"}>Hi, I’m Enzo!</div>
-              <div>
-                <div>
-                  A<span className={gooperFont.className}> Web Developer </span>
-                </div>
-                <div className={"whitespace-nowrap"}>
-                  with skills in ✦
-                  <span className={gooperFont.className}> JavaScript</span> ✦
-                </div>
-              </div>
+            <div className={" text-xl font-medium sm:text-4xl"}>
+              Hi I’m Enzo,
             </div>
-            <div className={"space-y-2"}>
+            <div
+              className={"flex flex-col items-center space-y-1 sm:items-start"}
+            >
               <div
                 className={
-                  "w-10/12 text-lg font-medium sm:w-2/4 sm:text-2xl sm:font-normal"
+                  "text-center text-base sm:w-full sm:text-start sm:text-2xl"
                 }
               >
+                My goal is to create optimized and beautiful websites using the
                 <span className={"hidden sm:inline"}>
-                  I'm passionate about{" "}
-                  <span className={""}>open source projects </span>and have
-                  specialized in{" "}
-                  <span className={"font-medium"}>TypeScript</span>.{" "}
+                  <br />
                 </span>
-                My goal is to create{" "}
-                <span className={"font-medium"}>optimized</span> and{" "}
-                <span className={"font-medium"}>beautiful</span> websites using
-                the latest technologies<span className={"sm:hidden"}>.</span>{" "}
-                <span className={"hidden sm:inline"}>
-                  in the{" "}
-                  <span className={" sm:font-medium"}>
-                    {" "}
-                    full-stack JavaScript ecosystem.
-                  </span>
-                </span>
+                latest technologies in the JavaScript full-stack ecosystem.
               </div>
               <div
                 className={
@@ -76,7 +58,7 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            <div className={"flex justify-start gap-4"}>
+            <div className={"flex justify-center gap-4 sm:justify-start"}>
               <div className={"flex"}>
                 <a
                   target={"_blank"}
@@ -166,8 +148,11 @@ export default function Home() {
           </div>
         </section>
         <section className={"space-y-4"}>
+          {/*<div className={"flex flex-col gap-6 sm:flex-row"} id={"projects"}>*/}
           <div
-            className={"flex h-[70rem] flex-col gap-6 sm:h-[26rem] sm:flex-row"}
+            className={
+              "flex h-[65rem] flex-col gap-6 sm:h-[20rem] sm:flex-row lg:h-[21rem]"
+            }
             id={"projects"}
           >
             {projects.map((project) => {
@@ -176,7 +161,7 @@ export default function Home() {
                   key={project.id}
                   href={project.link}
                   target={"_blank"}
-                  className={`group relative flex w-full basis-full cursor-pointer flex-col items-center justify-between overflow-hidden rounded-xl px-4 py-3 text-sm font-medium text-black transition ease-out sm:basis-1/3 sm:text-base sm:font-normal md:h-[20rem] lg:h-[26rem]`}
+                  className={`group relative flex w-full basis-full cursor-pointer flex-col items-center justify-between overflow-hidden rounded-xl px-4 py-3 text-sm font-medium text-black transition ease-out sm:h-[20rem] sm:text-base sm:font-normal lg:h-[21rem]`}
                 >
                   <div
                     className={`absolute h-full w-full scale-110 transform rounded-xl bg-cover bg-center transition-all duration-500 ease-in-out sm:group-hover:scale-125 ${project.image}`}
@@ -223,8 +208,8 @@ export default function Home() {
             })}
           </div>
         </section>
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }
