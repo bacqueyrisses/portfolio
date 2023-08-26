@@ -19,7 +19,7 @@ export default function Footer() {
           "flex flex-col items-center justify-center space-y-0 md:space-y-1"
         }
       >
-        <div className={"text-lg font-medium md:text-2xl"}>Let's connect!</div>
+        <div className={"text-xl font-medium md:text-2xl"}>Let's connect!</div>
         <div className={"hidden text-[0.90rem] leading-6 md:inline md:text-xl"}>
           I'm available from {nextMonth} {year} for a full time job.
         </div>
