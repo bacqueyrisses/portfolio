@@ -19,7 +19,7 @@ export default function CopyToClipboard({
     <div className={"group relative inline-flex items-center"}>
       <button
         type="button"
-        className={`inline-flex items-center rounded-xl border border-black px-4 py-1.5 text-[0.77rem] font-medium leading-5 transition dark:border-2 dark:border-secondary sm:text-base md:hover:-skew-x-6 ${
+        className={`inline-flex items-center rounded-xl border border-black px-4 py-1.5 text-[0.77rem] font-medium leading-5 transition dark:border-2 dark:border-secondary md:text-base md:hover:-skew-x-6 ${
           isCopied
             ? "-skew-x-6 bg-black text-secondary dark:bg-secondary dark:text-black"
             : ""
@@ -31,8 +31,8 @@ export default function CopyToClipboard({
       {
         <div className="absolute bottom-[1.30rem] left-1/2 mb-3.5 -translate-x-1/2 translate-y-0 scale-100 pb-1 opacity-100 dark:bottom-[1.40rem] md:bottom-[1.55rem] dark:md:bottom-[1.65rem]">
           <div
-            className={`relative -skew-x-6 rounded-lg bg-black px-1.5 text-[0.625rem] font-medium leading-6 text-white dark:bg-secondary dark:text-black sm:text-[0.72rem]  ${
-              isCopied ? "opacity-100" : "opacity-0 sm:group-hover:opacity-100"
+            className={`relative -skew-x-6 rounded-lg bg-black px-1.5 text-[0.625rem] font-medium leading-6 text-white dark:bg-secondary dark:text-black md:text-[0.72rem]  ${
+              isCopied ? "opacity-100" : "opacity-0 md:group-hover:opacity-100"
             }`}
             data-reach-alert="true"
           >

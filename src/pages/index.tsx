@@ -21,36 +21,36 @@ export default function Home() {
       <Header />
 
       <main
-        className={"flex flex-col justify-evenly gap-10 sm:h-screen sm:gap-0"}
+        className={"flex flex-col justify-evenly gap-10 md:h-screen md:gap-0"}
       >
-        <section
-          className={"text-[1.69rem] leading-[2.1rem] sm:text-4xl md:text-5xl"}
-        >
+        <section className={"text-[1.69rem] leading-[2.1rem] md:text-5xl"}>
           <div
             className={
-              "flex flex-col items-center gap-4 pt-24 text-2xl sm:items-start sm:gap-4 sm:pt-6 sm:text-6xl"
+              "flex flex-col items-center gap-4 pt-24 text-2xl md:items-start md:gap-4 md:pt-6 md:text-6xl"
             }
           >
-            <div className={" text-xl font-medium sm:text-4xl"}>
+            <div className={"text-2xl font-medium md:text-4xl"}>
               Hi I’m Enzo,
             </div>
             <div
-              className={"flex flex-col items-center space-y-1 sm:items-start"}
+              className={
+                "flex flex-col items-center space-y-2 md:items-start md:space-x-1"
+              }
             >
               <div
                 className={
-                  "text-center text-base sm:w-full sm:text-start sm:text-2xl"
+                  "text-center text-base md:w-full md:text-start md:text-2xl"
                 }
               >
-                My goal is to create optimized and beautiful websites using the
-                <span className={"hidden sm:inline"}>
+                My goal is to create optimized and beautiful websites using the{" "}
+                <span className={"hidden md:inline"}>
                   <br />
                 </span>
                 latest technologies in the JavaScript full-stack ecosystem.
               </div>
               <div
                 className={
-                  "flex items-center justify-start gap-2 text-sm font-normal underline sm:gap-6 sm:font-medium md:text-lg"
+                  "flex items-center justify-start gap-2 text-sm font-medium underline md:gap-6 md:text-lg"
                 }
               >
                 {technologies.map((technology) => (
@@ -58,13 +58,13 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            <div className={"flex justify-center gap-4 sm:justify-start"}>
+            <div className={"flex justify-center gap-4 md:justify-start"}>
               <div className={"flex"}>
                 <a
                   target={"_blank"}
                   href={"https://twitter.com/bacqueyrisses"}
                   className={
-                    "inline-flex cursor-pointer items-center rounded-md bg-[#1D9BF0] px-3 py-1.5 text-sm font-medium text-secondary hover:bg-opacity-90 dark:bg-secondary dark:text-black sm:px-4 md:text-base"
+                    "inline-flex cursor-pointer items-center rounded-md bg-[#1D9BF0] px-3 py-1.5 text-sm font-medium text-secondary hover:bg-opacity-90 dark:bg-secondary dark:text-black md:px-4 md:text-base"
                   }
                 >
                   Twitter/X
@@ -89,7 +89,7 @@ export default function Home() {
                 target={"_blank"}
                 href={"https://www.linkedin.com/in/bacqueyrisses/"}
                 className={
-                  "inline-flex cursor-pointer items-center rounded-md bg-[#0e76a8] px-3 py-1.5 text-sm font-medium text-secondary hover:bg-opacity-90 dark:bg-secondary dark:text-black sm:px-4 md:text-base"
+                  "inline-flex cursor-pointer items-center rounded-md bg-[#0e76a8] px-3 py-1.5 text-sm font-medium text-secondary hover:bg-opacity-90 dark:bg-secondary dark:text-black md:px-4 md:text-base"
                 }
               >
                 Linkedin
@@ -113,7 +113,7 @@ export default function Home() {
                 target={"_blank"}
                 href={"https://www.github.com/bacqueyrisses"}
                 className={
-                  "inline-flex cursor-pointer items-center rounded-md bg-black px-3 py-1.5 text-sm font-medium text-secondary hover:bg-neutral-800 dark:bg-secondary dark:text-black sm:px-4 md:text-base"
+                  "inline-flex cursor-pointer items-center rounded-md bg-black px-3 py-1.5 text-sm font-medium text-secondary hover:bg-neutral-800 dark:bg-secondary dark:text-black md:px-4 md:text-base"
                 }
               >
                 Github
@@ -135,7 +135,7 @@ export default function Home() {
               <a
                 href={"https://www.buymeacoffee.com/bacqueyrisses"}
                 target={"_blank"}
-                className={"hidden items-center sm:inline-flex"}
+                className={"hidden items-center md:inline-flex"}
               >
                 <Image
                   src={"/images/coffee.png"}
@@ -148,10 +148,10 @@ export default function Home() {
           </div>
         </section>
         <section className={"space-y-4"}>
-          {/*<div className={"flex flex-col gap-6 sm:flex-row"} id={"projects"}>*/}
+          {/*<div className={"flex flex-col gap-6 md:flex-row"} id={"projects"}>*/}
           <div
             className={
-              "flex h-[65rem] flex-col gap-6 sm:h-[20rem] sm:flex-row lg:h-[21rem]"
+              "flex h-[65rem] flex-col gap-6 md:h-[20rem] md:flex-row lg:h-[21rem]"
             }
             id={"projects"}
           >
@@ -161,26 +161,26 @@ export default function Home() {
                   key={project.id}
                   href={project.link}
                   target={"_blank"}
-                  className={`group relative flex w-full basis-full cursor-pointer flex-col items-center justify-between overflow-hidden rounded-xl px-4 py-3 text-sm font-medium text-black transition ease-out sm:h-[20rem] sm:text-base sm:font-normal lg:h-[21rem]`}
+                  className={`group relative flex w-full basis-full cursor-pointer flex-col items-center justify-between overflow-hidden rounded-xl px-4 py-3 text-sm font-medium text-black transition ease-out md:h-[20rem] md:text-base md:font-normal lg:h-[21rem]`}
                 >
                   <div
-                    className={`absolute h-full w-full scale-110 transform rounded-xl bg-cover bg-center transition-all duration-500 ease-in-out sm:group-hover:scale-125 ${project.image}`}
+                    className={`absolute h-full w-full scale-110 transform rounded-xl bg-cover bg-center transition-all duration-500 ease-in-out md:group-hover:scale-125 ${project.image}`}
                   ></div>
 
-                  <div className="absolute inset-0 z-0 h-full w-full rounded-xl bg-white opacity-20 sm:group-hover:opacity-25"></div>
+                  <div className="absolute inset-0 z-0 h-full w-full rounded-xl bg-white opacity-20 md:group-hover:opacity-25"></div>
                   <div
                     className={
                       "z-10 flex w-full items-baseline justify-between"
                     }
                   >
                     <div
-                      className={"text-lg transition duration-300 sm:text-2xl"}
+                      className={"text-lg transition duration-300 md:text-2xl"}
                     >
                       {project.name}
-                      <span className="hidden h-[0.01rem] max-w-0 bg-primary opacity-90 transition-all duration-500 group-hover:max-w-full sm:block"></span>
+                      <span className="hidden h-[0.01rem] max-w-0 bg-primary opacity-90 transition-all duration-500 group-hover:max-w-full md:block"></span>
                     </div>
 
-                    <div className={"sm:text-xl"}>({project.date})</div>
+                    <div className={"md:text-xl"}>({project.date})</div>
                   </div>
                   <div className={"z-10 flex flex-col gap-3 font-medium"}>
                     {project.live && (
@@ -194,7 +194,7 @@ export default function Home() {
                         ></span>
                         <span
                           className={
-                            "text-xs font-normal sm:text-sm sm:font-medium"
+                            "text-xs font-normal md:text-sm md:font-medium"
                           }
                         >
                           Live

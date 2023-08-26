@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <div
       className={
-        "fixed inset-x-0 top-0 z-50 flex items-center justify-between bg-secondary py-1 pl-3 pr-6 text-sm font-medium dark:bg-primary sm:py-2 sm:pl-32 sm:pr-36 sm:text-base md:text-base"
+        "fixed inset-x-0 top-0 z-50 flex items-center justify-between bg-secondary py-1 pl-3 pr-6 text-sm font-medium dark:bg-primary md:py-2 md:pl-32 md:pr-36 md:text-base md:text-base"
       }
     >
       <div className={"flex items-baseline gap-5 font-medium"}>
@@ -46,7 +46,7 @@ export default function Header() {
         smooth={true}
         duration={0}
         className={
-          "group inline-flex cursor-pointer items-center rounded-md bg-black px-4 py-1.5 font-medium text-secondary transition dark:bg-secondary dark:text-black sm:hover:hover:bg-neutral-800 md:text-base"
+          "group inline-flex cursor-pointer items-center rounded-md bg-black px-4 py-1.5 font-medium text-secondary transition dark:bg-secondary dark:text-black md:text-base md:hover:hover:bg-neutral-800"
         }
       >
         Contact

@@ -10,22 +10,22 @@ export default function Footer() {
   return (
     <footer
       className={
-        "mt-10 flex flex-col items-center space-y-2 pb-16 sm:mt-0 sm:space-y-4"
+        "mt-10 flex flex-col items-center space-y-2 pb-16 md:mt-0 md:space-y-4"
       }
       id={"contact"}
     >
       <div
         className={
-          "flex flex-col items-center justify-center space-y-0 sm:space-y-1"
+          "flex flex-col items-center justify-center space-y-0 md:space-y-1"
         }
       >
         <div className={"text-lg font-medium md:text-2xl"}>Let's connect!</div>
-        <div className={"hidden text-[0.90rem] leading-6 sm:inline md:text-xl"}>
+        <div className={"hidden text-[0.90rem] leading-6 md:inline md:text-xl"}>
           I'm available from {nextMonth} {year} for a full time job.
         </div>
         <div
           className={
-            "inline-flex items-center justify-center gap-1 whitespace-nowrap text-[0.90rem] leading-6 sm:hidden md:text-xl"
+            "inline-flex items-center justify-center gap-1 whitespace-nowrap text-[0.90rem] leading-6 md:hidden md:text-xl"
           }
         >
           <img
@@ -51,7 +51,7 @@ export default function Footer() {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="ml-2 h-4 w-4 sm:mt-0.5"
+            className="ml-2 h-4 w-4 md:mt-0.5"
           >
             <path
               strokeLinecap="round"
