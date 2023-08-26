@@ -34,7 +34,7 @@ export default function Home() {
             </div>
             <div
               className={
-                "flex flex-col items-center space-y-2 md:items-start md:space-x-1"
+                "flex flex-col items-center space-y-4 md:items-start md:space-x-1"
               }
             >
               <div
