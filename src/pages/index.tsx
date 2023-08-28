@@ -26,7 +26,7 @@ export default function Home() {
         <section className={"text-[1.69rem] leading-[2.1rem] md:text-5xl"}>
           <div
             className={
-              "flex flex-col items-center gap-4 pt-24 text-2xl md:items-start md:gap-4 md:pt-6 md:text-6xl"
+              "flex flex-col items-center gap-4 pt-20 text-2xl md:items-start md:gap-4 md:pt-6 md:text-6xl"
             }
           >
             <div className={"text-2xl font-medium md:text-4xl"}>
