@@ -1,5 +1,4 @@
-import { Html, Head, Main, NextScript } from "next/document";
-import { satoshiFont } from "@/styles/fonts";
+import { Head, Html, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
