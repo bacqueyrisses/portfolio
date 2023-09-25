@@ -148,7 +148,6 @@ export default function Home() {
           </div>
         </section>
         <section className={"space-y-4"}>
-          {/*<div className={"flex flex-col gap-6 md:flex-row"} id={"projects"}>*/}
           <div
             className={
               "flex h-[65rem] flex-col gap-6 md:h-[20rem] md:flex-row lg:h-[21rem]"
