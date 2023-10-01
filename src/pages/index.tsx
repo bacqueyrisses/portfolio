@@ -182,24 +182,24 @@ export default function Home() {
                     <div className={"md:text-xl"}>({project.date})</div>
                   </div>
                   <div className={"z-10 flex flex-col gap-3 font-medium"}>
-                    {project.live && (
-                      <div
+                    <div
+                      className={
+                        "inline-flex flex-grow-0 items-center space-x-2 self-start rounded-full border border-transparent bg-secondary px-2.5 py-0.5 transition-colors"
+                      }
+                    >
+                      <span
+                        className={`${
+                          project.live ? "bg-green-700" : "bg-yellow-500"
+                        } h-2 w-2 rounded-full`}
+                      ></span>
+                      <span
                         className={
-                          "inline-flex flex-grow-0 items-center space-x-2 self-start rounded-full border border-transparent bg-secondary px-2.5 py-0.5 transition-colors"
+                          "text-xs font-normal md:text-sm md:font-medium"
                         }
                       >
-                        <span
-                          className={"h-2 w-2 rounded-full bg-green-700"}
-                        ></span>
-                        <span
-                          className={
-                            "text-xs font-normal md:text-sm md:font-medium"
-                          }
-                        >
-                          Live
-                        </span>
-                      </div>
-                    )}
+                        {project.live ? "Live" : "WIP"}
+                      </span>
+                    </div>
                     {project.description}
                   </div>
                 </a>

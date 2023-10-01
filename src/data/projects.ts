@@ -17,7 +17,7 @@ export const projects = [
     image: "bg-gradient1",
     date: 2023,
     link: "https://mypostai.vercel.app",
-    live: true,
+    live: false,
   },
   {
     id: 3,
