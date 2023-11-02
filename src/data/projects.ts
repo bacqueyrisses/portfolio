@@ -13,7 +13,7 @@ export const projects = [
     id: 2,
     name: "PostAI",
     description:
-      "Design and send AI-crafted, location-based virtual postcards. Share personalized moments creatively!",
+      "Design and send AI-crafted, location-based virtual postcards. Share personalized moments creatively. Send yours now!",
     image: "bg-gradient1",
     date: 2023,
     link: "https://mypostai.vercel.app",
