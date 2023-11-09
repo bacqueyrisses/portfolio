@@ -9,7 +9,8 @@ export default function Contact() {
         <span className="ml-3">Let's connect</span>
       </h2>
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        I'm available from December 2023 for a full time job.
+        Let's build something unique together! For professional inquiries, feel
+        free to reach out.
       </p>
       <div className="mt-6 flex justify-start gap-4 sm:justify-between">
         <Button
