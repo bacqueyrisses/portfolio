@@ -12,7 +12,7 @@ export const projects: Array<Project> = [
     id: 1,
     title: 'NextAI',
     description:
-      'Discover Next.JS effortlessly with this AI-powered documentation search. Experience daily updates for the most up-to-date information.',
+      'Discover Next.js effortlessly with this AI-powered documentation search. Experience daily updates for the most up-to-date information.',
     date: 2023,
     link: 'https://www.nextai.dev/',
     live: true,
