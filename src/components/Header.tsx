@@ -271,8 +271,8 @@ export function Header() {
             }}
           >
             <div className="relative flex gap-4">
-              <div className="flex"></div>
-              <div className="flex items-center justify-end md:justify-center">
+              <div className="flex flex-1"></div>
+              <div className="flex flex-initial items-center justify-end md:flex-1 md:justify-center">
                 <Information />
               </div>
               <div className="flex justify-end md:flex-1">
