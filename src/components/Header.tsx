@@ -48,20 +48,18 @@ function MoonIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 function Information(props: React.ComponentPropsWithoutRef<'div'>) {
   return (
-    <div {...props}>
-      <div className="flex rounded-full bg-white/90 px-3 py-1 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-        <div className={'flex items-center justify-center'}>
-          <span>🎉</span>
-          <div
-            data-orientation="vertical"
-            role="none"
-            className="mx-2 h-4 w-[1px] shrink-0 bg-stone-300"
-          ></div>
-          <span className={'hidden sm:inline'}>
-            Available from December '23
-          </span>
-          <span className={'inline sm:hidden'}>Available December '23</span>
-        </div>
+    <div className="flex rounded-full bg-white/90 px-3 py-1 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
+      <div
+        className={`pointer-events-auto flex cursor-default items-center justify-center ${props}`}
+      >
+        <span>🎉</span>
+        <div
+          data-orientation="vertical"
+          role="none"
+          className="mx-2 h-4 w-[1px] shrink-0 bg-stone-300"
+        ></div>
+        <span className={'hidden sm:inline'}>Available from December '23</span>
+        <span className={'inline sm:hidden'}>Available December '23</span>
       </div>
     </div>
   )
@@ -273,9 +271,9 @@ export function Header() {
             }}
           >
             <div className="relative flex gap-4">
-              <div className="flex flex-1"></div>
-              <div className="flex flex-1 items-center justify-end md:justify-center">
-                <Information className="pointer-events-auto cursor-default" />
+              <div className="flex"></div>
+              <div className="flex items-center justify-end md:justify-center">
+                <Information />
               </div>
               <div className="flex justify-end md:flex-1">
                 <div className="pointer-events-auto">

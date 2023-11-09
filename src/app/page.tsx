@@ -19,9 +19,9 @@ export default async function Home() {
             Full-stack developer, typescript enthusiast and next.js lover.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I'm Enzo, my goal is to create optimized and beautiful my goal is to
-            create optimized and beautiful websites using the websites using the
-            latest technologies in the JavaScript full-stack ecosystem.
+            I'm Enzo, my goal is to create optimized and beautiful websites
+            using the latest technologies in the JavaScript full-stack
+            ecosystem.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
