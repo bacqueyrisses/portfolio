@@ -33,7 +33,7 @@ export default function Websites({ setFocusedProject }: IWebsites) {
             <Image
               src={image}
               alt="enzo bacqueyrisses website"
-              className="h-11/12 absolute inset-0 m-auto w-11/12 rounded-xl object-cover transition-all duration-500 ease-in-out  hover:scale-105"
+              className="h-11/12 absolute inset-0 m-auto w-11/12 rounded-xl object-cover transition duration-500 ease-in-out  hover:scale-105"
             />
           </button>
         ))}
