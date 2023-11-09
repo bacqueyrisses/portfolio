@@ -1,17 +1,10 @@
 'use client'
 
 import { Fragment, useEffect, useRef, useState } from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import { useTheme } from 'next-themes'
-import { Popover } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-
-import avatarImage from '@/images/logos/logo.webp'
-import avatarDarkImage from '@/images/logos/whitelogo.webp'
 import ScrollableLogo from '@/components/ScrollableLogo'
 
 function SunIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
@@ -47,10 +40,17 @@ function MoonIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 function Information(props: React.ComponentPropsWithoutRef<'div'>) {
+  const handleClick = () => {
+    const element = document.getElementById('contact-section')
+    element && element.scrollIntoView({ behavior: 'smooth' })
+  }
   return (
-    <div className="flex rounded-full bg-white/90 px-3 py-1 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
+    <button
+      onClick={handleClick}
+      className="flex rounded-full bg-white/90 px-3 py-1 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
+    >
       <div
-        className={`pointer-events-auto flex cursor-default items-center justify-center ${props}`}
+        className={`pointer-events-auto flex items-center justify-center ${props}`}
       >
         <span>🎉</span>
         <div
@@ -58,10 +58,10 @@ function Information(props: React.ComponentPropsWithoutRef<'div'>) {
           role="none"
           className="mx-2 h-4 w-[1px] shrink-0 bg-stone-300"
         ></div>
-        <span className={'hidden sm:inline'}>Available from December 2023</span>
-        <span className={'inline sm:hidden'}>Available Dec '23</span>
+        <span className={'hidden sm:inline'}>Available from December</span>
+        <span className={'inline sm:hidden'}>Available</span>
       </div>
-    </div>
+    </button>
   )
 }
 
