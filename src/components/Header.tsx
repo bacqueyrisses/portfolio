@@ -59,7 +59,7 @@ function Information(props: React.ComponentPropsWithoutRef<'div'>) {
           className="mx-2 h-4 w-[1px] shrink-0 bg-stone-300"
         ></div>
         <span className={'hidden sm:inline'}>Available from December '23</span>
-        <span className={'inline sm:hidden'}>Available December '23</span>
+        <span className={'inline sm:hidden'}>Available Dec '23</span>
       </div>
     </div>
   )
