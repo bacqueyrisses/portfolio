@@ -37,12 +37,14 @@ export default function Projects({ focusedProject }: IProjects) {
                   </span>
                   <div
                     className={
-                      'bg-secondary inline-flex flex-grow-0 items-center space-x-2 self-start rounded-full border border-transparent px-2.5 py-0.5 text-zinc-600 transition-colors dark:text-zinc-400'
+                      'bg-secondary group inline-flex flex-grow-0 items-center space-x-2 self-start rounded-full border border-transparent px-2.5 py-0.5 text-zinc-600 transition-colors dark:text-zinc-400'
                     }
                   >
                     <span
                       className={`${
-                        project.live ? 'bg-teal-500' : 'bg-yellow-500'
+                        project.live
+                          ? 'bg-teal-500 group-hover:animate-pulse'
+                          : 'bg-yellow-500'
                       } -mb-[1px] h-2 w-2 rounded-full`}
                     ></span>
                     <span
