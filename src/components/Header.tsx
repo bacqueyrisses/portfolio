@@ -46,10 +46,10 @@ function MoonIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-function Navigation(props: React.ComponentPropsWithoutRef<'nav'>) {
+function Information(props: React.ComponentPropsWithoutRef<'div'>) {
   return (
-    <nav {...props}>
-      <ul className="flex rounded-full bg-white/90 px-3 py-1 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
+    <div {...props}>
+      <div className="flex rounded-full bg-white/90 px-3 py-1 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
         <div className={'flex items-center justify-center'}>
           <span>🎉</span>
           <div
@@ -62,8 +62,8 @@ function Navigation(props: React.ComponentPropsWithoutRef<'nav'>) {
           </span>
           <span className={'inline sm:hidden'}>Available December '23</span>
         </div>
-      </ul>
-    </nav>
+      </div>
+    </div>
   )
 }
 
@@ -252,11 +252,6 @@ export function Header() {
                   style={{ transform: 'var(--avatar-image-transform)' }}
                   className="block h-16 w-16 origin-left"
                 />
-                {/*<Avatar*/}
-                {/*  large*/}
-                {/*  className="block h-16 w-16 origin-left"*/}
-                {/*  style={{ transform: 'var(--avatar-image-transform)' }}*/}
-                {/*/>*/}
               </div>
             </div>
           </Container>
@@ -280,7 +275,7 @@ export function Header() {
             <div className="relative flex gap-4">
               <div className="flex flex-1"></div>
               <div className="flex flex-1 items-center justify-end md:justify-center">
-                <Navigation className="pointer-events-auto" />
+                <Information className="pointer-events-auto cursor-default" />
               </div>
               <div className="flex justify-end md:flex-1">
                 <div className="pointer-events-auto">
