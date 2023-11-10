@@ -17,7 +17,7 @@ export default function Websites({ setFocusedProject }: IWebsites) {
 
     setTimeout(() => {
       setFocusedProject(null)
-    }, 2500)
+    }, 3000)
   }
   return (
     <div className="mt-16 sm:mt-20">
