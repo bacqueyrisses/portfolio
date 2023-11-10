@@ -48,7 +48,7 @@ export default function Projects({ focusedProject }: IProjects) {
                         project.live
                           ? 'bg-teal-500 group-hover:animate-pulse'
                           : 'bg-yellow-500'
-                      } -mb-[1px] h-2 w-2 rounded-full`}
+                      } h-2 w-2 rounded-full sm:-mb-[1px]`}
                     ></span>
                     <span
                       className={
