@@ -52,10 +52,10 @@ export default function Resume() {
       </ol>
 
       <Button
-        download
+        download="Enzo Bacqueyrisses CV"
         href="/resume.pdf"
+        target={'_blank'}
         rel="noopener noreferrer"
-        locale={false}
         variant="secondary"
         className="group mt-6 w-full"
       >
