@@ -10,9 +10,6 @@ export default {
 
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['var(--font-geist-sans)'],
-      },
       colors: {
         linkedin: '#0B66C2',
       },

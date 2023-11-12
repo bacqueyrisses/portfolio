@@ -2,7 +2,6 @@ import { type Metadata } from 'next'
 
 import { Providers } from '@/components/providers/Providers'
 import { Layout } from '@/components/Layout'
-import { GeistSans } from 'geist/font/sans'
 import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
@@ -20,11 +19,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html
-      lang="en"
-      className={`h-full antialiased ${GeistSans.variable}`}
-      suppressHydrationWarning
-    >
+    <html lang="en" className={'h-full antialiased'} suppressHydrationWarning>
       <body className="flex h-full bg-zinc-50 dark:bg-black">
         <Providers>
           <div className="flex w-full">
