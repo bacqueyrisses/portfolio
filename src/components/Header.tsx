@@ -6,6 +6,7 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import ScrollableLogo from '@/components/ScrollableLogo'
+import Image from 'next/image'
 
 function SunIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -47,12 +48,21 @@ function Information(props: React.ComponentPropsWithoutRef<'div'>) {
   return (
     <button
       onClick={handleClick}
-      className="flex rounded-full bg-white/90 px-3 py-1 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
+      className="group flex rounded-full bg-white/90 px-3 py-1 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur hover:ring-zinc-900/10 dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20"
     >
       <div
         className={`pointer-events-auto flex items-center justify-center ${props}`}
       >
-        <span>🎉</span>
+        <div className={'inline-flex w-8 items-center justify-center '}>
+          <Image
+            src={
+              'https://em-content.zobj.net/source/telegram/358/party-popper_1f389.webp'
+            }
+            alt={'popper telemoji'}
+            height={22}
+            width={22}
+          />
+        </div>
         <div
           data-orientation="vertical"
           role="none"

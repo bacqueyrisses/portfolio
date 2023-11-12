@@ -27,7 +27,7 @@ export default function Websites({ setFocusedProject }: IWebsites) {
             onClick={() => handleClick(imageIndex)}
             key={image.src}
             className={clsx(
-              'relative aspect-[16/10] w-full flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-96 sm:rounded-2xl',
+              'relative aspect-[16/10] w-full flex-none overflow-hidden rounded-xl bg-zinc-50 dark:bg-zinc-800 sm:w-96 sm:rounded-2xl',
             )}
           >
             <Image
