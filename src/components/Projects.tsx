@@ -19,9 +19,9 @@ export default function Projects({ focusedProject }: IProjects) {
         >
           <h2 className="text-base font-medium tracking-tight text-zinc-800 dark:text-zinc-100">
             <div
-              className={`absolute -inset-x-4 -inset-y-6 z-0 scale-95 opacity-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:bg-zinc-50 group-hover:opacity-100 dark:group-hover:bg-zinc-700 sm:-inset-x-6 sm:rounded-2xl ${
+              className={`absolute -inset-x-4 -inset-y-6 z-0 scale-95 opacity-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:bg-zinc-50 group-hover:opacity-100 dark:group-hover:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl ${
                 focusedProject === project.id &&
-                'scale-100 bg-zinc-50 opacity-100 dark:bg-zinc-700'
+                'scale-100 bg-zinc-50 opacity-100 dark:bg-zinc-800/50'
               }`}
             />
             <Link target={'_blank'} href={project.link}>
