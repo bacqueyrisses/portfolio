@@ -7,6 +7,7 @@ import clsx from 'clsx'
 import { Container } from '@/components/Container'
 import ScrollableLogo from '@/components/ScrollableLogo'
 import Image from 'next/image'
+import { nextMonth } from '@/lib/nextMonth'
 
 function SunIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -69,7 +70,7 @@ function Information(props: React.ComponentPropsWithoutRef<'div'>) {
           className="mx-2 h-4 w-[1px] shrink-0 bg-stone-300"
         ></div>
         <span className={'hidden pl-1 pr-2 sm:inline'}>
-          Available from December
+          Available from {nextMonth()}
         </span>
         <span className={'inline pl-1 pr-2 sm:hidden'}>Available</span>
       </div>
