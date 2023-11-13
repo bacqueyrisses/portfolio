@@ -3,7 +3,7 @@ import Image from 'next/image'
 import clsx from 'clsx'
 import Link from 'next/link'
 import avatarImage from '@/images/logos/logo.webp'
-import avatarDarkImage from '@/images/logos/whitelogo.webp'
+import avatarDarkImage from '@/images/logos/logo-dark.webp'
 
 export default function ScrollableLogo({
   large = false,

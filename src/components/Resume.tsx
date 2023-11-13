@@ -13,9 +13,19 @@ export default function Resume() {
           <Image
             src={experience.logo}
             alt={`logo de ${experience.company}`}
-            className="h-7 w-7"
+            className={`${
+              experience.darkLogo ? 'inline dark:hidden' : 'dark:inline'
+            } h-7 w-7`}
             unoptimized
           />
+          {experience.darkLogo && (
+            <Image
+              src={experience.darkLogo}
+              alt={`logo de ${experience.company}`}
+              className="hidden h-7 w-7 dark:inline"
+              unoptimized
+            />
+          )}
         </div>
         <div className="flex flex-auto flex-wrap gap-x-2">
           <span className="sr-only">Company</span>
