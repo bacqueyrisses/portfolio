@@ -50,6 +50,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
         attribute="class"
         defaultTheme="light"
         disableTransitionOnChange
+        enableSystem={false}
       >
         <ThemeWatcher />
         {children}

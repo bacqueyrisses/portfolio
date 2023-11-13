@@ -51,5 +51,3 @@ export default async function Home() {
     </>
   )
 }
-
-//TODO: Change companies logos sizes + dark mode color
