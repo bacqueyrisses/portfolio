@@ -1,5 +1,5 @@
-import { MailIcon } from '@/components/icons/CustomIcons'
-import { Button } from '@/components/Button'
+import { MailIcon } from './icons/CustomIcons'
+import { Button } from './Button'
 
 export default function Contact() {
   return (

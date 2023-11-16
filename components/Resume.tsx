@@ -1,9 +1,8 @@
 import Image from 'next/image'
 import { experience, Experience } from '@/data/experience'
 
-import { Button } from '@/components/Button'
-import { ArrowDownIcon, ComputerIcon } from '@/components/icons/CustomIcons'
-import Link from 'next/link'
+import { Button } from './Button'
+import { ArrowDownIcon, ComputerIcon } from './icons/CustomIcons'
 
 export default function Resume() {
   function Experience({ experience }: { experience: Experience }) {

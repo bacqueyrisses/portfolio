@@ -1,10 +1,10 @@
 import { type ImageProps } from 'next/image'
 
-import mesoigner from '@/images/logos/mesoigner.webp'
-import buildspace from '@/images/logos/buildspace.webp'
-import darkBuildspace from '@/images/logos/buildspace-dark.webp'
-import logo from '@/images/logos/logo.webp'
-import darkLogo from '@/images/logos/logo-dark.webp'
+import mesoigner from '../images/logos/mesoigner.webp'
+import buildspace from '../images/logos/buildspace.webp'
+import darkBuildspace from '../images/logos/buildspace-dark.webp'
+import logo from '../images/logos/logo.webp'
+import darkLogo from '../images/logos/logo-dark.webp'
 
 export type Experience = {
   company: string

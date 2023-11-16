@@ -1,14 +1,14 @@
-import { Container } from '@/components/Container'
+import { Container } from "@/components/Container"
 
 import {
   GitHubIcon,
   LinkedInIcon,
   TwitterIcon,
-} from '@/components/icons/SocialIcons'
-import HomeClient from '@/app/home-page'
-import SocialLink from '@/components/SocialLink'
-import Resume from '@/components/Resume'
-import Contact from '@/components/Contact'
+} from "@/components/icons/SocialIcons"
+import HomeClient from "./home-page"
+import SocialLink from "@/components/SocialLink"
+import Resume from "@/components/Resume"
+import Contact from "@/components/Contact"
 
 export default async function Home() {
   return (

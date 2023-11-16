@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ChevronRightIcon } from '@/components/icons/CustomIcons'
+import { ChevronRightIcon } from './icons/CustomIcons'
 
 import { projects } from '@/data/projects'
 
