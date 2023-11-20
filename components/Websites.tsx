@@ -1,8 +1,8 @@
 import Image from "next/image"
 import clsx from "clsx"
-import nextai from "@/images/websites/nextai.webp"
-import postai from "@/images/websites/postai.webp"
-import ouvrage from "@/images/websites/ouvrage.webp"
+import nextai from "@/public/images/websites/nextai.webp"
+import postai from "@/public/images/websites/postai.webp"
+import ouvrage from "@/public/images/websites/ouvrage.webp"
 import { SetStateAction } from "react"
 
 interface IWebsites {

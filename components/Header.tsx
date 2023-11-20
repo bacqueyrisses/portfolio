@@ -54,7 +54,7 @@ function Information(props: React.ComponentPropsWithoutRef<"div">) {
       <div
         className={`pointer-events-auto flex items-center justify-center ${props}`}
       >
-        <div className={"pl-2 pr-1"}>
+        <div className={"pl-1 pr-0.5"}>
           <Image
             src={
               "https://em-content.zobj.net/source/apple/354/party-popper_1f389.png"
@@ -69,10 +69,10 @@ function Information(props: React.ComponentPropsWithoutRef<"div">) {
           role="none"
           className="mx-2 h-4 w-[1px] shrink-0 bg-stone-300"
         ></div>
-        <span className={"hidden pl-1 pr-2 sm:inline"}>
+        <span className={"hidden pr-1 sm:inline"}>
           Available from {nextMonth()}
         </span>
-        <span className={"inline pl-1 pr-2 sm:hidden"}>Available</span>
+        <span className={"inline pr-1 sm:hidden"}>Available</span>
       </div>
     </button>
   )

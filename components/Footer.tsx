@@ -1,8 +1,8 @@
-import Link from 'next/link'
+import Link from "next/link"
 
-import { ContainerInner, ContainerOuter } from './Container'
-import Image from 'next/image'
-import coffee from '@/images/logos/coffee.png'
+import { ContainerInner, ContainerOuter } from "./Container"
+import Image from "next/image"
+import coffee from "@/public/images/logos/coffee.png"
 
 export function Footer() {
   return (
@@ -15,9 +15,9 @@ export function Footer() {
                 &copy; {new Date().getFullYear()} Enzo Bacqueyrisses
               </p>
               <Link
-                href={'https://www.buymeacoffee.com/bacqueyrisses'}
-                target={'_blank'}
-                className={'cursor-pointer'}
+                href={"https://www.buymeacoffee.com/bacqueyrisses"}
+                target={"_blank"}
+                className={"cursor-pointer"}
               >
                 <Image
                   src={coffee}
