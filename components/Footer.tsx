@@ -2,7 +2,8 @@ import Link from "next/link"
 
 import { ContainerInner, ContainerOuter } from "./Container"
 import Image from "next/image"
-import coffee from "@/public/images/logos/coffee.png"
+import whiteCoffee from "@/public/images/logos/white-button.png"
+import darkCoffee from "@/public/images/logos/black-button.png"
 
 export function Footer() {
   return (
@@ -20,10 +21,18 @@ export function Footer() {
                 className={"cursor-pointer"}
               >
                 <Image
-                  src={coffee}
-                  width={80}
-                  height={10}
+                  src={whiteCoffee}
+                  width={100}
+                  height={100}
                   alt={"Enzo Bacqueyrisses' Buy Me a Coffee logo"}
+                  className={"block dark:hidden"}
+                />
+                <Image
+                    src={darkCoffee}
+                    width={100}
+                    height={100}
+                    alt={"Enzo Bacqueyrisses' Buy Me a Coffee logo dark mode"}
+                    className={"hidden dark:block"}
                 />
               </Link>
             </div>
