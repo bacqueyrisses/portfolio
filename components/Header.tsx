@@ -1,20 +1,19 @@
-"use client"
+'use client'
 
-import {Fragment, useEffect, useRef, useState} from "react"
-import {useTheme} from "next-themes"
-import clsx from "clsx"
+import { Fragment, useEffect, useRef, useState } from 'react'
+import { useTheme } from 'next-themes'
+import clsx from 'clsx'
 
-import {Container} from "./Container"
-import ScrollableLogo from "./ScrollableLogo"
-import Image from "next/image"
-import {nextMonth} from "@/lib/nextMonth"
-import {MoonIcon, SunIcon} from "@/components/icons/CustomIcons";
+import { Container } from './Container'
+import ScrollableLogo from './ScrollableLogo'
+import Image from 'next/image'
+import { nextMonth } from '@/lib/nextMonth'
+import { MoonIcon, SunIcon } from '@/components/icons/CustomIcons'
 
-
-function Information(props: React.ComponentPropsWithoutRef<"div">) {
+function Information(props: React.ComponentPropsWithoutRef<'div'>) {
   const handleClick = () => {
-    const element = document.getElementById("contact-section")
-    element && element.scrollIntoView({ behavior: "smooth" })
+    const element = document.getElementById('contact-section')
+    element && element.scrollIntoView({ behavior: 'smooth' })
   }
   return (
     <button
@@ -24,25 +23,19 @@ function Information(props: React.ComponentPropsWithoutRef<"div">) {
       <div
         className={`pointer-events-auto flex items-center justify-center ${props}`}
       >
-        <div className={"pl-1 pr-0.5"}>
-          <Image
-            src={
-              "https://em-content.zobj.net/source/apple/354/party-popper_1f389.png"
-            }
-            alt={"popper emoji"}
-            height={17}
-            width={17}
-          />
-        </div>
+        <div
+          className={
+            'h-2 w-2 rounded-full bg-teal-500 pl-1 pr-0.5 group-hover:animate-pulse sm:-mb-[1px]'
+          }
+        ></div>
+
         <div
           data-orientation="vertical"
           role="none"
           className="mx-2 h-4 w-[1px] shrink-0 bg-stone-300"
         ></div>
-        <span className={"hidden pr-1 sm:inline"}>
-          Available from {nextMonth()}
-        </span>
-        <span className={"inline pr-1 sm:hidden"}>Available</span>
+        <span className={'hidden pr-1 sm:inline'}>Available for work</span>
+        <span className={'inline pr-1 sm:hidden'}>Available</span>
       </div>
     </button>
   )
@@ -50,7 +43,7 @@ function Information(props: React.ComponentPropsWithoutRef<"div">) {
 
 function ThemeToggle() {
   let { resolvedTheme, setTheme } = useTheme()
-  let otherTheme = resolvedTheme === "dark" ? "light" : "dark"
+  let otherTheme = resolvedTheme === 'dark' ? 'light' : 'dark'
   let [mounted, setMounted] = useState(false)
 
   useEffect(() => {
@@ -60,7 +53,7 @@ function ThemeToggle() {
   return (
     <button
       type="button"
-      aria-label={mounted ? `Switch to ${otherTheme} theme` : "Toggle theme"}
+      aria-label={mounted ? `Switch to ${otherTheme} theme` : 'Toggle theme'}
       className="group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
       onClick={() => setTheme(otherTheme)}
     >
@@ -79,12 +72,12 @@ function clamp(number: number, a: number, b: number) {
 function AvatarContainer({
   className,
   ...props
-}: React.ComponentPropsWithoutRef<"div">) {
+}: React.ComponentPropsWithoutRef<'div'>) {
   return (
     <div
       className={clsx(
         className,
-        "h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10",
+        'h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10',
       )}
       {...props}
     />
@@ -92,8 +85,8 @@ function AvatarContainer({
 }
 
 export function Header() {
-  let headerRef = useRef<React.ElementRef<"div">>(null)
-  let avatarRef = useRef<React.ElementRef<"div">>(null)
+  let headerRef = useRef<React.ElementRef<'div'>>(null)
+  let avatarRef = useRef<React.ElementRef<'div'>>(null)
   let isInitial = useRef(true)
 
   useEffect(() => {
@@ -121,31 +114,31 @@ export function Header() {
       )
 
       if (isInitial.current) {
-        setProperty("--header-position", "sticky")
+        setProperty('--header-position', 'sticky')
       }
 
-      setProperty("--content-offset", `${downDelay}px`)
+      setProperty('--content-offset', `${downDelay}px`)
 
       if (isInitial.current || scrollY < downDelay) {
-        setProperty("--header-height", `${downDelay + height}px`)
-        setProperty("--header-mb", `${-downDelay}px`)
+        setProperty('--header-height', `${downDelay + height}px`)
+        setProperty('--header-mb', `${-downDelay}px`)
       } else if (top + height < -upDelay) {
         let offset = Math.max(height, scrollY - upDelay)
-        setProperty("--header-height", `${offset}px`)
-        setProperty("--header-mb", `${height - offset}px`)
+        setProperty('--header-height', `${offset}px`)
+        setProperty('--header-mb', `${height - offset}px`)
       } else if (top === 0) {
-        setProperty("--header-height", `${scrollY + height}px`)
-        setProperty("--header-mb", `${-scrollY}px`)
+        setProperty('--header-height', `${scrollY + height}px`)
+        setProperty('--header-mb', `${-scrollY}px`)
       }
 
       if (top === 0 && scrollY > 0 && scrollY >= downDelay) {
-        setProperty("--header-inner-position", "fixed")
-        removeProperty("--header-top")
-        removeProperty("--avatar-top")
+        setProperty('--header-inner-position', 'fixed')
+        removeProperty('--header-top')
+        removeProperty('--avatar-top')
       } else {
-        removeProperty("--header-inner-position")
-        setProperty("--header-top", "0px")
-        setProperty("--avatar-top", "0px")
+        removeProperty('--header-inner-position')
+        setProperty('--header-top', '0px')
+        setProperty('--avatar-top', '0px')
       }
     }
 
@@ -164,7 +157,7 @@ export function Header() {
       x = clamp(x, fromX, toX)
 
       setProperty(
-        "--avatar-image-transform",
+        '--avatar-image-transform',
         `translate3d(${x}rem, 0, 0) scale(${scale})`,
       )
 
@@ -172,8 +165,8 @@ export function Header() {
       let borderX = (-toX + x) * borderScale
       let borderTransform = `translate3d(${borderX}rem, 0, 0) scale(${borderScale})`
 
-      setProperty("--avatar-border-transform", borderTransform)
-      setProperty("--avatar-border-opacity", scale === toScale ? "1" : "0")
+      setProperty('--avatar-border-transform', borderTransform)
+      setProperty('--avatar-border-opacity', scale === toScale ? '1' : '0')
     }
 
     function updateStyles() {
@@ -183,12 +176,12 @@ export function Header() {
     }
 
     updateStyles()
-    window.addEventListener("scroll", updateStyles, { passive: true })
-    window.addEventListener("resize", updateStyles)
+    window.addEventListener('scroll', updateStyles, { passive: true })
+    window.addEventListener('resize', updateStyles)
 
     return () => {
-      window.removeEventListener("scroll", updateStyles)
-      window.removeEventListener("resize", updateStyles)
+      window.removeEventListener('scroll', updateStyles)
+      window.removeEventListener('resize', updateStyles)
     }
   }, [])
 
@@ -197,8 +190,8 @@ export function Header() {
       <header
         className="pointer-events-none relative z-50 flex flex-none flex-col"
         style={{
-          height: "var(--header-height)",
-          marginBottom: "var(--header-mb)",
+          height: 'var(--header-height)',
+          marginBottom: 'var(--header-mb)',
         }}
       >
         <>
@@ -210,27 +203,27 @@ export function Header() {
             className="top-0 order-last -mb-3 pt-3"
             style={{
               position:
-                "var(--header-position)" as React.CSSProperties["position"],
+                'var(--header-position)' as React.CSSProperties['position'],
             }}
           >
             <div
               className="top-[var(--avatar-top,theme(spacing.3))] w-full"
               style={{
                 position:
-                  "var(--header-inner-position)" as React.CSSProperties["position"],
+                  'var(--header-inner-position)' as React.CSSProperties['position'],
               }}
             >
               <div className="relative">
                 <AvatarContainer
                   className="absolute left-0 top-3 origin-left transition-opacity"
                   style={{
-                    opacity: "var(--avatar-border-opacity, 0)",
-                    transform: "var(--avatar-border-transform)",
+                    opacity: 'var(--avatar-border-opacity, 0)',
+                    transform: 'var(--avatar-border-transform)',
                   }}
                 />
                 <ScrollableLogo
                   large
-                  style={{ transform: "var(--avatar-image-transform)" }}
+                  style={{ transform: 'var(--avatar-image-transform)' }}
                   className="block h-16 w-16 origin-left"
                 />
               </div>
@@ -243,14 +236,14 @@ export function Header() {
           className="top-0 z-10 h-16 pt-6"
           style={{
             position:
-              "var(--header-position)" as React.CSSProperties["position"],
+              'var(--header-position)' as React.CSSProperties['position'],
           }}
         >
           <Container
             className="top-[var(--header-top,theme(spacing.6))] w-full"
             style={{
               position:
-                "var(--header-inner-position)" as React.CSSProperties["position"],
+                'var(--header-inner-position)' as React.CSSProperties['position'],
             }}
           >
             <div className="relative flex gap-4">
@@ -268,7 +261,7 @@ export function Header() {
         </div>
       </header>
 
-      <div className="flex-none" style={{ height: "var(--content-offset)" }} />
+      <div className="flex-none" style={{ height: 'var(--content-offset)' }} />
     </>
   )
 }
