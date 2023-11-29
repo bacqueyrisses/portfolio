@@ -5,3 +5,5 @@
 
 ### Technologies
 Next.js 14 + Tailwind
+
+✦ Made with love by Enzo ✦
