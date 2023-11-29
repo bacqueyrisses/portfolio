@@ -6,8 +6,6 @@ import clsx from 'clsx'
 
 import { Container } from './Container'
 import ScrollableLogo from './ScrollableLogo'
-import Image from 'next/image'
-import { nextMonth } from '@/lib/nextMonth'
 import { MoonIcon, SunIcon } from '@/components/icons/CustomIcons'
 
 function Information(props: React.ComponentPropsWithoutRef<'div'>) {
