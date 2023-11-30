@@ -23,7 +23,7 @@ function Information(props: React.ComponentPropsWithoutRef<'div'>) {
       >
         <div
           className={
-            'h-2 w-2 rounded-full bg-teal-500 pl-1 pr-0.5 group-hover:animate-pulse sm:-mb-[1px]'
+            'h-2.5 w-2.5 rounded-full bg-teal-400 pl-1 pr-0.5 group-hover:animate-pulse'
           }
         ></div>
 
