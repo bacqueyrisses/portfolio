@@ -24,7 +24,7 @@ export const projects: Array<Project> = [
       'Design and send AI-crafted, location-based virtual postcards. Share personalized moments creatively. Send yours now!',
     date: 2023,
     link: 'https://mypostai.vercel.app',
-    live: false,
+    live: true,
   },
   {
     id: 3,
