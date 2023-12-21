@@ -21,7 +21,7 @@ export default function Projects({ focusedProject }: IProjects) {
             <div
               className={`absolute -inset-x-4 -inset-y-6 z-0 opacity-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:bg-zinc-50 group-hover:opacity-100 dark:group-hover:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl ${
                 focusedProject === project.id
-                  ? 'scale-100 bg-zinc-50/60 opacity-100 transition-all dark:bg-zinc-800/50'
+                  ? 'scale-[0.98] bg-zinc-50 opacity-100 transition-all dark:bg-zinc-800/50'
                   : 'scale-95'
               }`}
             />
