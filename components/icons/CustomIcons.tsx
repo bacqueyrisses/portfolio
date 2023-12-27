@@ -102,33 +102,36 @@ export function CameraIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth="1.5"
-      stroke="url(#grad1)"
-      className="h-6 w-6"
+      version="1.1"
+      viewBox="4.98 4.75 38.09 38.09"
       {...props}
     >
-      <defs>
-        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" style={{ stopColor: '#2DD4BF', stopOpacity: 1 }} />
-          <stop offset="50%" style={{ stopColor: '#5AC8A8', stopOpacity: 1 }} />
-          <stop
-            offset="100%"
-            style={{ stopColor: '#1E9F7A', stopOpacity: 1 }}
-          />
-        </linearGradient>
-      </defs>
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z"
-      />
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z"
-      />
+      <g>
+        <title>Layer 1</title>
+        <g id="svg_7">
+          <path
+            id="svg_2"
+            strokeDashoffset="0"
+            strokeMiterlimit="4"
+            strokeLinejoin="round"
+            strokeLinecap="round"
+            strokeWidth="0.75761"
+          ></path>
+          <path
+            id="svg_3"
+            strokeDashoffset="0"
+            strokeMiterlimit="4"
+            strokeLinejoin="round"
+            strokeLinecap="round"
+            strokeWidth="0.37881"
+          ></path>
+          <path
+            stroke="null"
+            id="svg_4"
+            d="m24.01953,4.75391c-1.40387,0 -2.76821,0.16193 -4.08558,0.4502l10.94105,17.13855l6.37074,-12.22205c-3.42648,-3.31342 -8.08325,-5.3667 -13.22621,-5.3667zm-4.74343,0.58868c-6.10117,1.56824 -11.02561,6.0871 -13.15696,11.94513l20.73953,0l-7.58257,-11.94513zm18.45437,5.26282l-9.72923,18.59283l14.26492,0c0.50395,-1.70984 0.79634,-3.5282 0.79634,-5.40137c0,-5.12524 -2.03879,-9.76837 -5.33203,-13.19147zm-31.81907,7.34021c-0.59637,1.8454 -0.93484,3.80853 -0.93484,5.85126c0,4.61902 1.66177,8.85571 4.3972,12.15295l10.2832,-17.79651c0.01704,-0.03003 0.04462,-0.04901 0.06925,-0.06903l0.10387,-0.13849l-13.91868,0l0,-0.00018zm10.94105,6.37067l-6.99396,12.15283c3.48695,3.89697 8.52019,6.37085 14.16104,6.37085c1.40591,0 2.76793,-0.16113 4.08558,-0.4502l-11.25266,-18.07349zm4.18945,5.50513l7.75569,12.39514c6.24455,-1.61853 11.23571,-6.31689 13.26083,-12.39514l-21.01652,0z"
+          ></path>
+        </g>
+      </g>
     </svg>
   )
 }

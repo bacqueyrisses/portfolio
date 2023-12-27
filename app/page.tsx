@@ -5,7 +5,7 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from '@/components/icons/SocialIcons'
-import { CameraIcon, GradientIcon } from '@/components/icons/CustomIcons'
+import { CameraIcon, CameraIcon2 } from '@/components/icons/CustomIcons'
 import HomeClient from './home-page'
 import SocialLink from '@/components/SocialLink'
 import Resume from '@/components/Resume'
@@ -44,10 +44,10 @@ export default async function Home() {
             />
             <Link
               href={'https://www.photos.bacqueyrisses.dev'}
-              className="group -m-1 p-1"
+              className="group -m-1 scale-[0.85] p-1"
               target={'_blank'}
             >
-              <CameraIcon className="h-6 w-6" />
+              <CameraIcon className="h-6 w-6 fill-zinc-500 group-hover:fill-zinc-700 dark:fill-zinc-400 dark:group-hover:fill-zinc-200" />
             </Link>
           </div>
         </div>
