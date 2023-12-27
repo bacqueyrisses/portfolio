@@ -1,14 +1,16 @@
-import { Container } from "@/components/Container"
+import { Container } from '@/components/Container'
 
 import {
   GitHubIcon,
   LinkedInIcon,
   TwitterIcon,
-} from "@/components/icons/SocialIcons"
-import HomeClient from "./home-page"
-import SocialLink from "@/components/SocialLink"
-import Resume from "@/components/Resume"
-import Contact from "@/components/Contact"
+} from '@/components/icons/SocialIcons'
+import { CameraIcon, GradientIcon } from '@/components/icons/CustomIcons'
+import HomeClient from './home-page'
+import SocialLink from '@/components/SocialLink'
+import Resume from '@/components/Resume'
+import Contact from '@/components/Contact'
+import Link from 'next/link'
 
 export default async function Home() {
   return (
@@ -40,6 +42,13 @@ export default async function Home() {
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
+            <Link
+              href={'https://www.photos.bacqueyrisses.dev'}
+              className="group -m-1 p-1"
+              target={'_blank'}
+            >
+              <CameraIcon className="h-6 w-6" />
+            </Link>
           </div>
         </div>
       </Container>
