@@ -5,7 +5,7 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from '@/components/icons/SocialIcons'
-import { CameraIcon, CameraIcon2 } from '@/components/icons/CustomIcons'
+import { CameraIcon } from '@/components/icons/CustomIcons'
 import HomeClient from './home-page'
 import SocialLink from '@/components/SocialLink'
 import Resume from '@/components/Resume'
