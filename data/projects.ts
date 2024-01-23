@@ -23,7 +23,7 @@ export const projects: Array<Project> = [
     description:
       'Design and send AI-crafted, location-based virtual postcards. Share personalized moments creatively. Send yours now!',
     date: 2023,
-    link: 'https://mypostai.vercel.app',
+    link: 'https://www.postai.enzo.codes',
     live: true,
   },
   {
