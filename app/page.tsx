@@ -43,7 +43,7 @@ export default async function Home() {
               icon={LinkedInIcon}
             />
             <Link
-              href={'https://www.photos.bacqueyrisses.dev'}
+              href={'https://www.photos.enzo.codes'}
               className="group -m-1 scale-[0.85] p-1"
               target={'_blank'}
             >
