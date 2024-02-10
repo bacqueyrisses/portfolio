@@ -1,6 +1,6 @@
 import '@/styles/tailwind.css'
 
-import { type Metadata } from 'next'
+import { type Metadata, Viewport } from 'next'
 
 import { Providers } from '@/components/providers/Providers'
 import { Layout } from '@/components/Layout'
@@ -17,6 +17,13 @@ export const metadata: Metadata = {
     description:
       'Full-stack developer specialised in Next.js, TypeScript & Node.JS',
   },
+}
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#FAFAFA' },
+    { media: '(prefers-color-scheme: dark)', color: '#000000' },
+  ],
 }
 
 export default function RootLayout({
