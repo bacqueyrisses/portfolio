@@ -1,7 +1,7 @@
 export default function AnimatedTitle() {
   return (
     <>
-      <h1 className="hidden select-none space-y-2 text-4xl font-bold leading-none tracking-tight text-zinc-800 dark:text-zinc-100 sm:block sm:space-y-0 sm:text-5xl">
+      <h1 className="hidden select-none space-y-0 text-5xl font-bold leading-none tracking-tight text-zinc-800 dark:text-zinc-100 sm:block">
         <span
           data-content="Full-stack developer,"
           className="relative bottom-0 left-0 top-0 whitespace-nowrap before:absolute before:z-0 before:animate-gradient-background-1 before:text-black before:content-[attr(data-content)]"
@@ -12,7 +12,7 @@ export default function AnimatedTitle() {
         </span>
         <span
           data-content="typescript"
-          className="relative bottom-0 left-0 top-0 before:absolute before:z-0 before:animate-gradient-background-2 before:text-black before:content-[attr(data-content)] sm:whitespace-nowrap"
+          className="relative bottom-0 left-0 top-0 whitespace-nowrap before:absolute before:z-0 before:animate-gradient-background-2 before:text-black before:content-[attr(data-content)]"
         >
           <span className="animate-gradient-foreground-2 bg-gradient-to-r from-gradient-2-start to-gradient-2-end bg-clip-text text-transparent">
             typescript
@@ -21,7 +21,7 @@ export default function AnimatedTitle() {
         <div>
           <span
             data-content="enthusiast"
-            className="relative bottom-0 left-0 top-0 before:absolute before:z-0 before:animate-gradient-background-2 before:text-black before:content-[attr(data-content)] sm:whitespace-nowrap"
+            className="relative bottom-0 left-0 top-0 whitespace-nowrap before:absolute before:z-0 before:animate-gradient-background-2 before:text-black before:content-[attr(data-content)]"
           >
             <span className="animate-gradient-foreground-2 bg-gradient-to-r from-gradient-2-start to-gradient-2-end bg-clip-text text-transparent">
               enthusiast
