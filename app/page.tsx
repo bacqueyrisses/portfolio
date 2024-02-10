@@ -11,15 +11,14 @@ import SocialLink from '@/components/SocialLink'
 import Resume from '@/components/Resume'
 import Contact from '@/components/Contact'
 import Link from 'next/link'
+import AnimatedTitle from '@/components/AnimatedTitle'
 
 export default async function Home() {
   return (
     <>
       <Container className="mt-9">
         <div className="max-w-2xl">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Full-stack developer, typescript enthusiast and next.js lover.
-          </h1>
+          <AnimatedTitle />
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I'm Enzo, my goal is to create optimized and beautiful websites
             using the latest technologies in the JavaScript full-stack
