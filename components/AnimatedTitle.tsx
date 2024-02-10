@@ -27,7 +27,10 @@ export default function AnimatedTitle() {
               enthusiast
             </span>
           </span>
-          <span> and </span>
+          <span className={'before:text-zinc-800 dark:before:text-zinc-100'}>
+            {' '}
+            and{' '}
+          </span>
           <span
             data-content="next.js lover."
             className="relative bottom-0 left-0 top-0 whitespace-nowrap before:absolute before:z-0 before:animate-gradient-background-3 before:text-zinc-800 before:content-[attr(data-content)] dark:before:text-zinc-100"
