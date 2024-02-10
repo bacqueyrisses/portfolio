@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description:
     'I’m Enzo, a full-stack developer specialised in Next.js, TypeScript & Node.JS.',
   openGraph: {
-    title: '☑️ Enzo Bacqueyrisses | Next.js Developer',
+    title: '▲ Enzo Bacqueyrisses | Next.js Developer',
     description:
       'Full-stack developer specialised in Next.js, TypeScript & Node.JS',
   },
