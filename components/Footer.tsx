@@ -7,7 +7,7 @@ import darkCoffee from '@/public/images/logos/black-button.png'
 
 export function Footer() {
   return (
-    <footer className="mt-10 flex-none sm:mt-32">
+    <footer className="mt-20 flex-none lg:mt-24">
       <ContainerOuter>
         <div className="border-t border-zinc-100 pb-10 pt-10 dark:border-zinc-700/40">
           <ContainerInner>
