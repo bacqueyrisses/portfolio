@@ -4,26 +4,26 @@ export default function AnimatedTitle() {
       <h1 className="hidden select-none space-y-1 text-5xl font-bold leading-none tracking-tight sm:block">
         <span
           data-content="Full-stack developer,"
-          className="relative top-0 whitespace-nowrap before:absolute before:z-0 before:animate-gradient-background-1 before:text-zinc-800 before:content-[attr(data-content)] dark:before:text-zinc-100"
+          className="whitespace-nowrap before:absolute before:z-0 before:animate-gradient-background-1 before:text-zinc-800 before:content-[attr(data-content)] dark:before:text-zinc-100"
         >
-          <span className="animate-gradient-foreground-1 bg-gradient-to-r from-gradient-1-start to-gradient-1-end bg-clip-text text-transparent">
+          <span className="relative top-1/2 -translate-y-1/2 animate-gradient-foreground-1 bg-gradient-to-r from-gradient-1-start to-gradient-1-end bg-clip-text text-transparent">
             Full-stack developer,{' '}
           </span>
         </span>
         <span
           data-content="typescript"
-          className="relative left-0 whitespace-nowrap before:absolute before:z-0 before:animate-gradient-background-2 before:text-zinc-800 before:content-[attr(data-content)] dark:before:text-zinc-100"
+          className="whitespace-nowrap before:absolute before:z-0 before:animate-gradient-background-2 before:text-zinc-800 before:content-[attr(data-content)] dark:before:text-zinc-100"
         >
-          <span className="animate-gradient-foreground-2 bg-gradient-to-r from-gradient-2-start to-gradient-2-end bg-clip-text text-transparent">
+          <span className="relative top-1/2 -translate-y-1/2 animate-gradient-foreground-2 bg-gradient-to-r from-gradient-2-start to-gradient-2-end bg-clip-text text-transparent">
             typescript
           </span>
         </span>
         <div>
           <span
             data-content="enthusiast"
-            className="relative bottom-0 left-0 whitespace-nowrap before:absolute before:z-0 before:animate-gradient-background-2 before:text-zinc-800 before:content-[attr(data-content)] dark:before:text-zinc-100"
+            className="whitespace-nowrap before:absolute before:z-0 before:animate-gradient-background-2 before:text-zinc-800 before:content-[attr(data-content)] dark:before:text-zinc-100"
           >
-            <span className="animate-gradient-foreground-2 bg-gradient-to-r from-gradient-2-start to-gradient-2-end bg-clip-text text-transparent">
+            <span className="relative top-1/2 -translate-y-1/2 animate-gradient-foreground-2 bg-gradient-to-r from-gradient-2-start to-gradient-2-end bg-clip-text text-transparent">
               enthusiast
             </span>
           </span>
@@ -33,9 +33,9 @@ export default function AnimatedTitle() {
           </span>
           <span
             data-content="next.js lover."
-            className="relative left-0 top-0 whitespace-nowrap before:absolute before:z-0 before:animate-gradient-background-3 before:text-zinc-800 before:content-[attr(data-content)] dark:before:text-zinc-100"
+            className="whitespace-nowrap before:absolute before:z-0 before:animate-gradient-background-3 before:text-zinc-800 before:content-[attr(data-content)] dark:before:text-zinc-100"
           >
-            <span className="animate-gradient-foreground-3 bg-gradient-to-r from-gradient-3-start to-gradient-3-end bg-clip-text text-transparent">
+            <span className="relative top-1/2 -translate-y-1/2 animate-gradient-foreground-3 bg-gradient-to-r from-gradient-3-start to-gradient-3-end bg-clip-text text-transparent">
               next.js lover.
             </span>
           </span>
