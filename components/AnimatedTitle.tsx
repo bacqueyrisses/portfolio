@@ -3,13 +3,18 @@ export default function AnimatedTitle() {
     <>
       <h1 className="hidden select-none space-y-1 text-5xl font-bold leading-none tracking-tight sm:block">
         <span
-          data-content="Full-stack developer,"
+          data-content="Full-stack developer"
           className="whitespace-nowrap before:absolute before:z-0 before:animate-gradient-background-1 before:text-zinc-800 before:content-[attr(data-content)] dark:before:text-zinc-100"
         >
           <span className="relative top-1/2 -translate-y-1/2 animate-gradient-foreground-1 bg-gradient-to-r from-gradient-1-start to-gradient-1-end bg-clip-text text-transparent">
-            Full-stack developer,{' '}
+            Full-stack developer{' '}
           </span>
         </span>
+        <span
+          className={'-ml-2.5 before:text-zinc-800 dark:before:text-zinc-100'}
+        >
+          ,
+        </span>{' '}
         <span
           data-content="typescript"
           className="whitespace-nowrap before:absolute before:z-0 before:animate-gradient-background-2 before:text-zinc-800 before:content-[attr(data-content)] dark:before:text-zinc-100"
@@ -32,11 +37,18 @@ export default function AnimatedTitle() {
             and{' '}
           </span>
           <span
-            data-content="next.js lover."
+            data-content="next.js lover"
             className="whitespace-nowrap before:absolute before:z-0 before:animate-gradient-background-3 before:text-zinc-800 before:content-[attr(data-content)] dark:before:text-zinc-100"
           >
             <span className="relative top-1/2 -translate-y-1/2 animate-gradient-foreground-3 bg-gradient-to-r from-gradient-3-start to-gradient-3-end bg-clip-text text-transparent">
-              next.js lover.
+              next.js lover{' '}
+            </span>
+            <span
+              className={
+                '-ml-2.5 before:text-zinc-800 dark:before:text-zinc-100'
+              }
+            >
+              .
             </span>
           </span>
         </div>
