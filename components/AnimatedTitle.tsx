@@ -11,7 +11,7 @@ export default function AnimatedTitle() {
           </span>
         </span>
         <span
-          className={'-ml-2.5 before:text-zinc-800 dark:before:text-zinc-100'}
+          className={'-ml-2 before:text-zinc-800 dark:before:text-zinc-100'}
         >
           ,
         </span>{' '}
@@ -44,9 +44,7 @@ export default function AnimatedTitle() {
               next.js lover{' '}
             </span>
             <span
-              className={
-                '-ml-2.5 before:text-zinc-800 dark:before:text-zinc-100'
-              }
+              className={'-ml-2 before:text-zinc-800 dark:before:text-zinc-100'}
             >
               .
             </span>
