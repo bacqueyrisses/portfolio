@@ -10,7 +10,7 @@ export default function Projects({ focusedProject }: IProjects) {
   return (
     <div
       id="projects-section"
-      className="flex flex-col gap-16 sm:scroll-mt-24 md:scroll-mt-28"
+      className="flex scroll-mt-16 flex-col gap-16 lg:scroll-mt-20"
     >
       {projects.map((project) => (
         <div
