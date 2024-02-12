@@ -1,7 +1,7 @@
 export default function AnimatedTitle() {
   return (
     <>
-      <h1 className="hidden select-none space-y-1 text-5xl font-bold leading-none tracking-tight sm:block">
+      <h1 className="hidden select-none space-y-1 text-5xl font-bold leading-none tracking-tight lg:block">
         <span
           data-content="Full-stack developer"
           className="whitespace-nowrap before:absolute before:z-0 before:animate-gradient-background-1 before:text-zinc-800 before:content-[attr(data-content)] dark:before:text-zinc-100"
@@ -51,7 +51,7 @@ export default function AnimatedTitle() {
           </span>
         </div>
       </h1>
-      <h1 className="block select-none space-y-1 text-4xl font-bold leading-none tracking-tight sm:hidden">
+      <h1 className="block select-none space-y-1 text-4xl font-bold leading-none tracking-tight md:space-y-0  md:text-5xl lg:hidden">
         <span
           data-content="Full-stack developer,"
           className="relative block before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:block before:w-full before:animate-gradient-background-1 before:text-zinc-800 before:content-[attr(data-content)] dark:before:text-zinc-100"
@@ -70,14 +70,16 @@ export default function AnimatedTitle() {
             typescript enthusiast
           </span>
         </span>
-        <span className={'inline-block'}>and</span>{' '}
-        <span
-          data-content="next.js lover."
-          className="relative inline-block before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:block before:w-full before:animate-gradient-background-3 before:text-zinc-800 before:content-[attr(data-content)] dark:before:text-zinc-100"
-        >
-          <span className="animate-gradient-foreground-3 bg-gradient-to-r from-gradient-3-start to-gradient-3-end bg-clip-text text-transparent">
-            {' '}
-            next.js lover.
+        <span className={'block'}>
+          <span className={'inline-block'}>and</span>{' '}
+          <span
+            data-content="next.js lover."
+            className="relative inline-block before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:block before:w-full before:animate-gradient-background-3 before:text-zinc-800 before:content-[attr(data-content)] dark:before:text-zinc-100"
+          >
+            <span className="animate-gradient-foreground-3 bg-gradient-to-r from-gradient-3-start to-gradient-3-end bg-clip-text text-transparent">
+              {' '}
+              next.js lover.
+            </span>
           </span>
         </span>
       </h1>
