@@ -53,13 +53,18 @@ export default function AnimatedTitle() {
       </h1>
       <h1 className="block select-none space-y-1 text-4xl font-bold leading-none tracking-tight md:space-y-0  md:text-5xl lg:hidden">
         <span
-          data-content="Full-stack developer,"
+          data-content="Full-stack developer"
           className="relative block before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:block before:w-full before:animate-gradient-background-1 before:text-zinc-800 before:content-[attr(data-content)] dark:before:text-zinc-100"
         >
           <span className="animate-gradient-foreground-1 bg-gradient-to-r from-gradient-1-start to-gradient-1-end bg-clip-text text-transparent">
             {' '}
-            Full-stack developer,
+            Full-stack developer{' '}
           </span>
+          <span
+            className={'-ml-1.5 before:text-zinc-800 dark:before:text-zinc-100'}
+          >
+            ,
+          </span>{' '}
         </span>
         <span
           data-content="typescript enthusiast"
@@ -73,12 +78,19 @@ export default function AnimatedTitle() {
         <span className={'block'}>
           <span className={'inline-block'}>and</span>{' '}
           <span
-            data-content="next.js lover."
+            data-content="next.js lover"
             className="relative inline-block before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:block before:w-full before:animate-gradient-background-3 before:text-zinc-800 before:content-[attr(data-content)] dark:before:text-zinc-100"
           >
             <span className="animate-gradient-foreground-3 bg-gradient-to-r from-gradient-3-start to-gradient-3-end bg-clip-text text-transparent">
               {' '}
-              next.js lover.
+              next.js lover{' '}
+            </span>
+            <span
+              className={
+                '-ml-1.5 before:text-zinc-800 dark:before:text-zinc-100'
+              }
+            >
+              .
             </span>
           </span>
         </span>
