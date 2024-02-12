@@ -21,14 +21,14 @@ export default function Websites({ setFocusedProject }: IWebsites) {
   }
   const imageAltTexts = ['NextAI', 'postai', 'Ouvrage']
   return (
-    <div className="mt-16 lg:mt-20">
-      <div className="-my-4 flex flex-col items-center justify-center gap-4 overflow-hidden px-4 py-4 sm:flex-row">
+    <div className="mx-auto mt-16 max-w-7xl px-4 lg:mt-20 lg:px-8">
+      <div className="flex flex-col items-center justify-evenly overflow-hidden px-4 sm:flex-row sm:gap-6 sm:px-10">
         {[nextai, postai, ouvrage].map((image, imageIndex) => (
           <button
             onClick={() => handleClick(imageIndex)}
             key={image.src}
             className={clsx(
-              'relative aspect-[16/10] w-full flex-none overflow-hidden rounded-xl bg-zinc-50 dark:bg-zinc-800 sm:w-96 sm:rounded-2xl md:w-56 lg:w-96',
+              'relative aspect-[16/10] w-full overflow-hidden rounded-xl bg-zinc-50 dark:bg-zinc-800 sm:rounded-2xl lg:basis-1/3',
             )}
           >
             <Image
