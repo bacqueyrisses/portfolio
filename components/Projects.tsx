@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { ArrowRightIcon } from './icons/CustomIcons'
-
 import { projects } from '@/data/projects'
 
 interface IProjects {
