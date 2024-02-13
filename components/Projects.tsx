@@ -79,7 +79,6 @@ export default function Projects({ focusedProject }: IProjects) {
                   className="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500"
                 >
                   Visit website
-                  <ChevronRightIcon className="ml-1 h-4 w-4 stroke-current" />
                 </div>
               </span>
             </Link>
