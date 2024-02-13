@@ -68,7 +68,7 @@ export default function Projects({ focusedProject }: IProjects) {
                       focusedProject === project.id
                         ? 'text-zinc-800 dark:text-zinc-400'
                         : 'text-zinc-400 dark:text-zinc-400'
-                    } h-2.5 w-2.5 translate-y-1 transition-colors duration-500 ease-in-out group-hover:text-zinc-900 group-hover:dark:text-zinc-100`}
+                    } h-2.5 w-2.5 translate-y-1.5 transition-colors duration-500 ease-in-out group-hover:text-zinc-900 group-hover:dark:text-zinc-100 sm:translate-y-1`}
                   />
                 </div>
                 <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
