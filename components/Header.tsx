@@ -25,13 +25,14 @@ function Information(props: React.ComponentPropsWithoutRef<'div'>) {
           className={
             'h-2.5 w-2.5 rounded-full bg-teal-400 pl-1 pr-0.5 group-hover:animate-pulse'
           }
-        ></div>
+        />
 
         <div
           data-orientation="vertical"
           role="none"
           className="mx-2 h-4 w-[1px] shrink-0 bg-stone-300"
-        ></div>
+        />
+
         <span className={'hidden pr-1 sm:inline'}>Available for work</span>
         <span className={'inline pr-1 sm:hidden'}>Available</span>
       </div>
