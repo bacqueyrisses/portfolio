@@ -6,10 +6,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
     <>
       <div className="fixed inset-0 flex justify-center sm:px-8">
         <div className="flex w-full max-w-7xl lg:px-8">
-          <div className="w-full rounded-t-3xl border border-zinc-100 bg-white dark:border-white/5 dark:bg-zinc-900" />
+          <div className="w-full rounded-t-[1.6rem] border border-zinc-100 bg-white dark:border-white/5 dark:bg-zinc-900 sm:rounded-t-3xl" />
         </div>
       </div>
-      <div className="relative flex w-full flex-col px-3 sm:px-0">
+      <div className="relative flex w-full flex-col px-2.5 sm:px-0">
         <Header />
         <main className="flex-auto">{children}</main>
         <Footer />
