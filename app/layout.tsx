@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#FAFAFA' },
+    { media: '(prefers-color-scheme: light)', color: '#F4F4F5' },
     { media: '(prefers-color-scheme: dark)', color: '#000000' },
   ],
 }
@@ -33,7 +33,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={'h-full antialiased'} suppressHydrationWarning>
-      <body className="flex h-full bg-zinc-50 dark:bg-black">
+      <body className="flex h-full bg-zinc-100 dark:bg-black">
         <Providers>
           <div className="flex w-full">
             <Layout>{children}</Layout>
