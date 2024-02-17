@@ -1,16 +1,16 @@
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { headers } from 'next/headers'
-import { isOnSafariMobile } from '@/utils/safari'
+import { isSafariMobile } from '@/utils/safari'
 
 export function Layout({ children }: { children: React.ReactNode }) {
-  const isSafariMobile = isOnSafariMobile(headers())
+  const safariMobile = isSafariMobile(headers())
 
   return (
     <>
       <div
         className={`${
-          isSafariMobile ? 'absolute' : 'fixed'
+          safariMobile ? 'absolute' : 'fixed'
         } inset-0 flex justify-center sm:px-8`}
       >
         <div className="flex h-lvh w-full max-w-7xl lg:px-8">
