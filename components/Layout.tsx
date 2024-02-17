@@ -1,7 +1,11 @@
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
+import { headers } from 'next/headers'
+import { isOnSafariMobile } from '@/utils/safari'
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  const isSafariMobile = isOnSafariMobile(headers())
+
   return (
     <>
       <div
