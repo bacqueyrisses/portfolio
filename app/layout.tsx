@@ -35,7 +35,7 @@ export default function RootLayout({
     <html lang="en" className={'h-full antialiased'} suppressHydrationWarning>
       <body className="flex h-full bg-zinc-100/70 dark:bg-black">
         <Providers>
-          <div className="flex h-lvh w-full">
+          <div className="flex w-full">
             <Layout>{children}</Layout>
           </div>
         </Providers>
