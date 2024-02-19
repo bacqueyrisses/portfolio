@@ -1,14 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    logging: { fetches: { fullUrl: true } },
-    images: {
-        remotePatterns: [
-            {
-                protocol: "https",
-                hostname: "em-content.zobj.net",
-                pathname: "/**",
-            },
-        ],
-    },
+  logging: { fetches: { fullUrl: true } },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "em-content.zobj.net",
+        pathname: "/**",
+      },
+    ],
+  },
 };
-export default nextConfig
+export default nextConfig;

@@ -1,17 +1,17 @@
-import { Container } from '@/components/Container'
+import { Container } from "@/components/Container";
 
 import {
   GitHubIcon,
   LinkedInIcon,
   TwitterIcon,
-} from '@/components/icons/SocialIcons'
-import { CameraIcon } from '@/components/icons/CustomIcons'
-import HomeClient from './home-page'
-import SocialLink from '@/components/SocialLink'
-import Resume from '@/components/Resume'
-import Contact from '@/components/Contact'
-import Link from 'next/link'
-import AnimatedTitle from '@/components/AnimatedTitle'
+} from "@/components/icons/SocialIcons";
+import { CameraIcon } from "@/components/icons/CustomIcons";
+import HomeClient from "./home-page";
+import SocialLink from "@/components/SocialLink";
+import Resume from "@/components/Resume";
+import Contact from "@/components/Contact";
+import Link from "next/link";
+import AnimatedTitle from "@/components/AnimatedTitle";
 
 export default async function Home() {
   return (
@@ -42,9 +42,9 @@ export default async function Home() {
               icon={LinkedInIcon}
             />
             <Link
-              href={'https://www.photos.enzo.codes'}
+              href={"https://www.photos.enzo.codes"}
               className="group -m-1 scale-[0.85] p-1"
-              target={'_blank'}
+              target={"_blank"}
             >
               <CameraIcon className="h-6 w-6 fill-zinc-500 group-hover:fill-zinc-700 dark:fill-zinc-400 dark:group-hover:fill-zinc-200" />
             </Link>
@@ -57,5 +57,5 @@ export default async function Home() {
         <Resume />
       </HomeClient>
     </>
-  )
+  );
 }

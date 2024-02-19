@@ -1,16 +1,16 @@
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/Header'
-import { headers } from 'next/headers'
-import { isSafariMobile } from '@/utils/safari'
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
+import { headers } from "next/headers";
+import { isSafariMobile } from "@/utils/safari";
 
 export function Layout({ children }: { children: React.ReactNode }) {
-  const safariMobile = isSafariMobile(headers())
+  const safariMobile = isSafariMobile(headers());
 
   return (
     <>
       <div
         className={`${
-          safariMobile ? 'absolute' : 'fixed'
+          safariMobile ? "absolute" : "fixed"
         } inset-0 flex justify-center sm:px-8`}
       >
         <div className="flex w-full max-w-7xl lg:px-8">
@@ -23,5 +23,5 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Footer />
       </div>
     </>
-  )
+  );
 }

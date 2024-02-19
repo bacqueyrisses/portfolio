@@ -1,17 +1,17 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
+import { useState } from "react";
 
-import { Container } from '@/components/Container'
-import Websites from '@/components/Websites'
-import Projects from '@/components/Projects'
+import { Container } from "@/components/Container";
+import Websites from "@/components/Websites";
+import Projects from "@/components/Projects";
 
 export default function HomeClient({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-  const [focusedProject, setFocusedProject] = useState<null | number>(null)
+  const [focusedProject, setFocusedProject] = useState<null | number>(null);
 
   return (
     <>
@@ -23,5 +23,5 @@ export default function HomeClient({
         </div>
       </Container>
     </>
-  )
+  );
 }

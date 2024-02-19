@@ -1,9 +1,9 @@
-import Link from 'next/link'
-import { ArrowRightIcon } from './icons/CustomIcons'
-import { projects } from '@/data/projects'
+import Link from "next/link";
+import { ArrowRightIcon } from "./icons/CustomIcons";
+import { projects } from "@/data/projects";
 
 interface IProjects {
-  focusedProject: number | null
+  focusedProject: number | null;
 }
 export default function Projects({ focusedProject }: IProjects) {
   return (
@@ -14,22 +14,22 @@ export default function Projects({ focusedProject }: IProjects) {
       {projects.map((project) => (
         <div
           key={project.id}
-          className={'group relative flex flex-col items-start'}
+          className={"group relative flex flex-col items-start"}
         >
           <h2 className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
             <div
               className={`absolute -inset-x-4 -inset-y-6 z-0 opacity-0 transition duration-500 ease-in-out group-hover:scale-100 group-hover:bg-zinc-50 group-hover:opacity-100 dark:group-hover:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl ${
                 focusedProject === project.id
-                  ? 'scale-[0.98] bg-zinc-50 opacity-100 transition-all dark:bg-zinc-800/50'
-                  : 'scale-95'
+                  ? "scale-[0.98] bg-zinc-50 opacity-100 transition-all dark:bg-zinc-800/50"
+                  : "scale-95"
               }`}
             />
-            <Link target={'_blank'} href={project.link}>
+            <Link target={"_blank"} href={project.link}>
               <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl" />
               <span className="relative z-10">
                 <div
                   className={
-                    'relative z-10 order-first mb-3 flex items-center justify-between pl-3.5 text-sm text-zinc-400 dark:text-zinc-500'
+                    "relative z-10 order-first mb-3 flex items-center justify-between pl-3.5 text-sm text-zinc-400 dark:text-zinc-500"
                   }
                 >
                   {project.date}
@@ -41,32 +41,32 @@ export default function Projects({ focusedProject }: IProjects) {
                   </span>
                   <div
                     className={
-                      'bg-secondary group inline-flex flex-grow-0 items-center space-x-2 self-start rounded-full border border-transparent px-2.5 py-0.5 text-zinc-600 transition-colors dark:text-zinc-400'
+                      "bg-secondary group inline-flex flex-grow-0 items-center space-x-2 self-start rounded-full border border-transparent px-2.5 py-0.5 text-zinc-600 transition-colors dark:text-zinc-400"
                     }
                   >
                     <span
                       className={`${
                         project.live
-                          ? 'bg-teal-400 group-hover:animate-pulse'
-                          : 'bg-yellow-500'
+                          ? "bg-teal-400 group-hover:animate-pulse"
+                          : "bg-yellow-500"
                       } h-2.5 w-2.5 rounded-full`}
                     ></span>
                     <span
                       className={
-                        'text-xs font-normal md:text-sm md:font-medium'
+                        "text-xs font-normal md:text-sm md:font-medium"
                       }
                     >
-                      {project.live ? 'Live' : 'WIP'}
+                      {project.live ? "Live" : "WIP"}
                     </span>
                   </div>
                 </div>
-                <div className={'flex gap-1'}>
+                <div className={"flex gap-1"}>
                   {project.title}
                   <ArrowRightIcon
                     className={`${
                       focusedProject === project.id
-                        ? 'text-zinc-800 dark:text-zinc-400'
-                        : 'text-zinc-400 dark:text-zinc-400'
+                        ? "text-zinc-800 dark:text-zinc-400"
+                        : "text-zinc-400 dark:text-zinc-400"
                     } h-2.5 w-2.5 translate-y-1.5 transition-colors duration-500 ease-in-out group-hover:text-zinc-900 group-hover:dark:text-zinc-100 sm:translate-y-1`}
                   />
                 </div>
@@ -85,5 +85,5 @@ export default function Projects({ focusedProject }: IProjects) {
         </div>
       ))}
     </div>
-  )
+  );
 }
