@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import clsx from "clsx";
 import Link from "next/link";
-import avatarImage from "public/images/logos/logo.webp";
-import avatarDarkImage from "public/images/logos/logo-dark.webp";
+import avatarImage from "@/public/images/logos/logo.webp";
+import avatarDarkImage from "@/public/images/logos/logo-dark.webp";
 
 export default function ScrollableLogo({
   large = false,
