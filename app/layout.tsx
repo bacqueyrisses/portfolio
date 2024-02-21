@@ -32,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={"h-full antialiased"} suppressHydrationWarning>
+    <html lang="en" className={"h-lvh antialiased"} suppressHydrationWarning>
       <body className="bg-dotted flex h-full bg-zinc-100/70 dark:bg-black dark:bg-none">
         <Providers>
           <div className="flex h-full w-full">
