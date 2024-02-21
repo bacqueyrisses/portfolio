@@ -33,7 +33,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={"h-full antialiased"} suppressHydrationWarning>
-      <body className="bg-dotted relative flex h-full bg-zinc-100/70 dark:bg-black dark:bg-none">
+      <body className="bg-dotted flex h-full bg-zinc-100/70 dark:bg-black dark:bg-none">
         <Providers>
           <div className="flex h-lvh w-full">
             <Layout>{children}</Layout>
