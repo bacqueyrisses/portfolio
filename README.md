@@ -12,7 +12,7 @@
 </p>
 
 <a href="https://www.enzo.codes">
-    <img alt="Enzo Bacqueyrisses portfolio." src="https://github.com/bacqueyrisses/portfolio/assets/96829831/fc4e9a71-af8a-4b43-ae94-f6a0a04cf41b">
+    <img alt="Enzo Bacqueyrisses portfolio." src="https://github.com/bacqueyrisses/portfolio/assets/96829831/4b5d392c-781e-4fcf-9d60-1b24e382f09b">
 </a>
 
 <br/>
