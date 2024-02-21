@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-dotted {
+    background-image: url("https://framerusercontent.com/images/ts47W2luGuek4dj4dD2EH96SA1Y.png");
+    background-size: 30px;
+    background-position: left top;
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+}
