@@ -4,20 +4,9 @@ import { headers } from "next/headers";
 import { isSafariMobile } from "@/utils/safari";
 
 export function Layout({ children }: { children: React.ReactNode }) {
-  const safariMobile = isSafariMobile(headers());
-
   return (
     <>
-      <div
-        className={
-          "-pb-96 fixed inset-0 flex min-h-lvh justify-center border-0 sm:px-8"
-        }
-      >
-        <div className="flex w-full max-w-7xl lg:px-8">
-          <div className="w-full rounded-t-[1.6rem] bg-white dark:bg-zinc-900 sm:rounded-t-3xl sm:border sm:border-zinc-800/5 sm:dark:border-white/5" />
-        </div>
-      </div>
-      <div className="flex w-full flex-col px-2.5 sm:px-0">
+      <div className="relative mb-2 mt-2 flex h-fit flex-col rounded-[1.6rem] bg-white dark:bg-zinc-900 sm:rounded-t-3xl sm:border sm:border-zinc-800/10 sm:dark:border-white/5">
         <Header />
         <main className="flex-auto">{children}</main>
         <Footer />
