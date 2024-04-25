@@ -18,13 +18,13 @@ export default function Contact() {
       <div className="mt-6 flex justify-start gap-4 sm:justify-between">
         <Button
           className={"hidden w-1/2 sm:block"}
-          href={"mailto:enzo.bacqueyrisses@gmail.com"}
+          href={"mailto:bacqueyrisses@duck.com"}
         >
           Contact me via e-mail
         </Button>
         <Button
           className={"block w-1/2 sm:hidden"}
-          href={"mailto:enzo.bacqueyrisses@gmail.com"}
+          href={"mailto:bacqueyrisses@duck.com"}
         >
           Send an e-mail
         </Button>
