@@ -18,9 +18,7 @@ function Information(props: React.ComponentPropsWithoutRef<"div">) {
       onClick={handleClick}
       className="hover:ring-zinc-00/10 group flex rounded-full bg-white/90 px-3 py-1 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-700/5 ring-1 ring-zinc-800/5 backdrop-blur transition duration-200 ease-in-out hover:ring-zinc-700/10 dark:bg-black dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20"
     >
-      <div
-        className={`pointer-events-auto flex items-center justify-center ${props}`}
-      >
+      <div className={`flex items-center justify-center ${props}`}>
         <div className={"h-2.5 w-2.5 rounded-full bg-teal-400 pl-1 pr-0.5"} />
 
         <div
@@ -183,7 +181,7 @@ export function Header() {
   return (
     <>
       <header
-        className="pointer-events-none relative z-50 flex flex-none flex-col"
+        className="relative z-50 flex flex-none flex-col"
         style={{
           height: "var(--header-height)",
           marginBottom: "var(--header-mb)",
@@ -243,11 +241,8 @@ export function Header() {
           >
             <div className="relative flex gap-4">
               <div className="flex flex-1 justify-between" />
-              {/*<div className="flex flex-initial items-center">*/}
-              {/*<Information />*/}
-              {/*</div>*/}
               <div className="flex justify-end md:flex-1">
-                <div className="pointer-events-auto">
+                <div>
                   <ThemeToggle />
                 </div>
               </div>
