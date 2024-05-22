@@ -12,6 +12,7 @@ import {
   PlanetIcon,
   SendIcon,
 } from "@/components/icons/CustomIcons";
+import Link from "next/link";
 
 export default function BentoGridDemo() {
   return (
@@ -240,7 +241,14 @@ const SkeletonFour = () => {
       >
         <SkeletonInside />
         <p className="mt-4 text-center text-xs font-semibold leading-5 text-neutral-500 sm:text-sm md:leading-normal">
-          Project backed by Station F
+          Project backed by{" "}
+          <Link
+            target={"_blank"}
+            className={"hover:text-neutral-900 hover:dark:text-neutral-300/90"}
+            href={"https://stationf.co"}
+          >
+            Station F
+          </Link>
         </p>
         <p className="mt-4 rounded-xl border border-orange-500 bg-orange-100 px-2 py-0.5 text-xs text-orange-600 dark:bg-orange-900/20">
           Scalable
