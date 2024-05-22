@@ -10,6 +10,7 @@ import {
   MessageIcon,
   PencilIcon,
   PlanetIcon,
+  RocketIcon,
   SendIcon,
 } from "@/components/icons/CustomIcons";
 import Link from "next/link";
@@ -246,7 +247,7 @@ const SkeletonFour = () => {
         </p>
       </motion.div>
       <motion.div className="relative z-20 flex h-full w-1/3 flex-col items-center justify-center rounded-2xl border border-neutral-200 bg-white p-4 dark:border-white/[0.1] dark:bg-black">
-        <ClickIcon className={"size-8 grow md:size-10"} />
+        <SkeletonInside />
         <p className="mt-4 hidden text-center text-xs font-semibold leading-5 text-neutral-500 sm:text-sm md:block md:leading-normal">
           Innovative AI on-demand Mind Maps
         </p>
@@ -261,7 +262,7 @@ const SkeletonFour = () => {
         variants={second}
         className="flex h-full w-1/3 flex-col items-center justify-center rounded-2xl border border-neutral-200 bg-white p-4 dark:border-white/[0.1] dark:bg-black"
       >
-        <SkeletonInside />
+        <RocketIcon className={"size-6 grow md:size-8"} />
         <p className="mt-4 text-center text-xs font-semibold leading-5 text-neutral-500 sm:text-sm md:leading-normal">
           Project backed by{" "}
           <Link
