@@ -1,7 +1,7 @@
 export default function AnimatedTitle() {
   return (
     <>
-      <h1 className="hidden select-none space-y-1 text-5xl font-bold leading-none tracking-tight lg:block">
+      <h1 className="hidden select-none space-y-1 text-[2.4rem] font-bold leading-none tracking-tight lg:block">
         <span
           data-content="Full-stack developer"
           className="whitespace-nowrap before:absolute before:z-0 before:animate-gradient-background-1 before:text-zinc-800 before:content-[attr(data-content)] dark:before:text-zinc-100"

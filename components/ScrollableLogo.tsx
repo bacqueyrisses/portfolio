@@ -45,7 +45,7 @@ export default function ScrollableLogo({
           height={60}
           sizes={large ? "4rem" : "2.25rem"}
           className={clsx(
-            "rounded-full bg-zinc-100 object-cover dark:hidden dark:bg-zinc-800",
+            "rounded-full bg-zinc-100 object-cover dark:hidden dark:bg-black",
             large ? "h-16 w-16" : "h-9 w-9",
           )}
           priority
@@ -58,7 +58,7 @@ export default function ScrollableLogo({
           height={60}
           sizes={large ? "4rem" : "2.25rem"}
           className={clsx(
-            "hidden rounded-full bg-zinc-100 object-cover dark:inline dark:bg-zinc-800",
+            "hidden rounded-full bg-zinc-100 object-cover dark:inline dark:bg-black",
             large ? "h-16 w-16" : "h-9 w-9",
           )}
           priority

@@ -8,7 +8,7 @@ export default function SocialLink({
 }) {
   return (
     <Link className="group -m-1 p-1" {...props}>
-      <Icon className="h-6 w-6 fill-zinc-500 group-hover:fill-zinc-700 dark:fill-zinc-400 dark:group-hover:fill-zinc-200" />
+      <Icon className="h-6 w-6 fill-neutral-600 group-hover:fill-neutral-900 dark:fill-neutral-200 dark:group-hover:fill-neutral-50" />
     </Link>
   );
 }

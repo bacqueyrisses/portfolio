@@ -21,7 +21,7 @@ export default function Websites({ setFocusedProject }: IWebsites) {
   };
   const imageAltTexts = ["NextAI", "postai", "Ouvrage"];
   return (
-    <div className="mx-auto mt-20 max-w-7xl px-4 lg:mt-24 lg:px-8">
+    <div className="mx-auto mt-20 max-w-7xl px-4 lg:px-8">
       <div className="flex flex-col items-center justify-evenly gap-6 overflow-hidden sm:flex-row sm:px-10">
         {[nextai, postai, ouvrage].map((image, imageIndex) => (
           <button

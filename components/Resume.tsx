@@ -49,10 +49,10 @@ export default function Resume() {
   }
 
   return (
-    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <ComputerIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Work Experience</span>
+    <div className="col-span-2 rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 dark:bg-black">
+      <h2 className="flex items-center gap-2 font-sans text-base font-semibold text-neutral-600 dark:text-neutral-200">
+        <ComputerIcon className="size-4" />
+        <span>Work Experience</span>
       </h2>
       <ol className="mt-6 space-y-4">
         {experience.map((experience, experienceIndex) => (

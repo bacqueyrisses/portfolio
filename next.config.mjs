@@ -10,5 +10,6 @@ const nextConfig = {
       },
     ],
   },
+  plugins: [],
 };
 export default nextConfig;

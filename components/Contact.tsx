@@ -5,31 +5,34 @@ export default function Contact() {
   return (
     <div
       id="contact-section"
-      className="scroll-mt-10 rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 sm:scroll-mt-24 md:scroll-mt-28"
+      className="flex scroll-mt-10 flex-col justify-between rounded-xl border border-zinc-100 p-6 dark:border-zinc-700/40 dark:bg-black sm:scroll-mt-20 md:scroll-mt-28"
     >
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <MailIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Let's connect</span>
-      </h2>
-      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Let's build something unique together! For professional inquiries, feel
-        free to reach out.
-      </p>
-      <div className="mt-6 flex justify-start gap-4 sm:justify-between">
+      <div>
+        <h2 className="flex items-center gap-2 font-sans text-base font-semibold text-neutral-600 dark:text-neutral-200">
+          <MailIcon className="size-4" />
+          <span>Let's connect</span>
+        </h2>
+        <p className="mt-6 text-sm text-zinc-600 dark:text-zinc-400">
+          Let's build something unique together! For professional inquiries,
+          feel free to reach out, and let's turn your vision into reality with
+          our combined expertise and creativity.
+        </p>
+      </div>
+      <div className="mt-6 flex flex-col justify-start gap-4 sm:justify-between">
         <Button
-          className={"hidden w-1/2 sm:block"}
+          className={"hidden sm:block"}
           href={"mailto:Enzo Bacqueyrisses<bacqueyrisses@duck.com>"}
         >
           Contact me via e-mail
         </Button>
         <Button
-          className={"block w-1/2 sm:hidden"}
+          className={"block sm:hidden"}
           href={"mailto:Enzo Bacqueyrisses<bacqueyrisses@duck.com>"}
         >
           Send an e-mail
         </Button>
         <Button
-          className={"hidden w-1/2 sm:block"}
+          className={"hidden sm:block"}
           target={"_blank"}
           href={"https://www.linkedin.com/in/bacqueyrisses/"}
           variant={"linkedin"}
@@ -37,7 +40,7 @@ export default function Contact() {
           Or send me an InMail
         </Button>
         <Button
-          className={"block w-1/2 sm:hidden"}
+          className={"block sm:hidden"}
           target={"_blank"}
           href={"https://www.linkedin.com/in/bacqueyrisses/"}
           variant={"linkedin"}
