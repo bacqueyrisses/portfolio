@@ -135,14 +135,36 @@ const SkeletonTwo = () => {
 const SkeletonThree = () => {
   const variants = {
     initial: {
-      backgroundPosition: "0 50%",
+      x: 0,
     },
     animate: {
-      backgroundPosition: ["0, 50%", "100% 50%", "0 50%"],
+      x: 10,
+      rotate: 5,
+      transition: {
+        duration: 0.2,
+      },
     },
   };
+  const variantsSecond = {
+    initial: {
+      x: 0,
+    },
+    animate: {
+      x: -10,
+      rotate: -5,
+      transition: {
+        duration: 0.2,
+      },
+    },
+  };
+
   return (
-    <div className="flex h-full min-h-[6rem] w-full flex-1 transform flex-col rounded-lg bg-postai bg-contain transition duration-200 hover:scale-95"></div>
+    <motion.div
+      initial="initial"
+      variants={variants}
+      whileHover="animate"
+      className="flex h-full min-h-[6rem] w-full flex-1 flex-col rounded-lg bg-postai bg-contain"
+    ></motion.div>
   );
 };
 const SkeletonFour = () => {
