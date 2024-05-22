@@ -31,7 +31,7 @@ export default function BentoGridDemo() {
   );
 }
 const Skeleton = () => (
-  <div className="dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex h-full min-h-[6rem] w-full flex-1 rounded-2xl border border-transparent bg-neutral-100 [mask-image:radial-gradient(ellipse_at_center,white,transparent)] dark:border-white/[0.2] dark:bg-black"></div>
+  <div className="flex h-full min-h-[6rem] w-full flex-1 rounded-2xl border border-transparent bg-neutral-100 bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] dark:border-white/[0.2] dark:bg-black dark:bg-dot-white/[0.2]"></div>
 );
 
 const SkeletonOne = () => {
@@ -64,7 +64,7 @@ const SkeletonOne = () => {
     <motion.div
       initial="initial"
       whileHover="animate"
-      className="dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex h-full min-h-[6rem] w-full flex-1 flex-col space-y-2"
+      className="flex h-full min-h-[6rem] w-full flex-1 flex-col space-y-2 bg-dot-black/[0.2] dark:bg-dot-white/[0.2]"
     >
       <motion.div
         variants={variants}
@@ -98,7 +98,7 @@ const SkeletonTwo = () => {
     animate: {
       width: "100%",
       transition: {
-        duration: 1,
+        duration: 1.5,
       },
     },
     hover: {
@@ -114,7 +114,7 @@ const SkeletonTwo = () => {
       initial="initial"
       animate="animate"
       whileHover="hover"
-      className="dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex h-full min-h-[6rem] w-full flex-1 flex-col space-y-2"
+      className="flex h-full min-h-[6rem] w-full flex-1 flex-col space-y-2 bg-dot-black/[0.2] dark:bg-dot-white/[0.2]"
     >
       {arr.map((_, i) => (
         <motion.div
@@ -141,7 +141,7 @@ const SkeletonThree = () => {
     },
   };
   return (
-    <div className="bg-postai flex h-full min-h-[6rem] w-full flex-1 transform flex-col rounded-lg bg-contain transition duration-200 hover:scale-95"></div>
+    <div className="flex h-full min-h-[6rem] w-full flex-1 transform flex-col rounded-lg bg-postai bg-contain transition duration-200 hover:scale-95"></div>
   );
 };
 const SkeletonFour = () => {
@@ -185,7 +185,7 @@ const SkeletonFour = () => {
           repeat: Infinity,
           repeatType: "reverse",
         }}
-        className="dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex h-full w-full flex-1 flex-col space-y-2 rounded-lg"
+        className="flex h-full w-full flex-1 flex-col space-y-2 rounded-lg bg-dot-black/[0.2] dark:bg-dot-white/[0.2]"
         style={{
           background:
             "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
@@ -201,7 +201,7 @@ const SkeletonFour = () => {
       initial="initial"
       animate="animate"
       whileHover="hover"
-      className="dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex h-full min-h-[6rem] w-full flex-1 flex-row space-x-2"
+      className="flex h-full min-h-[6rem] w-full flex-1 flex-row space-x-2 bg-dot-black/[0.2] dark:bg-dot-white/[0.2]"
     >
       <motion.div
         variants={first}
@@ -279,7 +279,7 @@ const SkeletonFive = () => {
     <motion.div
       initial="initial"
       whileHover="animate"
-      className="dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex h-full min-h-[6rem] w-full flex-1 flex-col space-y-2"
+      className="flex h-full min-h-[6rem] w-full flex-1 flex-col space-y-2 bg-dot-black/[0.2] dark:bg-dot-white/[0.2]"
     >
       <motion.div
         variants={variants}
