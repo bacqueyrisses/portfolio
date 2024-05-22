@@ -215,7 +215,7 @@ const SkeletonFour = () => {
           className="h-10 w-10 grow md:h-1/2 md:w-1/2"
         />
 
-        <p className="mt-4 text-center text-xs font-semibold text-neutral-500 sm:text-sm">
+        <p className="mt-4 text-center text-xs font-semibold leading-5 text-neutral-500 sm:text-sm md:leading-normal">
           Built with Next.js and Vercel
         </p>
         <p className="mt-4 rounded-xl border border-blue-500 bg-blue-100 px-2 py-0.5 text-xs text-blue-600 dark:bg-blue-900/20">
@@ -224,10 +224,10 @@ const SkeletonFour = () => {
       </motion.div>
       <motion.div className="relative z-20 flex h-full w-1/3 flex-col items-center justify-center rounded-2xl border border-neutral-200 bg-white p-4 dark:border-white/[0.1] dark:bg-black">
         <ClickIcon className={"size-8 grow md:size-10"} />
-        <p className="mt-4 hidden text-center text-xs font-semibold text-neutral-500 sm:text-sm md:block">
+        <p className="mt-4 hidden text-center text-xs font-semibold leading-5 text-neutral-500 sm:text-sm md:block md:leading-normal">
           Innovative AI on-demand Mind Maps
         </p>
-        <p className="mt-4 block text-center text-xs font-semibold text-neutral-500 sm:text-sm md:hidden">
+        <p className="mt-4 block text-center text-xs font-semibold leading-5 text-neutral-500 sm:text-sm md:hidden md:leading-normal">
           Innovative AI Mind Maps
         </p>
         <p className="mt-4 text-nowrap rounded-xl border border-green-500 bg-green-100 px-2 py-0.5 text-xs text-green-600 dark:bg-green-900/20">
@@ -239,7 +239,7 @@ const SkeletonFour = () => {
         className="flex h-full w-1/3 flex-col items-center justify-center rounded-2xl border border-neutral-200 bg-white p-4 dark:border-white/[0.1] dark:bg-black"
       >
         <SkeletonInside />
-        <p className="mt-4 text-center text-xs font-semibold text-neutral-500 sm:text-sm">
+        <p className="mt-4 text-center text-xs font-semibold leading-5 text-neutral-500 sm:text-sm md:leading-normal">
           Project backed by Station F
         </p>
         <p className="mt-4 rounded-xl border border-orange-500 bg-orange-100 px-2 py-0.5 text-xs text-orange-600 dark:bg-orange-900/20">
