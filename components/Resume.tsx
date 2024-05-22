@@ -49,7 +49,7 @@ export default function Resume() {
   }
 
   return (
-    <div className="col-span-2 rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 dark:bg-black">
+    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 dark:bg-black md:col-span-2">
       <h2 className="flex items-center gap-2 font-sans text-base font-semibold text-neutral-600 dark:text-neutral-200">
         <ComputerIcon className="size-4" />
         <span>Work Experience</span>
