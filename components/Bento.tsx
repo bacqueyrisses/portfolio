@@ -212,7 +212,7 @@ const SkeletonFour = () => {
           alt="next.js kawai logo"
           height="960"
           width="960"
-          className="h-1/2 w-1/2 grow"
+          className="h-10 w-10 grow md:h-1/2 md:w-1/2"
         />
 
         <p className="mt-4 text-center text-xs font-semibold text-neutral-500 sm:text-sm">
@@ -223,11 +223,14 @@ const SkeletonFour = () => {
         </p>
       </motion.div>
       <motion.div className="relative z-20 flex h-full w-1/3 flex-col items-center justify-center rounded-2xl border border-neutral-200 bg-white p-4 dark:border-white/[0.1] dark:bg-black">
-        <ClickIcon className={"size-10 grow"} />
-        <p className="mt-4 text-center text-xs font-semibold text-neutral-500 sm:text-sm">
+        <ClickIcon className={"size-8 grow md:size-10"} />
+        <p className="mt-4 hidden text-center text-xs font-semibold text-neutral-500 sm:text-sm md:block">
           Innovative AI on-demand Mind Maps
         </p>
-        <p className="mt-4 rounded-xl border border-green-500 bg-green-100 px-2 py-0.5 text-xs text-green-600 dark:bg-green-900/20">
+        <p className="mt-4 block text-center text-xs font-semibold text-neutral-500 sm:text-sm md:hidden">
+          Innovative AI Mind Maps
+        </p>
+        <p className="mt-4 text-nowrap rounded-xl border border-green-500 bg-green-100 px-2 py-0.5 text-xs text-green-600 dark:bg-green-900/20">
           AI driven
         </p>
       </motion.div>
