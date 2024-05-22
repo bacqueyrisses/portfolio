@@ -41,8 +41,8 @@ const SkeletonOne = () => {
       x: 0,
     },
     animate: {
-      x: 10,
-      rotate: 5,
+      y: 10,
+      rotate: -3,
       transition: {
         duration: 0.2,
       },
