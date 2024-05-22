@@ -5,7 +5,6 @@ import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import {
-  ClickIcon,
   MapIcon,
   MessageIcon,
   PencilIcon,
@@ -240,7 +239,22 @@ const SkeletonFour = () => {
         />
 
         <p className="mt-4 text-center text-xs font-semibold leading-5 text-neutral-500 sm:text-sm md:leading-normal">
-          Built with Next.js and Vercel
+          Built with{" "}
+          <Link
+            target={"_blank"}
+            className={"hover:text-neutral-900 hover:dark:text-neutral-300/90"}
+            href={"https://nextjs.org"}
+          >
+            Next.js{" "}
+          </Link>
+          and{" "}
+          <Link
+            target={"_blank"}
+            className={"hover:text-neutral-900 hover:dark:text-neutral-300/90"}
+            href={"http://vercel.com"}
+          >
+            Vercel
+          </Link>
         </p>
         <p className="mt-4 rounded-xl border border-blue-500 bg-blue-100 px-2 py-0.5 text-xs text-blue-600 dark:bg-blue-900/20">
           Modern
