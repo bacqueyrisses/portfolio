@@ -10,10 +10,10 @@ export default function HomeClient({
 }) {
   return (
     <>
-      <Container className="mt-16 lg:mt-20">
+      <Container className="mt-12 lg:mt-16">
         <BentoGridDemo />
       </Container>
-      <Container className="mt-16 lg:mt-20">
+      <Container className="mt-12 lg:mt-16">
         <div className="mx-auto grid grid-cols-1 gap-4 md:grid-cols-3">
           {children}
         </div>

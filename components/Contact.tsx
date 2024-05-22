@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <div
       id="contact-section"
-      className="flex scroll-mt-10 flex-col justify-between rounded-xl border border-zinc-100 p-6 dark:border-zinc-700/40 dark:bg-black sm:scroll-mt-20 md:scroll-mt-28"
+      className="flex scroll-mt-10 flex-col justify-between rounded-xl border border-zinc-100 p-6 dark:border-zinc-700/40 dark:bg-black sm:scroll-mt-16 md:scroll-mt-28"
     >
       <div>
         <h2 className="flex items-center gap-2 font-sans text-base font-semibold text-neutral-600 dark:text-neutral-200">
