@@ -13,12 +13,14 @@ import {
   SendIcon,
 } from "@/components/icons/CustomIcons";
 import Link from "next/link";
+import { ProjectType } from "@/components/ui/following-pointer";
 
 export default function BentoGridDemo() {
   return (
     <BentoGrid className="mx-auto max-w-4xl md:auto-rows-[20rem]">
       {items.map((item, i) => (
         <BentoGridItem
+          type={item.type}
           key={i}
           title={item.title}
           description={item.description}
@@ -365,8 +367,10 @@ const items = [
     ),
     header: <SkeletonFive />,
     link: "https://www.nextai.dev/",
+    pointer: "Personal project",
     className: "md:col-span-1",
     icon: <MessageIcon className="size-4" />,
+    type: "personal" as ProjectType,
   },
   {
     title: "Ouvrage",
@@ -379,6 +383,7 @@ const items = [
     link: "https://www.ouvrage.dev/",
     className: "md:col-span-1",
     icon: <PencilIcon className="size-4" />,
+    type: "personal" as ProjectType,
   },
   {
     title: "PostAI",
@@ -391,6 +396,7 @@ const items = [
     link: "https://www.postai.enzo.codes/",
     className: "md:col-span-1",
     icon: <SendIcon className="size-4" />,
+    type: "personal" as ProjectType,
   },
   {
     title: "Mapbrain",
@@ -404,6 +410,7 @@ const items = [
     className: "md:col-span-2",
     link: "https://www.mapbrain.ai/",
     icon: <MapIcon className="size-4" />,
+    type: "work" as ProjectType,
   },
   {
     title: "Ecowayer",
@@ -416,5 +423,6 @@ const items = [
     className: "md:col-span-1",
     link: "https://ecowayer.com/",
     icon: <PlanetIcon className={"size-4"} />,
+    type: "work" as ProjectType,
   },
 ];

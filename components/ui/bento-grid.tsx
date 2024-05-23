@@ -1,4 +1,9 @@
 import Link from "next/link";
+import {
+  FollowerPointerCard,
+  ProjectType,
+  TitleComponent,
+} from "@/components/ui/following-pointer";
 
 export const BentoGrid = ({
   className,
@@ -21,6 +26,7 @@ export const BentoGridItem = ({
   title,
   link,
   description,
+  type,
   header,
   icon,
 }: {
@@ -28,6 +34,7 @@ export const BentoGridItem = ({
   title?: string | React.ReactNode;
   link: string;
   description?: string | React.ReactNode;
+  type: ProjectType;
   header?: React.ReactNode;
   icon?: React.ReactNode;
 }) => {
@@ -36,6 +43,7 @@ export const BentoGridItem = ({
       className={`group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 rounded-xl border border-zinc-100 bg-white p-4 transition duration-200 hover:border-transparent hover:shadow-xl dark:border-zinc-700/40 dark:bg-black dark:shadow-none ${className}`}
     >
       {header}
+
       <div className="transition duration-200 group-hover/bento:translate-x-2">
         <Link
           target={"_blank"}
@@ -47,10 +55,14 @@ export const BentoGridItem = ({
           {icon}
           {title}
         </Link>
-
-        <div className="font-sans text-xs font-normal text-neutral-600 dark:text-neutral-300">
-          {description}
-        </div>
+        <FollowerPointerCard
+          variant={type}
+          title={<TitleComponent variant={type} />}
+        >
+          <div className="font-sans text-xs font-normal text-neutral-600 dark:text-neutral-300">
+            {description}
+          </div>
+        </FollowerPointerCard>
       </div>
     </div>
   );
