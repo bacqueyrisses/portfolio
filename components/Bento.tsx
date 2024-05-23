@@ -267,7 +267,7 @@ const SkeletonFour = () => {
           Modern
         </p>
       </motion.div>
-      <motion.div className="relative z-20 flex h-full w-1/3 flex-col items-center justify-center rounded-2xl border border-neutral-200 bg-white p-4 dark:border-white/[0.1] dark:bg-black">
+      <motion.div className="flex h-full w-1/3 flex-col items-center justify-center rounded-2xl border border-neutral-200 bg-white p-4 dark:border-white/[0.1] dark:bg-black">
         <SkeletonInside />
         <p className="mt-4 hidden text-center text-xs font-medium leading-4 text-neutral-500 dark:text-neutral-400 sm:text-sm md:block md:leading-normal">
           Innovative AI on-demand Mind Maps
