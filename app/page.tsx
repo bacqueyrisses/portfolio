@@ -19,7 +19,7 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <AnimatedTitle />
-          <p className="mt-6 text-base leading-7 tracking-tight text-zinc-600 dark:text-zinc-400 sm:tracking-normal">
+          <p className="mt-6 text-base leading-6 tracking-tight text-zinc-600 dark:text-zinc-400 sm:tracking-normal md:leading-7">
             I'm Enzo, my goal is to create optimized and beautiful websites
             using the latest technologies in the JavaScript full-stack
             ecosystem. I'm passionate about open source projects and have
