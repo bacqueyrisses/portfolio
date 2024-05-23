@@ -174,22 +174,22 @@ const SkeletonThree = () => {
 const SkeletonFour = () => {
   const first = {
     initial: {
-      x: 20,
-      rotate: -5,
-    },
-    hover: {
       x: 0,
       rotate: 0,
+    },
+    hover: {
+      x: 20,
+      rotate: -5,
     },
   };
   const second = {
     initial: {
-      x: -20,
-      rotate: 5,
-    },
-    hover: {
       x: 0,
       rotate: 0,
+    },
+    hover: {
+      x: -20,
+      rotate: 5,
     },
   };
 
