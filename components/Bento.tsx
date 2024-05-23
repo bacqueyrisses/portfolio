@@ -124,7 +124,7 @@ const SkeletonTwo = () => {
           style={{
             maxWidth: 100 - 40 + 40 + "%",
           }}
-          className="flex h-4 w-full flex-row items-center space-x-2 rounded-full border border-neutral-100  bg-neutral-100 p-2 pr-7 text-[0.6rem] italic text-neutral-600 dark:border-white/[0.2] dark:bg-black dark:text-neutral-200"
+          className="flex h-4 w-full flex-row items-center space-x-2 rounded-full border border-neutral-100  bg-neutral-100 p-2 pr-7 text-[0.6rem] italic text-neutral-500 dark:border-white/[0.2] dark:bg-black dark:text-neutral-400"
         >
           mot
         </motion.div>
@@ -238,7 +238,7 @@ const SkeletonFour = () => {
           className="h-10 w-10 grow md:h-1/2 md:w-1/2"
         />
 
-        <p className="mt-4 text-center text-xs font-semibold leading-5 text-neutral-500 sm:text-sm md:leading-normal">
+        <p className="mt-4 text-center text-xs font-medium leading-4 text-neutral-500 dark:text-neutral-400 sm:text-sm md:leading-normal">
           Built with{" "}
           <Link
             target={"_blank"}
@@ -262,10 +262,10 @@ const SkeletonFour = () => {
       </motion.div>
       <motion.div className="relative z-20 flex h-full w-1/3 flex-col items-center justify-center rounded-2xl border border-neutral-200 bg-white p-4 dark:border-white/[0.1] dark:bg-black">
         <SkeletonInside />
-        <p className="mt-4 hidden text-center text-xs font-semibold leading-5 text-neutral-500 sm:text-sm md:block md:leading-normal">
+        <p className="mt-4 hidden text-center text-xs font-medium leading-4 text-neutral-500 dark:text-neutral-400 sm:text-sm md:block md:leading-normal">
           Innovative AI on-demand Mind Maps
         </p>
-        <p className="mt-4 block text-center text-xs font-semibold leading-5 text-neutral-500 sm:text-sm md:hidden md:leading-normal">
+        <p className="mt-4 block text-center text-xs font-medium leading-4 text-neutral-500 dark:text-neutral-400 sm:text-sm md:hidden md:leading-normal">
           Innovative AI Mind Maps
         </p>
         <p className="mt-4 text-nowrap rounded-xl border border-green-500 bg-green-100 px-2 py-0.5 text-xs text-green-600 dark:bg-green-900/20">
@@ -277,11 +277,13 @@ const SkeletonFour = () => {
         className="flex h-full w-1/3 flex-col items-center justify-center rounded-2xl border border-neutral-200 bg-white p-4 dark:border-white/[0.1] dark:bg-black"
       >
         <RocketIcon className={"size-6 grow md:size-8"} />
-        <p className="mt-4 text-center text-xs font-semibold leading-5 text-neutral-500 sm:text-sm md:leading-normal">
+        <p className="mt-4 text-center text-xs font-medium leading-4 text-neutral-500 dark:text-neutral-400 sm:text-sm md:leading-normal">
           Project backed by{" "}
           <Link
             target={"_blank"}
-            className={"hover:text-neutral-900 hover:dark:text-neutral-300/90"}
+            className={
+              "hover:text-neutral-900 dark:text-neutral-400 hover:dark:text-neutral-300/90"
+            }
             href={"https://stationf.co"}
           >
             Station F
@@ -331,7 +333,7 @@ const SkeletonFive = () => {
         className="flex w-fit flex-row items-start space-x-2 rounded-2xl border border-neutral-100 bg-white p-2 pr-4 dark:border-white/[0.2] dark:bg-black"
       >
         <div className="h-6 w-6 flex-shrink-0 rounded-full bg-gradient-to-r from-pink-500 to-violet-500" />
-        <p className="text-xs text-neutral-500">
+        <p className="text-xs text-neutral-500 dark:text-neutral-400">
           How did the Image component work again?
         </p>
       </motion.div>
@@ -339,7 +341,9 @@ const SkeletonFive = () => {
         variants={variantsSecond}
         className="ml-auto flex w-fit flex-row items-center justify-end space-x-2 rounded-full border border-neutral-100 bg-white p-2 pl-4 dark:border-white/[0.2] dark:bg-black"
       >
-        <p className="text-xs text-neutral-500">I got you bro.</p>
+        <p className="text-xs text-neutral-500 dark:text-neutral-400">
+          I got you bro.
+        </p>
         <div className="h-6 w-6 flex-shrink-0 rounded-full bg-gradient-to-r from-violet-500 to-pink-500" />
       </motion.div>
     </motion.div>
@@ -349,7 +353,7 @@ const items = [
   {
     title: "NextAI",
     description: (
-      <span className="text-sm">
+      <span className="text-sm dark:text-zinc-400">
         Effortless Next.JS documentation exploration powered by AI.
       </span>
     ),
@@ -361,7 +365,7 @@ const items = [
   {
     title: "Ouvrage",
     description: (
-      <span className="text-sm">
+      <span className="text-sm dark:text-zinc-400">
         Expand your vocabulary, discover new words and get access to your list.
       </span>
     ),
@@ -373,7 +377,7 @@ const items = [
   {
     title: "PostAI",
     description: (
-      <span className="text-sm">
+      <span className="text-sm dark:text-zinc-400">
         Design and send AI-crafted, location-based virtual postcards.
       </span>
     ),
@@ -385,7 +389,7 @@ const items = [
   {
     title: "Mapbrain",
     description: (
-      <span className="text-sm">
+      <span className="text-sm dark:text-zinc-400">
         Create detailed and comprehensive brain maps using advanced AI
         algorithms.
       </span>
@@ -398,7 +402,7 @@ const items = [
   {
     title: "Ecowayer",
     description: (
-      <span className="text-sm">
+      <span className="text-sm dark:text-zinc-400">
         Experience the power of AI in generating unique travel itineraries.
       </span>
     ),
