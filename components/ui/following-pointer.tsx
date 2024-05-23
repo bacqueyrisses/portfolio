@@ -144,7 +144,7 @@ export const FollowPointer = ({
 };
 
 export const TitleComponent = ({ variant }: { variant: ProjectType }) => (
-  <div className="flex items-center justify-center gap-2 px-2">
+  <div className="flex items-center justify-center gap-1.5 px-2">
     {variant === "personal" ? (
       <SmileyIcon className={"size-5"} />
     ) : (
