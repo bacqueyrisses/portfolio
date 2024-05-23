@@ -347,16 +347,16 @@ const SkeletonFive = () => {
 };
 const items = [
   {
-    title: "Ecowayer",
+    title: "NextAI",
     description: (
       <span className="text-sm">
-        Experience the power of AI in generating unique travel itineraries.
+        Effortless Next.JS documentation exploration powered by AI.
       </span>
     ),
-    header: <SkeletonOne />,
+    header: <SkeletonFive />,
+    link: "https://www.nextai.dev/",
     className: "md:col-span-1",
-    link: "https://ecowayer.com/",
-    icon: <PlanetIcon className={"size-4"} />,
+    icon: <MessageIcon className="size-4" />,
   },
   {
     title: "Ouvrage",
@@ -395,17 +395,16 @@ const items = [
     link: "https://www.mapbrain.ai/",
     icon: <MapIcon className="size-4" />,
   },
-
   {
-    title: "NextAI",
+    title: "Ecowayer",
     description: (
       <span className="text-sm">
-        Effortless Next.JS documentation exploration powered by AI.
+        Experience the power of AI in generating unique travel itineraries.
       </span>
     ),
-    header: <SkeletonFive />,
-    link: "https://www.nextai.dev/",
+    header: <SkeletonOne />,
     className: "md:col-span-1",
-    icon: <MessageIcon className="size-4" />,
+    link: "https://ecowayer.com/",
+    icon: <PlanetIcon className={"size-4"} />,
   },
 ];
