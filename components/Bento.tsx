@@ -251,7 +251,7 @@ const SkeletonFour = () => {
           <Link
             target={"_blank"}
             className={"hover:text-neutral-900 hover:dark:text-neutral-300/90"}
-            href={"https://nextjs.org"}
+            href={"https://nextjs.org/?uwu"}
           >
             Next.js{" "}
           </Link>
