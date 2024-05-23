@@ -19,13 +19,6 @@ export const metadata: Metadata = {
   },
 };
 
-export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#F7F7F7" },
-    { media: "(prefers-color-scheme: dark)", color: "#000000" },
-  ],
-};
-
 export default function RootLayout({
   children,
 }: {
@@ -33,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={"h-full antialiased"} suppressHydrationWarning>
-      <body className="dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative mb-40 flex justify-center bg-zinc-100/70 dark:bg-black">
+      <body className="relative mb-40 flex justify-center bg-zinc-100/70 bg-dot-black/[0.2] dark:bg-black dark:bg-dot-white/[0.2]">
         <Providers>
           <div className="flex justify-center">
             <Layout>{children}</Layout>

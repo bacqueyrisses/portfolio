@@ -1,7 +1,5 @@
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { headers } from "next/headers";
-import { isSafariMobile } from "@/utils/safari";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
