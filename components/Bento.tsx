@@ -163,7 +163,7 @@ const SkeletonThree = () => {
       initial="initial"
       variants={variants}
       whileHover="animate"
-      className="flex h-full min-h-[6rem] w-full flex-1 flex-col rounded-lg bg-postai bg-contain"
+      className="flex h-full min-h-[6rem] w-full flex-1 flex-col rounded-lg bg-postai bg-cover bg-bottom md:bg-contain"
     ></motion.div>
   );
 };
@@ -328,7 +328,7 @@ const SkeletonFive = () => {
     >
       <motion.div
         variants={variants}
-        className="flex flex-row items-start space-x-2 rounded-2xl border border-neutral-100 bg-white p-2 dark:border-white/[0.2] dark:bg-black"
+        className="flex w-fit flex-row items-start space-x-2 rounded-2xl border border-neutral-100 bg-white p-2 pr-4 dark:border-white/[0.2] dark:bg-black"
       >
         <div className="h-6 w-6 flex-shrink-0 rounded-full bg-gradient-to-r from-pink-500 to-violet-500" />
         <p className="text-xs text-neutral-500">
@@ -337,7 +337,7 @@ const SkeletonFive = () => {
       </motion.div>
       <motion.div
         variants={variantsSecond}
-        className="ml-auto flex w-3/4 flex-row items-center justify-end space-x-2 rounded-full border border-neutral-100 bg-white p-2 dark:border-white/[0.2] dark:bg-black"
+        className="ml-auto flex w-fit flex-row items-center justify-end space-x-2 rounded-full border border-neutral-100 bg-white p-2 pl-4 dark:border-white/[0.2] dark:bg-black"
       >
         <p className="text-xs text-neutral-500">I got you bro.</p>
         <div className="h-6 w-6 flex-shrink-0 rounded-full bg-gradient-to-r from-violet-500 to-pink-500" />
