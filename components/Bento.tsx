@@ -353,7 +353,7 @@ const items = [
   {
     title: "NextAI",
     description: (
-      <span className="text-sm dark:text-zinc-400">
+      <span className="text-sm text-zinc-600 dark:text-zinc-400">
         Effortless Next.JS documentation exploration powered by AI.
       </span>
     ),
@@ -365,7 +365,7 @@ const items = [
   {
     title: "Ouvrage",
     description: (
-      <span className="text-sm dark:text-zinc-400">
+      <span className="text-sm text-zinc-600 dark:text-zinc-400">
         Expand your vocabulary, discover new words and get access to your list.
       </span>
     ),
@@ -377,7 +377,7 @@ const items = [
   {
     title: "PostAI",
     description: (
-      <span className="text-sm dark:text-zinc-400">
+      <span className="text-sm text-zinc-600 dark:text-zinc-400">
         Design and send AI-crafted, location-based virtual postcards.
       </span>
     ),
@@ -389,7 +389,7 @@ const items = [
   {
     title: "Mapbrain",
     description: (
-      <span className="text-sm dark:text-zinc-400">
+      <span className="text-sm text-zinc-600 dark:text-zinc-400">
         Create detailed and comprehensive brain maps using advanced AI
         algorithms.
       </span>
@@ -402,7 +402,7 @@ const items = [
   {
     title: "Ecowayer",
     description: (
-      <span className="text-sm dark:text-zinc-400">
+      <span className="text-sm text-zinc-600 dark:text-zinc-400">
         Experience the power of AI in generating unique travel itineraries.
       </span>
     ),
