@@ -264,7 +264,7 @@ const SkeletonFour = () => {
           </Link>
         </p>
         <p className="mt-4 rounded-xl border border-blue-500 bg-blue-100 px-2 py-0.5 text-xs text-blue-600 dark:bg-blue-900/20">
-          Modern
+          Innovative
         </p>
       </motion.div>
       <motion.div className="flex h-full w-1/3 flex-col items-center justify-center rounded-2xl border border-neutral-200 bg-white p-4 dark:border-white/[0.1] dark:bg-black">

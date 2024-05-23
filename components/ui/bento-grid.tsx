@@ -4,6 +4,7 @@ import {
   ProjectType,
   TitleComponent,
 } from "@/components/ui/following-pointer";
+import { ArrowRightIcon } from "@/components/icons/CustomIcons";
 
 export const BentoGrid = ({
   className,
@@ -48,12 +49,17 @@ export const BentoGridItem = ({
         <Link
           target={"_blank"}
           className={
-            "mb-2 mt-2 flex w-fit items-center gap-2 font-sans font-semibold text-neutral-600 transition duration-200 ease-in-out hover:text-neutral-900 dark:text-neutral-200 hover:dark:text-neutral-50"
+            "group mb-2 mt-2 flex w-fit items-center gap-0.5 font-sans font-semibold text-neutral-600 transition duration-200 ease-in-out hover:text-neutral-900 dark:text-neutral-200 hover:dark:text-neutral-50"
           }
           href={link}
         >
-          {icon}
-          {title}
+          <div className={"flex items-center justify-between gap-2"}>
+            {icon}
+            {title}
+          </div>
+          <ArrowRightIcon
+            className={`h-2.5 w-2.5 self-start transition-colors duration-500 ease-in-out group-hover:skew-y-[9deg] group-hover:text-zinc-900 group-hover:dark:text-zinc-100 sm:translate-y-1`}
+          />
         </Link>
         <FollowerPointerCard
           variant={type}
