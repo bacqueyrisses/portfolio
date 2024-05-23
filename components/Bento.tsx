@@ -126,9 +126,10 @@ const SkeletonTwo = () => {
           style={{
             maxWidth: 100 - 40 + 40 + "%",
           }}
-          className="flex h-4 w-full flex-row items-center space-x-2 rounded-full border border-neutral-100  bg-neutral-100 p-2 pr-7 text-[0.6rem] italic text-neutral-500 dark:border-white/[0.2] dark:bg-black dark:text-neutral-400"
+          className="flex h-4 w-full flex-row items-center space-x-2 rounded-full border border-neutral-100  bg-neutral-100 p-2 pr-9 text-[0.6rem] italic text-neutral-500 dark:border-white/[0.2] dark:bg-black dark:text-neutral-400"
         >
-          mot
+          <span>♥</span>
+          <span>~</span>
         </motion.div>
       ))}
     </motion.div>
