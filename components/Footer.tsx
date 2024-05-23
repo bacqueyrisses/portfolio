@@ -2,8 +2,6 @@ import Link from "next/link";
 
 import { ContainerInner, ContainerOuter } from "./Container";
 import Image from "next/image";
-import whiteCoffee from "@/public/images/logos/white-button.png";
-import darkCoffee from "@/public/images/logos/black-button.png";
 import avatarImage from "@/public/images/logos/logo.webp";
 import avatarDarkImage from "@/public/images/logos/logo-dark.webp";
 
@@ -17,26 +15,20 @@ export function Footer() {
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Enzo Bacqueyrisses
               </p>
-              <Link
-                href={"https://www.buymeacoffee.com/bacqueyrisses"}
-                target={"_blank"}
-                className={"cursor-pointer"}
-              >
-                <Image
-                  src={avatarImage}
-                  width={40}
-                  height={40}
-                  alt={"Enzo Bacqueyrisses logo"}
-                  className={"block dark:hidden"}
-                />
-                <Image
-                  src={avatarDarkImage}
-                  width={40}
-                  height={40}
-                  alt={"Enzo Bacqueyrisses logo dark mode"}
-                  className={"hidden dark:block"}
-                />
-              </Link>
+              <Image
+                src={avatarImage}
+                width={40}
+                height={40}
+                alt={"Enzo Bacqueyrisses logo"}
+                className={"block dark:hidden"}
+              />
+              <Image
+                src={avatarDarkImage}
+                width={40}
+                height={40}
+                alt={"Enzo Bacqueyrisses logo dark mode"}
+                className={"hidden dark:block"}
+              />
             </div>
           </ContainerInner>
         </div>
