@@ -134,7 +134,7 @@ export const FollowPointer = ({
           opacity: 0,
         }}
         className={
-          "min-w-max whitespace-nowrap rounded-full bg-neutral-200 px-2 py-2 text-xs text-white"
+          "min-w-max whitespace-nowrap rounded-full bg-neutral-200 px-2 py-1.5 text-xs text-white"
         }
       >
         {title || `William Shakespeare`}
@@ -150,7 +150,9 @@ export const TitleComponent = ({ variant }: { variant: ProjectType }) => (
     ) : (
       <WorkIcon className={"size-5"} />
     )}
-    <p>{variant === "personal" ? "Personal project" : "Work project"}</p>
+    <p className={"font-medium"}>
+      {variant === "personal" ? "Personal project" : "Work project"}
+    </p>
   </div>
 );
 
