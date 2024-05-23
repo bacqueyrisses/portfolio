@@ -12,6 +12,11 @@ import Resume from "@/components/Resume";
 import Contact from "@/components/Contact";
 import Link from "next/link";
 import AnimatedTitle from "@/components/AnimatedTitle";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Enzo Bacqueyrisses",
+};
 
 export default async function Home() {
   return (
