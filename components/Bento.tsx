@@ -5,6 +5,7 @@ import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import {
+  CheckIcon,
   MapIcon,
   MessageIcon,
   PencilIcon,
@@ -413,16 +414,17 @@ const items = [
     type: "work" as ProjectType,
   },
   {
-    title: "Ecowayer",
+    title: "Consentement",
     description: (
       <span className="text-sm text-zinc-600 dark:text-zinc-400">
-        Experience the power of AI in generating unique travel itineraries.
+        Evaluate and understand your consent with a series of 10 useful
+        questions.
       </span>
     ),
     header: <SkeletonOne />,
     className: "md:col-span-1",
-    link: "https://ecowayer.com/",
-    icon: <PlanetIcon className={"size-4"} />,
+    link: "https://www.roueduconsentement.com",
+    icon: <CheckIcon className={"size-4"} />,
     type: "work" as ProjectType,
   },
 ];
