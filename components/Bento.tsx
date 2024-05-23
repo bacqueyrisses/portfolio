@@ -377,7 +377,8 @@ const items = [
     title: "Ouvrage",
     description: (
       <span className="text-sm text-zinc-600 dark:text-zinc-400">
-        Expand your vocabulary, discover new words and get access to your list.
+        Expand your vocabulary, discover new terms and craft your own list of
+        words.
       </span>
     ),
     header: <SkeletonTwo />,
