@@ -66,7 +66,7 @@ const SkeletonOne = () => {
       initial="initial"
       whileHover="animate"
       whileTap="animate"
-      className="flex h-full min-h-[6rem] w-full flex-1 flex-col space-y-2 bg-dot-black/[0.2] dark:bg-dot-white/[0.2]"
+      className="flex h-full min-h-[6rem] w-full flex-1 select-none flex-col space-y-2 bg-dot-black/[0.2] dark:bg-dot-white/[0.2]"
     >
       <motion.div
         variants={variants}
@@ -117,7 +117,7 @@ const SkeletonTwo = () => {
       animate="animate"
       whileHover="hover"
       whileTap="hover"
-      className="flex h-full min-h-[6rem] w-full flex-1 flex-col space-y-2 bg-dot-black/[0.2] dark:bg-dot-white/[0.2]"
+      className="flex h-full min-h-[6rem] w-full flex-1 select-none flex-col space-y-2 bg-dot-black/[0.2] dark:bg-dot-white/[0.2]"
     >
       {arr.map((_, i) => (
         <motion.div
@@ -166,7 +166,7 @@ const SkeletonThree = () => {
       variants={variants}
       whileHover="animate"
       whileTap="animate"
-      className="flex h-full min-h-[6rem] w-full flex-1 flex-col rounded-lg bg-postai bg-cover bg-bottom md:bg-contain"
+      className="flex h-full min-h-[6rem] w-full flex-1 select-none flex-col rounded-lg bg-postai bg-cover bg-bottom md:bg-contain"
     ></motion.div>
   );
 };
@@ -228,7 +228,7 @@ const SkeletonFour = () => {
       animate="animate"
       whileHover="hover"
       whileTap="hover"
-      className="flex h-full min-h-[6rem] w-full flex-1 flex-row space-x-2 bg-dot-black/[0.2] dark:bg-dot-white/[0.2]"
+      className="flex h-full min-h-[6rem] w-full flex-1 select-none flex-row space-x-2 bg-dot-black/[0.2] dark:bg-dot-white/[0.2]"
     >
       <motion.div
         variants={first}
@@ -331,7 +331,7 @@ const SkeletonFive = () => {
       initial="initial"
       whileHover="animate"
       whileTap="animate"
-      className="flex h-full min-h-[6rem] w-full flex-1 flex-col space-y-2 bg-dot-black/[0.2] dark:bg-dot-white/[0.2]"
+      className="flex h-full min-h-[6rem] w-full flex-1 select-none flex-col space-y-2 bg-dot-black/[0.2] dark:bg-dot-white/[0.2]"
     >
       <motion.div
         variants={variants}
