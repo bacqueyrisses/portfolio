@@ -65,6 +65,7 @@ const SkeletonOne = () => {
     <motion.div
       initial="initial"
       whileHover="animate"
+      whileTap="animate"
       className="flex h-full min-h-[6rem] w-full flex-1 flex-col space-y-2 bg-dot-black/[0.2] dark:bg-dot-white/[0.2]"
     >
       <motion.div
@@ -115,6 +116,7 @@ const SkeletonTwo = () => {
       initial="initial"
       animate="animate"
       whileHover="hover"
+      whileTap="hover"
       className="flex h-full min-h-[6rem] w-full flex-1 flex-col space-y-2 bg-dot-black/[0.2] dark:bg-dot-white/[0.2]"
     >
       {arr.map((_, i) => (
@@ -163,6 +165,7 @@ const SkeletonThree = () => {
       initial="initial"
       variants={variants}
       whileHover="animate"
+      whileTap="animate"
       className="flex h-full min-h-[6rem] w-full flex-1 flex-col rounded-lg bg-postai bg-cover bg-bottom md:bg-contain"
     ></motion.div>
   );
@@ -224,6 +227,7 @@ const SkeletonFour = () => {
       initial="initial"
       animate="animate"
       whileHover="hover"
+      whileTap="hover"
       className="flex h-full min-h-[6rem] w-full flex-1 flex-row space-x-2 bg-dot-black/[0.2] dark:bg-dot-white/[0.2]"
     >
       <motion.div
@@ -326,6 +330,7 @@ const SkeletonFive = () => {
     <motion.div
       initial="initial"
       whileHover="animate"
+      whileTap="animate"
       className="flex h-full min-h-[6rem] w-full flex-1 flex-col space-y-2 bg-dot-black/[0.2] dark:bg-dot-white/[0.2]"
     >
       <motion.div
