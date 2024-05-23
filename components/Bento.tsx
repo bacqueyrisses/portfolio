@@ -238,7 +238,7 @@ const SkeletonFour = () => {
         className="flex h-full w-1/3 flex-col items-center justify-center rounded-2xl border border-neutral-200 bg-white p-4 dark:border-white/[0.1] dark:bg-black"
       >
         <Image
-          src="/images/logos/next.gif"
+          src="/images/logos/next-slower.gif"
           alt="next.js kawai logo"
           height="960"
           width="960"
