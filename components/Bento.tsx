@@ -242,7 +242,7 @@ const SkeletonFour = () => {
           alt="next.js kawai logo"
           height="960"
           width="960"
-          className="h-10 w-10 grow md:h-1/2 md:w-1/2"
+          className="h-10 w-24 grow"
         />
 
         <p className="mt-4 text-center text-xs font-medium leading-4 text-neutral-500 dark:text-neutral-400 sm:text-sm md:leading-normal">
