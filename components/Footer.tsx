@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { ContainerInner, ContainerOuter } from "./Container";
 import Image from "next/image";
 import avatarImage from "@/public/images/logos/logo.webp";
@@ -9,7 +7,7 @@ export function Footer() {
   return (
     <footer className="mt-12 flex-none lg:mt-16">
       <ContainerOuter>
-        <div className="pb-6">
+        <div className="pb-4">
           <ContainerInner>
             <div className="flex flex-col items-center justify-center">
               <p className="text-sm text-zinc-600 dark:text-zinc-400">
