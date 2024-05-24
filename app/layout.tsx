@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={"h-full antialiased"} suppressHydrationWarning>
-      <body className="relative mb-40 flex justify-center bg-zinc-100/70 bg-dot-black/[0.2] dark:bg-black dark:bg-dot-white/[0.2]">
+      <body className="relative flex justify-center bg-zinc-100/70 bg-dot-black/[0.2] dark:bg-black dark:bg-dot-white/[0.2]">
         <Providers>
           <div className="flex justify-center">
             <Layout>{children}</Layout>
