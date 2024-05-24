@@ -9,7 +9,7 @@ export function Footer() {
   return (
     <footer className="mt-12 flex-none lg:mt-16">
       <ContainerOuter>
-        <div className="border-t border-zinc-100 pb-10 pt-10 dark:border-zinc-700/40">
+        <div className="pb-6">
           <ContainerInner>
             <div className="flex flex-col items-center justify-center">
               <p className="text-sm text-zinc-600 dark:text-zinc-400">
