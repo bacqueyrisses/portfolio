@@ -270,10 +270,10 @@ const SkeletonFour = () => {
       <motion.div className="flex h-full w-1/3 flex-col items-center justify-center rounded-2xl border border-neutral-200 bg-white p-4 dark:border-white/[0.1] dark:bg-black">
         <SkeletonInside />
         <p className="mt-4 hidden text-center text-xs font-medium leading-4 text-neutral-500 dark:text-neutral-400 sm:text-sm md:block md:leading-normal">
-          Innovative AI on-demand Mind Maps
+          Inventive AI on-demand Mind Maps
         </p>
         <p className="mt-4 block text-center text-xs font-medium leading-4 text-neutral-500 dark:text-neutral-400 sm:text-sm md:hidden md:leading-normal">
-          Innovative AI Mind Maps
+          Inventive AI Mind Maps
         </p>
         <p className="mt-4 text-nowrap rounded-xl border border-green-500 bg-green-100 px-2 py-0.5 text-xs text-green-600 dark:bg-green-900/20">
           AI driven
