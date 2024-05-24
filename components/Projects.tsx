@@ -29,7 +29,7 @@ export default function Projects({ focusedProject }: IProjects) {
               <span className="relative z-10">
                 <div
                   className={
-                    "relative z-10 order-first mb-3 flex items-center justify-between pl-3.5 text-sm text-zinc-400 dark:text-zinc-500"
+                    "relative z-10 order-first mb-3 flex items-center justify-between pl-3.5 text-sm text-zinc-600 dark:text-zinc-400"
                   }
                 >
                   {project.date}

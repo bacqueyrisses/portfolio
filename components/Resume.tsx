@@ -28,16 +28,16 @@ export default function Resume() {
         </div>
         <div className="flex flex-auto flex-wrap gap-x-2">
           <span className="sr-only">Company</span>
-          <span className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
+          <span className="w-full flex-none text-sm font-semibold text-neutral-700 dark:text-neutral-200">
             {experience.company}
           </span>
           <span className="sr-only">Role</span>
-          <span className="text-xs text-zinc-500 dark:text-zinc-400">
+          <span className="text-xs text-zinc-600 dark:text-zinc-400">
             {experience.title}
           </span>
           <span className="sr-only">Date</span>
           <span
-            className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
+            className="ml-auto text-xs text-zinc-600 dark:text-zinc-400"
             aria-label={`${experience.start} until ${experience.end}`}
           >
             <span>{experience.start}</span> <span aria-hidden="true">—</span>{" "}
@@ -50,7 +50,7 @@ export default function Resume() {
 
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 dark:bg-black md:col-span-2">
-      <h2 className="flex items-center gap-2 font-sans text-base font-semibold text-neutral-600 dark:text-neutral-200">
+      <h2 className="flex items-center gap-2 font-sans text-base font-semibold text-neutral-700 dark:text-neutral-200">
         <ComputerIcon className="size-4" />
         <span>Work Experience</span>
       </h2>

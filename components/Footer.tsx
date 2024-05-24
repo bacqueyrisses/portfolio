@@ -12,7 +12,7 @@ export function Footer() {
         <div className="border-t border-zinc-100 pb-10 pt-10 dark:border-zinc-700/40">
           <ContainerInner>
             <div className="flex flex-col items-center justify-center">
-              <p className="text-sm text-zinc-400 dark:text-zinc-500">
+              <p className="text-sm text-zinc-600 dark:text-zinc-400">
                 &copy; {new Date().getFullYear()} Enzo Bacqueyrisses
               </p>
               <Image

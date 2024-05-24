@@ -9,7 +9,6 @@ import {
   MapIcon,
   MessageIcon,
   PencilIcon,
-  PlanetIcon,
   RocketIcon,
   SendIcon,
 } from "@/components/icons/CustomIcons";

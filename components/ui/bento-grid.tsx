@@ -49,7 +49,7 @@ export const BentoGridItem = ({
         <Link
           target={"_blank"}
           className={
-            "group mb-2 mt-2 flex w-fit items-center gap-0.5 font-sans font-semibold text-neutral-600 transition duration-200 ease-in-out hover:text-neutral-900 dark:text-neutral-200 hover:dark:text-neutral-50"
+            "group mb-2 mt-2 flex w-fit items-center gap-0.5 font-sans font-semibold text-neutral-700 transition duration-200 ease-in-out hover:text-neutral-900 dark:text-neutral-200 hover:dark:text-neutral-50"
           }
           href={link}
         >
@@ -65,7 +65,7 @@ export const BentoGridItem = ({
           variant={type}
           title={<TitleComponent variant={type} />}
         >
-          <div className="font-sans text-xs font-normal text-neutral-600 dark:text-neutral-300">
+          <div className="font-sans text-xs font-normal text-neutral-700 dark:text-neutral-200">
             {description}
           </div>
         </FollowerPointerCard>

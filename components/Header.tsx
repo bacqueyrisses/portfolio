@@ -16,9 +16,11 @@ function Information(props: React.ComponentPropsWithoutRef<"div">) {
   return (
     <button
       onClick={handleClick}
-      className="hover:ring-zinc-00/10 group flex rounded-full bg-white/90 px-3 py-1 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-700/5 ring-1 ring-zinc-800/5 backdrop-blur transition duration-200 ease-in-out hover:ring-zinc-700/10 dark:bg-black dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20"
+      className="hover:ring-zinc-00/10 group flex rounded-full bg-white/90 px-3 py-1 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-700/5 ring-1 ring-zinc-800/5 backdrop-blur transition duration-200 ease-in-out hover:ring-zinc-700/10 dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20"
     >
-      <div className={`flex items-center justify-center ${props}`}>
+      <div
+        className={`pointer-events-auto flex items-center justify-center ${props}`}
+      >
         <div className={"h-2.5 w-2.5 rounded-full bg-teal-400 pl-1 pr-0.5"} />
 
         <div
@@ -47,11 +49,11 @@ function ThemeToggle() {
     <button
       type="button"
       aria-label={mounted ? `Switch to ${otherTheme} theme` : "Toggle theme"}
-      className="group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-700/5 ring-1 ring-zinc-800/5 backdrop-blur transition duration-200 ease-in-out hover:ring-zinc-700/10 dark:bg-black dark:ring-white/10 dark:hover:ring-white/20"
+      className="group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-700/5 ring-1 ring-zinc-800/5 backdrop-blur transition duration-200 ease-in-out hover:ring-zinc-700/10 dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
       onClick={() => setTheme(otherTheme)}
     >
       <SunIcon className="h-6 w-6 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-yellow-100/80 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:stroke-teal-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600" />
-      <MoonIcon className="hidden h-6 w-6 fill-black stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500" />
+      <MoonIcon className="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500" />
     </button>
   );
 }
@@ -70,7 +72,7 @@ function AvatarContainer({
     <div
       className={clsx(
         className,
-        "h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-black dark:ring-white/10",
+        "h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10",
       )}
       {...props}
     />
@@ -181,7 +183,7 @@ export function Header() {
   return (
     <>
       <header
-        className="relative z-50 flex flex-none flex-col"
+        className="pointer-events-none relative z-50 flex flex-none flex-col"
         style={{
           height: "var(--header-height)",
           marginBottom: "var(--header-mb)",
@@ -232,17 +234,14 @@ export function Header() {
               "var(--header-position)" as React.CSSProperties["position"],
           }}
         >
-          <Container
-            className="top-[var(--header-top,theme(spacing.6))] w-full"
-            style={{
-              position:
-                "var(--header-inner-position)" as React.CSSProperties["position"],
-            }}
-          >
+          <Container className="top-[var(--header-top,theme(spacing.6))] w-full">
             <div className="relative flex gap-4">
-              <div className="flex flex-1 justify-between" />
+              <div className="flex flex-1 justify-between"></div>
+              <div className="flex flex-initial items-center">
+                <Information />
+              </div>
               <div className="flex justify-end md:flex-1">
-                <div>
+                <div className="pointer-events-auto">
                   <ThemeToggle />
                 </div>
               </div>
