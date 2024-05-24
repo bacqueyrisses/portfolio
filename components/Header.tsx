@@ -237,9 +237,9 @@ export function Header() {
           <Container className="top-[var(--header-top,theme(spacing.6))] w-full">
             <div className="relative flex gap-4">
               <div className="flex flex-1 justify-between"></div>
-              <div className="flex flex-initial items-center">
-                <Information />
-              </div>
+              {/*<div className="flex flex-initial items-center">*/}
+              {/*  <Information />*/}
+              {/*</div>*/}
               <div className="flex justify-end md:flex-1">
                 <div className="pointer-events-auto">
                   <ThemeToggle />
