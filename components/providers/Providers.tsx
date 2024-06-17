@@ -47,7 +47,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
 
   return (
     <AppContext.Provider value={{ previousPathname }}>
-      <ThemeProvider attribute="class" defaultTheme="light">
+      <ThemeProvider attribute="class" defaultTheme="system">
         <ThemeWatcher />
         {children}
         <Analytics />
