@@ -366,7 +366,7 @@ const items = [
       </span>
     ),
     header: <SkeletonFive />,
-    link: "https://www.nextai.dev/",
+    link: "https://www.nextai.enzo.codes",
     pointer: "Personal project",
     className: "md:col-span-1",
     icon: <MessageIcon className="size-4" />,
