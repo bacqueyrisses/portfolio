@@ -8,7 +8,7 @@ import {
   CheckIcon,
   MapIcon,
   MessageIcon,
-  PencilIcon,
+  MoneyIcon,
   RocketIcon,
   SendIcon,
 } from "@/components/icons/CustomIcons";
@@ -384,7 +384,7 @@ const items = [
     header: <SkeletonTwo />,
     link: "https://haveno-reto.com",
     className: "md:col-span-1",
-    icon: <PencilIcon className="size-4" />,
+    icon: <MoneyIcon className="size-4" />,
     type: "personal" as ProjectType,
   },
   {
