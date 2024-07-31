@@ -14,6 +14,7 @@ import {
 } from "@/components/icons/CustomIcons";
 import Link from "next/link";
 import { ProjectType } from "@/components/ui/following-pointer";
+import haveno from "/public/images/logos/haveno.png";
 
 export default function BentoGridDemo() {
   return (
@@ -130,7 +131,8 @@ const SkeletonTwo = () => {
           }}
           className="flex h-4 w-full flex-row items-center space-x-2 rounded-full border border-neutral-100  bg-neutral-100 p-2 pr-9 text-[0.6rem] italic text-neutral-500 dark:border-white/[0.2] dark:bg-black dark:text-neutral-400"
         >
-          <span>♥</span>
+          {/*<span>♥</span>*/}
+          <Image src={haveno} className={"size-3"} alt={"haveno-reto logo"} />
           <span>~</span>
         </motion.div>
       ))}
@@ -373,15 +375,14 @@ const items = [
     type: "personal" as ProjectType,
   },
   {
-    title: "Ouvrage",
+    title: "Haveno-reto",
     description: (
       <span className="text-sm text-zinc-600 dark:text-zinc-400">
-        Expand your vocabulary, discover new terms and craft your own list of
-        words.
+        Website redesign to enhance user experience and visual appeal.
       </span>
     ),
     header: <SkeletonTwo />,
-    link: "https://www.ouvrage.dev/",
+    link: "https://haveno-reto.com",
     className: "md:col-span-1",
     icon: <PencilIcon className="size-4" />,
     type: "personal" as ProjectType,
@@ -403,8 +404,8 @@ const items = [
     title: "Mapbrain",
     description: (
       <span className="text-sm text-zinc-600 dark:text-zinc-400">
-        Create detailed and comprehensive brain maps using advanced AI
-        algorithms.
+        Created a comprehensive dashboard for detailed mind maps using advanced
+        AI.
       </span>
     ),
     header: <SkeletonFour />,
