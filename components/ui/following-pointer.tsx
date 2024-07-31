@@ -2,7 +2,11 @@
 
 import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion, useMotionValue } from "framer-motion";
-import { SmileyIcon, WorkIcon } from "@/components/icons/CustomIcons";
+import {
+  SmileyIcon,
+  WorkIcon,
+  WorldIcon,
+} from "@/components/icons/CustomIcons";
 
 export const FollowerPointerCard = ({
   children,
@@ -119,7 +123,11 @@ export const FollowPointer = ({
       <motion.div
         style={{
           backgroundColor:
-            variant === "work" ? "var(--teal-500)" : "var(--violet-500)",
+            variant === "work"
+              ? "var(--teal-500)"
+              : variant === "personal"
+                ? "var(--violet-500)"
+                : "var(--green-500)",
         }}
         initial={{
           scale: 0.5,
@@ -145,15 +153,16 @@ export const FollowPointer = ({
 
 export const TitleComponent = ({ variant }: { variant: ProjectType }) => (
   <div className="flex items-center justify-center gap-1.5 px-2">
-    {variant === "personal" ? (
-      <SmileyIcon className={"size-5"} />
-    ) : (
-      <WorkIcon className={"size-5"} />
-    )}
+    {variant === "personal" && <SmileyIcon className={"size-5"} />}
+    {variant === "work" && <WorkIcon className={"size-5"} />}
+    {variant === "open-source" && <WorldIcon className={"size-5"} />}
+
     <p className={"font-medium"}>
-      {variant === "personal" ? "Personal project" : "Work project"}
+      {variant === "personal" && "Personal project"}
+      {variant === "work" && "Work project"}
+      {variant === "open-source" && "Open source"}
     </p>
   </div>
 );
 
-export type ProjectType = "personal" | "work";
+export type ProjectType = "personal" | "work" | "open-source";

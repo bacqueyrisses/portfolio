@@ -385,7 +385,7 @@ const items = [
     link: "https://haveno-reto.com",
     className: "md:col-span-1",
     icon: <MoneyIcon className="size-4" />,
-    type: "personal" as ProjectType,
+    type: "open-source" as ProjectType,
   },
   {
     title: "PostAI",
