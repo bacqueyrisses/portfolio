@@ -8,12 +8,13 @@ import {
   CheckIcon,
   MapIcon,
   MessageIcon,
-  PencilIcon,
+  MoneyIcon,
   RocketIcon,
   SendIcon,
 } from "@/components/icons/CustomIcons";
 import Link from "next/link";
 import { ProjectType } from "@/components/ui/following-pointer";
+import haveno from "/public/images/logos/haveno.png";
 
 export default function BentoGridDemo() {
   return (
@@ -112,28 +113,40 @@ const SkeletonTwo = () => {
       },
     },
   };
-  const arr = new Array(6).fill(0);
+  const arr = new Array(5).fill(0);
   return (
     <motion.div
       initial="initial"
       animate="animate"
       whileHover="hover"
       whileTap="hover"
-      className="flex h-full min-h-[6rem] w-full flex-1 select-none flex-col space-y-2 bg-dot-black/[0.2] dark:bg-dot-white/[0.2]"
+      className="group flex h-full min-h-[6rem] w-full flex-1 select-none flex-col bg-dot-black/[0.2] dark:bg-dot-white/[0.2]"
     >
-      {arr.map((_, i) => (
-        <motion.div
-          key={"skeleton-two" + i}
-          variants={variants}
-          style={{
-            maxWidth: 100 - 40 + 40 + "%",
-          }}
-          className="flex h-4 w-full flex-row items-center space-x-2 rounded-full border border-neutral-100  bg-neutral-100 p-2 pr-9 text-[0.6rem] italic text-neutral-500 dark:border-white/[0.2] dark:bg-black dark:text-neutral-400"
-        >
-          <span>♥</span>
-          <span>~</span>
-        </motion.div>
-      ))}
+      <div
+        className={
+          "flex h-full w-full flex-1 flex-col space-y-2 rounded-2xl border border-neutral-100 bg-white p-2 pr-4 dark:border-white/[0.2] dark:bg-black"
+        }
+      >
+        <div className={"ml-1.5 flex items-center gap-1.5"}>
+          <div className="h-4 w-4 flex-shrink-0 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 group-hover:animate-spin" />
+          <p className={"text-xs font-medium text-zinc-600 dark:text-zinc-400"}>
+            Transactions
+          </p>
+        </div>
+        {arr.map((_, i) => (
+          <motion.div
+            key={"skeleton-two" + i}
+            variants={variants}
+            style={{
+              maxWidth: 100 - 40 + 40 + "%",
+            }}
+            className="flex h-4 w-full flex-row items-center space-x-2 rounded-full border border-neutral-100  bg-neutral-100 p-2 pr-9 text-[0.6rem] italic text-neutral-500 dark:border-white/[0.2] dark:bg-black dark:text-neutral-400"
+          >
+            <Image src={haveno} className={"size-3"} alt={"haveno-reto logo"} />
+            <span>~</span>
+          </motion.div>
+        ))}
+      </div>
     </motion.div>
   );
 };
@@ -373,18 +386,17 @@ const items = [
     type: "personal" as ProjectType,
   },
   {
-    title: "Ouvrage",
+    title: "Haveno-reto",
     description: (
       <span className="text-sm text-zinc-600 dark:text-zinc-400">
-        Expand your vocabulary, discover new terms and craft your own list of
-        words.
+        Website redesign to enhance user experience, built with Astro.
       </span>
     ),
     header: <SkeletonTwo />,
-    link: "https://www.ouvrage.dev/",
+    link: "https://haveno-reto.com",
     className: "md:col-span-1",
-    icon: <PencilIcon className="size-4" />,
-    type: "personal" as ProjectType,
+    icon: <MoneyIcon className="size-4" />,
+    type: "open-source" as ProjectType,
   },
   {
     title: "PostAI",
@@ -403,8 +415,8 @@ const items = [
     title: "Mapbrain",
     description: (
       <span className="text-sm text-zinc-600 dark:text-zinc-400">
-        Create detailed and comprehensive brain maps using advanced AI
-        algorithms.
+        Created a comprehensive dashboard for detailed mind maps using advanced
+        AI.
       </span>
     ),
     header: <SkeletonFour />,
