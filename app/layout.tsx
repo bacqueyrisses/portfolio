@@ -6,6 +6,7 @@ import { Providers } from "@/components/providers/Providers";
 import { Layout } from "@/components/Layout";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.enzo.codes"),
   title: {
     template: "%s - Enzo Bacqueyrisses",
     default: "Enzo Bacqueyrisses | Next.js Developer",
