@@ -2,7 +2,7 @@ import Image from "next/image";
 import { experience, Experience } from "@/data/experience";
 
 import { Button } from "./Button";
-import { ArrowDownIcon, ComputerIcon } from "./icons/CustomIcons";
+import {ArrowDownIcon, ComputerIcon, EyeIcon} from "./icons/CustomIcons";
 
 export default function Resume() {
   function Experience({ experience }: { experience: Experience }) {
@@ -59,18 +59,30 @@ export default function Resume() {
           <Experience key={experienceIndex} experience={experience} />
         ))}
       </ol>
-
+        <div className={"flex gap-2"}>
+        <Button
+            href="/resume.pdf"
+            target={"_blank"}
+            rel="noopener noreferrer"
+            variant="secondary"
+            className="group mt-6 w-full"
+        >
+            View the resume
+            <EyeIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+        </Button>
       <Button
-        download="Enzo Bacqueyrisses CV"
+        title="Download the resume"
+        download="Enzo-Bacqueyrisses-Resume"
         href="/resume.pdf"
         target={"_blank"}
         rel="noopener noreferrer"
         variant="secondary"
-        className="group mt-6 w-full"
+        className="group mt-6 w-10"
       >
-        Download CV
+
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
+        </div>
     </div>
   );
 }
