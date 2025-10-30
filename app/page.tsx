@@ -46,13 +46,13 @@ export default async function Home() {
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
-            <Link
-              href={"https://www.photos.enzo.codes"}
-              className="group -m-1 scale-[0.85] p-1"
-              target={"_blank"}
-            >
-              <CameraIcon className="h-6 w-6 fill-neutral-600 group-hover:fill-neutral-900 dark:fill-neutral-200 dark:group-hover:fill-neutral-50" />
-            </Link>
+            {/*<Link*/}
+            {/*  href={"https://www.photos.enzo.codes"}*/}
+            {/*  className="group -m-1 scale-[0.85] p-1"*/}
+            {/*  target={"_blank"}*/}
+            {/*>*/}
+            {/*  <CameraIcon className="h-6 w-6 fill-neutral-600 group-hover:fill-neutral-900 dark:fill-neutral-200 dark:group-hover:fill-neutral-50" />*/}
+            {/*</Link>*/}
           </div>
         </div>
       </Container>
