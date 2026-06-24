@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ArrowRightIcon } from "./icons/CustomIcons";
 import { projects } from "@/data/projects";
 
 interface IProjects {
@@ -56,20 +55,11 @@ export default function Projects({ focusedProject }: IProjects) {
                         "text-xs font-normal md:text-sm md:font-medium"
                       }
                     >
-                      {project.live ? "Live" : "WIP"}
+                      {project.live ? "Live" : "Offline"}
                     </span>
                   </div>
                 </div>
-                <div className={"flex gap-1"}>
-                  {project.title}
-                  <ArrowRightIcon
-                    className={`${
-                      focusedProject === project.id
-                        ? "text-zinc-800 dark:text-zinc-400"
-                        : "text-zinc-400 dark:text-zinc-400"
-                    } h-2.5 w-2.5 translate-y-1.5 transition-colors duration-500 ease-in-out group-hover:skew-y-[9deg] group-hover:text-zinc-900 group-hover:dark:text-zinc-100 sm:translate-y-1`}
-                  />
-                </div>
+                <div className={"flex gap-1"}>{project.title}</div>
                 <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
                   {project.description}
                 </p>

@@ -4,7 +4,6 @@ import {
   ProjectType,
   TitleComponent,
 } from "@/components/ui/following-pointer";
-import { ArrowRightIcon } from "@/components/icons/CustomIcons";
 
 export const BentoGrid = ({
   className,
@@ -30,6 +29,7 @@ export const BentoGridItem = ({
   type,
   header,
   icon,
+  offline,
 }: {
   className?: string;
   title?: string | React.ReactNode;
@@ -38,6 +38,7 @@ export const BentoGridItem = ({
   type: ProjectType;
   header?: React.ReactNode;
   icon?: React.ReactNode;
+  offline?: boolean;
 }) => {
   return (
     <div
@@ -56,10 +57,12 @@ export const BentoGridItem = ({
           <div className={"flex items-center justify-between gap-2"}>
             {icon}
             {title}
+            {offline ? (
+              <span className="rounded-full border border-yellow-500/40 bg-yellow-100 px-1.5 py-1 text-[0.65rem] font-medium leading-none text-yellow-700 dark:bg-yellow-900/20 dark:text-yellow-400">
+                Offline
+              </span>
+            ) : null}
           </div>
-          <ArrowRightIcon
-            className={`h-2.5 w-2.5 self-start transition-colors duration-500 ease-in-out group-hover:skew-y-[9deg] group-hover:text-zinc-900 group-hover:dark:text-zinc-100 sm:translate-y-1`}
-          />
         </Link>
         <FollowerPointerCard
           variant={type}

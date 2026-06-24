@@ -29,6 +29,7 @@ export default function BentoGridDemo() {
           link={item.link}
           className={`[&>p:text-lg] ${item.className}`}
           icon={item.icon}
+          offline={item.offline}
         />
       ))}
     </BentoGrid>
@@ -384,6 +385,7 @@ const items = [
     className: "md:col-span-1",
     icon: <MessageIcon className="size-4" />,
     type: "personal" as ProjectType,
+    offline: true,
   },
   {
     title: "Haveno-reto",
@@ -410,6 +412,7 @@ const items = [
     className: "md:col-span-1",
     icon: <SendIcon className="size-4" />,
     type: "personal" as ProjectType,
+    offline: true,
   },
   {
     title: "Mapbrain",
