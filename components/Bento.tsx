@@ -276,7 +276,7 @@ const SkeletonFour = () => {
             Vercel
           </Link>
         </p>
-        <p className="mt-4 rounded-xl border border-blue-500 bg-blue-100 px-2 py-0.5 text-xs text-blue-600 dark:bg-blue-900/20">
+        <p className="mt-4 rounded-lg border border-blue-500 bg-blue-100 px-2 py-0.5 text-xs text-blue-600 dark:bg-blue-900/20">
           Innovative
         </p>
       </motion.div>
@@ -288,7 +288,7 @@ const SkeletonFour = () => {
         <p className="mt-4 block text-center text-xs font-medium leading-4 text-neutral-500 dark:text-neutral-400 sm:text-sm md:hidden md:leading-normal">
           Inventive AI Mind Maps
         </p>
-        <p className="mt-4 text-nowrap rounded-xl border border-green-500 bg-green-100 px-2 py-0.5 text-xs text-green-600 dark:bg-green-900/20">
+        <p className="mt-4 text-nowrap rounded-lg border border-green-500 bg-green-100 px-2 py-0.5 text-xs text-green-600 dark:bg-green-900/20">
           AI driven
         </p>
       </motion.div>
@@ -309,7 +309,7 @@ const SkeletonFour = () => {
             Station F
           </Link>
         </p>
-        <p className="mt-4 rounded-xl border border-orange-500 bg-orange-100 px-2 py-0.5 text-xs text-orange-600 dark:bg-orange-900/20">
+        <p className="mt-4 rounded-lg border border-orange-500 bg-orange-100 px-2 py-0.5 text-xs text-orange-600 dark:bg-orange-900/20">
           Scalable
         </p>
       </motion.div>
