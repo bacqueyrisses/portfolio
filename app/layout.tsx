@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.enzo.codes"),
   title: "Enzo Bacqueyrisses | Lead Technical Engineer",
   description:
-    "I’m Enzo, a full-stack developer specialised in Next.js, TypeScript & Node.JS.",
+    "I’m Enzo, a full-stack engineer specialised in Next.js, TypeScript & Node.JS.",
   openGraph: {
     title: "Enzo Bacqueyrisses | Lead Technical Engineer",
     description:
-      "Full-stack developer specialised in Next.js, TypeScript & Node.JS",
+      "full-stack engineer specialised in Next.js, TypeScript & Node.JS",
   },
 };
 
