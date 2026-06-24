@@ -46,7 +46,7 @@ export const BentoGridItem = ({
       {title}
       {offline ? (
         <span className="rounded-full border border-yellow-500/40 bg-yellow-100 px-1.5 py-1 text-[0.65rem] font-medium leading-none text-yellow-700 dark:bg-yellow-900/20 dark:text-yellow-400">
-          Offline
+          offline
         </span>
       ) : null}
     </div>
