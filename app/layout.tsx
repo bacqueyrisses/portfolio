@@ -7,14 +7,11 @@ import { Layout } from "@/components/Layout";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.enzo.codes"),
-  title: {
-    template: "%s - Enzo Bacqueyrisses",
-    default: "Enzo Bacqueyrisses | Next.js Developer",
-  },
+  title: "Enzo Bacqueyrisses | Lead Technical Engineer",
   description:
     "I’m Enzo, a full-stack developer specialised in Next.js, TypeScript & Node.JS.",
   openGraph: {
-    title: "▲ Enzo Bacqueyrisses",
+    title: "Enzo Bacqueyrisses | Lead Technical Engineer",
     description:
       "Full-stack developer specialised in Next.js, TypeScript & Node.JS",
   },
