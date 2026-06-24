@@ -17,7 +17,7 @@ export type Experience = {
 export const experience: Array<Experience> = [
   {
     company: "IndexPresse",
-    title: "Full-stack Developer",
+    title: "Lead Technical Engineer",
     logo: indexpresse,
     darkLogo: indexpresse,
     start: "2023",
