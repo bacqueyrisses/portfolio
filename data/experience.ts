@@ -25,7 +25,7 @@ export const experience: Array<Experience> = [
   },
   {
     company: "Buildspace",
-    title: "Full-stack Developer",
+    title: "Full-stack Engineer",
     logo: buildspace,
     darkLogo: darkBuildspace,
     start: "2023",
@@ -33,7 +33,7 @@ export const experience: Array<Experience> = [
   },
   {
     company: "MeSoigner",
-    title: "SEO Developer",
+    title: "SEO Engineer",
     logo: mesoigner,
     start: "2021",
     end: "2022",
