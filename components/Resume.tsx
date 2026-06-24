@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { experience, Experience } from "@/data/experience";
+import {experience, Experience} from "@/data/experience";
 
-import { Button } from "./Button";
-import {ArrowDownIcon, ComputerIcon, EyeIcon} from "./icons/CustomIcons";
+import {Button} from "./Button";
+import {ArrowDownIcon, ComputerIcon} from "./icons/CustomIcons";
 
 export default function Resume() {
   function Experience({ experience }: { experience: Experience }) {
